@@ -12,7 +12,7 @@ from wagtail.documents import urls as wagtaildocs_urls
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
     # Django Admin, use {% url 'admin:index' %}
-    path(settings.ADMIN_URL, admin.site.urls),
+    path(settings.DJANGO_ADMIN_URL, admin.site.urls),
     # Wagtail Admin
     path(settings.WAGTAILADMIN_BASE_URL, include(wagtailadmin_urls)),
     path("documents/", include(wagtaildocs_urls)),
