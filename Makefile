@@ -89,6 +89,6 @@ create-repo:
 	pre-commit install
 	git add .
 	SKIP=terraform_validate git commit -m "initial commit"
-	gh repo create african-cities-conference --public -s . --push -r origin \
-		-d "African Cities Conference Website"
+	gh repo create African-Cities-Lab/african-cities-conference --public -s . \
+		--push -r origin -d "African Cities Conference Website"
 ########################################################################################
