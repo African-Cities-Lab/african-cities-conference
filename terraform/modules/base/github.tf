@@ -10,25 +10,25 @@
 #   license_template   = "gpl-3.0"
 # }
 data "github_repository" "repo" {
-  full_name = var.gh_repo_name
+  name = var.gh_repo_name
 }
 
 
 ## Secrets
 resource "github_actions_secret" "tf_api_token" {
-  repository      = data.github_repository.repo.full_name
+  repository      = data.github_repository.repo.name
   secret_name     = "tf_api_token"
   plaintext_value = var.tf_api_token
 }
 
 resource "github_actions_secret" "ssh_key" {
-  repository      = data.github_repository.repo.full_name
+  repository      = data.github_repository.repo.name
   secret_name     = "ssh_key"
   plaintext_value = tls_private_key.ssh_key.private_key_openssh
 }
 
 resource "github_actions_secret" "droplet_user" {
-  repository      = data.github_repository.repo.full_name
+  repository      = data.github_repository.repo.name
   secret_name     = "droplet_user"
   plaintext_value = var.droplet_user
 }
@@ -41,12 +41,12 @@ resource "github_actions_secret" "droplet_user" {
 # }
 
 resource "github_branch" "stage" {
-  repository = data.github_repository.repo.full_name
+  repository = data.github_repository.repo.name
   branch     = "stage"
 }
 
 resource "github_branch" "develop" {
-  repository = data.github_repository.repo.full_name
+  repository = data.github_repository.repo.name
   branch     = "develop"
 }
 

@@ -20,7 +20,7 @@ output "do_project_id" {
 
 output "gh_repo_name" {
   description = "Name of the `github_repository`."
-  value       = data.github_repository.repo.full_name
+  value       = data.github_repository.repo.name
 }
 
 output "ssh_key" {
