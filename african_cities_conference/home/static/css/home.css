@@ -1,0 +1,18 @@
+.page-banner {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 388px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+section.one-column:nth-child(even) {
+  background: linear-gradient(
+    90deg,
+    rgba(190, 55, 18, 0.98) 0%,
+    rgba(128, 47, 72, 0.98) 54%,
+    rgba(64, 39, 129, 1) 100%
+  );
+}
