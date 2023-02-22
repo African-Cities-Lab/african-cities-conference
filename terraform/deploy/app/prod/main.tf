@@ -16,7 +16,7 @@ module "app" {
   droplet_image   = var.droplet_image
   do_region       = var.do_region
   droplet_size    = var.droplet_size
-  a_record_name   = "@"
+  a_record_name   = "acc-2023"
   create_cname    = true
   env_file_map    = var.env_file_map
 

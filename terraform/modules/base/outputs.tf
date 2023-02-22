@@ -10,7 +10,7 @@ output "droplet_user_data" {
 
 output "domain_name" {
   description = "Name of the `digitalocean_domain`."
-  value       = digitalocean_domain.domain.name
+  value       = data.digitalocean_domain.domain.name
 }
 
 output "do_project_id" {

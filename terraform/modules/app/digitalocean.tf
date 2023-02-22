@@ -32,14 +32,6 @@ resource "digitalocean_record" "a" {
   value  = digitalocean_droplet.droplet.ipv4_address
 }
 
-resource "digitalocean_record" "cname" {
-  count  = var.create_cname ? 1 : 0
-  domain = data.digitalocean_domain.domain.name
-  name   = "www"
-  type   = "CNAME"
-  value  = "@"
-}
-
 resource "digitalocean_project_resources" "resources" {
   project = var.do_project_id
   resources = [
