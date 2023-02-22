@@ -1,0 +1,15 @@
+[
+    {
+	"model": "wagtailcore.locale",
+	"fields": {
+            "language_code": "fr"
+	}
+    },
+    {
+	"model": "wagtail_localize.localesynchronization",
+	"fields": {
+	    "locale_id": 2,
+            "sync_from": 1
+	}
+    }
+]
