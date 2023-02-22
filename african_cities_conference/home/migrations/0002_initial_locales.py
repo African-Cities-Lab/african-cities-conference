@@ -26,6 +26,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ("home", "0001_initial"),
+        ("wagtail_localize", "0012_localesynchronization"),
     ]
 
     operations = [
