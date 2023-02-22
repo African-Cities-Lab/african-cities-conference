@@ -232,7 +232,7 @@ EMAIL_TIMEOUT = 5
 DJANGO_ADMIN_URL = "django-admin/"
 WAGTAILADMIN_BASE_URL = "admin/"
 # https://docs.djangoproject.com/en/dev/ref/settings/#admins
-ADMINS = [("""Martí Bosch""", "marti.bosch@epfl.ch")]
+ADMINS = [("""Martí Bosch""", "contact@africancitieslab.org")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#managers
 MANAGERS = ADMINS
 
