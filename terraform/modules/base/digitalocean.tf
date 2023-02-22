@@ -23,6 +23,6 @@ resource "digitalocean_project" "do_project" {
 resource "digitalocean_project_resources" "resources" {
   project = digitalocean_project.do_project.id
   resources = [
-    digitalocean_domain.domain.urn
+    data.digitalocean_domain.domain.urn
   ]
 }
