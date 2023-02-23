@@ -2,7 +2,11 @@ from wagtail.admin.edit_handlers import FieldPanel
 from wagtail.core.fields import StreamField
 from wagtail.core.models import Page
 
-from african_cities_conference.home.blocks import OneColumnBlock, ThreeColumnBlock
+from african_cities_conference.home.blocks import (
+    CardLayoutBlock,
+    OneColumnBlock,
+    ThreeColumnBlock,
+)
 
 
 class HomePage(Page):
@@ -22,6 +26,7 @@ class FlatPage(Page):
         [
             ("one_column_block", OneColumnBlock()),
             ("three_column_block", ThreeColumnBlock()),
+            ("card_layout_block", CardLayoutBlock()),
         ],
         blank=True,
     )

@@ -5,7 +5,10 @@ class OneColumnBlock(blocks.StructBlock):
     title = blocks.CharBlock()
     content = blocks.StreamBlock(
         [
-            ("paragraph", blocks.RichTextBlock()),
+            (
+                "paragraph",
+                blocks.RichTextBlock(),
+            ),
         ],
     )
 
@@ -16,9 +19,26 @@ class OneColumnBlock(blocks.StructBlock):
 class ThreeColumnBlock(blocks.StructBlock):
     content = blocks.StreamBlock(
         [
-            ("body", blocks.RichTextBlock()),
+            (
+                "block",
+                blocks.RichTextBlock(),
+            ),
         ],
     )
 
     class Meta:
         template = "home/blocks/three_column_block.html"
+
+
+class CardLayoutBlock(blocks.StructBlock):
+    content = blocks.StreamBlock(
+        [
+            (
+                "block",
+                blocks.RichTextBlock(),
+            ),
+        ],
+    )
+
+    class Meta:
+        template = "home/blocks/card_layout_block.html"
