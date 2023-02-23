@@ -5,7 +5,10 @@ class OneColumnBlock(blocks.StructBlock):
     title = blocks.CharBlock()
     content = blocks.StreamBlock(
         [
-            ("paragraph", blocks.RichTextBlock()),
+            (
+                "paragraph",
+                blocks.RichTextBlock(),
+            ),
         ],
     )
 
@@ -16,7 +19,10 @@ class OneColumnBlock(blocks.StructBlock):
 class ThreeColumnBlock(blocks.StructBlock):
     content = blocks.StreamBlock(
         [
-            ("body", blocks.RichTextBlock()),
+            (
+                "block",
+                blocks.RichTextBlock(),
+            ),
         ],
     )
 
