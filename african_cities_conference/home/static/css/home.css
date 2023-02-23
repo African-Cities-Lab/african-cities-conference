@@ -17,3 +17,17 @@
   );
   color: #fff;
 }
+
+.card-layout {
+  border: 1px solid #ececec;
+  transition: 0.5s;
+  min-height: 285px;
+  width: 100%;
+}
+
+.card-layout .card .card-body {
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  border-bottom: 4px solid #be3712;
+  padding: 1rem 2rem 2rem 2rem;
+}
