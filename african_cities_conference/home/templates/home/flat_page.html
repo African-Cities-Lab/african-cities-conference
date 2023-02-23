@@ -5,6 +5,7 @@
 {% endblock title %}
 {% block css %}
     {{ block.super }}
+    <link href="{% static 'css/home.css' %}" rel="stylesheet" />
     <style>
      .page-banner {
          background-image: url({% static "images/assets/banner-pattern.png" %});
@@ -25,5 +26,7 @@
             </div>
         </div>
     </section>
-    {{ page.body }}
+    <section class="page-content">
+        {{ page.body }}
+    </section>
 {% endblock content %}

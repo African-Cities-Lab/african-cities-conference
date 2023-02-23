@@ -1,7 +1,5 @@
-<section class="one-column my-5">
-    <div class="container py-5">
-        <div class="row pt-3">
-            <div class="col-md-5 col-lg-4 p-4">{{ self.content }}</div>
-        </div>
+<div class="container py-5">
+    <div class="row pt-3">
+        {% for block in self.content %}<div class="col-md-5 col-lg-4 p-4">{{ block.value }}</div>{% endfor %}
     </div>
-</section>
+</div>
