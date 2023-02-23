@@ -5,15 +5,54 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="African Cities Conference" />
+        <meta name="author" content="Nabil Raimi, Martí Bosch" />
         <title>
             {% block title %}
                 African Cities Conference
             {% endblock title %}
         </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="African Cities Conference Website" />
-        <meta name="author" content="Nabil Raimi, Martí Bosch" />
-        <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}" />
+        <meta name="description"
+              content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title"
+              content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
+        <meta name="twitter:description"
+              content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
+        <meta name="twitter:site" content="@AfricanCtiesLab" />
+        <meta itemprop='image'
+              content="{% static 'images/assets/small-logo.png' %}"/>
+        <meta property="og:title"
+              content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference " %} - African Cities Lab{% endif %}"/>
+        <meta property="og:description"
+              content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
+        <meta property="og:site_name" content="African Cities Conference" />
+        <meta itemprop='image'
+              content="{% static 'images/assets/small-logo.png' %}"/>
+        <meta itemprop="name"
+              content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
+        <meta itemprop='description'
+              content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
+        <meta itemprop='image'
+              content="{% static 'images/assets/small-logo.png' %}"/>
+        <link rel="apple-touch-icon"
+              sizes="180x180"
+              href="{% static 'images/favicons/apple-touch-icon.png' %}"/>
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="{% static 'images/favicons/favicon-32x32.png' %}"/>
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="{% static 'images/favicons/favicon-16x16.png' %}"/>
+        <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}"/>
+        <link rel="mask-icon"
+              href="{% static 'images/favicons/safari-pinned-tab.svg' %}"
+              color="#BE3712"/>
+        <meta name="msapplication-TileColor" content="#ffffff"/>
+        <meta name="theme-color" content="#ffffff"/>
         {% block css %}
             <!-- Latest compiled and minified Bootstrap CSS -->
             <link rel="stylesheet"
@@ -24,12 +63,22 @@
             <!-- Your stuff: Third-party CSS libraries go here -->
             <!-- This file stores project-specific CSS -->
             <link href="{% static 'css/project.css' %}" rel="stylesheet" />
+            <link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
         {% endblock css %}
         <!-- Le javascript
-    ================================================== -->
+        ================================================== -->
         {# Placed at the top of the document so pages load faster with defer #}
         {% block javascript %}
             <!-- Bootstrap JS -->
+            <script defer
+                    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+                    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+                    crossorigin="anonymous"></script>
+            <script defer
+                    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                    crossorigin="anonymous"></script>
             <script defer
                     src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
                     integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
@@ -41,53 +90,125 @@
         {% endblock javascript %}
     </head>
     <body>
-        <div class="mb-1">
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler navbar-toggler-right"
-                            type="button"
+        <header id="header">
+            <nav id="main-nav"
+                 class="navbar w-100 navbar-expand-lg text-center py-3 shadow-sm z-index-2">
+                <div class="civa-header container-fluid">
+                    <a class="navbar-brand" href="">
+                        <img src="{% static 'images/assets/logo-acc.png' %}"
+                             alt="African Cities Conference"
+                             class="navbar-brand-image"
+                             width="158"
+                             height="60px"/>
+                    </a>
+                    <button class="navbar-toggler navbar-toggler-right bg-white"
                             data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
+                            data-bs-target="#navbar-responsive"
+                            type="button"
+                            aria-controls="navbar-responsive"
                             aria-expanded="false"
                             aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="{% url 'home' %}">African Cities Conference</a>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{% url 'home' %}">Home <span class="visually-hidden">(current)</span></a>
+                    <div id="navbar-responsive"
+                         class="collapse navbar-collapse justify-content-between">
+                        <ul class="navbar-nav text-uppercase mx-5">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="">{% translate "Home" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="nav-link" href="">{% translate "Program" %}</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="">{% translate "Speakers" %}</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="">{% translate "Committee" %}</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="">{% translate "ACC Calls" %}</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="">{% translate "Venue & Contacts" %}</a>
                             </li>
                         </ul>
+                        <div class="right-header"></div>
                     </div>
                 </div>
             </nav>
-        </div>
-        <div class="container">
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="alert alert-dismissible {% if message.tags %}alert-{{ message.tags }}{% endif %}">
-                        {{ message }}
-                        <button type="button"
-                                class="btn-close"
-                                data-bs-dismiss="alert"
-                                aria-label="Close"></button>
-                    </div>
-                {% endfor %}
-            {% endif %}
+        </header>
+        <main>
             {% block content %}
-                <p>Use this document as a way to quick start any new project.</p>
             {% endblock content %}
-        </div>
-        <!-- /container -->
-        {% block modal %}
-        {% endblock modal %}
+        </main>
+        <footer>
+            <div class="acc-footer">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 text-center">
+                            <div class="text-center">
+                                <p class="font-size-12 mb-3">{% translate "An event by" %}</p>
+                            </div>
+                            <a href="https://africancitieslab.org/" target="_blank">
+                                <img src="{% static 'images/assets/logo-white.png' %}"
+                                     alt="African Cities Lab"
+                                     width="250"/>
+                            </a>
+                            <div class="social-media__wrapper pt-4">
+                                <ul class="list-inline mt-3 mb-5">
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://twitter.com/AfricanCtiesLab" class="text-white"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://www.linkedin.com/company/african-cities-lab/?viewAsMember=true"
+                                           class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://www.facebook.com/African-Cities-Lab-103073095772023"
+                                           class="text-white"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://instagram.com/africancitieslab?igshid=YmMyMTA2M2Y="
+                                           class="text-white"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://medium.com/@African_Cities_Lab" class="text-white"><i class="fab fa-medium-m"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://www.youtube.com/channel/UC22_61it3OdPBNj3CwkndUA"
+                                           class="text-white"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-footer-container my-3">
+                                <ul class="menu-footer">
+                                    <li class="menu-item">
+                                        <a href="https://africancitieslab.org/">{% translate "About African Cities Lab" %}</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="">{% translate "Program" %}</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="">{% translate "Call for papers" %}</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="">{% translate "Venue & Contacts" %}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-center mt-4">
+                                <p class="font-size-12">{% translate "© Copyright 2022 African Cities Lab. All rights reserved. " %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         {% block inline_javascript %}
             {% comment %}
-    Script tags with only code, no src (defer by default). To run
-    with a "defer" so that you run inline code:
-    <script>window.addEventListener('DOMContentLoaded', () => {/* Run whatever you want */});</script>
+                Script tags with only code, no src (defer by default). To run
+                with a "defer" so that you run inline code:
+                <script>window.addEventListener('DOMContentLoaded', () => {/* Run whatever you want */});</script>
             {% endcomment %}
         {% endblock inline_javascript %}
     </body>
