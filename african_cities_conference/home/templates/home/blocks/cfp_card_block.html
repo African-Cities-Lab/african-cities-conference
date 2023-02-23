@@ -10,7 +10,7 @@
             {% for block in self.content %}
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-10">
                     <div class="cfp-card">
-                        <a href="{{ block.value.learn_more_url }}">
+                        <a href="{{ block.value.learn_more_url.url }}">
                             <div class="cfp-card__header">
                                 <span class="h4">{{ block.value.title }}</span>
                             </div>
