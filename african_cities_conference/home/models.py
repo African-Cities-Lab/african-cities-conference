@@ -5,6 +5,7 @@ from wagtail.core.models import Page
 from african_cities_conference.home.blocks import (
     CardLayoutBlock,
     OneColumnBlock,
+    SpeakerLayoutBlock,
     ThreeColumnBlock,
 )
 
@@ -27,6 +28,7 @@ class FlatPage(Page):
             ("one_column_block", OneColumnBlock()),
             ("three_column_block", ThreeColumnBlock()),
             ("card_layout_block", CardLayoutBlock()),
+            ("speaker_layout_block", SpeakerLayoutBlock()),
         ],
         blank=True,
     )
