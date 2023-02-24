@@ -2,33 +2,29 @@ from wagtail.core import blocks
 from wagtail.images.blocks import ImageChooserBlock
 
 
-class OneColumnBlock(blocks.StructBlock):
-    title = blocks.CharBlock(blank=True)
-    content = blocks.StreamBlock(
-        [
-            (
-                "paragraph",
-                blocks.RichTextBlock(),
-            ),
-        ],
+class ColumnBlock(blocks.StructBlock):
+    content = blocks.ListBlock(
+        blocks.RichTextBlock(label="paragraph"),
     )
+    extra_classes = blocks.CharBlock(required=False, label="extra classes")
 
     class Meta:
-        template = "home/blocks/one_column_block.html"
+        template = "home/blocks/column_block.html"
+
+    def render(self, value, context=None):
+        return super().render(value, context={"col_classes": self.col_classes})
 
 
-class ThreeColumnBlock(blocks.StructBlock):
-    content = blocks.StreamBlock(
-        [
-            (
-                "block",
-                blocks.RichTextBlock(),
-            ),
-        ],
-    )
+class OneColumnBlock(ColumnBlock):
+    col_classes = "col-12"
 
-    class Meta:
-        template = "home/blocks/three_column_block.html"
+
+class TwoColumnBlock(ColumnBlock):
+    col_classes = "col-12 col-lg-6"
+
+
+class ThreeColumnBlock(ColumnBlock):
+    col_classes = "col-lg-4 col-md-5"
 
 
 class CardLayoutBlock(blocks.StructBlock):
