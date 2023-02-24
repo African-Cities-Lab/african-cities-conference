@@ -77,7 +77,7 @@ class SpeakerLayoutBlock(blocks.StructBlock):
                     blocks.ListBlock(
                         blocks.StructBlock(
                             [
-                                ("social_network", blocks.CharBlock()),
+                                ("fa_class", blocks.CharBlock()),
                                 ("profile_link", blocks.CharBlock()),
                             ]
                         ),
