@@ -1334,6 +1334,16 @@ a.nav-link:hover {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
+.sidebar-menu .sidebar-item {
+  max-width: 82%;
+  background: #402781;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  padding: 1rem 1.5rem;
+  margin: 0.75rem auto;
+  text-align: center;
+}
 /*----------------------------------------*/
 /*  Footer
 /*----------------------------------------*/
