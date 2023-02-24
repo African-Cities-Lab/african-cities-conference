@@ -1595,3 +1595,16 @@ a.nav-link:hover {
     padding-left: 30px;
   }
 }
+@keyframes Blink {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

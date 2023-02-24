@@ -3,7 +3,7 @@ from wagtail.images.blocks import ImageChooserBlock
 
 
 class OneColumnBlock(blocks.StructBlock):
-    title = blocks.CharBlock()
+    title = blocks.CharBlock(blank=True)
     content = blocks.StreamBlock(
         [
             (
@@ -43,6 +43,27 @@ class CardLayoutBlock(blocks.StructBlock):
 
     class Meta:
         template = "home/blocks/card_layout_block.html"
+
+
+class CfpCardBlock(blocks.StructBlock):
+    title = blocks.CharBlock(blank=True)
+    content = blocks.StreamBlock(
+        [
+            (
+                "block",
+                blocks.StructBlock(
+                    [
+                        ("title", blocks.CharBlock(label="Title")),
+                        ("learn_more_url", blocks.PageChooserBlock(label="Page Link")),
+                        ("description", blocks.RichTextBlock(label="Description")),
+                    ]
+                ),
+            ),
+        ],
+    )
+
+    class Meta:
+        template = "home/blocks/cfp_card_block.html"
 
 
 class SpeakerLayoutBlock(blocks.StructBlock):
