@@ -74,11 +74,13 @@ class SpeakerLayoutBlock(blocks.StructBlock):
                 ),
                 (
                     "social_links",
-                    blocks.StructBlock(
-                        [
-                            ("social_network", blocks.CharBlock()),
-                            ("profile_link", blocks.CharBlock()),
-                        ]
+                    blocks.ListBlock(
+                        blocks.StructBlock(
+                            [
+                                ("social_network", blocks.CharBlock()),
+                                ("profile_link", blocks.CharBlock()),
+                            ]
+                        ),
                     ),
                 ),
                 (
