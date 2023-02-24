@@ -6,7 +6,7 @@ from african_cities_conference.home.blocks import (
     CardLayoutBlock,
     CfpCardBlock,
     OneColumnBlock,
-    OneColumnTexteBlock,
+    SpeakerLayoutBlock,
     ThreeColumnBlock,
 )
 
@@ -27,10 +27,10 @@ class FlatPage(Page):
     body = StreamField(
         [
             ("one_column_block", OneColumnBlock()),
-            ("one_column_texte_block", OneColumnTexteBlock()),
             ("three_column_block", ThreeColumnBlock()),
             ("card_layout_block", CardLayoutBlock()),
             ("cfp_card_block", CfpCardBlock()),
+            ("speaker_layout_block", SpeakerLayoutBlock()),
         ],
         blank=True,
     )
