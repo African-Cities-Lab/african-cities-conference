@@ -1,4 +1,4 @@
-{% load static i18n %}
+{% load home_tags i18n static %}
 <!DOCTYPE html>
 {% get_current_language as LANGUAGE_CODE %}
 <html lang="{{ LANGUAGE_CODE }}">
@@ -134,7 +134,46 @@
                                 <a class="nav-link" href="">{% translate "Venue & Contacts" %}</a>
                             </li>
                         </ul>
-                        <div class="right-header"></div>
+                        <div class="right-header">
+                            <span class="dropdown px-3">
+                                <a class="text-black font-weight-bold dropdown-toggle"
+                                   href="#"
+                                   role="button"
+                                   id="lang-dropdown"
+                                   data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    <i class="fas fa-globe mx-2"></i>{{ LANGUAGE_CODE|upper }}
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="lang-dropdown">
+                                    {% get_available_languages as LANGUAGES %}
+                                    {% get_language_info_list for LANGUAGES as languages %}
+                                    {% for language in languages %}
+                                        {% if language.code != LANGUAGE_CODE %}
+                                            <li>
+                                                <a class="dropdown-item "
+                                                   onclick='document.getElementById("language-selector").value="{{ language.code }}";document.getElementById("language-form").submit()'>
+                                                    {{ language.code|upper }}
+                                                </a>
+                                            </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </span>
+                            <form action="{% url 'set_language' %}"
+                                  method="post"
+                                  class="ms-2 d-none"
+                                  id="language-form">
+                                {% csrf_token %}
+                                {% redirect_to self.slug as next %}
+                                <input name="next"
+                                       type="hidden"
+                                       value="{% if next %}{{ next }}{% else %}{{ request.get_full_path|slice:'3:' }}{% endif %}"/>
+                                <input name="language"
+                                       id="language-selector"
+                                       type="hidden"
+                                       value="{{ LANGUAGE_CODE }}"/>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </nav>
