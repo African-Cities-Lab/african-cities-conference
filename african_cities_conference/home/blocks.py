@@ -93,3 +93,18 @@ class SpeakerLayoutBlock(blocks.StructBlock):
 
     class Meta:
         template = "home/blocks/speaker_layout_block.html"
+
+
+class ColumnSidebarLayoutBlock(blocks.StructBlock):
+    content = blocks.RichTextBlock()
+    sidebar = blocks.StreamBlock(
+        [
+            (
+                "block",
+                blocks.PageChooserBlock(label="Page Link"),
+            ),
+        ],
+    )
+
+    class Meta:
+        template = "home/blocks/column_sidebar_layout_block.html"
