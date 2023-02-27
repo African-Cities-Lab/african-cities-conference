@@ -1,4 +1,4 @@
-{% load static i18n %}
+{% load home_tags i18n static %}
 <!DOCTYPE html>
 {% get_current_language as LANGUAGE_CODE %}
 <html lang="{{ LANGUAGE_CODE }}">
@@ -15,27 +15,8 @@
         </title>
         <meta name="description"
               content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:title"
-              content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
-        <meta name="twitter:description"
-              content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
-        <meta name="twitter:site" content="@AfricanCtiesLab" />
-        <meta itemprop='image'
-              content="{% static 'images/assets/small-logo.png' %}"/>
-        <meta property="og:title"
-              content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference " %} - African Cities Lab{% endif %}"/>
-        <meta property="og:description"
-              content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
-        <meta property="og:site_name" content="African Cities Conference" />
-        <meta itemprop='image'
-              content="{% static 'images/assets/small-logo.png' %}"/>
-        <meta itemprop="name"
-              content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
-        <meta itemprop='description'
-              content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
-        <meta itemprop='image'
-              content="{% static 'images/assets/small-logo.png' %}"/>
+        {% block static_meta_tag %}
+        {% endblock static_meta_tag %}
         <link rel="apple-touch-icon"
               sizes="180x180"
               href="{% static 'images/favicons/apple-touch-icon.png' %}"/>
@@ -61,6 +42,8 @@
                   crossorigin="anonymous"
                   referrerpolicy="no-referrer"/>
             <!-- Your stuff: Third-party CSS libraries go here -->
+            <link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
             <!-- This file stores project-specific CSS -->
             <link href="{% static 'css/project.css' %}" rel="stylesheet" />
             <link rel="stylesheet"
@@ -113,26 +96,77 @@
                     <div id="navbar-responsive"
                          class="collapse navbar-collapse justify-content-between">
                         <ul class="navbar-nav text-uppercase mx-5">
+                            {% url 'home' as url %}
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="">{% translate "Home" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% url 'home' %}">{% translate "Home" %}</a>
                             </li>
+                            {% url 'program' as url %}
                             <li class="list-inline-item">
-                                <a class="nav-link" href="">{% translate "Program" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% url 'program' %}">{% translate "Program" %}</a>
                             </li>
+                            {% localized_slugurl 'speakers' as url %}
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="">{% translate "Speakers" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% localized_slugurl 'speakers' %}">{% translate "Speakers" %}</a>
                             </li>
+                            {% localized_slugurl 'commitee' as url %}
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="">{% translate "Committee" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% localized_slugurl 'commitee' %}">{% translate "Committee" %}</a>
                             </li>
+                            {% localized_slugurl 'acc-calls' as url %}
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="">{% translate "ACC Calls" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% localized_slugurl 'acc-calls' %}">{% translate "ACC Calls" %}</a>
                             </li>
+                            {% url 'contact' as url %}
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="">{% translate "Venue & Contacts" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% url 'contact' %}">{% translate "Venue & Contacts" %}</a>
                             </li>
                         </ul>
-                        <div class="right-header"></div>
+                        <div class="right-header">
+                            <span class="dropdown px-3">
+                                <a class="text-black font-weight-bold dropdown-toggle"
+                                   href="#"
+                                   role="button"
+                                   id="lang-dropdown"
+                                   data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    <i class="fas fa-globe mx-2"></i>{{ LANGUAGE_CODE|upper }}
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="lang-dropdown">
+                                    {% get_available_languages as LANGUAGES %}
+                                    {% get_language_info_list for LANGUAGES as languages %}
+                                    {% for language in languages %}
+                                        {% if language.code != LANGUAGE_CODE %}
+                                            <li>
+                                                <a class="dropdown-item "
+                                                   onclick='document.getElementById("language-selector").value="{{ language.code }}";document.getElementById("language-form").submit()'>
+                                                    {{ language.code|upper }}
+                                                </a>
+                                            </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </span>
+                            <form action="{% url 'set_language' %}"
+                                  method="post"
+                                  class="ms-2 d-none"
+                                  id="language-form">
+                                {% csrf_token %}
+                                {% redirect_to self.slug as next %}
+                                <input name="next"
+                                       type="hidden"
+                                       value="{% if next %}{{ next }}{% else %}{{ request.get_full_path|slice:'3:' }}{% endif %}"/>
+                                <input name="language"
+                                       id="language-selector"
+                                       type="hidden"
+                                       value="{{ LANGUAGE_CODE }}"/>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </nav>
