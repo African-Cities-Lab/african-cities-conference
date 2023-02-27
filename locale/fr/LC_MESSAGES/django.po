@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-27 12:21+0100\n"
+"POT-Creation-Date: 2023-02-27 14:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,9 +33,9 @@ msgstr "Lieu & Contacts"
 #: african_cities_conference/home/templates/home/contact.html:11
 #: african_cities_conference/home/templates/home/contact.html:18
 #: african_cities_conference/home/templates/home/contact.html:25
-#: african_cities_conference/home/templates/home/home.html:8
-#: african_cities_conference/home/templates/home/home.html:15
-#: african_cities_conference/home/templates/home/home.html:22
+#: african_cities_conference/home/templates/home/home.html:7
+#: african_cities_conference/home/templates/home/home.html:13
+#: african_cities_conference/home/templates/home/home.html:19
 #: african_cities_conference/home/templates/home/program.html:11
 #: african_cities_conference/home/templates/home/program.html:18
 #: african_cities_conference/home/templates/home/program.html:25
@@ -47,16 +47,16 @@ msgstr ""
 "African Cities Conference (ACC) est la première conférence internationale "
 "sur le développement urbain et durable en Afrique."
 
-#: african_cities_conference/home/templates/home/contact.html:57
+#: african_cities_conference/home/templates/home/contact.html:56
 msgid ""
 "\n"
-"            The first annual meeting of the academic and professional world "
-"on African cities, \n"
-"            will highlight the solutions brought by urban actors to create "
-"new city models capable \n"
-"            of accommodating the 950 million additional inhabitants who will "
-"populate urban environments by 2050.\n"
-"            "
+"                        The first annual meeting of the academic and "
+"professional world on African cities,\n"
+"                        will highlight the solutions brought by urban actors "
+"to create new city models capable\n"
+"                        of accommodating the 950 million additional "
+"inhabitants who will populate urban environments by 2050.\n"
+"                        "
 msgstr ""
 "\n"
 "Le premier rendez-vous annuel du monde académique et professionnel sur les "
@@ -67,14 +67,14 @@ msgstr ""
 "milieux urbains à horizon 2050.\n"
 "          "
 
-#: african_cities_conference/home/templates/home/contact.html:64
+#: african_cities_conference/home/templates/home/contact.html:63
 msgid ""
 "\n"
-"            The first edition of this international event will present "
-"digital and smart cities as sustainable, \n"
-"            inclusive and innovative solutions to the urban challenges "
-"facing Africa.\n"
-"            "
+"                        The first edition of this international event will "
+"present digital and smart cities as sustainable,\n"
+"                        inclusive and innovative solutions to the urban "
+"challenges facing Africa.\n"
+"                        "
 msgstr ""
 "\n"
 "La première édition de cet événement international présentera les villes "
@@ -83,21 +83,21 @@ msgstr ""
 "est confrontée.\n"
 "          "
 
-#: african_cities_conference/home/templates/home/contact.html:79
-#: african_cities_conference/home/templates/home/home.html:508
+#: african_cities_conference/home/templates/home/contact.html:76
+#: african_cities_conference/home/templates/home/home.html:650
 msgid "Novotel Cotonou Orisha"
 msgstr ""
 
-#: african_cities_conference/home/templates/home/contact.html:82
+#: african_cities_conference/home/templates/home/contact.html:78
 msgid ""
 "\n"
-"            The welcome of the participants to the 1st edition of the "
-"African Cities Conference will be done at the Novotel \n"
-"            hotel. Located on the famous boulevard of the Marina, a few "
-"meters from the emblematic statue of \n"
-"            the Amazon, it is an ultramodern setting with state-of-the-art "
-"technological equipment, capable of hosting large-scale events.\n"
-"            "
+"                        The welcome of the participants to the 1st edition "
+"of the African Cities Conference will be done at the Novotel\n"
+"                        hotel. Located on the famous boulevard of the "
+"Marina, a few meters from the emblematic statue of\n"
+"                        the Amazon, it is an ultramodern setting with state-"
+"of-the-art technological equipment, capable of hosting large-scale events.\n"
+"                        "
 msgstr ""
 "\n"
 "L’accueil des participants à la 1ère édition de l'African Cities Conference "
@@ -108,19 +108,19 @@ msgstr ""
 "de pointe, capable d’accueillir des événements d’envergure.\n"
 "          "
 
-#: african_cities_conference/home/templates/home/contact.html:116
+#: african_cities_conference/home/templates/home/contact.html:118
 msgid "Hosting"
 msgstr "Hébergement"
 
-#: african_cities_conference/home/templates/home/contact.html:119
+#: african_cities_conference/home/templates/home/contact.html:120
 msgid ""
 "\n"
-"            A part of the rooms of the Novotel Hotel in Cotonou has been "
-"reserved for the African Cities \n"
-"            Conference. Other 3 and 4 star hotels will be announced soon and "
-"reservation details will be \n"
-"            communicated to participants as soon as possible.\n"
-"            "
+"                        A part of the rooms of the Novotel Hotel in Cotonou "
+"has been reserved for the African Cities\n"
+"                        Conference. Other 3 and 4 star hotels will be "
+"announced soon and reservation details will be\n"
+"                        communicated to participants as soon as possible.\n"
+"                        "
 msgstr ""
 "\n"
 "Une partie des chambres de l’hôtel Novotel de Cotonou a été réservée pour "
@@ -130,23 +130,24 @@ msgstr ""
 "communiquées aux participants dans les meilleurs délais.\n"
 "          "
 
-#: african_cities_conference/home/templates/home/contact.html:135
+#: african_cities_conference/home/templates/home/contact.html:134
 msgid "Visa"
 msgstr ""
 
-#: african_cities_conference/home/templates/home/contact.html:138
+#: african_cities_conference/home/templates/home/contact.html:136
 msgid ""
 "\n"
-"            Nationals of countries subject to the visa application procedure "
-"can now apply for a visa online (e-visa) \n"
-"            at <a href=\"https://evisa.bj/\" class=\"text_primary\" target="
-"\"_blank\">https://evisa.bj/</a>. It takes 7 days to obtain a visa. \n"
-"            The maximum validity of a visa varies from 30 to 90 days "
-"depending on your nationality. If necessary, \n"
-"            the organisers will send you an official letter of "
-"participation, justifying your travel \n"
-"            from your country of origin to Benin.\n"
-"            "
+"                        Nationals of countries subject to the visa "
+"application procedure can now apply for a visa online (e-visa)\n"
+"                        at <a href=\"https://evisa.bj/\" class=\"text_primary"
+"\" target=\"_blank\">https://evisa.bj/</a>. It takes 7 days to obtain a "
+"visa.\n"
+"                        The maximum validity of a visa varies from 30 to 90 "
+"days depending on your nationality. If necessary,\n"
+"                        the organisers will send you an official letter of "
+"participation, justifying your travel\n"
+"                        from your country of origin to Benin.\n"
+"                        "
 msgstr ""
 "\n"
 "Les ressortissants des pays soumis à la procédure de demande de visa peuvent "
@@ -159,14 +160,13 @@ msgstr ""
 "justifiant votre déplacement de votre pays de provenance vers le Bénin.\n"
 "          "
 
-#: african_cities_conference/home/templates/home/contact.html:159
-#: african_cities_conference/home/templates/home/home.html:513
+#: african_cities_conference/home/templates/home/contact.html:157
 msgid ""
 "\n"
-"            Follow us on social networks or write to us for any more "
-"information or request about \n"
-"            the event and how to become a partner.\n"
-"            "
+"                        Follow us on social networks or write to us for any "
+"more information or request about\n"
+"                        the event and how to become a partner.\n"
+"                        "
 msgstr ""
 "\n"
 "Suivez-nous sur nos divers réseaux sociaux ou écrivez-nous pour tout "
@@ -174,32 +174,32 @@ msgstr ""
 " sur l’événement et comment en devenir partenaire.\n"
 "          "
 
-#: african_cities_conference/home/templates/home/contact.html:164
-#: african_cities_conference/home/templates/home/home.html:521
+#: african_cities_conference/home/templates/home/contact.html:162
+#: african_cities_conference/home/templates/home/home.html:667
 msgid "For any request:"
 msgstr "Pour toute demande :"
 
-#: african_cities_conference/home/templates/home/home.html:36
+#: african_cities_conference/home/templates/home/home.html:32
 msgid "The African Cities Conference (ACC) - Digital Cities"
 msgstr "African Cities Conference (ACC) - Villes Digitales"
 
-#: african_cities_conference/home/templates/home/home.html:42
+#: african_cities_conference/home/templates/home/home.html:36
 msgid "Days"
 msgstr "Jours"
 
-#: african_cities_conference/home/templates/home/home.html:46
+#: african_cities_conference/home/templates/home/home.html:40
 msgid "Hours"
 msgstr "Heures"
 
-#: african_cities_conference/home/templates/home/home.html:50
+#: african_cities_conference/home/templates/home/home.html:44
 msgid "Minutes"
 msgstr "Minutes"
 
-#: african_cities_conference/home/templates/home/home.html:54
+#: african_cities_conference/home/templates/home/home.html:48
 msgid "Seconds"
 msgstr "Secondes"
 
-#: african_cities_conference/home/templates/home/home.html:68
+#: african_cities_conference/home/templates/home/home.html:60
 msgid ""
 "African Cities Conference (ACC) is the first international conference on "
 "urban and sustainable development in Africa."
@@ -207,31 +207,31 @@ msgstr ""
 "African Cities Conference (ACC) est la première conférence internationale "
 "sur le développement urbain et durable en Afrique."
 
-#: african_cities_conference/home/templates/home/home.html:79
+#: african_cities_conference/home/templates/home/home.html:70
 msgid "Date"
 msgstr "Date"
 
-#: african_cities_conference/home/templates/home/home.html:80
-#: african_cities_conference/home/templates/home/home.html:510
+#: african_cities_conference/home/templates/home/home.html:71
+#: african_cities_conference/home/templates/home/home.html:656
 msgid "May 23 & 24"
 msgstr "23 & 24 Mai"
 
-#: african_cities_conference/home/templates/home/home.html:89
+#: african_cities_conference/home/templates/home/home.html:79
 msgid "Location"
 msgstr "Lieu"
 
-#: african_cities_conference/home/templates/home/home.html:90
+#: african_cities_conference/home/templates/home/home.html:80
 msgid "Novotel, Cotonou, Benin"
 msgstr "Novotel, Cotonou, Bénin"
 
-#: african_cities_conference/home/templates/home/home.html:102
+#: african_cities_conference/home/templates/home/home.html:90
 msgid ""
 "\n"
 "              African digital cities are presented as a reasonable response "
-"to future demographic projections and the inability of the public sector \n"
+"to future demographic projections and the inability of the public sector\n"
 "              alone to respond structurally to a strong increase in demand "
 "for urban infrastructure and infrastructure and urban services such as "
-"housing, \n"
+"housing,\n"
 "              socio-professional integration, etc.<br>\n"
 "              "
 msgstr ""
@@ -244,15 +244,15 @@ msgstr ""
 "l’insertion socio-professionnelle, etc.\n"
 "                "
 
-#: african_cities_conference/home/templates/home/home.html:107
+#: african_cities_conference/home/templates/home/home.html:95
 msgid ""
 "\n"
 "              Challenging the current vision of cities in Africa, digital "
 "cities seem to be major players in the urbanization of Africa. At a time "
-"when a \n"
+"when a\n"
 "              new urban paradigm is being implemented but intrinsic "
 "challenges remain, the role of digital cities as drivers of urban "
-"development in \n"
+"development in\n"
 "              Africa is to be established.<br>\n"
 "              "
 msgstr ""
@@ -266,12 +266,12 @@ msgstr ""
 "urbain en Afrique est à établir. \n"
 "                "
 
-#: african_cities_conference/home/templates/home/home.html:112
+#: african_cities_conference/home/templates/home/home.html:100
 msgid ""
 "\n"
 "              There is today a tangible and growing demand for talented and "
 "highly qualified African researchers on the theme of the city and its "
-"digitalization. \n"
+"digitalization.\n"
 "              This is particularly visible in all areas of the digital "
 "transformation of the continent.\n"
 "              "
@@ -284,14 +284,14 @@ msgstr ""
 "transformation numérique du continent.\n"
 "                "
 
-#: african_cities_conference/home/templates/home/home.html:118
+#: african_cities_conference/home/templates/home/home.html:106
 msgid ""
 "\n"
 "              The « <strong>African Cities Conference (ACC) - Digital "
-"Cities</strong> » aims to increase the scope and influence of research, \n"
+"Cities</strong> » aims to increase the scope and influence of research,\n"
 "              innovation and entrepreneurial activities on the African "
 "continent related to the digitization of cities, as well as to promote "
-"scientific excellence \n"
+"scientific excellence\n"
 "              in Africa.\n"
 "              "
 msgstr ""
@@ -304,12 +304,12 @@ msgstr ""
 "scientifique en Afrique.\n"
 "                "
 
-#: african_cities_conference/home/templates/home/home.html:125
+#: african_cities_conference/home/templates/home/home.html:113
 msgid ""
 "\n"
 "              Therefore, beyond its thematic focus, ACC aims to advance "
 "interdisciplinary research by bridging the disciplinary gap between the "
-"different academic \n"
+"different academic\n"
 "              cultures of the humanities, sciences and application-oriented "
 "research, but also the sectoral gap between urban development actors in "
 "Africa.\n"
@@ -324,16 +324,16 @@ msgstr ""
 "développement urbain en Afrique.\n"
 "                "
 
-#: african_cities_conference/home/templates/home/home.html:140
+#: african_cities_conference/home/templates/home/home.html:127
 msgid "African Cities Conference (ACC) - Digital Cities"
 msgstr "African Cities Conference (ACC) - Villes Digitales"
 
-#: african_cities_conference/home/templates/home/home.html:142
+#: african_cities_conference/home/templates/home/home.html:129
 msgid ""
 "\n"
 "              The conference organizers cordially invite you to submit your "
-"scientific work to \n"
-"              African Cities Conference (ACC) - Digital Cities to be held \n"
+"scientific work to\n"
+"              African Cities Conference (ACC) - Digital Cities to be held\n"
 "              in Cotonou, Benin, next May 23 & 24\n"
 "              "
 msgstr ""
@@ -345,11 +345,11 @@ msgstr ""
 "Conference qui se tiendra à Cotonou, au Bénin, les 23 et 24 mai 2023.\n"
 "            "
 
-#: african_cities_conference/home/templates/home/home.html:151
+#: african_cities_conference/home/templates/home/home.html:139
 msgid "Call for papers "
 msgstr "Appel à contributions"
 
-#: african_cities_conference/home/templates/home/home.html:164
+#: african_cities_conference/home/templates/home/home.html:151
 msgid ""
 "\n"
 "              Topics\n"
@@ -359,266 +359,266 @@ msgstr ""
 "Thématiques\n"
 "                  "
 
-#: african_cities_conference/home/templates/home/home.html:175
+#: african_cities_conference/home/templates/home/home.html:161
 msgid "Digitalization of cities and urban planning"
 msgstr "Digitalisation des villes et planification urbaine"
 
-#: african_cities_conference/home/templates/home/home.html:177
+#: african_cities_conference/home/templates/home/home.html:163
 msgid "Digital water and energy management"
 msgstr "Gestion numérisée des eaux et de l'énergie"
 
-#: african_cities_conference/home/templates/home/home.html:178
+#: african_cities_conference/home/templates/home/home.html:164
 msgid "Smart waste management and sanitation"
 msgstr "Gestion intelligente des déchets et assainissement"
 
-#: african_cities_conference/home/templates/home/home.html:179
+#: african_cities_conference/home/templates/home/home.html:165
 msgid "Digital management of education and health"
 msgstr "Gestion de l'éducation et de la santé"
 
-#: african_cities_conference/home/templates/home/home.html:180
+#: african_cities_conference/home/templates/home/home.html:166
 msgid "Digital mobility and transport management"
 msgstr "Mobilité digitale et gestion des transports"
 
-#: african_cities_conference/home/templates/home/home.html:181
+#: african_cities_conference/home/templates/home/home.html:167
 msgid "Land use and land cover management"
 msgstr "Gestion de l'utilisation et de la couverture des sols"
 
-#: african_cities_conference/home/templates/home/home.html:182
+#: african_cities_conference/home/templates/home/home.html:168
 msgid "Informality & precarious neighbourhoods"
 msgstr "Informalité & quartiers précaires"
 
-#: african_cities_conference/home/templates/home/home.html:183
+#: african_cities_conference/home/templates/home/home.html:169
 msgid "Land tenure and cadastral management"
 msgstr "Gestion du régime foncier et du cadastre"
 
-#: african_cities_conference/home/templates/home/home.html:184
+#: african_cities_conference/home/templates/home/home.html:171
 msgid "Quality of Life and Social Layer"
 msgstr "Qualité de vie et couches sociales"
 
-#: african_cities_conference/home/templates/home/home.html:185
+#: african_cities_conference/home/templates/home/home.html:174
 msgid "Architecture & Urban Planning"
 msgstr "Architecture & Planification urbaine"
 
-#: african_cities_conference/home/templates/home/home.html:186
+#: african_cities_conference/home/templates/home/home.html:177
 msgid "Energy for Building and Construction Development"
 msgstr "Développement de l'énergie pour le bâtiment et la construction"
 
-#: african_cities_conference/home/templates/home/home.html:187
+#: african_cities_conference/home/templates/home/home.html:180
 msgid "Computer-Aided Civil and Infrastructure Engineering"
 msgstr "Génie civil et infrastructures assistées par ordinateur"
 
-#: african_cities_conference/home/templates/home/home.html:195
-#: african_cities_conference/home/templates/home/program.html:112
+#: african_cities_conference/home/templates/home/home.html:190
+#: african_cities_conference/home/templates/home/program.html:99
 msgid "Digital and smart african cities"
 msgstr "Villes africaines numériques et intelligentes"
 
-#: african_cities_conference/home/templates/home/home.html:197
+#: african_cities_conference/home/templates/home/home.html:194
 msgid "Digital and smart cities strategies in Africa"
 msgstr "Stratégies pour les villes numériques et intelligentes en Afrique"
 
-#: african_cities_conference/home/templates/home/home.html:198
+#: african_cities_conference/home/templates/home/home.html:197
 msgid "Digital and Smart african city stakeholders"
 msgstr "Les acteurs de la ville africaine numérique et intelligente"
 
-#: african_cities_conference/home/templates/home/home.html:199
+#: african_cities_conference/home/templates/home/home.html:200
 msgid "Digital and Smart city infrastructure"
 msgstr "Infrastructures des villes numériques et intelligentes"
 
-#: african_cities_conference/home/templates/home/home.html:200
+#: african_cities_conference/home/templates/home/home.html:203
 msgid "IoT for digital and smart cities"
 msgstr "IoT pour les villes numériques et intelligentes"
 
-#: african_cities_conference/home/templates/home/home.html:201
+#: african_cities_conference/home/templates/home/home.html:206
 msgid "Robotics, blockchain and crytomoney"
 msgstr "Robotique, blockchain et cryptomonnaie"
 
-#: african_cities_conference/home/templates/home/home.html:202
+#: african_cities_conference/home/templates/home/home.html:209
 msgid "Artificial intelligence and application integration"
 msgstr "Intelligence artificielle et intégration des applications"
 
-#: african_cities_conference/home/templates/home/home.html:203
+#: african_cities_conference/home/templates/home/home.html:212
 msgid "Cybersecurity & IS governance for smart cities"
 msgstr "Cybersécurité et gouvernance des SI pour les villes intelligentes"
 
-#: african_cities_conference/home/templates/home/home.html:204
+#: african_cities_conference/home/templates/home/home.html:215
 msgid "Advanced technologies for African smart cities"
 msgstr "Technologies avancées pour les villes intelligentes africaines"
 
-#: african_cities_conference/home/templates/home/home.html:212
+#: african_cities_conference/home/templates/home/home.html:225
 msgid "Remote sensing and Smart geo - information systems "
 msgstr "Télédétection et systèmes d'information géographique intelligents"
 
-#: african_cities_conference/home/templates/home/home.html:214
+#: african_cities_conference/home/templates/home/home.html:229
 msgid "GIS and remote sensing"
 msgstr "SIG et télédétection"
 
-#: african_cities_conference/home/templates/home/home.html:215
+#: african_cities_conference/home/templates/home/home.html:232
 msgid "Citizen sensing and Citizen engagement"
 msgstr "La perception des citoyens et l'engagement des citoyens"
 
-#: african_cities_conference/home/templates/home/home.html:216
+#: african_cities_conference/home/templates/home/home.html:235
 msgid "Geo AI and applications"
 msgstr "Géo IA et applications"
 
-#: african_cities_conference/home/templates/home/home.html:217
+#: african_cities_conference/home/templates/home/home.html:238
 msgid "Spatial data Infrastructures (SDI)"
 msgstr "Infrastructures de données spatiales (IDS)"
 
-#: african_cities_conference/home/templates/home/home.html:218
+#: african_cities_conference/home/templates/home/home.html:241
 msgid "Interactive visualization and 3D modeling"
 msgstr "Visualisation interactive et modélisation 3D"
 
-#: african_cities_conference/home/templates/home/home.html:219
+#: african_cities_conference/home/templates/home/home.html:244
 msgid "Geo Artificial intelligence (Geo AI)"
 msgstr "Intelligence géo-artificielle (Geo AI)"
 
-#: african_cities_conference/home/templates/home/home.html:220
+#: african_cities_conference/home/templates/home/home.html:247
 msgid "GIS application (GIS API)"
 msgstr "Application SIG (API SIG)"
 
-#: african_cities_conference/home/templates/home/home.html:221
+#: african_cities_conference/home/templates/home/home.html:250
 msgid "Collective sensing & spatial big urban data"
 msgstr "Détection collective et grandes données spatiales urbaines"
 
-#: african_cities_conference/home/templates/home/home.html:222
+#: african_cities_conference/home/templates/home/home.html:253
 msgid "Smart geo-addressing and participatory addressing"
 msgstr "Géo-adressage intelligent et adressage participatif"
 
-#: african_cities_conference/home/templates/home/home.html:223
+#: african_cities_conference/home/templates/home/home.html:256
 msgid "SIG and geolocalisation"
 msgstr "SIG et géolocalisation"
 
-#: african_cities_conference/home/templates/home/home.html:224
+#: african_cities_conference/home/templates/home/home.html:259
 msgid "Digital twins & twin cities"
 msgstr "Jumeaux numériques et villes jumelles"
 
-#: african_cities_conference/home/templates/home/home.html:232
+#: african_cities_conference/home/templates/home/home.html:269
 msgid "Digital Citizen and digital gouvernance"
 msgstr "Citoyen gouvernance digitale"
 
-#: african_cities_conference/home/templates/home/home.html:234
+#: african_cities_conference/home/templates/home/home.html:273
 msgid "Citizens and Collaborative Governance"
 msgstr "Citoyens et gouvernance collaborative"
 
-#: african_cities_conference/home/templates/home/home.html:235
+#: african_cities_conference/home/templates/home/home.html:276
 msgid "Geopolitics, democratic processes and cyber-citizenship"
 msgstr "Géopolitique, processus démocratiques et cybercitoyenneté"
 
-#: african_cities_conference/home/templates/home/home.html:236
+#: african_cities_conference/home/templates/home/home.html:279
 msgid "Data Governance for smart cities"
 msgstr "Gouvernance des données pour les villes intelligentes"
 
-#: african_cities_conference/home/templates/home/home.html:237
+#: african_cities_conference/home/templates/home/home.html:282
 msgid "Digitalisation and internet 5.0"
 msgstr "Digitalisation et internet 5.0"
 
-#: african_cities_conference/home/templates/home/home.html:238
+#: african_cities_conference/home/templates/home/home.html:285
 msgid "Digital tools for smart urban development"
 msgstr "Des outils numériques pour un développement urbain intelligent"
 
-#: african_cities_conference/home/templates/home/home.html:239
+#: african_cities_conference/home/templates/home/home.html:288
 msgid "Socio-cultural transformations and social inclusion"
 msgstr "Transformations socioculturelles et inclusion sociale"
 
-#: african_cities_conference/home/templates/home/home.html:240
+#: african_cities_conference/home/templates/home/home.html:291
 msgid "Crowdsourcing and citizen participation"
 msgstr "Crowdsourcing et participation citoyenne"
 
-#: african_cities_conference/home/templates/home/home.html:241
+#: african_cities_conference/home/templates/home/home.html:294
 msgid "Digital governance and digital citizenship"
 msgstr "Gouvernance et citoyenneté numériques"
 
-#: african_cities_conference/home/templates/home/home.html:249
+#: african_cities_conference/home/templates/home/home.html:304
 msgid "African digital cities challenges"
 msgstr "Défis des villes numériques africaines"
 
-#: african_cities_conference/home/templates/home/home.html:251
+#: african_cities_conference/home/templates/home/home.html:308
 msgid "Resilience of African digital cities"
 msgstr "Résilience des villes numériques africaines"
 
-#: african_cities_conference/home/templates/home/home.html:252
+#: african_cities_conference/home/templates/home/home.html:311
 msgid "Waste management and sanitation"
 msgstr "Gestion des déchets et assainissement"
 
-#: african_cities_conference/home/templates/home/home.html:253
+#: african_cities_conference/home/templates/home/home.html:314
 msgid "Renewable energy and use"
 msgstr "Énergies renouvelables et utilisation"
 
-#: african_cities_conference/home/templates/home/home.html:254
+#: african_cities_conference/home/templates/home/home.html:317
 msgid "Housing and wellbeing"
 msgstr "Logement et bien-être"
 
-#: african_cities_conference/home/templates/home/home.html:255
+#: african_cities_conference/home/templates/home/home.html:320
 msgid "Energy and environmental efficiency"
 msgstr "Efficacité énergétique et environnementale"
 
-#: african_cities_conference/home/templates/home/home.html:256
+#: african_cities_conference/home/templates/home/home.html:323
 msgid "Sustainable development and adaptation of smart cities"
 msgstr "Développement durable et adaptation des villes intelligentes"
 
-#: african_cities_conference/home/templates/home/home.html:257
+#: african_cities_conference/home/templates/home/home.html:326
 msgid "Urban pollution and heat monitoring"
 msgstr "Surveillance de la pollution et de la température urbaine"
 
-#: african_cities_conference/home/templates/home/home.html:265
-#: african_cities_conference/home/templates/home/program.html:193
+#: african_cities_conference/home/templates/home/home.html:336
+#: african_cities_conference/home/templates/home/program.html:166
 msgid "Urban mobility and transportation"
 msgstr "Mobilité et transport urbains"
 
-#: african_cities_conference/home/templates/home/home.html:267
+#: african_cities_conference/home/templates/home/home.html:340
 msgid "ITS (Intelligent Transport Systems)"
 msgstr ""
 
-#: african_cities_conference/home/templates/home/home.html:268
+#: african_cities_conference/home/templates/home/home.html:343
 msgid "Urban mobility"
 msgstr "Mobilité urbaine"
 
-#: african_cities_conference/home/templates/home/home.html:269
+#: african_cities_conference/home/templates/home/home.html:346
 msgid "Travel behavior (travel patterns, route choice, mode choice, etc.)"
 msgstr "Modèles de transport urbain"
 
-#: african_cities_conference/home/templates/home/home.html:270
+#: african_cities_conference/home/templates/home/home.html:349
 msgid "Multimodal transportation"
 msgstr "Transports multimodaux"
 
-#: african_cities_conference/home/templates/home/home.html:271
+#: african_cities_conference/home/templates/home/home.html:352
 msgid "Non-motorized and informal transportation"
 msgstr "Transport non motorisé et informel"
 
-#: african_cities_conference/home/templates/home/home.html:272
+#: african_cities_conference/home/templates/home/home.html:355
 msgid "Shared mobility (carsharing, bike sharing, etc.)"
 msgstr "Vélo en libre-service"
 
-#: african_cities_conference/home/templates/home/home.html:273
+#: african_cities_conference/home/templates/home/home.html:358
 msgid "Transportation and Traffic Engineering"
 msgstr "Transport et ingénierie du trafic"
 
-#: african_cities_conference/home/templates/home/home.html:281
-#: african_cities_conference/home/templates/home/program.html:211
+#: african_cities_conference/home/templates/home/home.html:368
+#: african_cities_conference/home/templates/home/program.html:181
 msgid "Emerging urban technologies"
 msgstr "Technologies urbaines émergentes"
 
-#: african_cities_conference/home/templates/home/home.html:283
+#: african_cities_conference/home/templates/home/home.html:372
 msgid "Construction Robotics"
 msgstr "Robotique de construction"
 
-#: african_cities_conference/home/templates/home/home.html:284
+#: african_cities_conference/home/templates/home/home.html:375
 msgid "AI-based solutions"
 msgstr "Solutions basées sur l'IA"
 
-#: african_cities_conference/home/templates/home/home.html:285
+#: african_cities_conference/home/templates/home/home.html:378
 msgid "Mobile currency solutions"
 msgstr "Solution Mobile money"
 
-#: african_cities_conference/home/templates/home/home.html:286
+#: african_cities_conference/home/templates/home/home.html:381
 msgid "Infrastructure Design tools"
 msgstr "Outils de conception d'infrastructures"
 
-#: african_cities_conference/home/templates/home/home.html:287
+#: african_cities_conference/home/templates/home/home.html:384
 msgid "Construction Technology & Engineering"
 msgstr "Technologie et ingénierie de la construction"
 
-#: african_cities_conference/home/templates/home/home.html:301
+#: african_cities_conference/home/templates/home/home.html:398
 msgid ""
 "\n"
 "                <span class=\"text_primary\">ACC 2023</span> side events\n"
@@ -629,7 +629,7 @@ msgstr ""
 "2023</span>\n"
 "                    "
 
-#: african_cities_conference/home/templates/home/home.html:307
+#: african_cities_conference/home/templates/home/home.html:404
 msgid ""
 "\n"
 "                      This conference is virtual and presential and open to "
@@ -641,7 +641,7 @@ msgstr ""
 "à tous.\n"
 "                    "
 
-#: african_cities_conference/home/templates/home/home.html:312
+#: african_cities_conference/home/templates/home/home.html:409
 msgid ""
 "\n"
 "                      It will include….\n"
@@ -651,15 +651,15 @@ msgstr ""
 "                    Elle inclura....\n"
 "                    "
 
-#: african_cities_conference/home/templates/home/home.html:319
+#: african_cities_conference/home/templates/home/home.html:416
 msgid "View conference agenda"
 msgstr "Voir l'agenda de la conférence"
 
-#: african_cities_conference/home/templates/home/home.html:328
+#: african_cities_conference/home/templates/home/home.html:430
 msgid "Preliminary Webinars"
 msgstr "Webinaires préliminaire"
 
-#: african_cities_conference/home/templates/home/home.html:333
+#: african_cities_conference/home/templates/home/home.html:438
 msgid ""
 "\n"
 "                          Through a series of 4 webinars, the partners of "
@@ -692,60 +692,75 @@ msgstr ""
 "ou pourraient être plus efficaces dans l'exploitation du numérique pour "
 "atteindre les ODD localement."
 
-#: african_cities_conference/home/templates/home/home.html:344
-#: african_cities_conference/home/templates/home/home.html:517
+#: african_cities_conference/home/templates/home/home.html:449
+#: african_cities_conference/home/templates/home/home.html:663
 msgid "Learn more"
 msgstr "En savoir plus"
 
-#: african_cities_conference/home/templates/home/home.html:351
+#: african_cities_conference/home/templates/home/home.html:461
 msgid "B2B Meetings & Partnerships"
 msgstr "Rencontres et partenariats B2B"
 
-#: african_cities_conference/home/templates/home/home.html:363
+#: african_cities_conference/home/templates/home/home.html:480
 msgid "African smart cities’ Innovation Expo-2023"
-msgstr "Exposition sur l'innovation dans les villes intelligentes d'Afrique - 2023"
+msgstr ""
+"Exposition sur l'innovation dans les villes intelligentes d'Afrique - 2023"
 
-#: african_cities_conference/home/templates/home/home.html:375
+#: african_cities_conference/home/templates/home/home.html:499
 msgid "Doctoral Consortium & Spring school"
 msgstr "Consortium doctoral & école de printemps"
 
-#: african_cities_conference/home/templates/home/home.html:387
+#: african_cities_conference/home/templates/home/home.html:518
 msgid "Poster & Demos Session"
 msgstr "Session posters et démos"
 
-#: african_cities_conference/home/templates/home/home.html:399
+#: african_cities_conference/home/templates/home/home.html:537
 msgid "Worshops & Tutorials session"
 msgstr "Session Ateliers & Didacticiels"
 
-#: african_cities_conference/home/templates/home/home.html:420
+#: african_cities_conference/home/templates/home/home.html:559
 msgid "Organizations"
 msgstr "Organisateurs"
 
-#: african_cities_conference/home/templates/home/home.html:449
+#: african_cities_conference/home/templates/home/home.html:589
 msgid "Academic and institutional partners"
 msgstr "Partenaires académiques et institutionnels"
 
-#: african_cities_conference/home/templates/home/home.html:505
-#: african_cities_conference/templates/base.html:121
-#: african_cities_conference/templates/base.html:223
+#: african_cities_conference/home/templates/home/home.html:647
+#: african_cities_conference/templates/base.html:127
+#: african_cities_conference/templates/base.html:229
 msgid "Venue & Contacts"
 msgstr "Lieu & Contacts"
 
-#: african_cities_conference/home/templates/home/home.html:509
+#: african_cities_conference/home/templates/home/home.html:653
 msgid "Cotonou, Benin"
 msgstr "Cotonou, Bénin"
+
+#: african_cities_conference/home/templates/home/home.html:659
+msgid ""
+"\n"
+"            Follow us on social networks or write to us for any more "
+"information or request about\n"
+"            the event and how to become a partner.\n"
+"            "
+msgstr ""
+"\n"
+"Suivez-nous sur nos divers réseaux sociaux ou écrivez-nous pour tout "
+"complément d’informations ou préoccupations \n"
+" sur l’événement et comment en devenir partenaire.\n"
+"          "
 
 #: african_cities_conference/home/templates/home/program.html:4
 #: african_cities_conference/home/templates/home/program.html:9
 #: african_cities_conference/home/templates/home/program.html:16
 #: african_cities_conference/home/templates/home/program.html:23
 #: african_cities_conference/home/templates/home/program.html:44
-#: african_cities_conference/templates/base.html:105
-#: african_cities_conference/templates/base.html:217
+#: african_cities_conference/templates/base.html:107
+#: african_cities_conference/templates/base.html:223
 msgid "Program"
 msgstr "Programme"
 
-#: african_cities_conference/home/templates/home/program.html:55
+#: african_cities_conference/home/templates/home/program.html:54
 msgid ""
 "\n"
 "              ACC 2023 – Conference trails\n"
@@ -755,19 +770,19 @@ msgstr ""
 "ACC 2023 – Grands sujets de discussion\n"
 "            "
 
-#: african_cities_conference/home/templates/home/program.html:74
+#: african_cities_conference/home/templates/home/program.html:68
 msgid "Digital city transition and urban planning"
 msgstr "Transition digitale des villes et planification urbaine"
 
-#: african_cities_conference/home/templates/home/program.html:77
+#: african_cities_conference/home/templates/home/program.html:70
 msgid ""
 "\n"
-"            In Africa, the digital transformation of cities is still "
-"minimal, but initiatives in this \n"
-"            direction are beginning to emerge. For example, in Morocco and "
-"Tunisia smart homes and \n"
-"            connected mobility are already being developed.\n"
-"            "
+"                            In Africa, the digital transformation of cities "
+"is still minimal, but initiatives in this\n"
+"                            direction are beginning to emerge. For example, "
+"in Morocco and Tunisia smart homes and\n"
+"                            connected mobility are already being developed.\n"
+"                            "
 msgstr ""
 "\n"
 "En Afrique, la transformation digitale des villes est encore minime mais les "
@@ -778,15 +793,15 @@ msgstr ""
 "connectée.\n"
 "            "
 
-#: african_cities_conference/home/templates/home/program.html:115
+#: african_cities_conference/home/templates/home/program.html:101
 msgid ""
 "\n"
-"            We hear increasingly about \"smart\" cities, but what are they "
-"really about? Smart cities in Africa \n"
-"            represent a challenge for the development of urban territories, "
-"for the economy, but also to gain \n"
-"            international visibility.\n"
-"            "
+"                            We hear increasingly about \"smart\" cities, but "
+"what are they really about? Smart cities in Africa\n"
+"                            represent a challenge for the development of "
+"urban territories, for the economy, but also to gain\n"
+"                            international visibility.\n"
+"                            "
 msgstr ""
 "\n"
 "Nous entendons de plus en plus parler de villes \"intelligentes\", mais de "
@@ -796,25 +811,26 @@ msgstr ""
 "en visibilité à l’international.\n"
 "            "
 
-#: african_cities_conference/home/templates/home/program.html:132
+#: african_cities_conference/home/templates/home/program.html:114
 msgid "Remote sensing and geo – information systems (smart GIS)"
 msgstr "Télédétection et systèmes d'information géographique intelligents"
 
-#: african_cities_conference/home/templates/home/program.html:135
+#: african_cities_conference/home/templates/home/program.html:116
 msgid ""
 "\n"
-"            Remote sensing and spatial data play an important role in urban "
-"planning by providing accurate and up-to-date \n"
-"            information about the physical and environmental characteristics "
-"of urban areas. This information can be \n"
-"            used for mapping and monitoring land use and land cover, "
-"assessing the physical characteristics of urban areas, \n"
-"            monitoring environmental quality, supporting emergency "
-"management, and improving transportation planning. \n"
-"            By utilizing remote sensing and spatial data, urban planners can "
-"make informed decisions that lead to the \n"
-"            development of more sustainable and resilient cities.\n"
-"            "
+"                            Remote sensing and spatial data play an "
+"important role in urban planning by providing accurate and up-to-date\n"
+"                            information about the physical and environmental "
+"characteristics of urban areas. This information can be\n"
+"                            used for mapping and monitoring land use and "
+"land cover, assessing the physical characteristics of urban areas,\n"
+"                            monitoring environmental quality, supporting "
+"emergency management, and improving transportation planning.\n"
+"                            By utilizing remote sensing and spatial data, "
+"urban planners can make informed decisions that lead to the\n"
+"                            development of more sustainable and resilient "
+"cities.\n"
+"                            "
 msgstr ""
 "\n"
 "La télédétection et les données spatiales jouent un rôle important dans la "
@@ -831,25 +847,25 @@ msgstr ""
 "développement de villes plus durables et plus résilientes.\n"
 "            "
 
-#: african_cities_conference/home/templates/home/program.html:153
+#: african_cities_conference/home/templates/home/program.html:132
 msgid "Digital citizenship and digital gouvernance"
 msgstr "Citoyenneté et gouvernance numériques"
 
-#: african_cities_conference/home/templates/home/program.html:156
+#: african_cities_conference/home/templates/home/program.html:134
 msgid ""
 "\n"
-"            Digital citizenship refers to responsible and ethical use of "
-"technology and the internet. It encompasses \n"
-"            values, behaviors, and skills such as internet safety, digital "
-"literacy, digital etiquette, digital rights \n"
-"            and responsibilities, and digital activism. By developing these "
-"skills, individuals can engage in the digital \n"
-"            world effectively, protect their rights and interests, and "
-"contribute to a more inclusive and equitable digital \n"
-"            society. Digital citizenship education is important for "
-"individuals, particularly students, to become informed \n"
-"            and effective members of a digital society.\n"
-"            "
+"                            Digital citizenship refers to responsible and "
+"ethical use of technology and the internet. It encompasses\n"
+"                            values, behaviors, and skills such as internet "
+"safety, digital literacy, digital etiquette, digital rights\n"
+"                            and responsibilities, and digital activism. By "
+"developing these skills, individuals can engage in the digital\n"
+"                            world effectively, protect their rights and "
+"interests, and contribute to a more inclusive and equitable digital\n"
+"                            society. Digital citizenship education is "
+"important for individuals, particularly students, to become informed\n"
+"                            and effective members of a digital society.\n"
+"                            "
 msgstr ""
 "\n"
 "La citoyenneté numérique désigne l'utilisation responsable et éthique de la "
@@ -866,21 +882,21 @@ msgstr ""
 "des membres informés et efficaces de la société numérique.\n"
 "            "
 
-#: african_cities_conference/home/templates/home/program.html:174
+#: african_cities_conference/home/templates/home/program.html:150
 msgid "African digital cities challenge"
 msgstr "Challenges des villes africaines digitales"
 
-#: african_cities_conference/home/templates/home/program.html:177
+#: african_cities_conference/home/templates/home/program.html:152
 msgid ""
 "\n"
-"            Digital technology has great potential for innovation in areas "
-"such as health, agriculture, \n"
-"            education, energy, financial services, and transport in the "
-"cities and towns of tomorrow. \n"
-"            The rapid spread of mobile and digital technology in Africa "
-"should enable African countries \n"
-"            to make a rapid leap in economic development.\n"
-"            "
+"                            Digital technology has great potential for "
+"innovation in areas such as health, agriculture,\n"
+"                            education, energy, financial services, and "
+"transport in the cities and towns of tomorrow.\n"
+"                            The rapid spread of mobile and digital "
+"technology in Africa should enable African countries\n"
+"                            to make a rapid leap in economic development.\n"
+"                            "
 msgstr ""
 "\n"
 "Le numérique a un grand potentiel d’innovation dans des domaines tels que la "
@@ -892,16 +908,16 @@ msgstr ""
 "de faire un bond rapide dans le développement économique.\n"
 "            "
 
-#: african_cities_conference/home/templates/home/program.html:196
+#: african_cities_conference/home/templates/home/program.html:168
 msgid ""
 "\n"
-"            The African continent is on the verge of unprecedented growth, "
-"making it necessary to develop \n"
-"            the urban mobility sector. The predictions of demographic and "
-"economic growth on the continent \n"
-"            do not leave the global players in the transport sector "
-"indifferent.\n"
-"            "
+"                            The African continent is on the verge of "
+"unprecedented growth, making it necessary to develop\n"
+"                            the urban mobility sector. The predictions of "
+"demographic and economic growth on the continent\n"
+"                            do not leave the global players in the transport "
+"sector indifferent.\n"
+"                            "
 msgstr ""
 "\n"
 "Le continent est à l’aube d’une croissance sans précédent qui rend "
@@ -911,13 +927,13 @@ msgstr ""
 "ne laissent pas les acteurs mondiaux du domaine du transport indifférents.\n"
 "            "
 
-#: african_cities_conference/home/templates/home/program.html:214
+#: african_cities_conference/home/templates/home/program.html:183
 msgid ""
 "\n"
-"            As global warming increasingly affects African cities, new "
-"cooling technologies \n"
-"            are being developed to combat climate change.\n"
-"            "
+"                            As global warming increasingly affects African "
+"cities, new cooling technologies\n"
+"                            are being developed to combat climate change.\n"
+"                            "
 msgstr ""
 "\n"
 "A l’heure où le réchauffement climatique touche de plus en plus les villes "
@@ -950,34 +966,34 @@ msgstr ""
 "Nous suivons ces erreurs automatiquement, mais si le problème persiste, "
 "n'hésitez pas à de nous contacter. Essayez de rafraîchir le site."
 
-#: african_cities_conference/templates/base.html:101
+#: african_cities_conference/templates/base.html:102
 msgid "Home"
 msgstr "Accueil"
 
-#: african_cities_conference/templates/base.html:109
+#: african_cities_conference/templates/base.html:112
 msgid "Speakers"
 msgstr "Intervenants"
 
-#: african_cities_conference/templates/base.html:113
+#: african_cities_conference/templates/base.html:117
 msgid "Committee"
 msgstr "Comité"
 
-#: african_cities_conference/templates/base.html:117
+#: african_cities_conference/templates/base.html:122
 msgid "ACC Calls"
 msgstr ""
 
-#: african_cities_conference/templates/base.html:178
+#: african_cities_conference/templates/base.html:184
 msgid "An event by"
 msgstr "Un événement de"
 
-#: african_cities_conference/templates/base.html:214
+#: african_cities_conference/templates/base.html:220
 msgid "About African Cities Lab"
 msgstr "À propos d'African Cities Lab"
 
-#: african_cities_conference/templates/base.html:220
+#: african_cities_conference/templates/base.html:226
 msgid "Call for papers"
 msgstr "Appel à contributions"
 
-#: african_cities_conference/templates/base.html:228
+#: african_cities_conference/templates/base.html:234
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
