@@ -15,27 +15,8 @@
         </title>
         <meta name="description"
               content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:title"
-              content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
-        <meta name="twitter:description"
-              content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
-        <meta name="twitter:site" content="@AfricanCtiesLab" />
-        <meta itemprop='image'
-              content="{% static 'images/assets/small-logo.png' %}"/>
-        <meta property="og:title"
-              content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference " %} - African Cities Lab{% endif %}"/>
-        <meta property="og:description"
-              content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
-        <meta property="og:site_name" content="African Cities Conference" />
-        <meta itemprop='image'
-              content="{% static 'images/assets/small-logo.png' %}"/>
-        <meta itemprop="name"
-              content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
-        <meta itemprop='description'
-              content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
-        <meta itemprop='image'
-              content="{% static 'images/assets/small-logo.png' %}"/>
+        {% block static_meta_tag %}
+        {% endblock static_meta_tag %}
         <link rel="apple-touch-icon"
               sizes="180x180"
               href="{% static 'images/favicons/apple-touch-icon.png' %}"/>
@@ -115,23 +96,35 @@
                     <div id="navbar-responsive"
                          class="collapse navbar-collapse justify-content-between">
                         <ul class="navbar-nav text-uppercase mx-5">
+                            {% url 'home' as url %}
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="">{% translate "Home" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% url 'home' %}">{% translate "Home" %}</a>
                             </li>
+                            {% url 'program' as url %}
                             <li class="list-inline-item">
-                                <a class="nav-link" href="">{% translate "Program" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% url 'program' %}">{% translate "Program" %}</a>
                             </li>
+                            {% localized_slugurl 'speakers' as url %}
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="">{% translate "Speakers" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% localized_slugurl 'speakers' %}">{% translate "Speakers" %}</a>
                             </li>
+                            {% localized_slugurl 'commitee' as url %}
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="">{% translate "Committee" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% localized_slugurl 'commitee' %}">{% translate "Committee" %}</a>
                             </li>
+                            {% localized_slugurl 'acc-calls' as url %}
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="">{% translate "ACC Calls" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% localized_slugurl 'acc-calls' %}">{% translate "ACC Calls" %}</a>
                             </li>
+                            {% url 'contact' as url %}
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="">{% translate "Venue & Contacts" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% url 'contact' %}">{% translate "Venue & Contacts" %}</a>
                             </li>
                         </ul>
                         <div class="right-header">

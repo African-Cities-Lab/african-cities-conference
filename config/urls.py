@@ -13,7 +13,7 @@ urlpatterns = [
     # Language Redirect
     path("i18n/", include("django.conf.urls.i18n")),
     # Home page
-    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    path("", TemplateView.as_view(template_name="home/home.html"), name="home"),
     # Django Admin, use {% url 'admin:index' %}
     path(settings.DJANGO_ADMIN_URL, admin.site.urls),
     # Wagtail Admin
@@ -23,6 +23,7 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns = urlpatterns + i18n_patterns(
+    path("", include("home.urls")),
     path("", include(wagtail_urls)),
 )
 
