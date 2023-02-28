@@ -1,5 +1,5 @@
-<div class="container-xl my-5 py-5">
-    <div class="row pt-3">
+<div class="container-xl py-5">
+    <div class="row pt-3 font-size-16">
         {% for block in self.content %}
             <div class="{{ col_classes }}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">{{ block }}</div>
         {% endfor %}
