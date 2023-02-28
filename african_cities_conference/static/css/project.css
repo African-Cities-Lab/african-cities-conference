@@ -510,6 +510,11 @@ p {
   margin-bottom: 0 !important;
 }
 
+b,
+strong {
+  font-weight: bold !important;
+}
+
 input,
 select,
 optgroup {
@@ -1142,8 +1147,15 @@ a.nav-link:hover {
   margin-top: 1rem;
 }
 
-.platform-feature__card .card:hover h5 {
-  color: #be3712;
+.platform-feature__card .card {
+  border: 1px solid #ececec;
+}
+
+.platform-feature__card .card .card-body {
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  border-bottom: 4px solid #be3712;
+  padding: 1rem 2rem 2rem 2rem;
 }
 
 .focus-topics-area {
