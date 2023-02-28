@@ -1,4 +1,4 @@
-{% load home_tags i18n static %}
+{% load home_tags i18n static wagtailcore_tags %}
 <!DOCTYPE html>
 {% get_current_language as LANGUAGE_CODE %}
 <html lang="{{ LANGUAGE_CODE }}">
@@ -143,8 +143,8 @@
                                     {% for language in languages %}
                                         {% if language.code != LANGUAGE_CODE %}
                                             <li>
-                                                <a class="dropdown-item "
-                                                   onclick='document.getElementById("language-selector").value="{{ language.code }}";document.getElementById("language-form").submit()'>
+                                                <a class="dropdown-item"
+                                                   onclick='document.getElementById("language-selector").value="{{ language.code }}";{% if page %}document.getElementById("language-next").value="{% language language.code %}{% pageurl page.localized %}{% endlanguage %}";{% endif %}document.getElementById("language-form").submit()'>
                                                     {{ language.code|upper }}
                                                 </a>
                                             </li>
@@ -157,10 +157,10 @@
                                   class="ms-2 d-none"
                                   id="language-form">
                                 {% csrf_token %}
-                                {% redirect_to self.slug as next %}
                                 <input name="next"
+                                       id="language-next"
                                        type="hidden"
-                                       value="{% if next %}{{ next }}{% else %}{{ request.get_full_path|slice:'3:' }}{% endif %}"/>
+                                       value="{{ redirect_to }}"/>
                                 <input name="language"
                                        id="language-selector"
                                        type="hidden"
