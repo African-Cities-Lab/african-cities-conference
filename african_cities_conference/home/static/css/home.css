@@ -18,10 +18,10 @@
   color: #fff;
 }
 
-.card-layout {
+.card-layout .card {
   border: 1px solid #ececec;
   transition: 0.5s;
-  min-height: 285px;
+  min-height: 300px;
   width: 100%;
 }
 
