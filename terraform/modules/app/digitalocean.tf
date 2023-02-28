@@ -21,7 +21,7 @@ resource "digitalocean_spaces_bucket" "bucket" {
 
   cors_rule {
     allowed_methods = ["GET"]
-    allowed_origins = [data.digitalocean_domain.domain.name]
+    allowed_origins = ["*.${data.digitalocean_domain.domain.name}"]
   }
 }
 
