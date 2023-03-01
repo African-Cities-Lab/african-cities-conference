@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 12:28+0100\n"
+"POT-Creation-Date: 2023-03-01 17:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: african_cities_conference/home/templates/home/blocks/agenda_layout.html:8
+msgid "Day"
+msgstr "Jour"
 
 #: african_cities_conference/home/templates/home/blocks/cfp_card_block.html:19
 msgid "Read more"
@@ -36,9 +40,6 @@ msgstr "Lieu & Contacts"
 #: african_cities_conference/home/templates/home/home.html:7
 #: african_cities_conference/home/templates/home/home.html:13
 #: african_cities_conference/home/templates/home/home.html:19
-#: african_cities_conference/home/templates/home/program.html:11
-#: african_cities_conference/home/templates/home/program.html:18
-#: african_cities_conference/home/templates/home/program.html:25
 #: african_cities_conference/templates/base.html:17
 msgid ""
 "ACC is the first international conference on urban and sustainable "
@@ -360,7 +361,6 @@ msgstr ""
 "            "
 
 #: african_cities_conference/home/templates/home/home.html:160
-#: african_cities_conference/home/templates/home/program.html:68
 msgid "Digital city transition and urban planning"
 msgstr "Transition digitale des villes et planification urbaine"
 
@@ -384,7 +384,6 @@ msgstr ""
 "            "
 
 #: african_cities_conference/home/templates/home/home.html:170
-#: african_cities_conference/home/templates/home/program.html:99
 msgid "Digital and smart african cities"
 msgstr "Villes africaines numériques et intelligentes"
 
@@ -407,7 +406,6 @@ msgstr ""
 "            "
 
 #: african_cities_conference/home/templates/home/home.html:180
-#: african_cities_conference/home/templates/home/program.html:114
 msgid "Remote sensing and geo – information systems (smart GIS)"
 msgstr "Télédétection et systèmes d'information géographique intelligents"
 
@@ -443,7 +441,6 @@ msgstr ""
 "            "
 
 #: african_cities_conference/home/templates/home/home.html:193
-#: african_cities_conference/home/templates/home/program.html:132
 msgid "Digital citizenship and digital gouvernance"
 msgstr "Citoyenneté et gouvernance numériques"
 
@@ -479,7 +476,6 @@ msgstr ""
 "            "
 
 #: african_cities_conference/home/templates/home/home.html:206
-#: african_cities_conference/home/templates/home/program.html:150
 msgid "African digital cities challenge"
 msgstr "Challenges des villes africaines digitales"
 
@@ -506,7 +502,6 @@ msgstr ""
 "            "
 
 #: african_cities_conference/home/templates/home/home.html:217
-#: african_cities_conference/home/templates/home/program.html:166
 msgid "Urban mobility and transportation"
 msgstr "Mobilité et transport urbains"
 
@@ -530,7 +525,6 @@ msgstr ""
 "            "
 
 #: african_cities_conference/home/templates/home/home.html:227
-#: african_cities_conference/home/templates/home/program.html:181
 msgid "Emerging urban technologies"
 msgstr "Technologies urbaines émergentes"
 
@@ -680,181 +674,6 @@ msgstr ""
 " sur l’événement et comment en devenir partenaire.\n"
 "          "
 
-#: african_cities_conference/home/templates/home/program.html:4
-#: african_cities_conference/home/templates/home/program.html:9
-#: african_cities_conference/home/templates/home/program.html:16
-#: african_cities_conference/home/templates/home/program.html:23
-#: african_cities_conference/home/templates/home/program.html:44
-#: african_cities_conference/templates/base.html:107
-#: african_cities_conference/templates/base.html:223
-msgid "Program"
-msgstr "Programme"
-
-#: african_cities_conference/home/templates/home/program.html:54
-msgid ""
-"\n"
-"              ACC 2023 – Conference trails\n"
-"            "
-msgstr ""
-"\n"
-"ACC 2023 – Grands sujets de discussion\n"
-"            "
-
-#: african_cities_conference/home/templates/home/program.html:70
-msgid ""
-"\n"
-"                            In Africa, the digital transformation of cities "
-"is still minimal, but initiatives in this\n"
-"                            direction are beginning to emerge. For example, "
-"in Morocco and Tunisia smart homes and\n"
-"                            connected mobility are already being developed.\n"
-"                            "
-msgstr ""
-"\n"
-"En Afrique, la transformation digitale des villes est encore minime mais les "
-"initiatives oeuvrant \n"
-"dans ce sens commencent à émerger. A titre d’exemple le Maroc et la Tunisie "
-"sont des pays qui, bénéficiant d’une excellente couverture en électricité, \n"
-"développent déjà des maisons intelligentes et des services de mobilité "
-"connectée.\n"
-"            "
-
-#: african_cities_conference/home/templates/home/program.html:101
-msgid ""
-"\n"
-"                            We hear increasingly about \"smart\" cities, but "
-"what are they really about? Smart cities in Africa\n"
-"                            represent a challenge for the development of "
-"urban territories, for the economy, but also to gain\n"
-"                            international visibility.\n"
-"                            "
-msgstr ""
-"\n"
-"Nous entendons de plus en plus parler de villes \"intelligentes\", mais de "
-"quoi s’agit-il vraiment ? Les smart cities en Afrique \n"
-"représentent un enjeu pour le développement des territoires urbains, pour "
-"l’économie, mais aussi pour gagner \n"
-"en visibilité à l’international.\n"
-"            "
-
-#: african_cities_conference/home/templates/home/program.html:116
-msgid ""
-"\n"
-"                            Remote sensing and spatial data play an "
-"important role in urban planning by providing accurate and up-to-date\n"
-"                            information about the physical and environmental "
-"characteristics of urban areas. This information can be\n"
-"                            used for mapping and monitoring land use and "
-"land cover, assessing the physical characteristics of urban areas,\n"
-"                            monitoring environmental quality, supporting "
-"emergency management, and improving transportation planning.\n"
-"                            By utilizing remote sensing and spatial data, "
-"urban planners can make informed decisions that lead to the\n"
-"                            development of more sustainable and resilient "
-"cities.\n"
-"                            "
-msgstr ""
-"\n"
-"La télédétection et les données spatiales jouent un rôle important dans la "
-"planification urbaine en fournissant des informations précises et "
-"actualisées \n"
-"sur les caractéristiques physiques et environnementales des zones urbaines. "
-"Ces informations peuvent être utilisées \n"
-"pour cartographier et surveiller l'utilisation et la couverture des sols, "
-"évaluer les caractéristiques physiques des zones urbaines, surveiller la "
-"qualité de l'environnement, soutenir la gestion des urgences et améliorer la "
-"planification des transports. \n"
-"En utilisant la télédétection et les données spatiales, les planificateurs "
-"urbains peuvent prendre des décisions éclairées qui mènent au \n"
-"développement de villes plus durables et plus résilientes.\n"
-"            "
-
-#: african_cities_conference/home/templates/home/program.html:134
-msgid ""
-"\n"
-"                            Digital citizenship refers to responsible and "
-"ethical use of technology and the internet. It encompasses\n"
-"                            values, behaviors, and skills such as internet "
-"safety, digital literacy, digital etiquette, digital rights\n"
-"                            and responsibilities, and digital activism. By "
-"developing these skills, individuals can engage in the digital\n"
-"                            world effectively, protect their rights and "
-"interests, and contribute to a more inclusive and equitable digital\n"
-"                            society. Digital citizenship education is "
-"important for individuals, particularly students, to become informed\n"
-"                            and effective members of a digital society.\n"
-"                            "
-msgstr ""
-"\n"
-"La citoyenneté numérique désigne l'utilisation responsable et éthique de la "
-"technologie et de l'internet. Elle englobe des valeurs, \n"
-"des comportements et des compétences tels que la sécurité sur l'internet, la "
-"culture numérique, l'étiquette numérique, les droits \n"
-"et responsabilités numériques et l'activisme numérique. En développant ces "
-"compétences, les individus peuvent s'engager \n"
-"efficacement dans le monde numérique, protéger leurs droits, intérêts et "
-"contribuer à une société numérique \n"
-"plus inclusive et équitable. L'éducation à la citoyenneté numérique est "
-"importante pour que les individus, en particulier les étudiants, "
-"deviennent \n"
-"des membres informés et efficaces de la société numérique.\n"
-"            "
-
-#: african_cities_conference/home/templates/home/program.html:152
-msgid ""
-"\n"
-"                            Digital technology has great potential for "
-"innovation in areas such as health, agriculture,\n"
-"                            education, energy, financial services, and "
-"transport in the cities and towns of tomorrow.\n"
-"                            The rapid spread of mobile and digital "
-"technology in Africa should enable African countries\n"
-"                            to make a rapid leap in economic development.\n"
-"                            "
-msgstr ""
-"\n"
-"Le numérique a un grand potentiel d’innovation dans des domaines tels que la "
-"santé, l’agriculture, \n"
-"l’éducation, l’énergie, les services financiers, et les transports, dans des "
-"villes et villages de demain. \n"
-"La diffusion rapide de la technologie mobile et numérique en Afrique devrait "
-"permettre aux pays africains \n"
-"de faire un bond rapide dans le développement économique.\n"
-"            "
-
-#: african_cities_conference/home/templates/home/program.html:168
-msgid ""
-"\n"
-"                            The African continent is on the verge of "
-"unprecedented growth, making it necessary to develop\n"
-"                            the urban mobility sector. The predictions of "
-"demographic and economic growth on the continent\n"
-"                            do not leave the global players in the transport "
-"sector indifferent.\n"
-"                            "
-msgstr ""
-"\n"
-"Le continent est à l’aube d’une croissance sans précédent qui rend "
-"nécessaire le développement \n"
-"du secteur de la mobilité urbaine. Les prédictions de croissance "
-"démographique et économique du continent africain \n"
-"ne laissent pas les acteurs mondiaux du domaine du transport indifférents.\n"
-"            "
-
-#: african_cities_conference/home/templates/home/program.html:183
-msgid ""
-"\n"
-"                            As global warming increasingly affects African "
-"cities, new cooling technologies\n"
-"                            are being developed to combat climate change.\n"
-"                            "
-msgstr ""
-"\n"
-"A l’heure où le réchauffement climatique touche de plus en plus les villes "
-"africaines, on observe l'avènement de nouvelles technologies \n"
-"de refroidissement pour lutter contre le changement climatique.\n"
-"            "
-
 #: african_cities_conference/templates/404.html:13
 msgid "Oops..."
 msgstr ""
@@ -883,6 +702,11 @@ msgstr ""
 #: african_cities_conference/templates/base.html:102
 msgid "Home"
 msgstr "Accueil"
+
+#: african_cities_conference/templates/base.html:107
+#: african_cities_conference/templates/base.html:223
+msgid "Program"
+msgstr "Programme"
 
 #: african_cities_conference/templates/base.html:112
 msgid "Speakers"

@@ -148,3 +148,78 @@ class SidebarLayout(blocks.StructBlock):
 
     class Meta:
         template = "home/blocks/sidebar_layout.html"
+
+
+class AgendaLayout(blocks.StructBlock):
+    agenda = blocks.ListBlock(
+        blocks.StructBlock(
+            [
+                ("date", blocks.CharBlock()),
+                (
+                    "content",
+                    blocks.ListBlock(
+                        blocks.StructBlock(
+                            [
+                                (
+                                    "session",
+                                    blocks.RichTextBlock(
+                                        required=False, label="Session title"
+                                    ),
+                                ),
+                                (
+                                    "program",
+                                    blocks.ListBlock(
+                                        blocks.StructBlock(
+                                            [
+                                                (
+                                                    "time",
+                                                    blocks.CharBlock(required=False),
+                                                ),
+                                                ("title", blocks.RichTextBlock()),
+                                                (
+                                                    "description",
+                                                    blocks.RichTextBlock(
+                                                        required=False
+                                                    ),
+                                                ),
+                                                (
+                                                    "speakers",
+                                                    blocks.ListBlock(
+                                                        blocks.StructBlock(
+                                                            [
+                                                                (
+                                                                    "image",
+                                                                    ImageChooserBlock(
+                                                                        required=False
+                                                                    ),
+                                                                ),
+                                                                (
+                                                                    "name",
+                                                                    blocks.CharBlock(
+                                                                        required=False
+                                                                    ),
+                                                                ),
+                                                                (
+                                                                    "designation",
+                                                                    blocks.CharBlock(
+                                                                        required=False
+                                                                    ),
+                                                                ),
+                                                            ]
+                                                        ),
+                                                    ),
+                                                ),
+                                            ]
+                                        ),
+                                    ),
+                                ),
+                            ]
+                        ),
+                    ),
+                ),
+            ],
+        ),
+    )
+
+    class Meta:
+        template = "home/blocks/agenda_layout.html"

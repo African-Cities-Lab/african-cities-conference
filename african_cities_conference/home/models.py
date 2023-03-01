@@ -3,6 +3,7 @@ from wagtail.core.fields import StreamField
 from wagtail.core.models import Page
 
 from african_cities_conference.home.blocks import (
+    AgendaLayout,
     Button,
     CardLayoutBlock,
     CfpCardBlock,
@@ -67,6 +68,25 @@ class PageWithSidebar(Page):
     )
     content_panels = Page.content_panels + [
         FieldPanel("sidebar"),
+        FieldPanel("body"),
+    ]
+    parent_page_type = [
+        "home.HomePage",
+    ]
+
+
+class ProgramPage(Page):
+    """Program page model."""
+
+    body = StreamField(
+        [
+            ("agenda_layout", AgendaLayout()),
+            ("paragraph_layout", ParagraphLayout()),
+        ],
+        blank=True,
+    )
+
+    content_panels = Page.content_panels + [
         FieldPanel("body"),
     ]
     parent_page_type = [
