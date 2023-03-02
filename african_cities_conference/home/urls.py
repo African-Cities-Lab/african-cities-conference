@@ -7,9 +7,4 @@ urlpatterns = [
         TemplateView.as_view(template_name="home/contact.html"),
         name="contact",
     ),
-    path(
-        "program/",
-        TemplateView.as_view(template_name="home/program.html"),
-        name="program",
-    ),
 ]
