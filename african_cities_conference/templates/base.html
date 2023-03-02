@@ -101,10 +101,10 @@
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% url 'home' %}">{% translate "Home" %}</a>
                             </li>
-                            {% url 'program' as url %}
+                            {% localized_slugurl 'program' as url %}
                             <li class="list-inline-item">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
-                                   href="{% url 'program' %}">{% translate "Program" %}</a>
+                                   href="{% localized_slugurl 'program' %}">{% translate "Program" %}</a>
                             </li>
                             {% localized_slugurl 'speakers' as url %}
                             <li class="nav-item mx-2">

@@ -506,13 +506,9 @@ h5,
   padding: 0;
 }
 
-p {
-  margin-bottom: 0 !important;
-}
-
 b,
 strong {
-  font-weight: bold !important;
+  font-weight: 500 !important;
 }
 
 input,
@@ -575,7 +571,7 @@ video:focus {
 
 a {
   cursor: pointer;
-  color: #000;
+  color: #be3712;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
   text-decoration: none;
@@ -589,7 +585,7 @@ a:active,
 a.active,
 a:hover {
   color: #be3712 !important;
-  text-decoration: none;
+  text-decoration: underline;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
 }
@@ -721,6 +717,7 @@ a:hover {
   transition: all 0.5s ease-in-out !important;
   transform: translateY(-4px);
   box-shadow: 5px 8px 18px rgb(0 0 0 / 8%);
+  text-decoration: none !important;
 }
 
 .btn__small {
@@ -818,6 +815,7 @@ a.nav-link:focus,
 a.nav-link.active,
 a.nav-link:hover {
   color: #be3712 !important;
+  text-decoration: none !important;
 }
 
 #main-nav .dropdown-menu {
@@ -1182,23 +1180,22 @@ a.nav-link:hover {
   font-size: 20px;
 }
 
-.program-block {
+.acc-trails-block {
   margin: auto;
-  padding: 1rem 0 4rem;
   display: flex;
   max-width: 60rem;
   flex-direction: column;
   word-break: break-word;
 }
 
-.program-block .program-inner {
+.acc-trails-block .acc-trails-inner {
   padding: 0.5rem 1rem;
   position: relative;
   margin-left: 8rem;
   margin-top: 1rem;
 }
 
-.program-block .program-inner:before {
+.acc-trails-block .acc-trails-inner:before {
   border: 0.1rem solid #ecf1f9;
   top: -0.1rem;
   left: -1rem;
@@ -1209,12 +1206,12 @@ a.nav-link:hover {
   border-radius: 5rem;
 }
 
-.program-block .program-inner .program-timeline {
+.acc-trails-block .acc-trails-inner .acc-trails-timeline {
   position: relative;
 }
 
-.program-block .program-inner .program-timeline:before {
-  top: -0.1rem;
+.acc-trails-block .acc-trails-inner .acc-trails-timeline:before {
+  top: 1rem;
   left: -2rem;
   width: 0.5rem;
   height: 3rem;
@@ -1225,17 +1222,9 @@ a.nav-link:hover {
   background: #402781;
 }
 
-.leftInfo {
-  position: absolute;
-  text-align: right;
-  left: -9rem;
-  width: 6rem;
-}
-
-.rightInfo {
+.acc-trails-content {
   min-height: 6.4rem;
   padding: 1.5rem 0;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .speaker-list__speaker {
@@ -1255,8 +1244,8 @@ a.nav-link:hover {
 }
 
 .speaker-list__speaker .speaker-list__speaker__img > img {
-  width: 3rem;
-  height: 3rem;
+  width: 3.75rem;
+  height: 3.75rem;
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
