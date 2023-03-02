@@ -1280,6 +1280,7 @@ a.nav-link:hover {
   background-color: #fff;
   box-shadow: 0 3px 10px hsl(5deg 13% 82% / 34%);
   overflow: hidden;
+  text-decoration: none;
 }
 
 .cfp-card .cfp-card__header {
