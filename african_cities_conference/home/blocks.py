@@ -42,7 +42,7 @@ class CardLayoutBlock(blocks.StructBlock):
 
 
 class CfpCardBlock(blocks.StructBlock):
-    title = blocks.CharBlock(blank=True)
+    title = blocks.CharBlock(required=False)
     content = blocks.StreamBlock(
         [
             (
@@ -77,8 +77,8 @@ class SpeakerLayoutBlock(blocks.StructBlock):
                     blocks.ListBlock(
                         blocks.StructBlock(
                             [
-                                ("fa_class", blocks.CharBlock()),
-                                ("profile_link", blocks.CharBlock()),
+                                ("fa_class", blocks.CharBlock(required=False)),
+                                ("profile_link", blocks.CharBlock(required=False)),
                             ]
                         ),
                     ),
@@ -108,3 +108,118 @@ class ColumnSidebarLayoutBlock(blocks.StructBlock):
 
     class Meta:
         template = "home/blocks/column_sidebar_layout_block.html"
+
+
+class Button(blocks.StructBlock):
+    self_class = blocks.CharBlock(required=False)
+    button_type = blocks.CharBlock(help_text="btn__primary or btn__secondary")
+    button_type = blocks.CharBlock(help_text="btn__primary or btn__secondary")
+    button_url = blocks.CharBlock()
+    button_title = blocks.CharBlock()
+
+    class Meta:
+        template = "home/blocks/button.html"
+
+
+class ParagraphLayout(blocks.StructBlock):
+    self_class = blocks.CharBlock(required=False)
+    content = blocks.StreamBlock(
+        [
+            (
+                "block",
+                blocks.RichTextBlock(),
+            ),
+        ],
+    )
+
+    class Meta:
+        template = "home/blocks/paragraph_layout.html"
+
+
+class SidebarLayout(blocks.StructBlock):
+    sidebar = blocks.StreamBlock(
+        [
+            (
+                "block",
+                blocks.PageChooserBlock(label="Page Link"),
+            ),
+        ],
+    )
+
+    class Meta:
+        template = "home/blocks/sidebar_layout.html"
+
+
+class AgendaLayout(blocks.StructBlock):
+    agenda = blocks.ListBlock(
+        blocks.StructBlock(
+            [
+                ("date", blocks.CharBlock()),
+                (
+                    "content",
+                    blocks.ListBlock(
+                        blocks.StructBlock(
+                            [
+                                (
+                                    "session",
+                                    blocks.RichTextBlock(
+                                        required=False, label="Session title"
+                                    ),
+                                ),
+                                (
+                                    "program",
+                                    blocks.ListBlock(
+                                        blocks.StructBlock(
+                                            [
+                                                (
+                                                    "time",
+                                                    blocks.CharBlock(required=False),
+                                                ),
+                                                ("title", blocks.RichTextBlock()),
+                                                (
+                                                    "description",
+                                                    blocks.RichTextBlock(
+                                                        required=False
+                                                    ),
+                                                ),
+                                                (
+                                                    "speakers",
+                                                    blocks.ListBlock(
+                                                        blocks.StructBlock(
+                                                            [
+                                                                (
+                                                                    "image",
+                                                                    ImageChooserBlock(
+                                                                        required=False
+                                                                    ),
+                                                                ),
+                                                                (
+                                                                    "name",
+                                                                    blocks.CharBlock(
+                                                                        required=False
+                                                                    ),
+                                                                ),
+                                                                (
+                                                                    "designation",
+                                                                    blocks.CharBlock(
+                                                                        required=False
+                                                                    ),
+                                                                ),
+                                                            ]
+                                                        ),
+                                                    ),
+                                                ),
+                                            ]
+                                        ),
+                                    ),
+                                ),
+                            ]
+                        ),
+                    ),
+                ),
+            ],
+        ),
+    )
+
+    class Meta:
+        template = "home/blocks/agenda_layout.html"
