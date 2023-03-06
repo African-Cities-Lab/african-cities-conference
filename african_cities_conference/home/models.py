@@ -17,9 +17,7 @@ from african_cities_conference.home.blocks import (
 
 
 class HomePage(Page):
-    subpage_types = [
-        "home.FlatPage",
-    ]
+    subpage_types = ["home.FlatPage", "home.PageWithSideBar", "home.ProgramPage"]
     parent_page_type = [
         "wagtailcore.Page",
     ]
