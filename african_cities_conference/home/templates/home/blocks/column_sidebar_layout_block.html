@@ -1,0 +1,14 @@
+<div class="py-5">
+    <div class="container-fluid py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 font-size-16">{{ self.content }}</div>
+            <div class="col-12 col-lg-4">
+                <aside class="sidebar-menu my-5">
+                    {% for block in self.sidebar %}
+                        <a href="{{ block.value.url }}" class="sidebar-item h4">{{ block.value.title }}</a>
+                    {% endfor %}
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>

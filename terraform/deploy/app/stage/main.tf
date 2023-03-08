@@ -9,7 +9,7 @@ data "terraform_remote_state" "base" {
 }
 
 module "app" {
-  source = "github.com/African-Cities-Lab/african-cities-conference//terraform/modules/app"
+  source = "github.com/African-Cities-Lab/african-cities-conference//terraform/modules/app?ref=stage"
   env    = "stage"
 
   resource_prefix = var.resource_prefix
