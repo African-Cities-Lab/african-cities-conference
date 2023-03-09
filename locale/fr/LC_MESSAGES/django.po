@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 18:42+0100\n"
+"POT-Creation-Date: 2023-03-09 09:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,57 +85,36 @@ msgstr ""
 "          "
 
 #: african_cities_conference/home/templates/home/contact.html:76
+#: african_cities_conference/home/templates/home/home.html:79
 #: african_cities_conference/home/templates/home/home.html:495
-msgid "Novotel Cotonou Orisha"
-msgstr ""
+msgid "Sèmè One, Cotonou, Benin"
+msgstr "Sèmè One, Cotonou, Bénin"
 
 #: african_cities_conference/home/templates/home/contact.html:78
 msgid ""
 "\n"
-"                        The welcome of the participants to the 1st edition "
-"of the African Cities Conference will be done at the Novotel\n"
-"                        hotel. Located on the famous boulevard of the "
-"Marina, a few meters from the emblematic statue of\n"
-"                        the Amazon, it is an ultramodern setting with state-"
-"of-the-art technological equipment, capable of hosting large-scale events.\n"
+"                        The first modern and intelligent campus of 4,500 m², "
+"includes classrooms, coworking spaces, a language center, \n"
+"                        offices and a data center. This smart building has a "
+"strong African identity and validates the guiding principles, \n"
+"                        assumptions and functionalities developed for the "
+"entire Sèmè City project.\n"
 "                        "
 msgstr ""
 "\n"
-"L’accueil des participants à la 1ère édition de l'African Cities Conference "
-"se fera à l'hôtel Novotel \n"
-"Cotonou. Situé sur le très célèbre boulevard de la Marina, à quelques mètres "
-"de la statue emblématique \n"
-"de l’Amazone, il est un cadre ultramoderne doté d’équipements technologiques "
-"de pointe, capable d’accueillir des événements d’envergure.\n"
-"          "
-
-#: african_cities_conference/home/templates/home/contact.html:118
-msgid "Hosting"
-msgstr "Hébergement"
-
-#: african_cities_conference/home/templates/home/contact.html:120
-msgid ""
-"\n"
-"                        A part of the rooms of the Novotel Hotel in Cotonou "
-"has been reserved for the African Cities\n"
-"                        Conference. Other 3 and 4 star hotels will be "
-"announced soon and reservation details will be\n"
-"                        communicated to participants as soon as possible.\n"
+"Premier campus moderne et intelligent de 4 500 m²,"
+" comprend des salles de classe, des espaces de coworking, un centre \n"
+"linguistique, des bureaux et un data center. Ce bâtiment intelligent est doté d’une "
+"forte identité africaine et permet de valider les principes directeurs, \n"
+"les hypothèses et les fonctionnalités élaborés pour la "
+"globalité du projet Sèmè City.\n"
 "                        "
-msgstr ""
-"\n"
-"Une partie des chambres de l’hôtel Novotel de Cotonou a été réservée pour "
-"l'African Cities \n"
-"Conference. D’autres hôtels 3 et 4 étoiles seront bientôt annoncés et les "
-"modalités de réservation seront \n"
-"communiquées aux participants dans les meilleurs délais.\n"
-"          "
 
-#: african_cities_conference/home/templates/home/contact.html:134
+#: african_cities_conference/home/templates/home/contact.html:100
 msgid "Visa"
 msgstr ""
 
-#: african_cities_conference/home/templates/home/contact.html:136
+#: african_cities_conference/home/templates/home/contact.html:102
 msgid ""
 "\n"
 "                        Nationals of countries subject to the visa "
@@ -161,7 +140,7 @@ msgstr ""
 "justifiant votre déplacement de votre pays de provenance vers le Bénin.\n"
 "          "
 
-#: african_cities_conference/home/templates/home/contact.html:157
+#: african_cities_conference/home/templates/home/contact.html:119
 msgid ""
 "\n"
 "                        Follow us on social networks or write to us for any "
@@ -175,7 +154,7 @@ msgstr ""
 " sur l’événement et comment en devenir partenaire.\n"
 "          "
 
-#: african_cities_conference/home/templates/home/contact.html:162
+#: african_cities_conference/home/templates/home/contact.html:124
 #: african_cities_conference/home/templates/home/home.html:512
 msgid "For any request:"
 msgstr "Pour toute demande :"
@@ -217,13 +196,10 @@ msgstr "Date"
 msgid "May 23 & 24"
 msgstr "23 & 24 Mai"
 
-#: african_cities_conference/home/templates/home/home.html:79
-msgid "Location"
-msgstr "Lieu"
-
 #: african_cities_conference/home/templates/home/home.html:80
-msgid "Novotel, Cotonou, Benin"
-msgstr "Novotel, Cotonou, Bénin"
+#: african_cities_conference/home/templates/home/home.html:498
+msgid "In person & Online"
+msgstr "En présentiel & En ligne"
 
 #: african_cities_conference/home/templates/home/home.html:90
 msgid ""
@@ -655,10 +631,6 @@ msgstr "Partenaires académiques et institutionnels"
 #: african_cities_conference/templates/base.html:229
 msgid "Venue & Contacts"
 msgstr "Lieu & Contacts"
-
-#: african_cities_conference/home/templates/home/home.html:498
-msgid "Cotonou, Benin"
-msgstr "Cotonou, Bénin"
 
 #: african_cities_conference/home/templates/home/home.html:504
 msgid ""
