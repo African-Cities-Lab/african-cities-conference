@@ -1131,7 +1131,7 @@ a.nav-link:hover {
   width: 50%;
   height: 8rem;
   margin-top: -0.0625rem;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1214,7 +1214,7 @@ a.nav-link:hover {
 .acc-trails-block {
   margin: auto;
   display: flex;
-  max-width: 60rem;
+  max-width: 48rem;
   flex-direction: column;
   word-break: break-word;
 }
@@ -1222,7 +1222,7 @@ a.nav-link:hover {
 .acc-trails-block .acc-trails-inner {
   padding: 0.5rem 1rem;
   position: relative;
-  margin-left: 8rem;
+  margin-left: 1.5rem;
   margin-top: 1rem;
 }
 
