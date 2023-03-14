@@ -661,6 +661,10 @@ a:hover {
   font-size: 2.75em;
 }
 
+.font-size-4-5em {
+  font-size: 4.5em;
+}
+
 .font-size-4em {
   font-size: 4em;
 }
@@ -976,17 +980,35 @@ a.nav-link:hover {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 3.5rem;
-  padding-top: 3.5rem;
-  min-height: 388px;
+  padding: 80px 0 175px;
+  min-height: 465px;
   color: #fff;
   display: flex;
   align-items: center;
 }
 
+.civa-date {
+  text-align: center;
+}
+
+.countdown-timer__section {
+  margin-top: -60px;
+  margin-bottom: -60px;
+  overflow: visible;
+}
+
+.countdown-timer__container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  text-align: center;
+}
+
 .countdown-timer__widget {
   position: relative;
-  margin: 50px auto;
+  padding: 25px 0;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
@@ -1001,12 +1023,16 @@ a.nav-link:hover {
   width: 12px;
   height: 34px;
   left: -12px;
-  top: 23px;
+  top: 16px;
   z-index: 0;
 }
 
 .countdown-timer__widget .timer-container > span.h1 {
   font-size: 62px;
+}
+
+.countdown-timer__widget .timer-container > p {
+  margin-bottom: 0;
 }
 
 .info-media-wrap {
@@ -1531,7 +1557,8 @@ a.nav-link:hover {
 /*  Responsive CSS
 /*----------------------------------------*/
 @media (max-width: 576px) {
-  .section-title {
+  .section-title,
+  .font-size-2-5em {
     font-size: 2.3em;
   }
 
@@ -1564,6 +1591,10 @@ a.nav-link:hover {
     font-size: 2em !important;
   }
 
+  .font-size-4-5em {
+    font-size: 2.75em !important;
+  }
+
   .font-size-3-50em {
     font-size: 2.25em !important;
   }
@@ -1588,14 +1619,23 @@ a.nav-link:hover {
   }
 }
 
+@media (min-width: 768px) {
+  .vertical-divider {
+    height: 78px;
+    margin-right: 22px;
+    border-right: 1px solid #fff;
+    width: 1px;
+  }
+
+  .civa-date {
+    text-align: right;
+  }
+}
+
 @media (max-width: 768px) {
   .container-fluid {
     padding-left: 15px !important;
     padding-right: 15px !important;
-  }
-
-  .font-size-2-5em {
-    font-size: unset;
   }
 
   .font-size-4em {
@@ -1609,6 +1649,10 @@ a.nav-link:hover {
   .mdl-speaker-avatar > img {
     width: 65%;
     height: 275px;
+  }
+
+  .civa-location {
+    text-align: center;
   }
 }
 
