@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 20:04+0100\n"
+"POT-Creation-Date: 2023-03-15 20:16+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr "En savoir plus"
 #: african_cities_conference/home/templates/home/contact.html:16
 #: african_cities_conference/home/templates/home/contact.html:23
 #: african_cities_conference/home/templates/home/contact.html:44
-#: african_cities_conference/home/templates/home/home.html:487
+#: african_cities_conference/home/templates/home/home.html:485
 #: african_cities_conference/templates/base.html:130
 #: african_cities_conference/templates/base.html:232
 msgid "Venues & Contacts"
@@ -89,7 +89,7 @@ msgstr ""
 
 #: african_cities_conference/home/templates/home/contact.html:76
 #: african_cities_conference/home/templates/home/home.html:45
-#: african_cities_conference/home/templates/home/home.html:490
+#: african_cities_conference/home/templates/home/home.html:488
 msgid "Sèmè One, Cotonou, Benin"
 msgstr "Sèmè One, Cotonou, Bénin"
 
@@ -124,15 +124,15 @@ msgstr ""
 "Sèmè City.\n"
 "                        "
 
-#: african_cities_conference/home/templates/home/contact.html:92
+#: african_cities_conference/home/templates/home/contact.html:93
 msgid "View location"
 msgstr "Itinéraire"
 
-#: african_cities_conference/home/templates/home/contact.html:131
+#: african_cities_conference/home/templates/home/contact.html:130
 msgid "Contact"
 msgstr "Contact"
 
-#: african_cities_conference/home/templates/home/contact.html:133
+#: african_cities_conference/home/templates/home/contact.html:132
 msgid ""
 "\n"
 "                    Follow us on social networks or write to us for any more "
@@ -146,13 +146,13 @@ msgstr ""
 " sur l’événement et comment en devenir partenaire.\n"
 "          "
 
-#: african_cities_conference/home/templates/home/contact.html:138
-#: african_cities_conference/home/templates/home/home.html:507
+#: african_cities_conference/home/templates/home/contact.html:137
+#: african_cities_conference/home/templates/home/home.html:505
 msgid "For any request:"
 msgstr "Pour toute demande :"
 
 #: african_cities_conference/home/templates/home/home.html:32
-#: african_cities_conference/home/templates/home/home.html:493
+#: african_cities_conference/home/templates/home/home.html:491
 msgid "In person & Online Event"
 msgstr "En présentiel & En ligne"
 
@@ -539,9 +539,9 @@ msgstr ""
 msgid ""
 "\n"
 "                            The side events are a platform for researchers, "
-"PhD students and even professionals to present results \n"
+"PhD students and even professionals to present results\n"
 "                            of their work and innovative implementations "
-"that will stimulate interdisciplinary exchange and interaction, \n"
+"that will stimulate interdisciplinary exchange and interaction,\n"
 "                            scientific discourse and creative and critical "
 "thinking.\n"
 "                            "
@@ -549,41 +549,40 @@ msgstr ""
 "\n"
 " Les événements parallèles sont une plate-forme pour les chercheurs, "
 "doctorants et même professionnels de présenter des résultats \n"
-"de leurs travaux et des mises en œuvre innovantes qui "
-"stimuleront les échanges et l'interaction interdisciplinaire, \n"
-"le discours scientifique et la réflexion créative "
-"et critique.\n"
+"de leurs travaux et des mises en œuvre innovantes qui stimuleront les "
+"échanges et l'interaction interdisciplinaire, \n"
+"le discours scientifique et la réflexion créative et critique.\n"
 "                                        "
 
 #: african_cities_conference/home/templates/home/home.html:269
 msgid ""
 "\n"
 "                            By participating in the organization of the "
-"ACC2023 side events, you benefit from an informal setting for \n"
+"ACC2023 side events, you benefit from an informal setting for\n"
 "                            networking and exploration of concrete options "
-"for addressing the challenge of African cities of tomorrow \n"
+"for addressing the challenge of African cities of tomorrow\n"
 "                            engaging a specifically interested audience in a "
-"question and answer session. The exhibitions, in turn, \n"
+"question and answer session. The exhibitions, in turn,\n"
 "                            allow participants to network around many "
 "different topics related to African cities.\n"
 "                            "
 msgstr ""
 "\n"
-" En participant à l'organisation des événements parallèles de "
-"l'ACC2023, vous profitez d'un cadre informel pour la mise \n"
-"en réseau et l'exploration d'options concrètes pour "
-"relever le défi des villes africaines de demain \n"
-"engageant un public spécifiquement intéressé dans une session "
-"de questions-réponses. Les expositions, à leur tour, permettent \n"
-"aux participants de réseauter autour de nombreux sujets "
-"différents liés aux villes africaines.\n"
+" En participant à l'organisation des événements parallèles de l'ACC2023, "
+"vous profitez d'un cadre informel pour la mise \n"
+"en réseau et l'exploration d'options concrètes pour relever le défi des "
+"villes africaines de demain \n"
+"engageant un public spécifiquement intéressé dans une session de questions-"
+"réponses. Les expositions, à leur tour, permettent \n"
+"aux participants de réseauter autour de nombreux sujets différents liés aux "
+"villes africaines.\n"
 "                            "
 
-#: african_cities_conference/home/templates/home/home.html:288
+#: african_cities_conference/home/templates/home/home.html:287
 msgid "Preliminary Webinars"
 msgstr "Webinaires préliminaires"
 
-#: african_cities_conference/home/templates/home/home.html:296
+#: african_cities_conference/home/templates/home/home.html:295
 msgid ""
 "\n"
 "                          Through a series of 4 webinars, the partners of "
@@ -616,19 +615,19 @@ msgstr ""
 "ou pourraient être plus efficaces dans l'exploitation du numérique pour "
 "atteindre les ODD localement."
 
-#: african_cities_conference/home/templates/home/home.html:307
-#: african_cities_conference/home/templates/home/home.html:333
-#: african_cities_conference/home/templates/home/home.html:358
-#: african_cities_conference/home/templates/home/home.html:383
-#: african_cities_conference/home/templates/home/home.html:503
+#: african_cities_conference/home/templates/home/home.html:306
+#: african_cities_conference/home/templates/home/home.html:332
+#: african_cities_conference/home/templates/home/home.html:357
+#: african_cities_conference/home/templates/home/home.html:382
+#: african_cities_conference/home/templates/home/home.html:501
 msgid "Learn more"
 msgstr "En savoir plus"
 
-#: african_cities_conference/home/templates/home/home.html:319
+#: african_cities_conference/home/templates/home/home.html:318
 msgid "Doctoral Consortium & Spring school"
 msgstr "Consortium doctoral & école de printemps"
 
-#: african_cities_conference/home/templates/home/home.html:327
+#: african_cities_conference/home/templates/home/home.html:326
 msgid ""
 "\n"
 "                                        The DC offers the opportunity to "
@@ -647,11 +646,11 @@ msgstr ""
 "pairs du domaine de leur sujet de thèse. \n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/home.html:345
+#: african_cities_conference/home/templates/home/home.html:344
 msgid "Poster & Demos Session"
 msgstr "Session posters et démos"
 
-#: african_cities_conference/home/templates/home/home.html:353
+#: african_cities_conference/home/templates/home/home.html:352
 msgid ""
 "\n"
 "                                        The poster and demo session of the "
@@ -668,11 +667,11 @@ msgstr ""
 "innovantes dans un cadre informel et interactif.\n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/home.html:370
+#: african_cities_conference/home/templates/home/home.html:369
 msgid "Worshops & Tutorials session"
 msgstr "Session Ateliers & Didacticiels"
 
-#: african_cities_conference/home/templates/home/home.html:378
+#: african_cities_conference/home/templates/home/home.html:377
 msgid ""
 "\n"
 "                                        We invite proposals for events that "
@@ -689,19 +688,19 @@ msgstr ""
 "scientifique et la réflexion créative et critique.\n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/home.html:398
+#: african_cities_conference/home/templates/home/home.html:397
 msgid "Organizations"
 msgstr "Organisateurs"
 
-#: african_cities_conference/home/templates/home/home.html:428
+#: african_cities_conference/home/templates/home/home.html:427
 msgid "African Cities Lab partners"
 msgstr "Partenaires de l'African Cities Lab"
 
-#: african_cities_conference/home/templates/home/home.html:496
+#: african_cities_conference/home/templates/home/home.html:494
 msgid "May 23 & 24"
 msgstr "23 & 24 Mai"
 
-#: african_cities_conference/home/templates/home/home.html:499
+#: african_cities_conference/home/templates/home/home.html:497
 msgid ""
 "\n"
 "            Follow us on social networks or write to us for any more "
@@ -715,7 +714,7 @@ msgstr ""
 " sur l’événement et comment en devenir partenaire.\n"
 "          "
 
-#: african_cities_conference/home/templates/home/home.html:525
+#: african_cities_conference/home/templates/home/home.html:523
 msgid ""
 "\n"
 "                            This conference is international, multi-site and "
@@ -727,27 +726,27 @@ msgstr ""
 "\">en ligne</span>.\n"
 "                    "
 
-#: african_cities_conference/home/templates/home/home.html:539
+#: african_cities_conference/home/templates/home/home.html:540
 msgid "Benin"
 msgstr "Bénin"
 
-#: african_cities_conference/home/templates/home/home.html:540
+#: african_cities_conference/home/templates/home/home.html:544
 msgid "Sèmè One, Cotonou"
 msgstr "Sèmè One, Cotonou, Bénin"
 
-#: african_cities_conference/home/templates/home/home.html:549
+#: african_cities_conference/home/templates/home/home.html:557
 msgid "Marocco"
 msgstr "Maroc"
 
-#: african_cities_conference/home/templates/home/home.html:550
+#: african_cities_conference/home/templates/home/home.html:561
 msgid "Mohammed VI Polytechnic University, Benguerir"
 msgstr "Université Mohammed VI Polytechnique, Benguérir"
 
-#: african_cities_conference/home/templates/home/home.html:559
+#: african_cities_conference/home/templates/home/home.html:574
 msgid "Ghana"
 msgstr ""
 
-#: african_cities_conference/home/templates/home/home.html:560
+#: african_cities_conference/home/templates/home/home.html:578
 msgid "Kwame Nkrumah University of Science and Technology, Kumasi"
 msgstr "Université des sciences et technologies Kwame Nkrumah, Kumasi"
 
