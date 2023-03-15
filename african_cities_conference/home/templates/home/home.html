@@ -44,8 +44,11 @@
                                     <h4 class="mb-2">
                                         <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "Sèmè One, Cotonou, Benin" %}
                                     </h4>
-                                    <h5 class="font-weight-500">
+                                    <h5 class="font-weight-500 font-size-18">
                                         <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "UM6P, Benguérir, Marocco" %}
+                                    </h5>
+                                    <h5 class="font-weight-500 pt-2 font-size-18">
+                                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "KNUST, Kumassi, Ghana" %}
                                     </h5>
                                 </div>
                             </div>
@@ -154,7 +157,7 @@
                 <div class="col-12 col-lg-8 text-center">
                     <h3 class="section-title mb-3">
                         {% blocktranslate %}
-            ACC2023 – Conference trails
+            ACC2023 – Conference tracks
             {% endblocktranslate %}
                     </h3>
                 </div>
@@ -248,27 +251,30 @@
         </section>
         <section class="bg-light__ py-5 my-5">
             <div class="container-xl">
-                <div class="row d-flex justify-content-around  py-5">
-                    <div class="col-12 col-lg-4">
+                <div class="row d-flex justify-content-lg-between py-5">
+                    <div class="col-12 col-lg-5 font-size-16">
                         <h3 class="section-title mb-3">
                             {% blocktranslate %}
                 <span class="text_primary">ACC2023</span> side events
                 {% endblocktranslate %}
                         </h3>
-                        <div class="py-3">
-                            <p class="font-size-22">
-                                {% blocktranslate %}
-                                This conference is international and will take place simultaneously in Benin, Morocco, Ghana and online.
-                      {% endblocktranslate %}
-                            </p>
-                            <p class="pt-3 text_primary font-size-22">
-                                {% blocktranslate %}
-                      It will include….
-                      {% endblocktranslate %}
-                            </p>
-                        </div>
+                        <p>
+                            {% blocktranslate %}
+                            The side events are a platform for researchers, PhD students and even professionals to present results
+                            of their work and innovative implementations that will stimulate interdisciplinary exchange and interaction,
+                            scientific discourse and creative and critical thinking.
+                            {% endblocktranslate %}
+                        </p>
+                        <p>
+                            {% blocktranslate %}
+                            By participating in the organization of the ACC2023 side events, you benefit from an informal setting for
+                            networking and exploration of concrete options for addressing the challenge of African cities of tomorrow
+                            engaging a specifically interested audience in a question and answer session. The exhibitions, in turn,
+                            allow participants to network around many different topics related to African cities.
+                            {% endblocktranslate %}
+                        </p>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 p-4">
                         <div class="accordion accordion-flush" id="ACC-highlights">
                             <div class="accordion-item">
                                 <h4 class="accordion-header" id="flush-headingOne">
@@ -298,44 +304,6 @@
                           development and achieve SDGs.
                           {% endblocktranslate %}
                                         <a href="https://africancitieslab.org/events/" class="text_primary">{% translate "Learn more" %}</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseTwo"
-                                            aria-expanded="false"
-                                            aria-controls="flush-collapseTwo">
-                                        {% translate "B2B Meetings & Partnerships" %}
-                                    </button>
-                                </h4>
-                                <div id="flush-collapseTwo"
-                                     class="accordion-collapse collapse"
-                                     aria-labelledby="flush-headingTwo"
-                                     data-bs-parent="#ACC-highlights">
-                                    <div class="accordion-body">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseThree"
-                                            aria-expanded="false"
-                                            aria-controls="flush-collapseThree">
-                                        {% translate "African smart cities’ Innovation Expo-2023" %}
-                                    </button>
-                                </h4>
-                                <div id="flush-collapseThree"
-                                     class="accordion-collapse collapse"
-                                     aria-labelledby="flush-headingThree"
-                                     data-bs-parent="#ACC-highlights">
-                                    <div class="accordion-body">
                                     </div>
                                 </div>
                             </div>
@@ -460,7 +428,7 @@
                     </h3>
                 </div>
             </div>
-            <div class="civa-partners-wrapper row-title">
+            <div class="civa-partners-wrapper mt-3 row-title">
                 <div class="partners-item">
                     <a href="https://seco.admin.ch/seco/en/home.html"
                        target="_blank"
@@ -509,12 +477,12 @@
             </div>
         </div>
     </section>
-    <section class="pb-5">
+    <!--section class="pb-5">
         <div class="container-xl">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-lg-6 pt-5 font-size-16">
                     <h3 class="section-title mb-4">
-                        {% translate "Venue & Contacts" %}
+                        {% translate "Venues & Contacts" %}
                     </h3>
                     <h4 class="mb-2 text_secondary">
                         {% translate "Sèmè One, Cotonou, Benin" %}
@@ -541,6 +509,75 @@
                 </div>
                 <div class="col-12 col-lg-6 pt-5 p-lg-5">
                     <img alt="Sèmè One" src="{% static 'images/assets/semeone.jpeg' %}"/>
+                </div>
+            </div>
+        </div>
+</section-->
+    <section class="bg-map"
+             style="background-image: url({% static "images/assets/bg-map.jpeg" %})">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 text-center">
+                    <h3 class="section-title mb-4">
+                        <span class="font-weight-500">
+                            {% blocktranslate %}
+                            This conference is international, multi-site and <span class="text_primary">online</span>.
+                            {% endblocktranslate %}
+                        </span>
+                    </h3>
+                </div>
+            </div>
+            <div class="tm-processbox-wrapper">
+                <div class="tm-processbox">
+                    <div class="tm-box-image">
+                        <div class="process-num">
+                            <span class="number"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="tm-box-content">
+                        <div class="tm-box-title">
+                            <h4>
+                                {% translate "Benin" %}
+                            </h4>
+                        </div>
+                        <div class="tm-box-description">
+                            {% translate "Sèmè One, Cotonou" %}
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-processbox">
+                    <div class="tm-box-image">
+                        <div class="process-num">
+                            <span class="number"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="tm-box-content">
+                        <div class="tm-box-title">
+                            <h4>
+                                {% translate "Marocco" %}
+                            </h4>
+                        </div>
+                        <div class="tm-box-description">
+                            {% translate "Mohammed VI Polytechnic University, Benguerir" %}
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-processbox">
+                    <div class="tm-box-image">
+                        <div class="process-num">
+                            <span class="number"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="tm-box-content">
+                        <div class="tm-box-title">
+                            <h4>
+                                {% translate "Ghana" %}
+                            </h4>
+                        </div>
+                        <div class="tm-box-description">
+                            {% translate "Kwame Nkrumah University of Science and Technology, Kumasi" %}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
