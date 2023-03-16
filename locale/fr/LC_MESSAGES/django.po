@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 20:16+0100\n"
+"POT-Creation-Date: 2023-03-16 09:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -331,12 +331,14 @@ msgstr "Appel à contributions"
 #: african_cities_conference/home/templates/home/home.html:159
 msgid ""
 "\n"
-"            ACC2023 – Conference tracks\n"
+"                        <span class=\"text_primary\">ACC2023</span> – "
+"Conference tracks\n"
 "            "
 msgstr ""
 "\n"
-"ACC2023 – Grands sujets de discussion\n"
-"            "
+"                   <span class=\"text_primary\">ACC2023</span> - Grands "
+"sujets de discussion\n"
+"                    "
 
 #: african_cities_conference/home/templates/home/home.html:169
 msgid "Digital city transition and urban planning"
@@ -521,8 +523,8 @@ msgstr ""
 "            "
 
 #: african_cities_conference/home/templates/home/home.html:247
-msgid "View conference program"
-msgstr "Voir l'agenda de la conférence"
+msgid "View program"
+msgstr "Voir le programme"
 
 #: african_cities_conference/home/templates/home/home.html:257
 msgid ""
