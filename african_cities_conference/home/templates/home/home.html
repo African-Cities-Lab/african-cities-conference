@@ -36,8 +36,8 @@
                         <div class="col-12 col-md-10">
                             <div class="row justify-content-center mx-auto">
                                 <div class="col-12 col-md-3 col-lg-3 pt-2 civa-date">
-                                    <h4 class="mb-2">23 & 24</h4>
-                                    <h5 class="font-weight-500">{% translate "May, 2023" %}</h5>
+                                    <h3 class="mb-2">23 & 24</h3>
+                                    <h4 class="font-weight-500">{% translate "May, 2023" %}</h4>
                                 </div>
                                 <div class="vertical-divider"></div>
                                 <div class="col-12 col-md-7 pt-2 civa-location">
@@ -157,7 +157,7 @@
                 <div class="col-12 col-lg-8 text-center">
                     <h3 class="section-title mb-3">
                         {% blocktranslate %}
-            ACC2023 – Conference tracks
+                        <span class="text_primary">ACC2023</span> – Conference tracks
             {% endblocktranslate %}
                     </h3>
                 </div>
@@ -233,7 +233,9 @@
                     </div>
                     <div class="acc-trails-timeline">
                         <div class="acc-trails-content">
-                            <h4 class="mb-3">{% translate "Emerging urban technologies" %}</h4>
+                            <h4 class="mb-3">
+                                {% translate "Emerging urban technologies" %}
+                            </h4>
                             {% blocktranslate %}
               As global warming increasingly affects African cities, new cooling technologies
               are being developed to combat climate change.
@@ -244,7 +246,7 @@
                 <div class="text-center">
                     <a class="btn btn__primary btn__big mt-5"
                        href="{% localized_slugurl 'program' %}">
-                        {% translate "View conference program" %}
+                        {% translate "View program" %}
                     </a>
                 </div>
             </div>
