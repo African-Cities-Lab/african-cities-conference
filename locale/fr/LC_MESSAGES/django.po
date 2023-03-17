@@ -169,7 +169,7 @@ msgid "May, 2023"
 msgstr "Mai 2023"
 
 #: african_cities_conference/home/templates/home/home.html:48
-msgid "UM6P, Benguérir, Marocco"
+msgid "UM6P, Benguérir, Morocco"
 msgstr "UM6P, Benguérir, Maroc"
 
 #: african_cities_conference/home/templates/home/home.html:51
@@ -737,7 +737,7 @@ msgid "Sèmè One, Cotonou"
 msgstr "Sèmè One, Cotonou, Bénin"
 
 #: african_cities_conference/home/templates/home/home.html:559
-msgid "Marocco"
+msgid "Morocco"
 msgstr "Maroc"
 
 #: african_cities_conference/home/templates/home/home.html:563
