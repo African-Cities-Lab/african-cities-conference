@@ -28,59 +28,68 @@
     <section class="civa-banner">
         <div class="container-lg position-relative">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-xl-8 text-center">
-                    <h1 class="font-size-3-50em mt-4">{% translate "The African Cities Conference (ACC) - Digital Cities" %}</h1>
-                    <div class="countdown-timer__widget">
-                        <div class="timer-container position-relative">
-                            <span id="days" class="h1"></span>
-                            <p>{% translate "Days" %}</p>
-                        </div>
-                        <div class="timer-container position-relative">
-                            <span id="hours" class="h1">230</span>
-                            <p>{% translate "Hours" %}</p>
-                        </div>
-                        <div class="timer-container position-relative">
-                            <span id="minutes" class="h1">230</span>
-                            <p>{% translate "Minutes" %}</p>
-                        </div>
-                        <div class="timer-container position-relative">
-                            <span id="seconds" class="h1">230</span>
-                            <p>{% translate "Seconds" %}</p>
+                <div class="col-12 col-md-10 col-xl-8">
+                    <h4 class="font-weight-500 text-center">{% translate "In person & Online Event" %}</h4>
+                    <h1 class="mt-3 text-center font-size-4-5em">{% translate "African Cities Conference" %}</h1>
+                    <h2 class="font-size-3-50em my-3 text-center">{% translate "on Digital and Smart Cities" %}</h2>
+                    <div class="row justify-content-center py-4">
+                        <div class="col-12 col-md-10">
+                            <div class="row justify-content-center mx-auto">
+                                <div class="col-12 col-md-3 col-lg-3 pt-2 civa-date">
+                                    <h3 class="mb-2">23 & 24</h3>
+                                    <h4 class="font-weight-500">{% translate "May, 2023" %}</h4>
+                                </div>
+                                <div class="vertical-divider"></div>
+                                <div class="col-12 col-md-7 pt-2 civa-location">
+                                    <h4 class="mb-2">
+                                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "Sèmè One, Cotonou, Benin" %}
+                                    </h4>
+                                    <h5 class="font-weight-500 font-size-18">
+                                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "UM6P, Benguérir, Morocco" %}
+                                    </h5>
+                                    <h5 class="font-weight-500 pt-2 font-size-18">
+                                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "KNUST, Kumassi, Ghana" %}
+                                    </h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-5">
-        <div class="container-xl py-md-5">
-            <div class="row justify-content-between">
-                <div class="col-12 col-lg-5">
-                    <p class="font-size-22 py-4 text_primary ">
-                        {% translate "African Cities Conference (ACC) is the first international conference on urban and sustainable development in Africa." %}
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6 ">
-                    <div class="row info-media-wrap">
-                        <div class="col-12 col-md-4 info-media ">
-                            <div class="info-media_icon">
-                                <i class="fas fa-calendar-alt"></i>
-                            </div>
-                            <div class="media-body">
-                                <h3 class="info-media_title">{% translate "Date" %}</h3>
-                                <p class="info-media_text font-size-16">{% translate "May 23 & 24" %}</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 info-media ">
-                            <div class="info-media_icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="media-body">
-                                <h3 class="info-media_title">{% translate "Sèmè One, Cotonou, Benin" %}</h3>
-                                <p class="info-media_text font-size-16">{% translate "In person & Online" %}</p>
-                            </div>
-                        </div>
+    <section class="countdown-timer__section">
+        <div class="countdown-timer__container">
+            <div class="text-white"
+                 style="background-image: url({% static "images/assets/banner-pattern.png" %})">
+                <div class="countdown-timer__widget">
+                    <div class="timer-container position-relative">
+                        <span id="days" class="h1"></span>
+                        <p>{% translate "Days" %}</p>
                     </div>
+                    <div class="timer-container position-relative">
+                        <span id="hours" class="h1">230</span>
+                        <p>{% translate "Hours" %}</p>
+                    </div>
+                    <div class="timer-container position-relative">
+                        <span id="minutes" class="h1">230</span>
+                        <p>{% translate "Minutes" %}</p>
+                    </div>
+                    <div class="timer-container position-relative">
+                        <span id="seconds" class="h1">230</span>
+                        <p>{% translate "Seconds" %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-5">
+        <div class="container-xl py-md-5">
+            <div class="row justify-content-center pt-5">
+                <div class="col-12 col-lg-8">
+                    <h3 class="font-weight-500 font-size-2-5em py-4 text_primary text-center">
+                        {% translate "Join the first international conference on urban and sustainable development in Africa." %}
+                    </h3>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -104,7 +113,7 @@
                         </p>
                         <p class="my-2">
                             {% blocktranslate %}
-              The « <strong>African Cities Conference (ACC) - Digital Cities</strong> » aims to increase the scope and influence of research,
+              The « <strong>African Cities Conference (ACC)</strong> » aims to increase the scope and influence of research,
               innovation and entrepreneurial activities on the African continent related to the digitization of cities, as well as to promote scientific excellence
               in Africa.
               {% endblocktranslate %}
@@ -124,12 +133,12 @@
         <div class="container-xl py-5">
             <div class="row justify-content-around align-items-center">
                 <div class="col-12 col-md-7">
-                    <h1>{% translate "African Cities Conference (ACC) - Digital Cities" %}</h1>
+                    <h1 class="font-size-2-5em">{% translate "Scientific contributions" %}</h1>
                     <p class="pt-3 font-size-16">
                         {% blocktranslate %}
-              The conference organizers cordially invite you to submit your scientific work to
-              African Cities Conference (ACC) - Digital Cities to be held
-              in Cotonou, Benin, next May 23 & 24
+                        The organizers of the conference invite all actors of the academic and scientific world to
+                        submit their contributions on the theme of digital and smart cities in the context of the
+                        African Cities Conference to be held in Cotonou, Benin, on 23 and 24 May 2023.
               {% endblocktranslate %}
                     </p>
                 </div>
@@ -148,7 +157,7 @@
                 <div class="col-12 col-lg-8 text-center">
                     <h3 class="section-title mb-3">
                         {% blocktranslate %}
-            ACC 2023 – Conference trails
+                        <span class="text_primary">ACC2023</span> – Conference tracks
             {% endblocktranslate %}
                     </h3>
                 </div>
@@ -224,7 +233,9 @@
                     </div>
                     <div class="acc-trails-timeline">
                         <div class="acc-trails-content">
-                            <h4 class="mb-3">{% translate "Emerging urban technologies" %}</h4>
+                            <h4 class="mb-3">
+                                {% translate "Emerging urban technologies" %}
+                            </h4>
                             {% blocktranslate %}
               As global warming increasingly affects African cities, new cooling technologies
               are being developed to combat climate change.
@@ -235,34 +246,37 @@
                 <div class="text-center">
                     <a class="btn btn__primary btn__big mt-5"
                        href="{% localized_slugurl 'program' %}">
-                        {% translate "View conference program" %}
+                        {% translate "View program" %}
                     </a>
                 </div>
             </div>
         </section>
         <section class="bg-light__ py-5 my-5">
             <div class="container-xl">
-                <div class="row d-flex justify-content-around">
-                    <div class="col-12 col-lg-4 py-5">
+                <div class="row d-flex justify-content-lg-between py-5">
+                    <div class="col-12 col-lg-5 font-size-16">
                         <h3 class="section-title mb-3">
                             {% blocktranslate %}
-                <span class="text_primary">ACC 2023</span> side events
+                <span class="text_primary">ACC2023</span> side events
                 {% endblocktranslate %}
                         </h3>
-                        <div class="py-3">
-                            <p class="font-size-22">
-                                {% blocktranslate %}
-                      This conference is virtual and presential and open to all.
-                      {% endblocktranslate %}
-                            </p>
-                            <p class="pt-3 text_primary font-size-22">
-                                {% blocktranslate %}
-                      It will include….
-                      {% endblocktranslate %}
-                            </p>
-                        </div>
+                        <p>
+                            {% blocktranslate %}
+                            The side events are a platform for researchers, PhD students and even professionals to present results
+                            of their work and innovative implementations that will stimulate interdisciplinary exchange and interaction,
+                            scientific discourse and creative and critical thinking.
+                            {% endblocktranslate %}
+                        </p>
+                        <p>
+                            {% blocktranslate %}
+                            By participating in the organization of the ACC2023 side events, you benefit from an informal setting for
+                            networking and exploration of concrete options for addressing the challenge of African cities of tomorrow
+                            engaging a specifically interested audience in a question and answer session. The exhibitions, in turn,
+                            allow participants to network around many different topics related to African cities.
+                            {% endblocktranslate %}
+                        </p>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 p-4">
                         <div class="accordion accordion-flush" id="ACC-highlights">
                             <div class="accordion-item">
                                 <h4 class="accordion-header" id="flush-headingOne">
@@ -296,44 +310,6 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h4 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseTwo"
-                                            aria-expanded="false"
-                                            aria-controls="flush-collapseTwo">
-                                        {% translate "B2B Meetings & Partnerships" %}
-                                    </button>
-                                </h4>
-                                <div id="flush-collapseTwo"
-                                     class="accordion-collapse collapse"
-                                     aria-labelledby="flush-headingTwo"
-                                     data-bs-parent="#ACC-highlights">
-                                    <div class="accordion-body">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseThree"
-                                            aria-expanded="false"
-                                            aria-controls="flush-collapseThree">
-                                        {% translate "African smart cities’ Innovation Expo-2023" %}
-                                    </button>
-                                </h4>
-                                <div id="flush-collapseThree"
-                                     class="accordion-collapse collapse"
-                                     aria-labelledby="flush-headingThree"
-                                     data-bs-parent="#ACC-highlights">
-                                    <div class="accordion-body">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
                                 <h4 class="accordion-header" id="flush-headingFour">
                                     <button class="accordion-button collapsed"
                                             type="button"
@@ -349,6 +325,13 @@
                                      aria-labelledby="flush-headingFour"
                                      data-bs-parent="#ACC-highlights">
                                     <div class="accordion-body">
+                                        {% blocktranslate %}
+                                        The DC offers the opportunity to present and discuss their doctoral research ideas and progress in a supportive,
+                                        formative yet critical environment, and to receive feedback from examiners, mentors and peers in the field of
+                                        their thesis topic.
+                                        {% endblocktranslate %}
+                                        <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-doctoral-consortium-spring-school/"
+                                           class="text_primary">{% translate "Learn more" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -368,6 +351,12 @@
                                      aria-labelledby="flush-headingFive"
                                      data-bs-parent="#ACC-highlights">
                                     <div class="accordion-body">
+                                        {% blocktranslate %}
+                                        The poster and demo session of the 1st African Cities Conference complements the research session and provides
+                                        an opportunity to present recent results and innovative implementations in an informal and interactive setting.
+                                        {% endblocktranslate %}
+                                        <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-poster-demos/"
+                                           class="text_primary">{% translate "Learn more" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -387,6 +376,12 @@
                                      aria-labelledby="flush-heading9"
                                      data-bs-parent="#ACC-highlights">
                                     <div class="accordion-body">
+                                        {% blocktranslate %}
+                                        We invite proposals for events that promote discussion, interdisciplinary exchange and interaction, scholarly discourse,
+                                        and creative and critical thinking, rather than being mere mini-conferences.
+                                        {% endblocktranslate %}
+                                        <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-workshops-tutorials/"
+                                           class="text_primary">{% translate "Learn more" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -428,14 +423,14 @@
     </section>
     <section class="py-5">
         <div class="container pb-5">
-            <div class="row justify-content-center pb-5">
+            <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
                     <h3 class="section-title text-center">
-                        {% translate "Academic and institutional partners" %}
+                        {% translate "African Cities Lab partners" %}
                     </h3>
                 </div>
             </div>
-            <div class="civa-partners-wrapper row-title">
+            <div class="civa-partners-wrapper mt-3 row-title">
                 <div class="partners-item">
                     <a href="https://seco.admin.ch/seco/en/home.html"
                        target="_blank"
@@ -484,20 +479,20 @@
             </div>
         </div>
     </section>
-    <section class="py-5">
+    <!--section class="pb-5">
         <div class="container-xl">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-lg-6 pt-5 font-size-16">
                     <h3 class="section-title mb-4">
-                        {% translate "Venue & Contacts" %}
+                        {% translate "Venues & Contacts" %}
                     </h3>
                     <h4 class="mb-2 text_secondary">
                         {% translate "Sèmè One, Cotonou, Benin" %}
                     </h4>
                     <p class="pt-2">
-                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "In person & Online" %}
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "In person & Online Event" %}
                     </p>
-                    <p class="pt-2">
+                    <p>
                         <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "May 23 & 24" %}
                     </p>
                     <div class="mt-3 mb-4">
@@ -511,11 +506,80 @@
                         <h6 class="mb-2">
                             {% translate "For any request:" %}
                         </h6>
-                        <a href="mailto:contact@africancitieslab.org" class="text_primary">contact@africancitieslab.org</a>
+                        <a href="mailto:info-acc@africancitieslab.org" class="text_primary">info-acc@africancitieslab.org</a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 p-5">
+                <div class="col-12 col-lg-6 pt-5 p-lg-5">
                     <img alt="Sèmè One" src="{% static 'images/assets/semeone.jpeg' %}"/>
+                </div>
+            </div>
+        </div>
+</section-->
+    <section class="bg-map"
+             style="background-image: url({% static "images/assets/bg-map.jpeg" %})">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 text-center">
+                    <h3 class="section-title mb-4">
+                        <span class="font-weight-500">
+                            {% blocktranslate %}
+                            This conference is international, multi-site and <span class="text_primary">online</span>.
+                            {% endblocktranslate %}
+                        </span>
+                    </h3>
+                </div>
+            </div>
+            <div class="tm-processbox-wrapper">
+                <div class="tm-processbox">
+                    <div class="tm-box-image">
+                        <div class="process-num">
+                            <span class="number"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="tm-box-content">
+                        <div class="tm-box-title">
+                            <h4>
+                                {% translate "Benin" %}
+                            </h4>
+                        </div>
+                        <div class="tm-box-description">
+                            {% translate "Sèmè One, Cotonou" %}
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-processbox">
+                    <div class="tm-box-image">
+                        <div class="process-num">
+                            <span class="number"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="tm-box-content">
+                        <div class="tm-box-title">
+                            <h4>
+                                {% translate "Morocco" %}
+                            </h4>
+                        </div>
+                        <div class="tm-box-description">
+                            {% translate "Mohammed VI Polytechnic University, Benguerir" %}
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-processbox">
+                    <div class="tm-box-image">
+                        <div class="process-num">
+                            <span class="number"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="tm-box-content">
+                        <div class="tm-box-title">
+                            <h4>
+                                {% translate "Ghana" %}
+                            </h4>
+                        </div>
+                        <div class="tm-box-description">
+                            {% translate "Kwame Nkrumah University of Science and Technology, Kumasi" %}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

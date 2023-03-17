@@ -1,26 +1,26 @@
 {% extends "base.html" %}
 {% load i18n static %}
 {% block title %}
-    {% translate "Venue & Contact" %} - African Cities Conference
+    {% translate "Venues & Contacts" %} - African Cities Conference
 {% endblock title %}
 {% block static_meta_tag %}
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title"
-          content="{% translate "Venue & Contact" %} - African Cities Conference"/>
+          content="{% translate "Venues & Contacts" %} - African Cities Conference"/>
     <meta name="twitter:description"
           content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
     <meta name="twitter:site" content="@AfricanCtiesLab" />
     <meta itemprop='image'
           content="{% static 'images/assets/small-logo.png' %}"/>
     <meta property="og:title"
-          content="{% translate "Venue & Contact" %} - African Cities Conference"/>
+          content="{% translate "Venues & Contacts" %} - African Cities Conference"/>
     <meta property="og:description"
           content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
     <meta property="og:site_name" content="African Cities Conference" />
     <meta itemprop='image'
           content="{% static 'images/assets/small-logo.png' %}"/>
     <meta itemprop="name"
-          content="{% translate "Venue & Contact" %} - African Cities Conference"/>
+          content="{% translate "Venues & Contacts" %} - African Cities Conference"/>
     <meta itemprop='description'
           content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
     <meta itemprop='image'
@@ -41,17 +41,17 @@
             <div class="row py-5">
                 <div class="col-12 col-md-6">
                     <div class="position-relative h1">
-                        {% translate "Venue & Contact" %}
+                        {% translate "Venues & Contacts" %}
                         <span class="dash-accent"></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-5 mb-3 font-size-16">
+    <section class="pt-5 mb-3 font-size-16">
         <div class="container-xl">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
+                <div class="col-12 col-md-10">
                     <p>
                         {% blocktranslate %}
                         The first annual meeting of the academic and professional world on African cities,
@@ -69,11 +69,16 @@
             </div>
         </div>
     </section>
-    <section class="py-5 font-size-16 bg-light__">
+    <section class="py-5 font-size-16">
         <div class="container-xl">
             <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-lg-5">
-                    <h4 class="mb-3">{% translate "Sèmè One, Cotonou, Benin" %}</h4>
+                    <h4>{% translate "Sèmè One, Cotonou, Benin" %}</h4>
+                    <p>
+                        {% blocktranslate %}
+                        In front of the EFE Montaigne Cotonou
+                        {% endblocktranslate %}
+                    </p>
                     <p>
                         {% blocktranslate %}
                         The first modern and intelligent campus of 4,500 m², includes classrooms, coworking spaces, a language center,
@@ -81,19 +86,26 @@
                         assumptions and functionalities developed for the entire Sèmè City project.
                         {% endblocktranslate %}
                     </p>
+                    <p>
+                        <a href="https://www.google.com/maps/place/S%C3%A8m%C3%A8+One/@6.3527145,2.3949498,15z/data=!4m6!3m5!1s0x102355b9305fa693:0x8cb0241859005892!8m2!3d6.3527145!4d2.3949498!16s%2Fg%2F11lkd3hk_k"
+                           target="_blank">
+                            <i class="fas fa-map-marker-alt mx-2 font-size-22"></i>
+                            <span>{% translate "View location" %}</span>
+                        </a>
+                    </p>
                 </div>
-                <div class="col-12 col-lg-6 p-5">
-                    <img alt="Sèmè One" src="{% static 'images/assets/semeone.jpeg' %}"/>
+                <div class="col-12 col-lg-6 pt-5 p-lg-5">
+                    <img alt="Sèmè One" src="{% static 'images/assets/seme-one-3.jpg' %}"/>
                 </div>
             </div>
         </div>
     </section>
+    {% comment %}
     <section class="py-5 font-size-16">
         <div class="container-xl">
             <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-lg-6 p-5 order-1 order-lg-0">
-                    <img alt="Passeport, Visa"
-                         src="{% static 'images/assets/visa-passport.jpeg' %}"/>
+                <div class="col-12 col-lg-6 pt-5 p-lg-5 order-1 order-lg-0">
+                    <img alt="Passeport, Visa" src="{% static 'images/assets/visa-passport.jpeg' %}"/>
                 </div>
                 <div class="col-12 col-lg-5 order-0 order-lg-1">
                     <h4 class="mb-3">{% translate "Visa" %}</h4>
@@ -110,19 +122,19 @@
             </div>
         </div>
     </section>
-    <section class="py-5 mb-3 font-size-16">
-        <div class="container-xl">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8 col-lg-6 mb-5 text-center">
-                    <p>
-                        {% blocktranslate %}
-                        Follow us on social networks or write to us for any more information or request about
-                        the event and how to become a partner.
-                        {% endblocktranslate %}
-                    </p>
-                    <h6 class="mt-2">{% translate "For any request:" %}</h6>
-                    <a href="mailto:info-acc@africancitieslab.org" class="text_primary">info-acc@africancitieslab.org</a>
-                </div>
+    {% endcomment %}
+    <section>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 offset-md-2 p-5">
+                <h3 class="section-title mb-3">{% translate "Contact" %}</h3>
+                <p class="font-size-16">
+                    {% blocktranslate %}
+                    Follow us on social networks or write to us for any more information or request about
+                    the event and how to become a partner.
+                    {% endblocktranslate %}
+                </p>
+                <h6 class="mt-2">{% translate "For any request:" %}</h6>
+                <a href="mailto:info-acc@africancitieslab.org" class="text_primary">info-acc@africancitieslab.org</a>
             </div>
         </div>
     </section>

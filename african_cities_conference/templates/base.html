@@ -48,6 +48,8 @@
             <link href="{% static 'css/project.css' %}" rel="stylesheet" />
             <link rel="stylesheet"
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+            <link rel="stylesheet"
+                  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         {% endblock css %}
         <!-- Le javascript
         ================================================== -->
@@ -67,6 +69,7 @@
                     integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
                     crossorigin="anonymous"
                     referrerpolicy="no-referrer"></script>
+            <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
             <!-- Your stuff: Third-party javascript libraries go here -->
             <!-- place project specific Javascript in this file -->
             <script defer src="{% static 'js/project.js' %}"></script>
@@ -124,7 +127,7 @@
                             {% url 'contact' as url %}
                             <li class="nav-item mx-2">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
-                                   href="{% url 'contact' %}">{% translate "Venue & Contacts" %}</a>
+                                   href="{% url 'contact' %}">{% translate "Venues & Contacts" %}</a>
                             </li>
                         </ul>
                         <div class="right-header">
@@ -226,7 +229,7 @@
                                         <a href="{% localized_slugurl 'acc-calls' %}">{% translate "Call for papers" %}</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="{% url 'contact' %}">{% translate "Venue & Contacts" %}</a>
+                                        <a href="{% url 'contact' %}">{% translate "Venues & Contacts" %}</a>
                                     </li>
                                 </ul>
                             </div>
