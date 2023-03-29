@@ -2,21 +2,21 @@
 {% load home_tags i18n static %}
 {% block static_meta_tag %}
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="African Cities Conference"/>
+    <meta name="twitter:title" content="African Cities Lab - 2023 Summit"/>
     <meta name="twitter:description"
-          content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
     <meta name="twitter:site" content="@AfricanCtiesLab" />
     <meta itemprop='image'
           content="{% static 'images/assets/small-logo.png' %}"/>
-    <meta property="og:title" content="African Cities Conference"/>
+    <meta property="og:title" content="African Cities Lab - 2023 Summit"/>
     <meta property="og:description"
-          content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
-    <meta property="og:site_name" content="African Cities Conference" />
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta property="og:site_name" content="African Cities Lab - 2023 Summit" />
     <meta itemprop='image'
           content="{% static 'images/assets/small-logo.png' %}"/>
-    <meta itemprop="name" content="African Cities Conference"/>
+    <meta itemprop="name" content="African Cities Lab - 2023 Summit"/>
     <meta itemprop='description'
-          content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
     <meta itemprop='image'
           content="{% static 'images/assets/small-logo.png' %}"/>
 {% endblock static_meta_tag %}
@@ -28,31 +28,27 @@
     <section class="civa-banner">
         <div class="container-lg position-relative">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-xl-8">
-                    <h4 class="font-weight-500 text-center">{% translate "In person & Online Event" %}</h4>
-                    <h1 class="mt-3 text-center font-size-4-5em">{% translate "African Cities Conference" %}</h1>
-                    <h2 class="font-size-3-50em my-3 text-center">{% translate "on Digital and Smart Cities" %}</h2>
-                    <div class="row justify-content-center py-4">
-                        <div class="col-12 col-md-10">
-                            <div class="row justify-content-center mx-auto">
-                                <div class="col-12 col-md-3 col-lg-3 pt-2 civa-date">
-                                    <h3 class="mb-2">23 & 24</h3>
-                                    <h4 class="font-weight-500">{% translate "May, 2023" %}</h4>
-                                </div>
-                                <div class="vertical-divider"></div>
-                                <div class="col-12 col-md-7 pt-2 civa-location">
-                                    <h4 class="mb-2">
-                                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "Sèmè One, Cotonou, Benin" %}
-                                    </h4>
-                                    <h5 class="font-weight-500 font-size-18">
-                                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "UM6P, Benguérir, Marocco" %}
-                                    </h5>
-                                    <h5 class="font-weight-500 pt-2 font-size-18">
-                                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "KNUST, Kumassi, Ghana" %}
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-12 col-md-10 col-xl-8 text-center">
+                    <h4 class="font-weight-500">
+                        {% translate "Hybrid event" %}<span class="text_primary">|</span>{% translate "May 23-24, 2023" %}
+                    </h4>
+                    <h2 class="font-size-3-50em my-3 ">
+                        {% blocktranslate %}
+                        African Cities Lab 2023 SUMMIT
+                        {% endblocktranslate %}
+                    </h2>
+                    <h3 class="font-weight-500">
+                        {% blocktranslate %}
+                        A cross-sectoral to uplift african cities development
+                        {% endblocktranslate %}
+                    </h3>
+                    <div class="h3 text-center pt-2">
+                        {% blocktranslate %}
+                        <span class="font-weight-500">Digital an smart cties:<span> <span class="h2 font-weight-bold">Datafrication</span>
+                        {% endblocktranslate %}
+                    </div>
+                    <div class="font-size-18 pt-4 pb-5">
+                        <i class="fas fa-map-marker-alt font-size-22 mx-2"></i>{% translate "Sèmè City (Cotonou, Benin)" %} | {% translate "UM6P (Ben Guérir, Morocco)" %} | {% translate "Online" %}
                     </div>
                 </div>
             </div>
@@ -83,57 +79,116 @@
             </div>
         </div>
     </section>
-    <section class="my-5">
-        <div class="container-xl py-md-5">
-            <div class="row justify-content-center pt-5">
-                <div class="col-12 col-lg-8">
-                    <h3 class="font-weight-500 font-size-2-5em py-4 text_primary text-center">
-                        {% translate "Join the first international conference on urban and sustainable development in Africa." %}
+    <section class="mt-5">
+        <div class="container-xl">
+            <div class="row justify-content-center py-5">
+                <div class="col-12 col-lg-5 d-none d-lg-block p-lg-5">
+                    <img alt="About ACL 2023 Summit"
+                         src="{% static 'images/assets/second-about-summit.jpg' %}"/>
+                </div>
+                <div class="col-12 col-lg-6 font-size-16 pt-md-5">
+                    <h3 class="font-weight-500 pb-3 pt-4">
+                        {% blocktranslate %}
+                        Join us for the African Cities Lab 2023 Summit - Digital and Smart Cities : <span class="text_primary">Datafrication</span>
+                        {% endblocktranslate %}
                     </h3>
+                    <p>
+                        {% blocktranslate %}
+                        By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals,
+                        academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to
+                        uplift african cities development.
+                        {% endblocktranslate %}
+                    </p>
+                    <p class="mt-1">
+                        {% blocktranslate %}
+                        The African Cities Lab 2023 Summit aims at creating a truly collective, international and intergenerational platform,
+                        connected and open to the world, where ALL urban development actors will reflect on digital and smart cities as new
+                        models for African cities.
+                        {% endblocktranslate %}
+                    </p>
+                    <p class="mt-1">
+                        {% blocktranslate %}
+                        Over the two days of African Cities Lab 2023 Summit, the tomorrow’s and today’s actors of african cities urban and
+                        sustainable development will meet around discussions about : collecting data in real time, establishing communication
+                        networks to connect devices and people in Africa, analysing data to optimise the management of urban resources and
+                        basic public services creation.
+                        {% endblocktranslate %}
+                    </p>
+                    <p class="mt-1">
+                        {% blocktranslate %}
+                        From Sèmè City (Cotonou, Benin) and Mohammed VI Polytechnic University (Ben Guérir, Morocco) and through a dedicated
+                        online platforms, international and intergenerational urban actors, politicians, Architects, Academic Researchers,
+                        Youth, national and international organizations will spread ideas and imagine data - driven solutions to build new models
+                        of African cities.
+                        {% endblocktranslate %}
+                    </p>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-12 pt-3">
-                    <div id="column-2" class="text-justify font-size-16">
-                        <p>
+        </div>
+    </section>
+    <section>
+        <div class="container-xl py-md-5">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h3 class="section-title mb-3">{% translate "Why should attend?" %}</h3>
+                    <div class="font-size-16">
+                        {% blocktranslate %}
+                        Creating a real <span class="text_primary">collective, international</span> and <span class="text_primary">intergenerational platform, connected</span> and
+                        <span class="text_primary">open</span> to the world, where <strong>ALL</strong> the actors of urban development will <span class="text_primary">think about
+                        digital and smart cities as new models of cities in Africa</span>.
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-12 col-md-3">
+                    <div class="mkdf-process-card">
+                        <div class="mkdf-process-circle">1</div>
+                        <div>
                             {% blocktranslate %}
-              African digital cities are presented as a reasonable response to future demographic projections and the inability of the public sector
-              alone to respond structurally to a strong increase in demand for urban infrastructure and infrastructure and urban services such as housing,
-              socio-professional integration, etc.<br>
-              {% endblocktranslate %}
+                            To increase the impact and influence of research and entrepreneurial activities related to the development of african cities.
+                            {% endblocktranslate %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="mkdf-process-card">
+                        <div class="mkdf-process-circle">2</div>
+                        <div>
                             {% blocktranslate %}
-              Challenging the current vision of cities in Africa, digital cities seem to be major players in the urbanization of Africa. At a time when a
-              new urban paradigm is being implemented but intrinsic challenges remain, the role of digital cities as drivers of urban development in
-              Africa is to be established.<br>
-              {% endblocktranslate %}
+                            To promote exchanges between politicians and public and private actors in the development of African cities.
+                            {% endblocktranslate %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="mkdf-process-card">
+                        <div class="mkdf-process-circle">3</div>
+                        <div>
                             {% blocktranslate %}
-              There is today a tangible and growing demand for talented and highly qualified African researchers on the theme of the city and its digitalization.
-              This is particularly visible in all areas of the digital transformation of the continent.
-              {% endblocktranslate %}
-                        </p>
-                        <p class="my-2">
+                            To create a place for academic research, entrepreneurs, institutional and professional networking in the urban field in Africa.
+                            {% endblocktranslate %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="mkdf-process-card">
+                        <div class="mkdf-process-circle">4</div>
+                        <div>
                             {% blocktranslate %}
-              The « <strong>African Cities Conference (ACC)</strong> » aims to increase the scope and influence of research,
-              innovation and entrepreneurial activities on the African continent related to the digitization of cities, as well as to promote scientific excellence
-              in Africa.
-              {% endblocktranslate %}
-                        </p>
-                        <p class="mb-2">
-                            {% blocktranslate %}
-              Therefore, beyond its thematic focus, ACC aims to advance interdisciplinary research by bridging the disciplinary gap between the different academic
-              cultures of the humanities, sciences and application-oriented research, but also the sectoral gap between urban development actors in Africa.
-              {% endblocktranslate %}
-                        </p>
+                            To create an immaterial platform from which emerge concrete solutions to build a new models of cities.
+                            {% endblocktranslate %}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg_secondary text-white py-3">
+    <section class="bg_secondary text-white py-3 mb-5">
         <div class="container-xl py-5">
             <div class="row justify-content-around align-items-center">
                 <div class="col-12 col-md-7">
-                    <h1 class="font-size-2-5em">{% translate "Scientific contributions" %}</h1>
+                    <h1 class="font-size-2-5em">{% translate "Academic contributions" %}</h1>
                     <p class="pt-3 font-size-16">
                         {% blocktranslate %}
                         The organizers of the conference invite all actors of the academic and scientific world to
@@ -151,150 +206,146 @@
             </div>
         </div>
     </section>
+    {% comment %}
     <section class="py-5">
         <div class="container-fluid">
-            <div class="row d-flex justify-content-center pt-5">
-                <div class="col-12 col-lg-8 text-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-10">
+                    <h3 class="section-title mb-3 text-center">
+                        {% blocktranslate %}
+                        What will we discuss?
+                        {% endblocktranslate %}
+                    </h3>
+
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8">
+                            <div class="acc-trails-block">
+                                <div class="acc-trails-inner">
+                                    <div class="acc-trails-timeline">
+                                        <div class="acc-trails-content">
+                                            {% blocktranslate %}
+                                            La numérisation des villes se réfère à <strong>l'utilisation de technologies numériques pour
+                                            améliorer les infrastructures urbaines, les services publics et la qualité de vie des citoyens.</strong>
+                                            {% endblocktranslate %}
+                                        </div>
+                                    </div>
+                                    <div class="acc-trails-timeline">
+                                        <div class="acc-trails-content">
+                                            {% blocktranslate %}
+                                            Cela peut inclure l'utilisation de capteurs pour collecter des données en temps réel, la mise
+                                            en place de réseaux de communication pour connecter les appareils et les personnes, ainsi que
+                                            l'utilisation de l'analyse de données pour optimiser la gestion des ressources urbaines.
+                                            {% endblocktranslate %}
+                                        </div>
+                                    </div>
+                                    <div class="acc-trails-timeline">
+                                        <div class="acc-trails-content">
+                                            {% blocktranslate %}
+                                            <strong>L'objectif ultime de la numérisation des villes est de créer des villes plus intelligentes,
+                                                plus efficaces, plus durables surtout plus inclusives.</strong>
+                                            {% endblocktranslate %}
+                                        </div>
+                                    </div>
+                                    <div class="acc-trails-timeline">
+                                        <div class="acc-trails-content">
+                                            {% blocktranslate %}
+                                            La collecte et le traitement de données apparaît comme une solution de développement urbain en Afrique qui permet
+                                            d’obtenir des informations précieuses pour améliorer la qualité de vie de tous les citoyens et une meilleure gestion des ressources
+                                            urbaines : planification urbaine, gestion des services publics, prévention des catastrophes ...
+                                            {% endblocktranslate %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    {% endcomment %}
+    <section class="py-5">
+        <div class="container-xl">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-5">
+                    <img alt="Who do we except"
+                         src="{% static 'images/assets/who-do-we-except.png' %}"/>
+                </div>
+                <div class="col-12 col-lg-5 pt-5 p-lg-5">
+                    <h3 class="section-title mb-4">{% translate "Who attends?" %}</h3>
+                    <div class="font-size-16">
+                        {% translate "Today's actors..." %}
+                        <ul class="mt-2 mb-4 list-unstyled">
+                            <li>
+                                <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "Professionals" %}
+                            </li>
+                            <li class="pt-2">
+                                <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "Public and private institutions" %}
+                            </li>
+                            <li class="pt-2">
+                                <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "The academic community" %}
+                            </li>
+                            <li class="pt-2">
+                                <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "Government officials" %}
+                            </li>
+                            <li class="pt-2">
+                                <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "The politicians" %}
+                            </li>
+                            <li class="pt-2">
+                                <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "Opinion leaders" %}
+                            </li>
+                        </ul>
+                        {% translate "Tomorrow's actors..." %}
+                        <ul class="mt-2 mb-4 list-unstyled">
+                            <li>
+                                <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "Entrepreneurs" %}
+                            </li>
+                            <li class="pt-2">
+                                <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "Youth" %}
+                            </li>
+                            <li class="pt-2">
+                                <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "Influencers" %}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light__ my-5">
+        <div class="container-xl">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-5 font-size-16 pt-5">
                     <h3 class="section-title mb-3">
                         {% blocktranslate %}
-                        <span class="text_primary">ACC2023</span> – Conference tracks
-            {% endblocktranslate %}
+                                Side events
+                            {% endblocktranslate %}
                     </h3>
+                    <p>
+                        {% blocktranslate %}
+                            The African Cities Lab 2023 SUMMIT side events are an interdisciplinary and creative platform, where academics researchers and students,
+                            professionals and entrepreneurs, will work together to find solutions that make African Cities digital and smart.
+                            {% endblocktranslate %}
+                    </p>
                 </div>
-            </div>
-            <div class="acc-trails-block">
-                <div class="acc-trails-inner">
-                    <div class="acc-trails-timeline">
-                        <div class="acc-trails-content">
-                            <h4 class="mb-3">{% translate "Digital city transition and urban planning" %}</h4>
-                            {% blocktranslate %}
-                In Africa, the digital transformation of cities is still minimal, but initiatives in this
-                direction are beginning to emerge. For example, in Morocco and Tunisia smart homes and
-                connected mobility are already being developed.
-              {% endblocktranslate %}
-                        </div>
-                    </div>
-                    <div class="acc-trails-timeline">
-                        <div class="acc-trails-content">
-                            <h4 class="mb-3">{% translate "Digital and smart african cities" %}</h4>
-                            {% blocktranslate %}
-              We hear increasingly about "smart" cities, but what are they really about? Smart cities in Africa
-              represent a challenge for the development of urban territories, for the economy, but also to gain
-              international visibility.
-            {% endblocktranslate %}
-                        </div>
-                    </div>
-                    <div class="acc-trails-timeline">
-                        <div class="acc-trails-content">
-                            <h4 class="mb-3">{% translate "Remote sensing and geo – information systems (smart GIS)" %}</h4>
-                            {% blocktranslate %}
-              Remote sensing and spatial data play an important role in urban planning by providing accurate and up-to-date
-              information about the physical and environmental characteristics of urban areas. This information can be
-              used for mapping and monitoring land use and land cover, assessing the physical characteristics of urban areas,
-              monitoring environmental quality, supporting emergency management, and improving transportation planning.
-              By utilizing remote sensing and spatial data, urban planners can make informed decisions that lead to the
-              development of more sustainable and resilient cities.
-              {% endblocktranslate %}
-                        </div>
-                    </div>
-                    <div class="acc-trails-timeline">
-                        <div class="acc-trails-content">
-                            <h4 class="mb-3">{% translate "Digital citizenship and digital gouvernance" %}</h4>
-                            {% blocktranslate %}
-              Digital citizenship refers to responsible and ethical use of technology and the internet. It encompasses
-              values, behaviors, and skills such as internet safety, digital literacy, digital etiquette, digital rights
-              and responsibilities, and digital activism. By developing these skills, individuals can engage in the digital
-              world effectively, protect their rights and interests, and contribute to a more inclusive and equitable digital
-              society. Digital citizenship education is important for individuals, particularly students, to become informed
-              and effective members of a digital society.
-              {% endblocktranslate %}
-                        </div>
-                    </div>
-                    <div class="acc-trails-timeline">
-                        <div class="acc-trails-content">
-                            <h4 class="mb-3">{% translate "African digital cities challenge" %}</h4>
-                            {% blocktranslate %}
-              Digital technology has great potential for innovation in areas such as health, agriculture,
-              education, energy, financial services, and transport in the cities and towns of tomorrow.
-              The rapid spread of mobile and digital technology in Africa should enable African countries
-              to make a rapid leap in economic development.
-              {% endblocktranslate %}
-                        </div>
-                    </div>
-                    <div class="acc-trails-timeline">
-                        <div class="acc-trails-content">
-                            <h4 class="mb-3">{% translate "Urban mobility and transportation" %}</h4>
-                            {% blocktranslate %}
-            The African continent is on the verge of unprecedented growth, making it necessary to develop
-            the urban mobility sector. The predictions of demographic and economic growth on the continent
-            do not leave the global players in the transport sector indifferent.
-              {% endblocktranslate %}
-                        </div>
-                    </div>
-                    <div class="acc-trails-timeline">
-                        <div class="acc-trails-content">
-                            <h4 class="mb-3">
-                                {% translate "Emerging urban technologies" %}
+                <div class="col-12 col-lg-6 p-5">
+                    <div class="accordion accordion-flush" id="ACC-highlights">
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                    {% translate "Preliminary Webinars" %}
+                                </button>
                             </h4>
-                            {% blocktranslate %}
-              As global warming increasingly affects African cities, new cooling technologies
-              are being developed to combat climate change.
-            {% endblocktranslate %}
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <a class="btn btn__primary btn__big mt-5"
-                       href="{% localized_slugurl 'program' %}">
-                        {% translate "View program" %}
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="bg-light__ py-5 my-5">
-            <div class="container-xl">
-                <div class="row d-flex justify-content-lg-between py-5">
-                    <div class="col-12 col-lg-5 font-size-16">
-                        <h3 class="section-title mb-3">
-                            {% blocktranslate %}
-                <span class="text_primary">ACC2023</span> side events
-                {% endblocktranslate %}
-                        </h3>
-                        <p>
-                            {% blocktranslate %}
-                            The side events are a platform for researchers, PhD students and even professionals to present results
-                            of their work and innovative implementations that will stimulate interdisciplinary exchange and interaction,
-                            scientific discourse and creative and critical thinking.
-                            {% endblocktranslate %}
-                        </p>
-                        <p>
-                            {% blocktranslate %}
-                            By participating in the organization of the ACC2023 side events, you benefit from an informal setting for
-                            networking and exploration of concrete options for addressing the challenge of African cities of tomorrow
-                            engaging a specifically interested audience in a question and answer session. The exhibitions, in turn,
-                            allow participants to network around many different topics related to African cities.
-                            {% endblocktranslate %}
-                        </p>
-                    </div>
-                    <div class="col-12 col-lg-6 p-4">
-                        <div class="accordion accordion-flush" id="ACC-highlights">
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseOne"
-                                            aria-expanded="false"
-                                            aria-controls="flush-collapseOne">
-                                        {% translate "Preliminary Webinars" %}
-                                    </button>
-                                </h4>
-                                <div id="flush-collapseOne"
-                                     class="accordion-collapse collapse"
-                                     aria-labelledby="flush-headingOne"
-                                     data-bs-parent="#ACC-highlights">
-                                    <div class="accordion-body">
-                                        {% blocktranslate %}
+                            <div id="flush-collapseOne"
+                                 class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingOne"
+                                 data-bs-parent="#ACC-highlights">
+                                <div class="accordion-body">
+                                    {% blocktranslate %}
                           Through a series of 4 webinars, the partners of the African Cities Lab,
                           in collaboration with EPFL, are providing insights for the political and scientific
                           dialogue in the run-up to the Cotonou conference in 2023.
@@ -305,84 +356,117 @@
                           harnessing and leveraging digital technologies to promote sustainable
                           development and achieve SDGs.
                           {% endblocktranslate %}
-                                        <a href="https://africancitieslab.org/events/" class="text_primary">{% translate "Learn more" %}</a>
-                                    </div>
+                                    <a href="https://africancitieslab.org/events/" class="text_primary">{% translate "Learn more" %}</a>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="flush-headingFour">
-                                    <button class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseFour"
-                                            aria-expanded="false"
-                                            aria-controls="flush-collapseFour">
-                                        {% translate "Doctoral Consortium & Spring school" %}
-                                    </button>
-                                </h4>
-                                <div id="flush-collapseFour"
-                                     class="accordion-collapse collapse"
-                                     aria-labelledby="flush-headingFour"
-                                     data-bs-parent="#ACC-highlights">
-                                    <div class="accordion-body">
-                                        {% blocktranslate %}
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-headingTen">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-target="#flush-collapseTen"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTen">
+                                    {% translate "Innovation Labs" %}
+                                </button>
+                            </h4>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                    {% translate "Doctoral Consortium & Spring school" %}
+                                </button>
+                            </h4>
+                            <div id="flush-collapseFour"
+                                 class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingFour"
+                                 data-bs-parent="#ACC-highlights">
+                                <div class="accordion-body">
+                                    {% blocktranslate %}
                                         The DC offers the opportunity to present and discuss their doctoral research ideas and progress in a supportive,
                                         formative yet critical environment, and to receive feedback from examiners, mentors and peers in the field of
                                         their thesis topic.
                                         {% endblocktranslate %}
-                                        <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-doctoral-consortium-spring-school/"
-                                           class="text_primary">{% translate "Learn more" %}</a>
-                                    </div>
+                                    <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-doctoral-consortium-spring-school/"
+                                       class="text_primary">{% translate "Learn more" %}</a>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="flush-headingFive">
-                                    <button class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseFive"
-                                            aria-expanded="false"
-                                            aria-controls="flush-collapseFive">
-                                        {% translate "Poster & Demos Session" %}
-                                    </button>
-                                </h4>
-                                <div id="flush-collapseFive"
-                                     class="accordion-collapse collapse"
-                                     aria-labelledby="flush-headingFive"
-                                     data-bs-parent="#ACC-highlights">
-                                    <div class="accordion-body">
-                                        {% blocktranslate %}
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                    {% translate "Poster & Demos Session" %}
+                                </button>
+                            </h4>
+                            <div id="flush-collapseFive"
+                                 class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingFive"
+                                 data-bs-parent="#ACC-highlights">
+                                <div class="accordion-body">
+                                    {% blocktranslate %}
                                         The poster and demo session of the 1st African Cities Conference complements the research session and provides
                                         an opportunity to present recent results and innovative implementations in an informal and interactive setting.
                                         {% endblocktranslate %}
-                                        <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-poster-demos/"
-                                           class="text_primary">{% translate "Learn more" %}</a>
-                                    </div>
+                                    <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-poster-demos/"
+                                       class="text_primary">{% translate "Learn more" %}</a>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="flush-heading9">
-                                    <button class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapse9"
-                                            aria-expanded="false"
-                                            aria-controls="flush-collapse9">
-                                        {% translate "Worshops & Tutorials session" %}
-                                    </button>
-                                </h4>
-                                <div id="flush-collapse9"
-                                     class="accordion-collapse collapse"
-                                     aria-labelledby="flush-heading9"
-                                     data-bs-parent="#ACC-highlights">
-                                    <div class="accordion-body">
-                                        {% blocktranslate %}
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-heading9">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse9"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapse9">
+                                    {% translate "Worshops & Tutorials session" %}
+                                </button>
+                            </h4>
+                            <div id="flush-collapse9"
+                                 class="accordion-collapse collapse"
+                                 aria-labelledby="flush-heading9"
+                                 data-bs-parent="#ACC-highlights">
+                                <div class="accordion-body">
+                                    {% blocktranslate %}
                                         We invite proposals for events that promote discussion, interdisciplinary exchange and interaction, scholarly discourse,
                                         and creative and critical thinking, rather than being mere mini-conferences.
                                         {% endblocktranslate %}
-                                        <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-workshops-tutorials/"
-                                           class="text_primary">{% translate "Learn more" %}</a>
-                                    </div>
+                                    <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-workshops-tutorials/"
+                                       class="text_primary">{% translate "Learn more" %}</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-heading11">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse11"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapse11">
+                                    {% translate "Marketplace" %}
+                                </button>
+                            </h4>
+                            <div id="flush-collapse11"
+                                 class="accordion-collapse collapse"
+                                 aria-labelledby="flush-heading11"
+                                 data-bs-parent="#ACC-highlights">
+                                <div class="accordion-body">
+                                    {% blocktranslate %}
+                                        It is a virtual showroom to offer visibility and the opportunity to a dozen a dozen entrepreneurs to
+                                        exhibit and sell their their innovative ideas, products and services.
+                                        {% endblocktranslate %}
                                 </div>
                             </div>
                         </div>
@@ -390,198 +474,197 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="py-5">
-        <div class="container">
-            <div class="row justify-content-center py-3">
-                <div class="col-12 col-md-8">
-                    <h3 class="section-title text-center">
-                        {% translate "Organizations" %}
-                    </h3>
-                </div>
-            </div>
-            <div class="civa-partners-wrapper mt-4">
-                <div class="partners-item">
-                    <a href="https://africancitieslab.org/" target="_blank" class="d-block">
-                        <img alt="African Cties Lab"
-                             src="{% static "images/assets/logo-acl.png" %}"/>
-                    </a>
-                </div>
-                <div class="partners-item">
-                    <a href="https://epfl.ch" target="_blank" class="d-block">
-                        <img alt="EPFL" src="{% static "images/assets/partners/cus.png" %}"/>
-                    </a>
-                </div>
-                <div class="partners-item">
-                    <a href="https://semecity.bj/en" target="_blank" class="d-block">
-                        <img alt="Seme City"
-                             src="{% static "images/assets/partners/semecity.png" %}"/>
-                    </a>
-                </div>
+    </div>
+</section>
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center py-3">
+            <div class="col-12 col-md-8">
+                <h3 class="section-title text-center">
+                    {% translate "Organizations" %}
+                </h3>
             </div>
         </div>
-    </section>
-    <section class="py-5">
-        <div class="container pb-5">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
-                    <h3 class="section-title text-center">
-                        {% translate "African Cities Lab partners" %}
-                    </h3>
-                </div>
+        <div class="civa-partners-wrapper mt-4">
+            <div class="partners-item">
+                <a href="https://africancitieslab.org/" target="_blank" class="d-block">
+                    <img alt="African Cties Lab"
+                         src="{% static "images/assets/logo-acl.png" %}"/>
+                </a>
             </div>
-            <div class="civa-partners-wrapper mt-3 row-title">
-                <div class="partners-item">
-                    <a href="https://seco.admin.ch/seco/en/home.html"
-                       target="_blank"
-                       class="d-block w-75">
-                        <img alt="SECO" src="{% static "images/assets/partners/seco.png" %}"/>
-                    </a>
-                </div>
+            <div class="partners-item">
+                <a href="https://epfl.ch" target="_blank" class="d-block">
+                    <img alt="EPFL" src="{% static "images/assets/partners/cus.png" %}"/>
+                </a>
             </div>
-            <div class="civa-partners-wrapper">
-                <div class="partners-item">
-                    <a href="https://epfl.ch" target="_blank" class="d-block">
-                        <img alt="EPFL" src="{% static "images/assets/partners/epfl.png" %}"/>
-                    </a>
-                </div>
-                <div class="partners-item">
-                    <a href="https://semecity.bj/en" target="_blank" class="d-block">
-                        <img alt="Seme City"
-                             src="{% static "images/assets/partners/semecity.png" %}"/>
-                    </a>
-                </div>
-                <div class="partners-item">
-                    <a href="https://um6p.ma" target="_blank" class="d-block">
-                        <img alt="UM6P" src="{% static "images/assets/partners/um6p.png" %}"/>
-                    </a>
-                </div>
-                <div class="partners-item">
-                    <a href="https://www.ucar.rnu.tn" target="_blank" class="d-block">
-                        <img alt="UCAR" src="{% static "images/assets/partners/ucar.png" %}"/>
-                    </a>
-                </div>
-                <div class="partners-item">
-                    <a href="https://www.knust.edu.gh" target="_blank" class="d-block">
-                        <img alt="KNUST" src="{% static "images/assets/partners/knust.png" %}"/>
-                    </a>
-                </div>
-                <div class="partners-item">
-                    <a href="https://ur.ac.rw" target="_blank" class="d-block">
-                        <img alt="UR" src="{% static "images/assets/partners/ur.png" %}"/>
-                    </a>
-                </div>
-                <div class="partners-item">
-                    <a href="https://www.uct.ac.za" target="_blank" class="d-block">
-                        <img alt="UCT" src="{% static "images/assets/partners/uct.png" %}"/>
-                    </a>
-                </div>
+            <div class="partners-item">
+                <a href="https://semecity.bj/en" target="_blank" class="d-block">
+                    <img alt="Seme City"
+                         src="{% static "images/assets/partners/semecity.png" %}"/>
+                </a>
             </div>
         </div>
-    </section>
-    <!--section class="pb-5">
-        <div class="container-xl">
-            <div class="row d-flex justify-content-center">
-                <div class="col-12 col-lg-6 pt-5 font-size-16">
-                    <h3 class="section-title mb-4">
-                        {% translate "Venues & Contacts" %}
+    </div>
+</section>
+<section class="py-5">
+    <div class="container pb-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <h3 class="section-title text-center">
+                    {% translate "African Cities Lab partners" %}
+                </h3>
+            </div>
+        </div>
+        <div class="civa-partners-wrapper mt-3 row-title">
+            <div class="partners-item">
+                <a href="https://seco.admin.ch/seco/en/home.html"
+                   target="_blank"
+                   class="d-block w-75">
+                    <img alt="SECO" src="{% static "images/assets/partners/seco.png" %}"/>
+                </a>
+            </div>
+        </div>
+        <div class="civa-partners-wrapper">
+            <div class="partners-item">
+                <a href="https://epfl.ch" target="_blank" class="d-block">
+                    <img alt="EPFL" src="{% static "images/assets/partners/epfl.png" %}"/>
+                </a>
+            </div>
+            <div class="partners-item">
+                <a href="https://semecity.bj/en" target="_blank" class="d-block">
+                    <img alt="Seme City"
+                         src="{% static "images/assets/partners/semecity.png" %}"/>
+                </a>
+            </div>
+            <div class="partners-item">
+                <a href="https://um6p.ma" target="_blank" class="d-block">
+                    <img alt="UM6P" src="{% static "images/assets/partners/um6p.png" %}"/>
+                </a>
+            </div>
+            <div class="partners-item">
+                <a href="https://www.ucar.rnu.tn" target="_blank" class="d-block">
+                    <img alt="UCAR" src="{% static "images/assets/partners/ucar.png" %}"/>
+                </a>
+            </div>
+            <div class="partners-item">
+                <a href="https://www.knust.edu.gh" target="_blank" class="d-block">
+                    <img alt="KNUST" src="{% static "images/assets/partners/knust.png" %}"/>
+                </a>
+            </div>
+            <div class="partners-item">
+                <a href="https://ur.ac.rw" target="_blank" class="d-block">
+                    <img alt="UR" src="{% static "images/assets/partners/ur.png" %}"/>
+                </a>
+            </div>
+            <div class="partners-item">
+                <a href="https://www.uct.ac.za" target="_blank" class="d-block">
+                    <img alt="UCT" src="{% static "images/assets/partners/uct.png" %}"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% comment %}
+    <section class="py-5" style="background-image: url({% static "images/assets/banner-pattern.png" %})">
+        <div class="container-xl py-3">
+            <div class="row justify-content-between align-items-center text-white">
+                <div class="col-12 col-md-4">
+                    <h3 class="section-title mb-2">
+                        {% translate "Get notified about event" %}
                     </h3>
-                    <h4 class="mb-2 text_secondary">
-                        {% translate "Sèmè One, Cotonou, Benin" %}
-                    </h4>
-                    <p class="pt-2">
-                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "In person & Online Event" %}
-                    </p>
-                    <p>
-                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "May 23 & 24" %}
-                    </p>
-                    <div class="mt-3 mb-4">
-                        {% blocktranslate %}
-            Follow us on social networks or write to us for any more information or request about
-            the event and how to become a partner.
-            {% endblocktranslate %}
-                        <a href="{% url 'contact' %}" class="text_primary">{% translate "Learn more" %}</a>
-                    </div>
                     <div>
-                        <h6 class="mb-2">
-                            {% translate "For any request:" %}
-                        </h6>
-                        <a href="mailto:info-acc@africancitieslab.org" class="text_primary">info-acc@africancitieslab.org</a>
+                        {% blocktranslate %}
+                        Register to our newsletter to be first to hear about speakers annoucements, program release, special events, and much more!
+                        {% endblocktranslate %}
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 pt-5 p-lg-5">
-                    <img alt="Sèmè One" src="{% static 'images/assets/semeone.jpeg' %}"/>
-                </div>
-            </div>
-        </div>
-</section-->
-    <section class="bg-map"
-             style="background-image: url({% static "images/assets/bg-map.jpeg" %})">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 text-center">
-                    <h3 class="section-title mb-4">
-                        <span class="font-weight-500">
-                            {% blocktranslate %}
-                            This conference is international, multi-site and <span class="text_primary">online</span>.
-                            {% endblocktranslate %}
-                        </span>
-                    </h3>
-                </div>
-            </div>
-            <div class="tm-processbox-wrapper">
-                <div class="tm-processbox">
-                    <div class="tm-box-image">
-                        <div class="process-num">
-                            <span class="number"><i class="fas fa-map-marker-alt"></i></span>
+                <div class="col-12 col-md-7">
+                    <form method="post" action="">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-12 col-lg-5 mt-3">
+                                <input type="text" name="NAME" class="form-control" placeholder="{% translate 'Your First and Last Name' %}" required>
+                            </div>
+                            <div class="col-12 col-lg-5 mt-3">
+                                <input type="email" name="EMAIL" class="form-control" placeholder="{% translate 'Your email here' %}" required>
+                            </div>
+                            <div class="col-12 col-lg-2 mt-3 text-center">
+                                <button type="submit" class="btn h-100 btn__primary btn__small">{% translate "Register" %}</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tm-box-content">
-                        <div class="tm-box-title">
-                            <h4>
-                                {% translate "Benin" %}
-                            </h4>
-                        </div>
-                        <div class="tm-box-description">
-                            {% translate "Sèmè One, Cotonou" %}
-                        </div>
-                    </div>
-                </div>
-                <div class="tm-processbox">
-                    <div class="tm-box-image">
-                        <div class="process-num">
-                            <span class="number"><i class="fas fa-map-marker-alt"></i></span>
-                        </div>
-                    </div>
-                    <div class="tm-box-content">
-                        <div class="tm-box-title">
-                            <h4>
-                                {% translate "Marocco" %}
-                            </h4>
-                        </div>
-                        <div class="tm-box-description">
-                            {% translate "Mohammed VI Polytechnic University, Benguerir" %}
-                        </div>
-                    </div>
-                </div>
-                <div class="tm-processbox">
-                    <div class="tm-box-image">
-                        <div class="process-num">
-                            <span class="number"><i class="fas fa-map-marker-alt"></i></span>
-                        </div>
-                    </div>
-                    <div class="tm-box-content">
-                        <div class="tm-box-title">
-                            <h4>
-                                {% translate "Ghana" %}
-                            </h4>
-                        </div>
-                        <div class="tm-box-description">
-                            {% translate "Kwame Nkrumah University of Science and Technology, Kumasi" %}
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
+{% endcomment %}
+<section class="bg-map"
+         style="background-image: url({% static "images/assets/bg-map.jpeg" %})">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 text-center">
+                <h3 class="section-title mb-4">
+                    <span class="font-weight-500">
+                        {% blocktranslate %}
+                            An multi-site, virtual and immersive <span class="text_primary">event experience</span>.
+                            {% endblocktranslate %}
+                    </span>
+                </h3>
+            </div>
+        </div>
+        <div class="tm-processbox-wrapper">
+            <div class="tm-processbox">
+                <div class="tm-box-image">
+                    <div class="process-num">
+                        <span class="number"><i class="fas fa-map-marker-alt"></i></span>
+                    </div>
+                </div>
+                <div class="tm-box-content">
+                    <div class="tm-box-title">
+                        <h4>
+                            {% translate "Benin" %}
+                        </h4>
+                    </div>
+                    <div class="tm-box-description">
+                        {% translate "Sèmè City, Cotonou" %}
+                    </div>
+                </div>
+            </div>
+            <div class="tm-processbox">
+                <div class="tm-box-image">
+                    <div class="process-num">
+                        <span class="number"><i class="fas fa-map-marker-alt"></i></span>
+                    </div>
+                </div>
+                <div class="tm-box-content">
+                    <div class="tm-box-title">
+                        <h4>
+                            {% translate "Online" %}
+                        </h4>
+                    </div>
+                    <div class="tm-box-description">
+                        {% translate "Engage via our virtual platform as you would at a physical event." %}
+                    </div>
+                </div>
+            </div>
+            <div class="tm-processbox">
+                <div class="tm-box-image">
+                    <div class="process-num">
+                        <span class="number"><i class="fas fa-map-marker-alt"></i></span>
+                    </div>
+                </div>
+                <div class="tm-box-content">
+                    <div class="tm-box-title">
+                        <h4>
+                            {% translate "Morocco" %}
+                        </h4>
+                    </div>
+                    <div class="tm-box-description">
+                        {% translate "Mohammed VI Polytechnic University, Ben guerir" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock content %}
