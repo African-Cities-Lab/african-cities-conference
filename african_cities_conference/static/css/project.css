@@ -983,8 +983,6 @@ a.nav-link:hover {
   padding: 80px 0 125px;
   min-height: 485px;
   color: #fff;
-  display: flex;
-  align-items: center;
 }
 
 .civa-date {
