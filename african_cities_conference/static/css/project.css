@@ -1896,6 +1896,12 @@ a.nav-link:hover {
   #acc-program-content .program-list .program-content .program-title {
     font-size: 20px;
   }
+
+  .acl-summit {
+    width: 100%;
+    height: 681px;
+    object-fit: cover;
+  }
 }
 
 @media (min-width: 1200px) {
