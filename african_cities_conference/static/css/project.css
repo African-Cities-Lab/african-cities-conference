@@ -466,6 +466,12 @@ template {
   font-weight: bold;
   font-style: italic;
 }
+@font-face {
+  font-family: "Haudrey";
+  src: url("../fonts/haudrey/Haudrey.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 /*----------------------------------------*/
 /*  Basic CSS
 /*----------------------------------------*/
@@ -504,6 +510,15 @@ h5,
   font-weight: 700;
   margin: 0;
   padding: 0;
+}
+
+.xxl-title-font-family {
+  font-family: "Haudrey", "Biko", sans-serif;
+}
+
+.xxl-title {
+  font-size: 8.5em;
+  line-height: 0.88;
 }
 
 b,
@@ -982,6 +997,8 @@ a.nav-link:hover {
   background-repeat: no-repeat;
   padding: 80px 0 125px;
   min-height: 485px;
+  display: flex;
+  align-items: center;
   color: #fff;
 }
 
@@ -1309,8 +1326,11 @@ a.nav-link:hover {
 }
 
 .mkdf-process-card {
-  box-shadow: 0 0 8px 8px rgb(241 242 245 / 25%);
+  border: 1px solid #f7f8fa;
+  box-shadow: -1px 14px 12px rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
   padding: 1rem;
+  min-height: 185px;
 }
 
 .cfp-card {
@@ -1665,6 +1685,10 @@ a.nav-link:hover {
   .section-title,
   .font-size-2-5em {
     font-size: 2.3em;
+  }
+
+  .xxl-title {
+    font-size: 4.5em;
   }
 
   .text-align-left__max-576 {
