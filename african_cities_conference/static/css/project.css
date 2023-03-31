@@ -1119,10 +1119,10 @@ a.nav-link:hover {
 
 .civa-banner {
   background-image: linear-gradient(
-      rgba(84, 84, 84, 0.5) 12%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(84, 84, 84, 0.01) 12%,
+      rgba(0, 0, 0, 0.3) 100%
     ),
-    url("../images/assets/icac-banner-image.jpg");
+    url("../images/assets/2023_summit_img.jpeg");
   position: relative;
 }
 
