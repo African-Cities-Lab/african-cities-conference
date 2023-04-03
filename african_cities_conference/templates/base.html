@@ -98,9 +98,9 @@
                     </button>
                     <div id="navbar-responsive"
                          class="collapse navbar-collapse justify-content-between">
-                        <ul class="navbar-nav text-uppercase mx-5">
+                        <ul class="navbar-nav text-uppercase mx-3">
                             {% url 'home' as url %}
-                            <li class="nav-item mx-2">
+                            <li class="nav-item mx-1">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% url 'home' %}">{% translate "Home" %}</a>
                             </li>
@@ -110,22 +110,22 @@
                                    href="{% localized_slugurl 'program' %}">{% translate "Program" %}</a>
                             </li>
                             {% localized_slugurl 'speakers' as url %}
-                            <li class="nav-item mx-2">
+                            <li class="nav-item mx-1">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% localized_slugurl 'speakers' %}">{% translate "Speakers" %}</a>
                             </li>
                             {% localized_slugurl 'commitee' as url %}
-                            <li class="nav-item mx-2">
+                            <li class="nav-item mx-1">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% localized_slugurl 'commitee' %}">{% translate "Committee" %}</a>
                             </li>
                             {% localized_slugurl 'acc-calls' as url %}
-                            <li class="nav-item mx-2">
+                            <li class="nav-item mx-1">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% localized_slugurl 'acc-calls' %}">{% translate "Calls " %}</a>
                             </li>
                             {% url 'contact' as url %}
-                            <li class="nav-item mx-2">
+                            <li class="nav-item mx-1">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% url 'contact' %}">{% translate "Venues & Contacts" %}</a>
                             </li>
