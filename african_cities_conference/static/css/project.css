@@ -517,7 +517,7 @@ h5,
 }
 
 .xxl-title {
-  font-size: 8.5em;
+  font-size: 7em;
   line-height: 0.88;
 }
 
@@ -1119,10 +1119,10 @@ a.nav-link:hover {
 
 .civa-banner {
   background-image: linear-gradient(
-      rgba(84, 84, 84, 0.5) 12%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(64, 39, 129, 0.25),
+      rgba(64, 39, 129, 0.2)
     ),
-    url("../images/assets/icac-banner-image.jpg");
+    url("../images/assets/2023_summit_img.jpeg");
   position: relative;
 }
 
