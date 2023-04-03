@@ -273,5 +273,12 @@ WAGTAILADMIN_RICH_TEXT_EDITORS = {
     },
 }
 
+# Mailchimp
+# ------------------------------------------------------------------------------
+MAILCHIMP_API_KEY = env("MAILCHIMP_API_KEY")
+MAILCHIMP_DATA_CENTER = env("MAILCHIMP_DATA_CENTER")
+MAILCHIMP_NEWSLETTER_EN_ID = env("MAILCHIMP_NEWSLETTER_EN_ID")
+MAILCHIMP_NEWSLETTER_FR_ID = env("MAILCHIMP_NEWSLETTER_FR_ID")
+
 # Your stuff...
 # ------------------------------------------------------------------------------
