@@ -825,7 +825,7 @@ a:hover {
 /*----------------------------------------*/
 .nav-link {
   color: #000;
-  font-weight: bold;
+  font-weight: 500;
   position: relative;
   display: block;
 }
@@ -1120,7 +1120,7 @@ a.nav-link:hover {
 .civa-banner {
   background-image: linear-gradient(
       rgba(64, 39, 129, 0.25),
-      rgba(64, 39, 129, 0.2)
+      rgba(64, 39, 129, 0.45)
     ),
     url("../images/assets/2023_summit_img.jpeg");
   position: relative;

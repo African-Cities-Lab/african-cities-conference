@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 18:39+0200\n"
+"POT-Creation-Date: 2023-04-03 19:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,7 +228,7 @@ msgid "UM6P (Ben Guérir, Morocco)"
 msgstr "UM6P (Ben Guérir, Maroc)"
 
 #: african_cities_conference/home/templates/home/home.html:44
-#: african_cities_conference/home/templates/home/home.html:654
+#: african_cities_conference/home/templates/home/home.html:669
 msgid "Online"
 msgstr "En ligne"
 
@@ -251,13 +251,13 @@ msgstr "Secondes"
 #: african_cities_conference/home/templates/home/home.html:85
 msgid ""
 "\n"
-"                        Join us for the African Cities Lab 2023 Summit - "
-"Digital and Smart Cities: Datafrication\n"
+"                        African Cities Lab 2023 SUMMIT - Digital and Smart "
+"Cities: Datafrication\n"
 "                        "
 msgstr ""
 "\n"
-"Rejoignez-nous pour l'African Cities Lab 2023 Summit - Villes numériques et "
-"intelligentes : Datafrication\n"
+"African Cities Lab 2023 SUMMIT - Villes numériques et intelligentes : "
+"Datafrication\n"
 "                        "
 
 #: african_cities_conference/home/templates/home/home.html:90
@@ -281,7 +281,7 @@ msgstr ""
 #: african_cities_conference/home/templates/home/home.html:97
 msgid ""
 "\n"
-"                        The African Cities Lab 2023 Summit aims at creating "
+"                        The African Cities Lab 2023 SUMMIT aims at creating "
 "a truly collective, international and intergenerational platform,\n"
 "                        connected and open to the world, where ALL urban "
 "development actors will reflect on digital and smart cities as new\n"
@@ -299,7 +299,7 @@ msgstr ""
 #: african_cities_conference/home/templates/home/home.html:104
 msgid ""
 "\n"
-"                        Over the two days of African Cities Lab 2023 Summit, "
+"                        Over the two days of African Cities Lab 2023 SUMMIT, "
 "the tomorrow’s and today’s actors of African cities and of urban and\n"
 "                        sustainable development will meet to discuss about: "
 "collecting data in real time, establishing communication\n"
@@ -429,7 +429,7 @@ msgid ""
 "                        The organizers of the conference invite all actors "
 "of the academic and scientific world to submit their contributions\n"
 "                        on the theme of digital and smart cities within the "
-"framework of the African Cities Lab 2023 Summit to be held on May\n"
+"framework of the African Cities Lab 2023 SUMMIT to be held on May\n"
 "                        23 and 24, 2023 in Cotonou, Benin and Ben Guérir, "
 "Morocco.\n"
 "              "
@@ -438,7 +438,7 @@ msgstr ""
 "Les organisateurs de la conférence invitent tous les acteurs du monde "
 "académique et scientifique à soumettre leurs contributions \n"
 "sur le thème des villes numériques et intelligentes dans le cadre du African "
-"Cities Lab 2023 Summit  qui se tiendra les 23 et 24 mai \n"
+"Cities Lab 2023 SUMMIT  qui se tiendra les 23 et 24 mai \n"
 "2023 à Cotonou, au Bénin et à Ben Guérir, au Maroc.\n"
 "              "
 
@@ -523,15 +523,16 @@ msgstr ""
 "intelligentes.\n"
 "                            "
 
-#: african_cities_conference/home/templates/home/home.html:327
+#: african_cities_conference/home/templates/home/home.html:326
+#: african_cities_conference/home/templates/home/home.html:476
 msgid "Go to the program"
 msgstr "Voir le programme"
 
-#: african_cities_conference/home/templates/home/home.html:341
+#: african_cities_conference/home/templates/home/home.html:339
 msgid "Preliminary Webinars"
 msgstr "Webinaires préliminaires"
 
-#: african_cities_conference/home/templates/home/home.html:349
+#: african_cities_conference/home/templates/home/home.html:347
 msgid ""
 "\n"
 "                          Through a series of 4 webinars, the partners of "
@@ -564,22 +565,22 @@ msgstr ""
 "ou pourraient être plus efficaces dans l'exploitation du numérique pour "
 "atteindre les ODD localement."
 
-#: african_cities_conference/home/templates/home/home.html:360
-#: african_cities_conference/home/templates/home/home.html:397
-#: african_cities_conference/home/templates/home/home.html:422
-#: african_cities_conference/home/templates/home/home.html:447
+#: african_cities_conference/home/templates/home/home.html:358
+#: african_cities_conference/home/templates/home/home.html:395
+#: african_cities_conference/home/templates/home/home.html:420
+#: african_cities_conference/home/templates/home/home.html:445
 msgid "Learn more"
 msgstr "En savoir plus"
 
-#: african_cities_conference/home/templates/home/home.html:371
+#: african_cities_conference/home/templates/home/home.html:369
 msgid "Innovation Labs"
 msgstr "Labs d’innovation"
 
-#: african_cities_conference/home/templates/home/home.html:383
+#: african_cities_conference/home/templates/home/home.html:381
 msgid "Doctoral Consortium & Spring school"
 msgstr "Consortium doctoral & école de printemps"
 
-#: african_cities_conference/home/templates/home/home.html:391
+#: african_cities_conference/home/templates/home/home.html:389
 msgid ""
 "\n"
 "                                        The DC offers the opportunity to "
@@ -598,11 +599,11 @@ msgstr ""
 "pairs du domaine de leur sujet de thèse. \n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/home.html:409
+#: african_cities_conference/home/templates/home/home.html:407
 msgid "Poster & Demos Session"
 msgstr "Session posters et démos"
 
-#: african_cities_conference/home/templates/home/home.html:417
+#: african_cities_conference/home/templates/home/home.html:415
 msgid ""
 "\n"
 "                                        The poster and demo session of the "
@@ -619,11 +620,11 @@ msgstr ""
 "innovantes dans un cadre informel et interactif.\n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/home.html:434
+#: african_cities_conference/home/templates/home/home.html:432
 msgid "Worshops & Tutorials session"
 msgstr "Session Ateliers & Didacticiels"
 
-#: african_cities_conference/home/templates/home/home.html:442
+#: african_cities_conference/home/templates/home/home.html:440
 msgid ""
 "\n"
 "                                        We invite proposals for events that "
@@ -640,11 +641,11 @@ msgstr ""
 "scientifique et la réflexion créative et critique.\n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/home.html:459
+#: african_cities_conference/home/templates/home/home.html:457
 msgid "Marketplace"
 msgstr ""
 
-#: african_cities_conference/home/templates/home/home.html:467
+#: african_cities_conference/home/templates/home/home.html:465
 msgid ""
 "\n"
 "                                        It is a virtual showroom to offer "
@@ -659,19 +660,19 @@ msgstr ""
 "et de vendre leur idées, produits et services innovants.\n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/home.html:485
+#: african_cities_conference/home/templates/home/home.html:489
 msgid "Organizations"
 msgstr "Organisateurs"
 
-#: african_cities_conference/home/templates/home/home.html:515
+#: african_cities_conference/home/templates/home/home.html:519
 msgid "African Cities Lab partners"
 msgstr "Partenaires de l'African Cities Lab"
 
-#: african_cities_conference/home/templates/home/home.html:574
+#: african_cities_conference/home/templates/home/home.html:580
 msgid "Let's keep in touch"
 msgstr "Restons en contact"
 
-#: african_cities_conference/home/templates/home/home.html:577
+#: african_cities_conference/home/templates/home/home.html:583
 msgid ""
 "\n"
 "                        Register to our newsletter to be first to hear about "
@@ -680,23 +681,23 @@ msgid ""
 msgstr ""
 "\n"
 "Abonnez-vous à notre newsletter pour être les premiers à être informés de "
-"l'annonce des intervenants, de la publication des programmes, "
-"et de bien d'autres choses encore !\n"
+"l'annonce des intervenants, de la publication des programmes, et de bien "
+"d'autres choses encore !\n"
 "                        "
 
-#: african_cities_conference/home/templates/home/home.html:587
+#: african_cities_conference/home/templates/home/home.html:596
 msgid "Your First and Last Name"
 msgstr "Votre nom et prénom"
 
-#: african_cities_conference/home/templates/home/home.html:590
+#: african_cities_conference/home/templates/home/home.html:603
 msgid "Your email here"
 msgstr "Votre email"
 
-#: african_cities_conference/home/templates/home/home.html:594
+#: african_cities_conference/home/templates/home/home.html:609
 msgid "Register"
 msgstr "S'inscrire"
 
-#: african_cities_conference/home/templates/home/home.html:620
+#: african_cities_conference/home/templates/home/home.html:635
 msgid ""
 "\n"
 "                            An multi-site, virtual and immersive <span class="
@@ -708,33 +709,33 @@ msgstr ""
 "et immersive sur plusieurs sites\n"
 "                    "
 
-#: african_cities_conference/home/templates/home/home.html:637
+#: african_cities_conference/home/templates/home/home.html:652
 msgid "Benin"
 msgstr "Bénin"
 
-#: african_cities_conference/home/templates/home/home.html:641
+#: african_cities_conference/home/templates/home/home.html:656
 msgid "Sèmè City, Cotonou"
 msgstr ""
 
-#: african_cities_conference/home/templates/home/home.html:658
+#: african_cities_conference/home/templates/home/home.html:673
 msgid "Engage via our virtual platform as you would at a physical event."
 msgstr ""
 "Engagez-vous via notre plateforme virtuelle comme vous le feriez lors d'un "
 "événement physique."
 
-#: african_cities_conference/home/templates/home/home.html:671
+#: african_cities_conference/home/templates/home/home.html:686
 msgid "Morocco"
 msgstr "Maroc"
 
-#: african_cities_conference/home/templates/home/home.html:675
+#: african_cities_conference/home/templates/home/home.html:690
 msgid "Mohammed VI Polytechnic University, Ben guerir"
 msgstr "Université Mohammed VI Polytechnique, Ben Guérir"
 
-#: african_cities_conference/home/views.py:66
+#: african_cities_conference/home/views.py:63
 msgid "Thank you for subscribing to our newsletter!"
 msgstr ""
 
-#: african_cities_conference/home/views.py:73
+#: african_cities_conference/home/views.py:68
 msgid "Your email is already registered!"
 msgstr ""
 
