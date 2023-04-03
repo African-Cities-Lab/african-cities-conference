@@ -1119,8 +1119,8 @@ a.nav-link:hover {
 
 .civa-banner {
   background-image: linear-gradient(
-      rgba(84, 84, 84, 0.01) 12%,
-      rgba(0, 0, 0, 0.3) 100%
+      rgba(64, 39, 129, 0.25),
+      rgba(64, 39, 129, 0.3)
     ),
     url("../images/assets/2023_summit_img.jpeg");
   position: relative;
