@@ -2,19 +2,19 @@
 {% load home_tags i18n static %}
 {% block static_meta_tag %}
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="African Cities Lab - 2023 Summit"/>
+    <meta name="twitter:title" content="African Cities Lab - 2023 SUMMIT"/>
     <meta name="twitter:description"
           content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
     <meta name="twitter:site" content="@AfricanCtiesLab" />
     <meta itemprop='image'
           content="{% static 'images/assets/small-logo.png' %}"/>
-    <meta property="og:title" content="African Cities Lab - 2023 Summit"/>
+    <meta property="og:title" content="African Cities Lab - 2023 SUMMIT"/>
     <meta property="og:description"
           content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
-    <meta property="og:site_name" content="African Cities Lab - 2023 Summit" />
+    <meta property="og:site_name" content="African Cities Lab - 2023 SUMMIT" />
     <meta itemprop='image'
           content="{% static 'images/assets/small-logo.png' %}"/>
-    <meta itemprop="name" content="African Cities Lab - 2023 Summit"/>
+    <meta itemprop="name" content="African Cities Lab - 2023 SUMMIT"/>
     <meta itemprop='description'
           content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
     <meta itemprop='image'
@@ -33,8 +33,13 @@
                         {% translate "Hybrid event" %}<span class="text_primary mx-2">|</span>{% translate "May 23-24" %}
                     </h5>
                     <h1 class="font-size-3-50em mt-3 mb-4">{% translate "African Cities Lab 2023 SUMMIT" %}</h1>
-                    <div class="xxl-title-font-family xxl-title">{% translate "DATAFRICATION" %}</div>
-                    <div class="h2 font-weight-500 text-center">{% translate "Digital and smart cities" %}</div>
+                    <!--div class="xxl-title-font-family xxl-title">{% translate "DATAFRICATION" %}</div-->
+                    <!--div class="h2 font-weight-500 text-center">{% translate "Digital and smart cities" %}</div-->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-7">
+                            <div class="h1 font-size-2-75em font-weight-500">{% translate "Join the movement to transform African cities" %}</div>
+                        </div>
+                    </div>
                     <div class="font-size-18 pt-4 pb-5">
                         <i class="fas fa-map-marker-alt font-size-22 mx-2"></i>{% translate "Sèmè City (Cotonou, Benin)" %} | {% translate "UM6P (Ben Guérir, Morocco)" %} | {% translate "Online" %}
                     </div>
@@ -72,13 +77,13 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-5 d-none d-lg-block p-lg-5">
                     <img class="acl-summit"
-                         alt="About ACL 2023 Summit"
+                         alt="About ACL 2023 SUMMIT"
                          src="{% static 'images/assets/city-of-port-louis-mauritius.jpg' %}"/>
                 </div>
                 <div class="col-12 col-lg-6 font-size-16 pt-md-5">
                     <h3 class="font-weight-500 pb-3 pt-4">
                         {% blocktranslate %}
-                        Join a cross-sectoral event to uplift african cities development
+                        African Cities Lab 2023 SUMMIT - Digital and Smart Cities: Datafrication
                         {% endblocktranslate %}
                     </h3>
                     <p>
@@ -90,14 +95,14 @@
                     </p>
                     <p class="mt-1">
                         {% blocktranslate %}
-                        The African Cities Lab 2023 Summit aims at creating a truly collective, international and intergenerational platform,
+                        The African Cities Lab 2023 SUMMIT aims at creating a truly collective, international and intergenerational platform,
                         connected and open to the world, where ALL urban development actors will reflect on digital and smart cities as new
                         models for African cities.
                         {% endblocktranslate %}
                     </p>
                     <p class="mt-1">
                         {% blocktranslate %}
-                        Over the two days of African Cities Lab 2023 Summit, the tomorrow’s and today’s actors of African cities and of urban and
+                        Over the two days of African Cities Lab 2023 SUMMIT, the tomorrow’s and today’s actors of African cities and of urban and
                         sustainable development will meet to discuss about: collecting data in real time, establishing communication
                         networks to connect devices and people in Africa, analysing data to optimise the management of urban resources and
                         basic public services creation.
@@ -181,7 +186,7 @@
                     <p class="pt-3 font-size-16">
                         {% blocktranslate %}
                         The organizers of the conference invite all actors of the academic and scientific world to submit their contributions
-                        on the theme of digital and smart cities within the framework of the African Cities Lab 2023 Summit to be held on May
+                        on the theme of digital and smart cities within the framework of the African Cities Lab 2023 SUMMIT to be held on May
                         23 and 24, 2023 in Cotonou, Benin and Ben Guérir, Morocco.
               {% endblocktranslate %}
                     </p>
@@ -315,11 +320,9 @@
                             professionals and entrepreneurs, will work together to find solutions that make African Cities digital and smart.
                             {% endblocktranslate %}
                     </p>
-                    <div class="mt-5">
+                    <div class="mt-5 d-none d-lg-block">
                         <a class="btn btn__primary btn__small"
-                           href="https://acc2023.africancitieslab.org/en/program/">
-                            {% translate "Go to the program" %}
-                        </a>
+                           href="{% localized_slugurl 'program' %}">{% translate "Go to the program" %}</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 p-5">
@@ -466,6 +469,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="mt-5 d-lg-none text-center">
+                        <a class="btn btn__primary btn__small"
+                           href="{% localized_slugurl 'program' %}">
+                            {% translate "Go to the program" %}
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -559,40 +568,62 @@
         </div>
     </div>
 </section>
-{% comment %}
-    <section class="py-5" style="background-image: url({% static "images/assets/banner-pattern.png" %})">
-        <div class="container-xl py-3">
-            <div class="row justify-content-between align-items-center text-white">
-                <div class="col-12 col-md-4">
-                    <h3 class="section-title mb-2">
-                        {% translate "Get notified about event" %}
-                    </h3>
-                    <div>
-                        {% blocktranslate %}
+<section id="newsletter"
+         class="py-5"
+         style="background-image: url({% static "images/assets/banner-pattern.png" %});
+                background-size: cover">
+    <div class="container-xl py-3">
+        <div class="row justify-content-between align-items-center text-white">
+            <div class="col-12 col-md-4">
+                <h3 class="section-title mb-2">
+                    {% translate "Let's keep in touch" %}
+                </h3>
+                <div>
+                    {% blocktranslate %}
                         Register to our newsletter to be first to hear about speakers annoucements, program release, special events, and much more!
                         {% endblocktranslate %}
-                    </div>
-                </div>
-                <div class="col-12 col-md-7">
-                    <form method="post" action="">
-                        {% csrf_token %}
-                        <div class="row">
-                            <div class="col-12 col-lg-5 mt-3">
-                                <input type="text" name="NAME" class="form-control" placeholder="{% translate 'Your First and Last Name' %}" required>
-                            </div>
-                            <div class="col-12 col-lg-5 mt-3">
-                                <input type="email" name="EMAIL" class="form-control" placeholder="{% translate 'Your email here' %}" required>
-                            </div>
-                            <div class="col-12 col-lg-2 mt-3 text-center">
-                                <button type="submit" class="btn h-100 btn__primary btn__small">{% translate "Register" %}</button>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
+            <div class="col-12 col-md-7 ">
+                <form method="post" action="{% url 'newsletter' %}">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-12 col-lg-5 mt-3">
+                            <input type="text"
+                                   name="NAME"
+                                   class="form-control"
+                                   placeholder="{% translate "Your First and Last Name" %}"
+                                   required/>
+                        </div>
+                        <div class="col-12 col-lg-5 mt-3">
+                            <input type="email"
+                                   name="EMAIL"
+                                   class="form-control"
+                                   placeholder="{% translate "Your email here" %}"
+                                   required/>
+                        </div>
+                        <input name="site_language" type="hidden" value="{{ LANGUAGE_CODE }}" />
+                        <div class="col-12 col-lg-2 mt-3 text-center">
+                            <button type="submit" class="btn h-100 btn__primary btn__small">
+                                {% translate "Register" %}
+                            </button>
+                        </div>
+                    </div>
+                    <!-- message if email is sent -->
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="mt-1">
+                                <p class="m-0 text-white font-size-16">
+                                    {{ message }}
+                                </p>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </form>
+            </div>
         </div>
-    </section>
-{% endcomment %}
+    </div>
+</section>
 <section class="bg-map"
          style="background-image: url({% static "images/assets/bg-map.jpeg" %})">
     <div class="container">
