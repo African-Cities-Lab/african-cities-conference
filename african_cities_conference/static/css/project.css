@@ -581,12 +581,12 @@ select:focus,
 video:focus {
   outline: none;
   box-shadow: 0 0 0 0 !important;
-  border-color: #be3712 !important;
+  border-color: #be3e20 !important;
 }
 
 a {
   cursor: pointer;
-  color: #be3712;
+  color: #be3e20;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
   text-decoration: none;
@@ -599,7 +599,7 @@ a:focus {
 a:active,
 a.active,
 a:hover {
-  color: #be3712 !important;
+  color: #be3e20 !important;
   text-decoration: underline;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
@@ -608,7 +608,7 @@ a:hover {
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: #fff;
-  color: #be3712 !important;
+  color: #be3e20 !important;
 }
 
 *::-moz-selection {
@@ -670,22 +670,27 @@ a:hover {
 
 .font-size-2-5em {
   font-size: 2.5em;
+  line-height: 1.25;
 }
 
 .font-size-2-75em {
   font-size: 2.75em;
+  line-height: 1.25;
 }
 
 .font-size-4-5em {
   font-size: 4.5em;
+  line-height: 1.25;
 }
 
 .font-size-4em {
   font-size: 4em;
+  line-height: 1.25;
 }
 
 .font-size-3-50em {
   font-size: 3.5em;
+  line-height: 1.25;
 }
 
 .text-justify {
@@ -693,14 +698,14 @@ a:hover {
 }
 
 .btn__primary {
-  background-color: #be3712;
-  border-color: #be3712;
+  background-color: #be3e20;
+  border-color: #be3e20;
   color: #fff;
   font-weight: 500;
 }
 
 .btn__secondary {
-  background-color: #402781;
+  background-color: #442683;
   border: 0;
   color: #fff;
   font-weight: 500;
@@ -708,24 +713,24 @@ a:hover {
 
 .btn__secondary:hover {
   color: #fff !important;
-  background: #402781;
+  background: #442683;
 }
 
 .btn-outline__primary {
   font-weight: bold;
   color: #000;
-  border-color: #be3712;
+  border-color: #be3e20;
   border: 2px solid;
 }
 
 .btn__primary:hover {
-  color: #be3712 !important;
+  color: #be3e20 !important;
   background: #fff !important;
 }
 
 .btn-outline__primary:hover {
-  background-color: #be3712;
-  border-color: #be3712;
+  background-color: #be3e20;
+  border-color: #be3e20;
   color: #fff !important;
 }
 
@@ -749,11 +754,21 @@ a:hover {
 }
 
 .bg_primary {
-  background-color: #be3712;
+  background-color: #be3e20;
 }
 
 .bg_secondary {
-  background-color: #402781;
+  background-color: #442683;
+}
+
+.bg_tertiary {
+  background-color: #49a2be;
+}
+
+._bg-pattern-new {
+  background-image: url("../images/assets/banner-aclsummit.jpg");
+  background-position: top center;
+  background-size: cover;
 }
 
 .btn-arrow > i {
@@ -761,11 +776,11 @@ a:hover {
 }
 
 .text_primary {
-  color: #be3712;
+  color: #be3e20;
 }
 
 .text_secondary {
-  color: #402781;
+  color: #442683;
 }
 
 .top-0 {
@@ -797,9 +812,9 @@ a:hover {
 }
 
 .append-form button[type="submit"]:hover {
-  color: #be3712 !important;
+  color: #be3e20 !important;
   background: #fff !important;
-  border-left: 1px solid #be3712;
+  border-left: 1px solid #be3e20;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
   -webkit-transition: all 0.5s ease-in-out !important;
@@ -833,7 +848,7 @@ a:hover {
 a.nav-link:focus,
 a.nav-link.active,
 a.nav-link:hover {
-  color: #be3712 !important;
+  color: #442683 !important;
   text-decoration: none !important;
 }
 
@@ -895,7 +910,7 @@ a.nav-link:hover {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: #be3712;
+  background: #be3e20;
   margin-left: 10px;
   animation: Blink 1s infinite;
   bottom: 13px;
@@ -908,8 +923,8 @@ a.nav-link:hover {
 .speakers-card .card-header::before {
   content: "";
   position: absolute;
-  background: #402781;
-  background: linear-gradient(180deg, rgba(64, 39, 129, 0) 0%, #402781 100%);
+  background: #442683;
+  background: linear-gradient(180deg, rgba(64, 39, 129, 0) 0%, #442683 100%);
   left: 0;
   top: 0;
   -webkit-transition: -webkit-transform 0.4s ease-in;
@@ -972,7 +987,7 @@ a.nav-link:hover {
 
 .mdl-speaker-social-list li > a {
   margin-right: 1rem;
-  color: #be3712 !important;
+  color: #be3e20 !important;
   font-size: 28px;
 }
 
@@ -1097,7 +1112,7 @@ a.nav-link:hover {
 }
 
 #ACC-highlights .accordion-button {
-  background: #402781;
+  background: #442683;
   color: #fff;
   font-size: 22px;
   margin: 1rem 0;
@@ -1118,11 +1133,7 @@ a.nav-link:hover {
 }
 
 .civa-banner {
-  background-image: linear-gradient(
-      rgba(64, 39, 129, 0.25),
-      rgba(64, 39, 129, 0.45)
-    ),
-    url("../images/assets/2023_summit_img.jpeg");
+  background-image: url("../images/assets/banner-aclsummit.jpg");
   position: relative;
 }
 
@@ -1175,7 +1186,7 @@ a.nav-link:hover {
 .count-box .count-box__order > h3 {
   width: 50px;
   height: 50px;
-  background: #be3712;
+  background: #be3e20;
   color: #fff;
   border-radius: 4px;
   text-align: center;
@@ -1196,7 +1207,7 @@ a.nav-link:hover {
 .platform-feature__card .card .card-body {
   -webkit-box-shadow: unset;
   box-shadow: unset;
-  border-bottom: 4px solid #be3712;
+  border-bottom: 4px solid #be3e20;
   padding: 1rem 2rem 2rem 2rem;
 }
 
@@ -1215,7 +1226,7 @@ a.nav-link:hover {
   border-top: 1px solid #ececec;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
-  border-bottom: 4px solid #be3712;
+  border-bottom: 4px solid #be3e20;
   border-radius: 0.25rem;
 }
 
@@ -1263,7 +1274,7 @@ a.nav-link:hover {
   position: absolute;
   border-radius: 5rem;
   border: 0.1rem solid #ecf1f9;
-  background: #402781;
+  background: #442683;
 }
 
 .acc-trails-content {
@@ -1320,7 +1331,7 @@ a.nav-link:hover {
   line-height: 46px;
   font-weight: 700;
   color: #fff;
-  background-color: #be3712;
+  background-color: #be3e20;
   border-radius: 100%;
   margin-bottom: 16px;
 }
@@ -1388,7 +1399,7 @@ a.nav-link:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #402781;
+  background-color: #442683;
   opacity: 0;
   transition: opacity 0.23s cubic-bezier(0.64, 0.04, 0.7, 0.09);
   z-index: 0;
@@ -1411,7 +1422,7 @@ a.nav-link:hover {
 
 .sidebar-menu .sidebar-item {
   max-width: 82%;
-  background: #402781;
+  background: #442683;
   display: block;
   color: #fff;
   font-size: 18px;
@@ -1465,7 +1476,7 @@ a.nav-link:hover {
   left: 0;
   bottom: 0;
   content: "";
-  background: #be3712;
+  background: #be3e20;
   width: 100%;
   height: 3px;
   position: absolute;
@@ -1474,7 +1485,7 @@ a.nav-link:hover {
 #acc-program-content .program-session {
   margin-top: 30px;
   padding: 0.75em;
-  background: #402781;
+  background: #442683;
   color: #fff;
   text-align: center;
   font-size: 22px;
@@ -1509,7 +1520,7 @@ a.nav-link:hover {
 
 #acc-program-content .program-list .program-hour-text::after {
   content: "";
-  background: #402781;
+  background: #442683;
   width: 16px;
   height: 16px;
   position: absolute;
@@ -1522,7 +1533,7 @@ a.nav-link:hover {
 }
 
 #acc-program-content .program-list .program-content {
-  border-bottom: 1px solid #402781;
+  border-bottom: 1px solid #442683;
   padding: 1.5rem;
   width: 100%;
 }
@@ -1583,7 +1594,7 @@ a.nav-link:hover {
   margin-right: 5px;
   font-size: 20px;
   font-weight: 500;
-  background-color: #be3712;
+  background-color: #be3e20;
   color: #fff;
   width: 46px;
   height: 46px;

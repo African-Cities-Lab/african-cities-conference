@@ -8,16 +8,6 @@
   align-items: center;
 }
 
-.block-one_column_block:nth-child(even) {
-  background: linear-gradient(
-    90deg,
-    rgba(190, 55, 18, 0.98) 0%,
-    rgba(128, 47, 72, 0.98) 54%,
-    rgba(64, 39, 129, 1) 100%
-  );
-  color: #fff;
-}
-
 .card-layout .card {
   border: 1px solid #ececec;
   transition: 0.5s;
@@ -28,6 +18,6 @@
 .card-layout .card .card-body {
   -webkit-box-shadow: unset;
   box-shadow: unset;
-  border-bottom: 4px solid #be3712;
+  border-bottom: 4px solid #be3e20;
   padding: 1rem 2rem 2rem 2rem;
 }
