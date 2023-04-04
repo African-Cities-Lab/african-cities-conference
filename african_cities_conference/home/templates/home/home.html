@@ -28,20 +28,21 @@
     <section class="civa-banner">
         <div class="container-lg position-relative">
             <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <h5 class="font-weight-500">
+                <div class="col-12">
+                    <!--h5 class="font-weight-500 text-center">
                         {% translate "Hybrid event" %}<span class="text_primary mx-2">|</span>{% translate "May 23-24" %}
-                    </h5>
-                    <h1 class="font-size-3-50em mt-3 mb-4">{% translate "African Cities Lab 2023 SUMMIT" %}</h1>
+                    </h5-->
+                    <!--h1 class="font-size-3-50em mt-3 mb-4">{% translate "African Cities Lab 2023 SUMMIT" %}</h1-->
                     <!--div class="xxl-title-font-family xxl-title">{% translate "DATAFRICATION" %}</div-->
                     <!--div class="h2 font-weight-500 text-center">{% translate "Digital and smart cities" %}</div-->
-                    <div class="row justify-content-center">
+                    <div class="row">
                         <div class="col-12 col-md-7">
-                            <div class="h1 font-size-2-75em font-weight-500">{% translate "Join the movement to transform African cities" %}</div>
+                            <div class="font-size-3-50em">{% translate "Join the movement to transform African cities" %}</div>
                         </div>
                     </div>
-                    <div class="font-size-18 pt-4 pb-5">
-                        <i class="fas fa-map-marker-alt font-size-22 mx-2"></i>{% translate "Sèmè City (Cotonou, Benin)" %} | {% translate "UM6P (Ben Guérir, Morocco)" %} | {% translate "Online" %}
+                    <div class="font-size-18 pt-3 pb-5">
+                        <span class="font-weight-bold font-size-22 mr-3">{% translate "MAY 23-24" %}</span>
+                        <span class="mx-2">{% translate "COTONOU" %} / {% translate "BEN GUERIR" %}</span>
                     </div>
                 </div>
             </div>
@@ -49,8 +50,7 @@
     </section>
     <section class="countdown-timer__section">
         <div class="countdown-timer__container">
-            <div class="text-white"
-                 style="background-image: url({% static "images/assets/banner-pattern.png" %})">
+            <div class="text-white _bg-pattern-new">
                 <div class="countdown-timer__widget">
                     <div class="timer-container position-relative">
                         <span id="days" class="h1"></span>
@@ -123,13 +123,13 @@
     <section>
         <div class="container-xl py-5">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-7 text-center">
+                <div class="col-12 col-md-10 text-center">
                     <h3 class="section-title mb-3">{% translate "Why should attend?" %}</h3>
                     <div class="font-size-16">
                         {% blocktranslate %}
-                        Creating a real <span class="text_primary">collective, international</span> and <span class="text_primary">intergenerational platform, connected</span> and
-                        <span class="text_primary">open</span> to the world, where <strong>ALL</strong> the actors of urban development will <span class="text_primary">think about
-                        digital and smart cities as new models of cities in Africa</span>.
+                        Creating a real collective, international and intergenerational platform, connected and
+                        open to the world, where <strong>ALL</strong> the actors of urban development will think about
+                        digital and smart cities as new models of cities in Africa.
                         {% endblocktranslate %}
                     </div>
                 </div>
@@ -178,7 +178,7 @@
             </div>
         </div>
     </section>
-    <section class="bg_secondary text-white py-3 mb-5">
+    <section class="text-white _bg-pattern-new py-3 mb-5">
         <div class="container-xl py-5">
             <div class="row justify-content-around align-items-center">
                 <div class="col-12 col-md-7">
@@ -568,10 +568,7 @@
         </div>
     </div>
 </section>
-<section id="newsletter"
-         class="py-5"
-         style="background-image: url({% static "images/assets/banner-pattern.png" %});
-                background-size: cover">
+<section id="newsletter" class="py-5 _bg-pattern-new">
     <div class="container-xl py-3">
         <div class="row justify-content-between align-items-center text-white">
             <div class="col-12 col-md-4">
