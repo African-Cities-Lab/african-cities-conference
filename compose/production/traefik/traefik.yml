@@ -28,7 +28,7 @@ certificatesResolvers:
 http:
   routers:
     web-secure-router:
-      rule: Host(`{{ env "TRAEFIK_HOST" }}`){{ if eq (env "ADD_HOST_WWW") "true" }} || Host(`www.{{ env "TRAEFIK_HOST" }}`){{ end }}
+      rule: Host(`{{ env "TRAEFIK_HOST" }}`){{ if eq (env "ADD_HOST_WWW") "true" }} || Host(`www.{{ env "TRAEFIK_HOST" }}`){{ end }} || Host(`acc2023.africancitieslab.org`)
       entryPoints:
         - web-secure
       middlewares:
