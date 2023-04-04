@@ -1,0 +1,64 @@
+{% load i18n static wagtailimages_tags %}
+<div id="acc-program" class="page-content py-5">
+    <div class="container">
+        <ul class="nav nav-tabs" id="acc-program-tab" role="tablist">
+            {% for agenda in self.agenda %}
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link {% if forloop.counter == 1 %}active{% endif %}"
+                       id="{{ forloop }}-tab"
+                       data-bs-toggle="tab"
+                       href="#tab{{ forloop.counter }}"
+                       role="tab"
+                       aria-controls="{{ forloop.counter }}"
+                       aria-selected="true">
+                        <h3 class="mb-1">{% translate "Day" %} {{ forloop.counter }}</h3>
+                        <span>{{ agenda.date }}</span>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="tab-content" id="acc-program-content">
+            {% for agenda in self.agenda %}
+                <div class="tab-pane p-md-4 fade {% if forloop.counter == 1 %}show active{% endif %}"
+                     id="tab{{ forloop.counter }}"
+                     role="tabpanel"
+                     aria-labelledby="{{ forloop.counter }}-tab">
+                    {% for content in agenda.content %}
+                        <div class="program-session h4">{{ content.session }}</div>
+                        <ul class="program-list">
+                            {% for program in content.program %}
+                                <li class="program-item">
+                                    <div class="program-hour">
+                                        <div class="program-hour-text">
+                                            {{ program.time }}
+                                            <small>(GMT+1)</small>
+                                        </div>
+                                    </div>
+                                    <div class="program-content">
+                                        <h6 class="mb-3 program-title">{{ program.title }}</h6>
+                                        <div class="program-text mb-4">{{ program.description }}</div>
+                                        {% if program.speakers %}
+                                            <div class="row speaker-list mt-3">
+                                                {% for speaker in program.speakers %}
+                                                    <div class="col-12 col-md-6 p-3">
+                                                        <div class="speaker-list__speaker">
+                                                            <div class="speaker-list__speaker__img">{% image speaker.image original %}</div>
+                                                            <span class="speaker-list__speaker__name">
+                                                                {{ speaker.name }} -
+                                                                <span class="font-size-12">{{ speaker.designation }}</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% block title %}
+    {% translate "Venues & Contacts" %} | African Cities Lab - 2023 Summit
+{% endblock title %}
+{% block static_meta_tag %}
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title"
+          content="{% translate "Venues & Contacts" %} | African Cities Lab - 2023 Summit"/>
+    <meta name="twitter:description"
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta name="twitter:site" content="@AfricanCtiesLab" />
+    <meta itemprop='image'
+          content="{% static 'images/assets/small-logo.png' %}"/>
+    <meta property="og:title"
+          content="{% translate "Venues & Contacts" %} | African Cities Lab - 2023 Summit"/>
+    <meta property="og:description"
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta property="og:site_name" content="African Cities Lab - 2023 Summit" />
+    <meta itemprop='image'
+          content="{% static 'images/assets/small-logo.png' %}"/>
+    <meta itemprop="name"
+          content="{% translate "Venues & Contacts" %} | African Cities Lab - 2023 Summit"/>
+    <meta itemprop='description'
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development.." %}"/>
+    <meta itemprop='image'
+          content="{% static 'images/assets/small-logo.png' %}"/>
+{% endblock static_meta_tag %}
+{% block css %}
+    {{ block.super }}
+    <style>
+    .page-banner {
+      background-image: url({% static 'images/assets/banner-pattern.png' %});
+      background-position: top center;
+    }
+    </style>
+{% endblock css %}
+{% block content %}
+    <section class="page-banner">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-12 col-md-6">
+                    <div class="position-relative h1">
+                        {% translate "Venues & Contacts" %}
+                        <span class="dash-accent"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 font-size-16">
+        <div class="container-xl pt-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-5">
+                    <h4>{% translate "Sèmè City" %}</h4>
+                    <p>
+                        {% blocktranslate %}
+                        Sèmè One Building (In front of the Montaigne school)<br>
+                        Cotonou, Benin
+                        {% endblocktranslate %}
+                    </p>
+                    <p>
+                        {% blocktranslate %}
+                        The first modern and intelligent campus of 4,500 m², includes classrooms, coworking spaces, a language center,
+                        offices and a data center. This smart building has a strong African identity and validates the guiding principles,
+                        assumptions and functionalities developed for the entire Sèmè City project.
+                        {% endblocktranslate %}
+                    </p>
+                    <p>
+                        <a href="https://www.google.com/maps/place/S%C3%A8m%C3%A8+One/@6.3527145,2.3949498,15z/data=!4m6!3m5!1s0x102355b9305fa693:0x8cb0241859005892!8m2!3d6.3527145!4d2.3949498!16s%2Fg%2F11lkd3hk_k"
+                           target="_blank">
+                            <i class="fas fa-map-marker-alt mx-2 font-size-22"></i>
+                            <span>Google Maps</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 pt-5 p-lg-5">
+                    <img alt="Sèmè One" src="{% static 'images/assets/seme-one-3.jpg' %}"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-5 font-size-16">
+        <div class="container-xl">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 p-lg-5 order-1 order-lg-0">
+                    <img alt="Sèmè One" src="{% static 'images/assets/um6p.jpeg' %}"/>
+                </div>
+                <div class="col-12 col-lg-5 pt-5 order-0 order-lg-1">
+                    <h4>{% translate "Mohammed VI Polytechnic University" %}</h4>
+                    <p>
+                        {% blocktranslate %}
+                        Lot 660, Hay Moulay Rachid Ben Guerir, 43150, Morocco
+                        {% endblocktranslate %}
+                    </p>
+                    <p>
+                        {% blocktranslate %}
+                        Mohammed VI Polytechnic University is an institution oriented towards applied research and innovation with a focus on Africa.
+                        {% endblocktranslate %}
+                    </p>
+                    <p>
+                        {% blocktranslate %}
+                        The University is engaged in economic and human development and puts research and innovation at the forefront of African development.<br>
+                        A mechanism that enables it to consolidate Morocco’s frontline position in these fields, in a unique partnership-based approach
+                        and boosting skills training relevant for the future of Africa.
+                        {% endblocktranslate %}
+                    </p>
+                    <p>
+                        {% blocktranslate %}
+                        Located in Benguerir, near Marrakech, in the heart of the Mohammed VI Green City, Mohammed VI Polytechnic University
+                        intends to shine on a national, continental and international scale.
+                        {% endblocktranslate %}
+                    </p>
+                    <p>
+                        {% blocktranslate %}
+                        More than just a traditional academic institution, Mohammed VI Polytechnic University (UM6P) is a platform for experimentation,
+                        a breeding ground for opportunities, which students refer to as a “School of Life".
+                        {% endblocktranslate %}
+                    </p>
+                    <p>
+                        <a href="https://www.google.com/maps/place/UM6P+-+Universit%C3%A9+Mohammed+VI+Polytechnique/@32.2128704,-7.9398627,15z/data=!4m2!3m1!1s0x0:0xbd50c8e7902ffbf9?sa=X&ved=2ahUKEwiJ3o7Q4YD-AhXGOcAKHe-xDEkQ_BJ6BAhxEAg"
+                           target="_blank">
+                            <i class="fas fa-map-marker-alt mx-2 font-size-22"></i>
+                            <span>Google Maps</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% comment %}
+    <section class="py-5 font-size-16">
+        <div class="container-xl">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-6 pt-5 p-lg-5 order-1 order-lg-0">
+                    <img alt="Passeport, Visa" src="{% static 'images/assets/visa-passport.jpeg' %}"/>
+                </div>
+                <div class="col-12 col-lg-5 order-0 order-lg-1">
+                    <h4 class="mb-3">{% translate "Visa" %}</h4>
+                    <p>
+                        {% blocktranslate %}
+                        Nationals of countries subject to the visa application procedure can now apply for a visa online (e-visa)
+                        at <a href="https://evisa.bj/" class="text_primary" target="_blank">https://evisa.bj/</a>. It takes 7 days to obtain a visa.
+                        The maximum validity of a visa varies from 30 to 90 days depending on your nationality. If necessary,
+                        the organisers will send you an official letter of participation, justifying your travel
+                        from your country of origin to Benin.
+                        {% endblocktranslate %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endcomment %}
+    <section class="pb-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 offset-md-2 p-5">
+                <h3 class="section-title mb-3">{% translate "Contact" %}</h3>
+                <p class="font-size-16">
+                    {% blocktranslate %}
+                    Follow us on social networks or write to us for any more information or request about
+                    the event and how to become a partner.
+                    {% endblocktranslate %}
+                </p>
+                <h6 class="mt-2">{% translate "For any request:" %}</h6>
+                <div>
+                    <a href="mailto:semecity.summit@africancitieslab.org"
+                       class="text_primary font-size-16">semecity.summit@africancitieslab.org</a>
+                </div>
+                <div class="pt-2">
+                    <a href="mailto:um6p.summit@africancitieslab.org"
+                       class="text_primary font-size-16">um6p.summit@africancitieslab.org</a>
+                </div>
+                <div class="pt-2">
+                    <a href="mailto:sponsors.summit@africancitieslab.org"
+                       class="text_primary font-size-16">sponsors.summit@africancitieslab.org</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
