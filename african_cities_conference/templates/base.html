@@ -75,6 +75,15 @@
             <script defer src="{% static 'js/project.js' %}"></script>
         {% endblock javascript %}
     </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FPJMCW73ZK"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FPJMCW73ZK');
+    </script>
     <body>
         <header id="header">
             <nav id="main-nav"
@@ -98,7 +107,7 @@
                     </button>
                     <div id="navbar-responsive"
                          class="collapse navbar-collapse justify-content-between">
-                        <ul class="navbar-nav text-uppercase mx-3">
+                        <ul class="navbar-nav text-uppercase mx-2">
                             {% url 'home' as url %}
                             <li class="nav-item mx-1">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
@@ -132,7 +141,7 @@
                         </ul>
                         <div class="right-header">
                             <span class="dropdown px-3">
-                                <a class="text-black font-weight-bold dropdown-toggle"
+                                <a class="text-black font-weight-500 dropdown-toggle"
                                    href="#"
                                    role="button"
                                    id="lang-dropdown"
