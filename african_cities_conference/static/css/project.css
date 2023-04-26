@@ -693,6 +693,11 @@ a:hover {
   line-height: 1.1;
 }
 
+.font-size-3-25em {
+  font-size: 3.25em;
+  line-height: 1.1;
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -879,6 +884,10 @@ a.nav-link:hover {
   opacity: 1;
 }
 
+#main-nav .right-header {
+  font-size: 12px;
+}
+
 #main-nav .right-header .dropdown-menu {
   min-width: 10px;
 }
@@ -1021,7 +1030,7 @@ a.nav-link:hover {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 80px 0 125px;
-  min-height: 485px;
+  min-height: 375px;
   display: flex;
   align-items: center;
   color: #fff;
@@ -1749,6 +1758,10 @@ a.nav-link:hover {
     font-size: 2.5em !important;
   }
 
+  .font-size-3-25em {
+    font-size: 2.25em !important;
+  }
+
   .font-size-2-75em {
     font-size: 2em !important;
   }
@@ -1802,6 +1815,10 @@ a.nav-link:hover {
 
   .font-size-3-50em {
     font-size: 2.75em;
+  }
+
+  .font-size-3-25em {
+    font-size: 2.5em;
   }
 
   .mdl-speaker-avatar > img {
@@ -1963,8 +1980,9 @@ a.nav-link:hover {
   }
 
   #main-nav > .civa-header.container-fluid {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-items: end;
   }
 }
 @keyframes Blink {
