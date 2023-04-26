@@ -93,8 +93,8 @@
                         <img src="{% static 'images/assets/logo-acl-summit-2023.svg' %}"
                              alt="African Cities Lab - 2023 Summit"
                              class="navbar-brand-image"
-                             width="250"
-                             height="36.37"/>
+                             width="235"
+                             height="34"/>
                     </a>
                     <button class="navbar-toggler navbar-toggler-right bg-white"
                             data-bs-toggle="collapse"
@@ -107,9 +107,9 @@
                     </button>
                     <div id="navbar-responsive"
                          class="collapse navbar-collapse justify-content-between">
-                        <ul class="navbar-nav text-uppercase mx-2">
+                        <ul class="navbar-nav text-uppercase">
                             {% url 'home' as url %}
-                            <li class="nav-item mx-1">
+                            <li class="nav-item">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% url 'home' %}">{% translate "Home" %}</a>
                             </li>
@@ -119,28 +119,35 @@
                                    href="{% localized_slugurl 'program' %}">{% translate "Program" %}</a>
                             </li>
                             {% localized_slugurl 'speakers' as url %}
-                            <li class="nav-item mx-1">
+                            <li class="nav-item">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% localized_slugurl 'speakers' %}">{% translate "Speakers" %}</a>
                             </li>
                             {% localized_slugurl 'commitee' as url %}
-                            <li class="nav-item mx-1">
+                            <li class="nav-item">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% localized_slugurl 'commitee' %}">{% translate "Committee" %}</a>
                             </li>
                             {% localized_slugurl 'acc-calls' as url %}
-                            <li class="nav-item mx-1">
+                            <li class="nav-item">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% localized_slugurl 'acc-calls' %}">{% translate "Calls " %}</a>
                             </li>
                             {% url 'contact' as url %}
-                            <li class="nav-item mx-1">
+                            <li class="nav-item">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% url 'contact' %}">{% translate "Venues & Contacts" %}</a>
                             </li>
                         </ul>
                         <div class="right-header">
-                            <span class="dropdown px-3">
+                            <div class="register-link">
+                                <a class="btn btn__primary btn-small font-size-14"
+                                   target="_blank"
+                                   href="https://reg.africancitieslab.org/189/participation_form">
+                                    {% translate "Register" %}
+                                </a>
+                            </div>
+                            <span class="dropdown px-2">
                                 <a class="text-black font-weight-500 dropdown-toggle"
                                    href="#"
                                    role="button"
