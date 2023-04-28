@@ -113,15 +113,11 @@
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% url 'home' %}">{% translate "Home" %}</a>
                             </li>
-                            {% localized_slugurl 'program' as url %}
                             <li class="list-inline-item">
-                                <a class="nav-link {% if request.path == url %}active{% endif %}"
-                                   href="{% localized_slugurl 'program' %}">{% translate "Program" %}</a>
+                                <a class="nav-link" href="https://reg.africancitieslab.org/189/agenda">{% translate "Program" %}</a>
                             </li>
-                            {% localized_slugurl 'speakers' as url %}
                             <li class="nav-item">
-                                <a class="nav-link {% if request.path == url %}active{% endif %}"
-                                   href="{% localized_slugurl 'speakers' %}">{% translate "Speakers" %}</a>
+                                <a class="nav-link" href="https://reg.africancitieslab.org/189/speakers">{% translate "Speakers" %}</a>
                             </li>
                             {% localized_slugurl 'commitee' as url %}
                             <li class="nav-item">
