@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% block title %}
+    {% translate "Agenda" %} | African Cities Lab - 2023 Summit
+{% endblock title %}
+{% block css %}
+    {{ block.super }}
+    <style>
+    .page-banner {
+      background-image: url({% static 'images/assets/banner-aclsummit.jpg' %});
+      background-position: top center;
+    }
+    #agenda-tab {
+        border: 0;
+        justify-content: center;
+    }
+    #agenda-tab .nav-item .nav-link {
+        border: 1px solid #dee2e6;
+        border-radius: .25em;
+        font-size: 18px;
+    }
+    </style>
+{% endblock css %}
+{% block content %}
+    <section class="page-banner">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-12 col-md-6">
+                    <div class="position-relative h1">
+                        {% translate "Agenda" %}
+                        <span class="dash-accent"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 font-size-16">
+        <div class="container-xl pt-5">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="agenda-tab" role="tablist">
+                        <li class="nav-item m-3" role="presentation">
+                            <a class="nav-link active"
+                               id="one-tab"
+                               data-bs-toggle="tab"
+                               href="#one"
+                               role="tab"
+                               aria-controls="one"
+                               aria-selected="true">
+                                23 May 2023
+                            </a>
+                        </li>
+                        <li class="nav-item m-3" role="presentation">
+                            <a class="nav-link"
+                               id="two-tab"
+                               data-bs-toggle="tab"
+                               href="#two"
+                               role="tab"
+                               aria-controls="two"
+                               aria-selected="false">
+                                24 May 2023
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content my-3" id="agenda-content">
+                        <div class="tab-pane fade show active"
+                             id="one"
+                             role="tabpanel"
+                             aria-labelledby="one-tab">
+                            <div class="accordion accordion-flush" id="agenda-panel">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
+                                        </button>
+                                    </div>
+                                    <div id="flush-collapseOne"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingOne"
+                                         data-bs-parent="#agenda-panel">
+                                        <div class="accordion-body"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade"
+                             id="two"
+                             role="tabpanel"
+                             aria-labelledby="two-tab"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
