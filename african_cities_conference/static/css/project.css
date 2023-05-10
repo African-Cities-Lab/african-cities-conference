@@ -1319,11 +1319,12 @@ a.nav-link:hover {
 }
 
 .speaker-list__speaker .speaker-list__speaker__img > img {
-  width: 3.75rem;
-  height: 3.75rem;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
+  object-position: top;
 }
 
 .speaker-list__speaker__name {
