@@ -1,99 +1,1602 @@
-{% extends "base.html" %}
-{% load i18n static %}
-{% block title %}
-    {% translate "Agenda" %} | African Cities Lab - 2023 Summit
-{% endblock title %}
-{% block css %}
-    {{ block.super }}
-    <style>
-    .page-banner {
-      background-image: url({% static 'images/assets/banner-aclsummit.jpg' %});
-      background-position: top center;
-    }
-    #agenda-tab {
-        border: 0;
-        justify-content: center;
-    }
-    #agenda-tab .nav-item .nav-link {
-        border: 1px solid #dee2e6;
-        border-radius: .25em;
-        font-size: 18px;
-    }
-    </style>
-{% endblock css %}
-{% block content %}
-    <section class="page-banner">
-        <div class="container-fluid">
-            <div class="row py-5">
-                <div class="col-12 col-md-6">
-                    <div class="position-relative h1">
-                        {% translate "Agenda" %}
-                        <span class="dash-accent"></span>
+{% load home_tags i18n static wagtailcore_tags %}
+<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="African Cities Lab - 2023 Summit" />
+        <meta name="author" content="Nabil Raimi, Martí Bosch" />
+        <title>{% translate "Agenda" %} | African Cities Lab - 2023 Summit</title>
+        <meta name="robots" content="noindex,nofollow"/>
+        <meta name="description"
+              content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+        <link rel="apple-touch-icon"
+              sizes="180x180"
+              href="{% static 'images/favicons/apple-touch-icon.png' %}"/>
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="{% static 'images/favicons/favicon-32x32.png' %}"/>
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="{% static 'images/favicons/favicon-16x16.png' %}"/>
+        <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}"/>
+        <link rel="mask-icon"
+              href="{% static 'images/favicons/safari-pinned-tab.svg' %}"
+              color="#be3e20"/>
+        <meta name="msapplication-TileColor" content="#ffffff"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+              integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"/>
+        <!-- Your stuff: Third-party CSS libraries go here -->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <!-- This file stores project-specific CSS -->
+        <link href="{% static 'css/project.css' %}" rel="stylesheet" />
+        <!-- This file stores agenda-specific CSS -->
+        <link href="{% static 'css/agenda.css' %}" rel="stylesheet" />
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <link rel="stylesheet"
+              href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <!-- Le javascript
+        ================================================== -->
+        {# Placed at the top of the document so pages load faster with defer #}
+        <!-- Bootstrap JS -->
+        <script defer
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+                integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+                crossorigin="anonymous"></script>
+        <script defer
+                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script defer
+                src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
+                integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <main id="agenda-page">
+            <section class="page-banner">
+                <div class="container">
+                    <div class="row py-5">
+                        <div class="col-12 col-md-6">
+                            <div class="position-relative position-relative font-size-3-50em font-weight-bold">
+                                {% translate "Program" %}
+                                <span class="dash-accent"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-5 font-size-16">
-        <div class="container-xl pt-5">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <ul class="nav nav-tabs" id="agenda-tab" role="tablist">
-                        <li class="nav-item m-3" role="presentation">
-                            <a class="nav-link active"
-                               id="one-tab"
-                               data-bs-toggle="tab"
-                               href="#one"
-                               role="tab"
-                               aria-controls="one"
-                               aria-selected="true">
-                                23 May 2023
-                            </a>
-                        </li>
-                        <li class="nav-item m-3" role="presentation">
-                            <a class="nav-link"
-                               id="two-tab"
-                               data-bs-toggle="tab"
-                               href="#two"
-                               role="tab"
-                               aria-controls="two"
-                               aria-selected="false">
-                                24 May 2023
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content my-3" id="agenda-content">
-                        <div class="tab-pane fade show active"
-                             id="one"
-                             role="tabpanel"
-                             aria-labelledby="one-tab">
-                            <div class="accordion accordion-flush" id="agenda-panel">
-                                <div class="accordion-item">
-                                    <div class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed"
-                                                type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#flush-collapseOne"
-                                                aria-expanded="false"
-                                                aria-controls="flush-collapseOne">
-                                        </button>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-8 py-0 py-md-4 order-1 order-lg-0">
+                            <div class="sheldule-legend text-center">
+                                <span class="font-weight-500 font-size-16">{% translate "Legend:" %}</span>
+                                <div class="d-inline-block m-2">
+                                    <div class="legend-color cotonou"></div>
+                                    <span>{% translate "Cotonou, Benin" %}</span>
+                                </div>
+                                <div class="d-inline-block m-2">
+                                    <div class="legend-color benguerir"></div>
+                                    <span>{% translate "Ben Guerir, Marocco" %}</span>
+                                </div>
+                                <div class="d-inline-block m-2">
+                                    <div class="legend-color kumasi"></div>
+                                    <span>{% translate "Kumasi, Ghana" %}</span>
+                                </div>
+                                <div class="d-inline-block m-2">
+                                    <div class="legend-color onsite"></div>
+                                    <span>{% translate "Only on site" %}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 pt-3 pb-4 py-md-4 text-center font-weight-500 order-0 order-lg-1">
+                            <div class="sheldule-download__btn d-inline-block">
+                                <a href="#">
+                                    <img src="{% static 'images/assets/download-ico.svg' %}"
+                                         alt="Download PDF"
+                                         class="mx-2"/>
+                                    {% translate "Download PDF" %}
+                                </a>
+                            </div>
+                            <div class="language-switcher mx-3 d-inline-block">
+                                <i class="fas fa-globe mx-2"></i><span class="text_primary">{{ LANGUAGE_CODE|upper }}</span>
+                                {% get_available_languages as LANGUAGES %}
+                                {% get_language_info_list for LANGUAGES as languages %}
+                                {% for language in languages %}
+                                    {% if language.code != LANGUAGE_CODE %}
+                                        <a class="mx-1 font-size-12 text-black"
+                                           onclick='document.getElementById("language-selector").value="{{ language.code }}";{% if page %}document.getElementById("language-next").value="{% language language.code %}{% pageurl page.localized %}{% endlanguage %}";{% endif %}document.getElementById("language-form").submit()'>
+                                            {{ language.code|upper }}
+                                        </a>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                            <form action="{% url 'set_language' %}"
+                                  method="post"
+                                  class="ms-2 d-none"
+                                  id="language-form">
+                                {% csrf_token %}
+                                <input name="next"
+                                       id="language-next"
+                                       type="hidden"
+                                       value="{{ redirect_to }}"/>
+                                <input name="language"
+                                       id="language-selector"
+                                       type="hidden"
+                                       value="{{ LANGUAGE_CODE }}"/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="sheldule-nav">
+                                <div class="sheldule-date">{% translate "May 23, 2023" %}</div>
+                            </div>
+                            <div class="sheldule-wrap">
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">{% translate "08:30 AM - 09:00 AM" %}</div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">{% translate "Welcome services" %}</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div id="flush-collapseOne"
-                                         class="accordion-collapse collapse"
-                                         aria-labelledby="flush-headingOne"
-                                         data-bs-parent="#agenda-panel">
-                                        <div class="accordion-body"></div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">{% translate "09:00 AM - 09:10 AM" %}</div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Opening Ceremony" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">{% translate "09:10 AM - 09:15 AM" %}</div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Datafrication: From Data to African Smart Cities" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    {% blocktranslate %}
+                                                    The challenges related to the accelerated demographic expansion observed in Africa would find their
+                                                    solutions in the new ICTs developed over the last decades. Mobile phone networks, internet, social networks,
+                                                    mobility applications, mobile payment, online shopping, etc. Digital transformation of traditional services
+                                                    has led to the production and use of an infinite amount of data that will be useful in building citizen-centred
+                                                    smart cities.
+                                                    {% endblocktranslate %}
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Jérôme Chenal"
+                                                                 src="{% static "images/assets/speakers/Jerome chenal.jpg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Jérôme CHENAL -
+                                                            <span class="font-size-12">{% translate "Director of the Centre of Excellence in Africa" %}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Claude Borna"
+                                                                 src="{% static "images/assets/speakers/Claude Borna.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Claude BORNA -
+                                                            <span class="font-size-12">{% translate "Managing Director and Chief Innovation Officer at Sèmè City Development Agency" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "09:15 AM - 09:30 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "The African city of 2043 as imagined by African youth" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    {% blocktranslate %}
+                                                    You are invited to take a twenty-year leap into the future with Rebecca, a 12-year-old learner in the
+                                                    TINIMA programme initiated by Sèmè City. Welcome to the year 2043, where eco-neighbourhoods, smart networks,
+                                                    innovative mobility and fully digitalized services are flourishing in African cities at the service of a
+                                                    sustainable and inclusive living environment for citizens.
+                                                    {% endblocktranslate %}
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <!--div class="speaker-list__speaker__img">
+                                                            <img alt="Rebecca" src="{% static "images/assets/speakers/Jérôme Chenal.jpg" %}"/>
+                                                        </div-->
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Rebecca -
+                                                            <span class="font-size-12">{% translate "Learner in the TINIMA program" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "09:30 AM - 10:15 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "The politician and the architect" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        Whereas the African city is in the process of transformation to address the urban challenges it faces,
+                                                        the public sector is giving more and more importance to collaborative work with the private sector.
+                                                        The relationship between public and private actors is being shaken up. This evolution of collaboration
+                                                        methods is stimulating, particularly with regard to the technological evolution that allows the city
+                                                        to be reconsidered in an innovative way.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="José TONATO"
+                                                                 src="{% static "images/assets/speakers/Jose-Didier-Tonato.jpg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            José TONATO -
+                                                            <span class="font-size-12">{% translate "Minister of Living Environment, Transport in charge of Sustainable Development of Benin" %}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Romarick ATOKE"
+                                                                 src="{% static "images/assets/speakers/Romarick ATOKE.jpeg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Romarick ATOKE -
+                                                            <span class="font-size-12">{% translate "Architect, Global Archi Consult" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "10:15 AM - 10:45 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    {% translate "Coffee break" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "10:45 AM - 12:00 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Collective intelligence: youth, robots and the African city of tomorrow" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    {% blocktranslate %}
+                                                    Second academic year students of Africa Design School, the first design school in Benin, will present the result
+                                                    of a Datavisualization workshop on relationship between mobility data and data collected in the experimental
+                                                    eco-city of Sèmè One, the first campus of the Sèmè City project.
+                                                    {% endblocktranslate %}
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <!--div class="speaker-list__speaker__img">
+                                                            <img alt="Africa Design School" src="{% static "images/assets/speakers/Jérôme Chenal.jpg" %}"/>
+                                                        </div-->
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            {% translate "Second academic year students of Africa Design School" %}
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "12:00 AM - 02:00 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    {% translate "Lunch break" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "02:00 PM - 02:30 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session benguerir">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Resilience and adaptation of African" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        This keynote speech will explore the challenges faced by cities in Africa, including rapid urbanization, climate change,
+                                                        and economic disparities. The keynote will highlight the importance of building resilience in African cities to ensure
+                                                        that they can withstand shocks and stresses while continuing to provide essential services and opportunities for their residents.
+                                                        It will also discuss successful examples of resilience-building efforts in African cities and offer insights into how these efforts
+                                                        can be scaled up and replicated across the continent. Ultimately, the keynote will emphasize the urgent need for a collaborative
+                                                        and coordinated approach to building resilient African cities that can thrive in the face of adversity.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Hassan RADOINE"
+                                                                 src="{% static "images/assets/speakers/Hassan-Radoine.jpeg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Hassan RADOINE -
+                                                            <span class="font-size-12">{% translate "Director of the School of Architecture, Urban Planning and Design (SAP + D) at the Mohammed VI Polytechnic University" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "02:15 PM - 03:00 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "The professional and the opinion leader Digital technologies and infrastructures" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        Innovation at the service of the city and its users is a key issue in addressing the urban challenges of the century and
+                                                        can raise economic, social and even ethical questions.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        Join two key players in the construction of new models of cities in Africa who will analyse how NICTs work in the urban question.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Kevin DEGILA"
+                                                                 src="{% static "images/assets/speakers/Kevin Degila.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Kevin DEGILA -
+                                                            <span class="font-size-12">{% translate "Artificial intelligence engineer, content creator on Youtube and teacher" %}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Karen CATARY"
+                                                                 src="{% static "images/assets/speakers/Caren KATARY.jpeg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Caren KATARY -
+                                                            <span class="font-size-12">{% translate "Director of Services for the State (Société des Infrastructures Numériques du Bénin)" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "02:15 PM - 04:00 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Workshop - Towards sustainable and healthy living environments in Africa: Public health and territorial planning policies connections" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "02:30 PM - 03:00 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session benguerir">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Urban geoinformation and its applications in African cities" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        This keynote speech will delve into the critical role of geospatial data and technology in informing urban
+                                                        planning and development decisions in African cities. The keynote will showcase successful applications of
+                                                        geoinformation in African cities and highlight the potential for these technologies to improve urban services,
+                                                        promote sustainability, and enhance resilience. It will also address the challenges faced by African cities in
+                                                        accessing and utilizing geospatial data and technology. Ultimately, the keynote will emphasize the need for
+                                                        collaborative efforts and public engagement approaches to leverage geoinformation to address urban challenges
+                                                        and support sustainable urban development in Africa.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Nesrine Chehata"
+                                                                 src="{% static "images/assets/speakers/Nesrine CHERATA.jpeg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Nesrine CHERATA -
+                                                            <span class="font-size-12">{% translate "Senior Lecturer in machine learning for Earth observation and Geomatics - Bordeaux INP" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "03:00 PM - 03:30 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session benguerir">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "The rural to the rescue of the urban" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        This keynote speech will highlight the importance of building strong partnerships between rural and urban
+                                                        communities and showcase examples of successful collaborations that have resulted in sustainable and
+                                                        equitable urban development. The aim of this speech is to inspire new thinking and action and to promote
+                                                        greater awareness of the value of rural-urban linkages in shaping the future of cities.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Selma ZERHOUNI"
+                                                                 src="{% static "images/assets/speakers/Selma Zerhouni.jpeg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Selma ZERHOUNI -
+                                                            <span class="font-size-12">{% translate "Professor at the School of Architecture, Urban Planning and Design (SAP + D) at the Mohammed VI Polytechnic University" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "03:15 PM - 04:15 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Data protection in African cities of tomorrow" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        Whereas the notion of smart cities places the user at the centre of the city's activities, the alliance
+                                                        between digital technology and innovation will make it possible to improve the comfort and quality of
+                                                        life of the populations that are becoming more and more producers and consumers of data.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        In this context, the regulation of data in Africa will have to be established as an essential tool in the
+                                                        fight against all forms of acts that would affect the security and well-being of populations.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "04:15 PM - 04:45 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Coffee break" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "03:30 PM - 04:00 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Coffee break" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "04:00 PM - 05:30 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Remote sensing and smart GIS" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        This session will examine the latest developments and applications of remote sensing and GIS technologies in
+                                                        the context of African urban environments. The session will feature papers that highlight the potential of
+                                                        remote sensing and smart GIS for urban planning, environmental monitoring, disaster management, and public
+                                                        service delivery in African cities. Through case studies and theoretical frameworks, this session aims to
+                                                        provide a platform for researchers and practitioners to exchange ideas and explore innovative approaches to
+                                                        using remote sensing and GIS technologies to support sustainable urban development in Africa.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Rida AZMI"
+                                                                 src="{% static "images/assets/speakers/Rida AZMI.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Rida AZMI -
+                                                            <span class="font-size-12">{% translate "Researcher at the Center of Urban Systems (CUS) at Mohammad VI Polytechnic University" %}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Nessrine Chehata"
+                                                                 src="{% static "images/assets/speakers/Nesrine CHERATA.jpeg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Nesrine CHERATA -
+                                                            <span class="font-size-12">{% translate "Senior Lecturer in machine learning for Earth observation and Geomatics - Bordeaux INP" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sheldule-session benguerir">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Sustainable mobility for African cities" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        This session will explore the latest advancements and opportunities in the field of mobility in African cities.
+                                                        With a focus on innovative technologies and strategies, this session will feature papers that examine the
+                                                        challenges and benefits of implementing smart mobility solutions in the region, including intelligent transportation
+                                                        systems, optimization methods with machine learning, and sustainable urban transport systems. The session aims to
+                                                        provide a platform for researchers and practitioners to exchange ideas and insights on how smart mobility solutions
+                                                        can contribute to more efficient, sustainable, and equitable transportation in African cities.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="El Bachir Diop"
+                                                                 src="{% static "images/assets/speakers/El Bachir DIOP.jpg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            El Bachir DIOP -
+                                                            <span class="font-size-12">{% translate "Researcher at the Center of Urban Systems (CUS) at Mohammed VI Polytechnic University" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Data-driven methods for urban planning" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        In this session, we will present papers that demonstrate how data analytics, machine learning, and
+                                                        other data-driven techniques can be used to address the unique challenges facing African cities,
+                                                        such as informal settlements, inadequate infrastructure, and rapid urbanization. Topics will include
+                                                        the use of satellite imagery and geospatial data to inform urban planning decisions, the application
+                                                        of social media data to better understand urban dynamics, and the use of predictive modeling to anticipate
+                                                        future urban growth. The papers will provide valuable insights for urban planners, policymakers, and researchers in Africa.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="El Arbi Alaoui Abdellaoui"
+                                                                 src="{% static "images/assets/speakers/El Arbi Alaoui Abdellaoui.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            El Arbi Alaoui Abdellaoui -
+                                                            <span class="font-size-12">{% translate "Assistant Professor at University Moulay Ismail of Meknes" %}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Stéphane Tékouabou"
+                                                                 src="{% static "images/assets/speakers/Stéphane TEKOUABOU.jpg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Stéphane TÉKOUABOU -
+                                                            <span class="font-size-12">{% translate "Researcher at the Center of Urban System (CUS) of the Mohammed VI Polytechnic University" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "04:45 PM - 05:15 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Restitution workshop - Towards sustainable and healthy living environments in Africa: Public health and territorial planning policies connections" %}
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade"
-                             id="two"
-                             role="tabpanel"
-                             aria-labelledby="two-tab"></div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-{% endblock content %}
+            </section>
+            <section class="py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="sheldule-nav">
+                                <div class="sheldule-date">
+                                    {% translate "May 24, 2023" %}
+                                </div>
+                            </div>
+                            <div class="sheldule-wrap">
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "08:30 AM - 09:00 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    {% translate "Welcome services" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "09:00 AM - 10:00 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Ouidah city transformation" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    {% blocktranslate %}
+                                                    The development of the coastal city of Ouidah in Benin is a key challenge for the Beninese government,
+                                                    which is developing several projects, including the design and development of the Marina hotel complex
+                                                    and the Sèmè City campus, a 346 ha eco city. Closeup on the construction of a smart city which will
+                                                    contribute to developing the tourist and economic attractiveness of Benin.
+                                                    {% endblocktranslate %}
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Christian HOUETCHENOU"
+                                                                 src="{% static "images/assets/speakers/Christian Houétchénou.jpeg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Christian HOUETCHENOU -
+                                                            <span class="font-size-12">{% translate "Mayor of Ouidah" %}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Halim ASSOUMA"
+                                                                 src="{% static "images/assets/speakers/Halim ASSOUMA.jpeg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Halim ASSOUMA -
+                                                            <span class="font-size-12">{% translate "Head of Management and Planning of Sèmè City" %}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Olayimika FALADE"
+                                                                 src="{% static "images/assets/speakers/Ola Faladé.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Olayimika FALADE -
+                                                            <span class="font-size-12">{% translate "Associate Architect Cobloc Architecture" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "10:00 AM - 10:30 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Coffee break" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "09:00 AM - 09:45 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session benguerir">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "The use of spatial data analysis for risk management" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    {% blocktranslate %}
+                                                    In this sesson , we will explore the crucial role of spatial data analysis in managing risks in African cities.
+                                                    Using real-world examples, we will examine the challenges and opportunities presented by the diverse and rapidly
+                                                    growing urban landscapes of Africa. We will highlight how spatial data analysis can help decision-makers to better
+                                                    understand and mitigate risks such as natural disasters, crime, and disease outbreaks.
+                                                    {% endblocktranslate %}
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Hicham BAHI"
+                                                                 src="{% static "images/assets/speakers/Hicham Bahi.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Hicham BAHI -
+                                                            <span class="font-size-12">{% translate "Assistant Professor at Mohammed VI Polytechnic University" %}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Willy Franck SOB"
+                                                                 src="{% static "images/assets/speakers/Willy Franck SOB.jpg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Willy Franck SOB -
+                                                            <span class="font-size-12">{% translate "Founder of GeOsm Family" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "09:45 AM - 10:30 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session benguerir">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Agadir Smart City: An intelligent environment for a sustainable and resilient city" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    {% blocktranslate %}
+                                                    During this session, we will examine the key features and successes of the Agadir Smart City initiative, including the use of
+                                                    renewable energy, smart waste management, and digital services for citizens. Through several examples, we will explore the
+                                                    potential of Smart Cities to drive economic growth and address pressing urban challenges, while creating a more livable and
+                                                    sustainable community in Agadir.
+                                                    {% endblocktranslate %}
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Ismail EL OMARI"
+                                                                 src="{% static "images/assets/speakers/Ismail El Omari.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Ismail EL OMARI -
+                                                            <span class="font-size-12">{% translate "Architect, Agadir City Councillor, and member of the urban planning & smart city committee" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "09:00 AM - 10:30 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Women's entrepreneurship in the city" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    {% blocktranslate %}
+                                                    This panel session will explore the challenges and opportunities faced by women entrepreneurs in African cities.
+                                                    We will discuss the unique barriers that women face in starting and growing their businesses, and how these
+                                                    challenges can be overcome through targeted policy interventions and support networks. Drawing on a case study
+                                                    from an African city, we will examine the ways in which women-led businesses are driving economic growth, creating
+                                                    jobs, and promoting social change. Ultimately, we will highlight the vital role that women's entrepreneurship plays
+                                                    in building more inclusive and sustainable African cities.
+                                                    {% endblocktranslate %}
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Kamal AZMI"
+                                                                 src="{% static "images/assets/speakers/Kamal Azmi.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Kamal AZMI -
+                                                            <span class="font-size-12">{% translate "Academic researcher in the field of management" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sheldule-session kumasi">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "GHANA" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Session 1: The effects of port activities on transport, mobility, and urban form-case study cities: Accra, Lomѐ, Djibouti" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    {% blocktranslate %}
+                                                    In port and maritime geography, ports play an important role in the economies of cities and act as catalysts and
+                                                    incite development in specific economic sectors and locations near ports or along corridors. This section discusses
+                                                    the port-city relationship of three port cities (i.e., Lomè, Djibouti, and Tema).
+                                                    {% endblocktranslate %}
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Augustus ABABIO-DONKOR"
+                                                                 src="{% static "images/assets/speakers/Augustus ABABIO-DONKOR.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Augustus ABABIO-DONKOR -
+                                                            <span class="font-size-12">{% translate "Transport Analyst, Lecturer & Research Coordinator, Regional Transport Research and Education Centre, Kumasi (TRECK), KNUST" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "10:30 AM - 11:30 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Unlocking Africa's Tourism Potential: The Power of social media Data-driven Strategies" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        By building new cities models in Africa to improve the living environment of the population, urban actors are aiming
+                                                        at a significant objective: make African cities the most pleasant living places in the world.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        The new tourism actors, agencies, influencers or tourism project owners are anticipating this long-term objective
+                                                        and are helping to discover Africa and its opportunities by using social networks as inexhaustible sources of data.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        With these new players, discover how social network data is reinventing tourism in Africa.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "10:30 AM - 11:00 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Coffee break" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "11:00 AM - 11:30 AM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Coffee break" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "11:30 AM - 12:30 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Collecting data to improve basic urban services in Africa Mobility - Health - Urban management" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        By enabling better management of services such as energy, urban mobility and waste management, ICTs play an important role in
+                                                        the development of African cities. The optimisation of public services requires the mobilisation of data produced by users
+                                                        in order to improve the living quality of populations on the continent.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        Join the discussion between public actors, start-ups and entrepreneurs in Benin who are designing and using innovative
+                                                        digital solutions to improve the quality of life of users.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Roland HOUNGBADJI"
+                                                                 src="{% static "images/assets/speakers/Roland HOUNGBADJI.jpeg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Roland HOUNGBADJI -
+                                                            <span class="font-size-12">{% translate "Entrepreneur, Co-founder of the Pharmap application" %}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="speaker-list__speaker">
+                                                        <!--div class="speaker-list__speaker__img">
+                                                            <img alt="Gilles AMOUSSOU" src="{% static "images/assets/speakers/Jérôme Chenal.jpg" %}"/>
+                                                        </div-->
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Gilles AMOUSSOU -
+                                                            <span class="font-size-12">{% translate "General Manager of the Waste Management Company" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "11:00 AM - 12:30 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Cloud computing for urban planning in Africa: the case of GEE" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        In this tutorial, we will explore the potential of cloud computing for urban planning in Africa, using Google
+                                                        Earth Engine (GEE) as a case study. We will provide an overview of GEE and its capabilities and demonstrate
+                                                        how it can be used to analyze and visualize urban spatial data. We will also discuss the benefits and challenges
+                                                        of cloud computing for urban planning in African cities, including issues related to data accessibility and privacy.
+                                                        By the end of the tutorial, participants will have a better understanding of how to use cloud computing tools like
+                                                        GEE to improve urban planning outcomes in Africa.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Rida AZMI"
+                                                                 src="{% static "images/assets/speakers/Rida AZMI.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Rida AZMI -
+                                                            <span class="font-size-12">{% translate "Researcher at the Center of Urban Systems (CUS) at Mohammad VI Polytechnic University" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sheldule-session benguerir">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Urban extension modeling with QGIS" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        This tutorial will explore how QGIS can be used to analyze urban growth patterns and predict future expansion, with a
+                                                        focus on techniques such as land use change modeling, suitability analysis, and spatial regression. We will also discuss
+                                                        the potential of these methods for informing urban planning and policy decision-making. By the end of the tutorial,
+                                                        participants will have gained practical skills in using QGIS for urban extension modeling and be better equipped to
+                                                        apply these techniques in their own work.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Younous LAHBOUB"
+                                                                 src="{% static "images/assets/speakers/Younous Lahboub.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Younous LAHBOUB -
+                                                            <span class="font-size-12">{% translate "Project manager at SADV/OCP" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Workshop session" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        Workshop session on different areas of urban planning in Africa.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Stéphane TÉKOUABOU"
+                                                                 src="{% static "images/assets/speakers/Stéphane TEKOUABOU.jpg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Stéphane TÉKOUABOU -
+                                                            <span class="font-size-12">{% translate "Researcher at the Center of Urban System (CUS) of the Mohammed VI Polytechnic University" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sheldule-session kumasi">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "GHANA" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Session 2: Public transport system and public health risk" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        Rapid population growth and urbanization are stimulating growth in African cities. The informal and inefficient
+                                                        public transport system in most African cities has increased vehicular traffic with its associated externalities.
+                                                        This section investigates the public transport systems and the major public health hazard of transport in Africa.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Augustus ABABIO-DONKOR"
+                                                                 src="{% static "images/assets/speakers/Augustus ABABIO-DONKOR.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Augustus ABABIO-DONKOR -
+                                                            <span class="font-size-12">{% translate "Transport Analyst, Lecturer & Research Coordinator, Regional Transport Research and Education Centre, Kumasi (TRECK), KNUST" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "12:30 PM - 02:30 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    {% translate "Coffee break" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "02:30 PM - 04:30 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "African Cities Lab: A gamechanger that transforms African cities" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        Presentation of the <a href="https://africancitieslab.org/" target="_blank">African Cities Lab project</a>:
+                                                        Six institutions from Anglophone and Francophone Africa are collaborating to create an African digital
+                                                        education platform on urban development, offering quality MOOCs and online continuing education for professionals.
+                                                        It also serves as a forum for the exchange of digital educational resources and management and governance of African
+                                                        cities to promote sustainable urban development.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "02:30 PM - 04:00 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session benguerir">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Digital transformation and digital governance" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        In this session, we will showcase recent research that explores the ways in which digital technologies are shaping
+                                                        urban citizenship, participation, and governance in Africa, and the opportunities and challenges that arise from
+                                                        these changes. Topics will include the role of digital platforms in promoting citizen engagement and accountability,
+                                                        the challenges of bridging the digital divide and ensuring equitable access to digital technologies, and the
+                                                        implications of digital governance for democratic processes and civic participation. The papers will provide
+                                                        important insights for policymakers, scholars, and practitioners working at the intersection of digital technologies
+                                                        and urban governance in Africa.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="El Bachir DIOP"
+                                                                 src="{% static "images/assets/speakers/El Bachir DIOP.jpg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            El Bachir DIOP -
+                                                            <span class="font-size-12">{% translate "Researcher at the Center of Urban Systems (CUS) at Mohammed VI Polytechnic University" %}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Nesrine CHERATA"
+                                                                 src="{% static "images/assets/speakers/Nesrine CHERATA.jpeg" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Nesrine CHERATA -
+                                                            <span class="font-size-12">{% translate "Senior Lecturer in machine learning for Earth observation and Geomatics - Bordeaux INP" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sheldule-session benguerir">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Architecture and urban development" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        This session will examine the intersections of architecture and urbanism, with a focus on the design, planning,
+                                                        and development of sustainable and livable urban spaces in Africa. The session will feature papers that explore
+                                                        a range of issues, including urban morphology, housing, public spaces, heritage conservation, new city development,
+                                                        and community participation, through a variety of theoretical and empirical perspectives. The aim of this session
+                                                        is to foster interdisciplinary dialogue and exchange of ideas among architects, urban designers, planners, and scholars,
+                                                        and to promote innovative approaches to architecture and urban development in the African context.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Hicham BAHI"
+                                                                 src="{% static "images/assets/speakers/Hicham Bahi.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Hicham BAHI -
+                                                            <span class="font-size-12">{% translate "Assistant Professor at Mohammed VI Polytechnic University" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Socioeconomic challenges of African cities" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        This session will address the complex and diverse issues that affect the social and economic well-being
+                                                        of urban populations in Africa. The session will feature papers that explore a range of topics, including
+                                                        poverty, the socioeconomic impacts of COVID-19, unemployment, and social exclusion, with a focus on urban youth.
+                                                        The aim of this session is to provide a platform for researchers and practitioners to share insights and experience
+                                                        and to propose innovative strategies and policies that can help to address the socioeconomic challenges facing
+                                                        African cities.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                                <div class="session-speakers">
+                                                    <div class="speaker-list__speaker">
+                                                        <div class="speaker-list__speaker__img">
+                                                            <img alt="Kamal AZMI"
+                                                                 src="{% static "images/assets/speakers/Kamal Azmi.png" %}"/>
+                                                        </div>
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Kamal AZMI -
+                                                            <span class="font-size-12">{% translate "Academic researcher in the field of management" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "04:00 PM - 05:00 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Coffee break/Posters" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        Posters presentations on different areas of urban planning in Africa.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "04:30 PM - 05:00 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Coffee break" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "05:00 PM - 06:00 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Restitution of the Hackathon (Innovation Lab)" %}
+                                                </div>
+                                                <div class="session-description">
+                                                    <p>
+                                                        {% blocktranslate %}
+                                                        Optimising drinking water management in the new eco-city of Seme City. As part of the African Cities Lab - 2023 Summit,
+                                                        a hackathon was organised with 12 teams of 5 people. The objective is to find digital solutions to reuse the grey water
+                                                        of the future Seme City campus. The restitution is an opportunity for the 5 finalist teams to present their solutions
+                                                        to a multidisciplinary jury.
+                                                        {% endblocktranslate %}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "05:00 PM - 05:30 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session benguerir">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Closing remarks" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "05:30 PM - 06:00 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session benguerir">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "MAROCCO" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Award ceremony" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "06:00 PM - 06:15 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session cotonou">
+                                                <div class="session-title">
+                                                    <span class="font-size-12 font-weight-400">{% translate "BENIN" %}</span>
+                                                    <span class="mx-1">|</span>{% translate "Key note - plenary session" %}
+                                                </div>
+                                                <div class="session-speakers pt-3">
+                                                    <div class="speaker-list__speaker">
+                                                        <!--div class="speaker-list__speaker__img">
+                                                            <img alt="Rebecca" src="{% static "images/assets/speakers/Jérôme Chenal.jpg" %}"/>
+                                                        </div-->
+                                                        <span class="speaker-list__speaker__name font-size-14">
+                                                            Rebecca -
+                                                            <span class="font-size-12">{% translate "Learner in the TINIMA program" %}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sheldule-item">
+                                    <div class="sheldule-info">
+                                        <div class="sheldule-time">
+                                            {% translate "06:30 PM - 07:30 PM" %}
+                                        </div>
+                                        <div class="sheldule-content">
+                                            <div class="sheldule-session onsite">
+                                                <div class="session-title">
+                                                    {% translate "Closing Cocktail" %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5">
+                <div class="container py-5">
+                    <div class="civa-partners-wrapper row-title">
+                        <div class="partners-item">
+                            <a href="https://seco.admin.ch/seco/en/home.html"
+                               target="_blank"
+                               class="d-block w-75">
+                                <img alt="SECO" src="{% static "images/assets/partners/seco.png" %}"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="civa-partners-wrapper">
+                        <div class="partners-item">
+                            <a href="https://semecity.bj/en" target="_blank" class="d-block">
+                                <img alt="Seme City"
+                                     src="{% static "images/assets/partners/semecity.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://um6p.ma" target="_blank" class="d-block">
+                                <img alt="UM6P" src="{% static "images/assets/partners/um6p.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://www.ucar.rnu.tn" target="_blank" class="d-block">
+                                <img alt="UCAR" src="{% static "images/assets/partners/ucar.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://www.knust.edu.gh" target="_blank" class="d-block">
+                                <img alt="KNUST" src="{% static "images/assets/partners/knust.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://ur.ac.rw" target="_blank" class="d-block">
+                                <img alt="UR" src="{% static "images/assets/partners/ur.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://www.uct.ac.za" target="_blank" class="d-block">
+                                <img alt="UCT" src="{% static "images/assets/partners/uct.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://epfl.ch" target="_blank" class="d-block">
+                                <img alt="EPFL" src="{% static "images/assets/partners/epfl.png" %}"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="acc-footer">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 text-center">
+                            <div class="text-center">
+                                <p class="font-size-12 mb-3">
+                                    {% translate "An event by" %}
+                                </p>
+                            </div>
+                            <a href="https://africancitieslab.org/" target="_blank">
+                                <img src="{% static 'images/assets/logo-white.png' %}"
+                                     alt="African Cities Lab"
+                                     width="250"/>
+                            </a>
+                            <div class="social-media__wrapper pt-4">
+                                <ul class="list-inline mt-3 mb-5">
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://twitter.com/AfricanCtiesLab" class="text-white"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://www.linkedin.com/company/african-cities-lab/?viewAsMember=true"
+                                           class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://www.facebook.com/African-Cities-Lab-103073095772023"
+                                           class="text-white"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://instagram.com/africancitieslab?igshid=YmMyMTA2M2Y="
+                                           class="text-white"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://medium.com/@African_Cities_Lab" class="text-white"><i class="fab fa-medium-m"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://www.youtube.com/channel/UC22_61it3OdPBNj3CwkndUA"
+                                           class="text-white"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-center mt-4">
+                                <p class="font-size-12">
+                                    {% translate "© Copyright 2022 African Cities Lab. All rights reserved. " %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
