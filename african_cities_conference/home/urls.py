@@ -11,8 +11,13 @@ urlpatterns = [
     ),
     path("newsletter/", views.newsletter_submission, name="newsletter"),
     path(
-        "summit-program/",
+        "program-pdf/",
+        TemplateView.as_view(template_name="home/program_pdf.html"),
+        name="program-pdf",
+    ),
+    path(
+        "program/",
         TemplateView.as_view(template_name="home/agenda.html"),
-        name="summit-program",
+        name="program",
     ),
 ]

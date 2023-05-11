@@ -1,10 +1,10 @@
-#agenda-page {
+#agenda-page-pdf {
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
 }
 
-.page-banner {
+#agenda-page-pdf .page-banner {
   background-image: url("../images/assets/banner-aclsummit.jpg");
   background-position: top center;
   padding: 0 3rem;
@@ -116,6 +116,30 @@
   word-break: break-word;
 }
 
+#sheldule-tab #sheldule-navigation.nav-tabs {
+  justify-content: center;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+#sheldule-tab #sheldule-navigation.nav-tabs li a.nav-link {
+  font-size: 18px;
+  border: none !important;
+  font-weight: bold;
+  padding: 1em 0;
+  margin: 0 0.8em;
+}
+
+#sheldule-tab #sheldule-navigation.nav-tabs li a.nav-link.active {
+  border: none;
+  border-bottom: solid 2px #be3e20 !important;
+}
+
+#sheldule-tab #sheldule-navigation.nav-tabs li a.nav-link:hover {
+  border: none;
+}
+
 @media (min-width: 600px) {
   .sheldule-wrap .single-sheldule-item .sheldule-info {
     display: -webkit-box;
@@ -126,7 +150,7 @@
   .sheldule-wrap .single-sheldule-item .sheldule-time {
     width: 17%;
     margin: 5px 5px 5px 0;
-    padding: 25px 22px;
+    padding: 25px 24px;
   }
 
   .sheldule-wrap .single-sheldule-item .sheldule-content {
@@ -157,5 +181,10 @@
     -ms-flex-positive: 1;
     flex-grow: 1;
     width: calc((100% / 3) - 30px);
+  }
+
+  #sheldule-tab #sheldule-navigation.nav-tabs li a.nav-link {
+    padding: 1.5em 0;
+    margin: 0 1.5em;
   }
 }
