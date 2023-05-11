@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-10 17:11+0200\n"
+"POT-Creation-Date: 2023-05-11 18:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: african_cities_conference/home/templates/home/agenda.html:12
-msgid "Agenda"
-msgstr ""
-
+#: african_cities_conference/home/templates/home/agenda.html:4
+#: african_cities_conference/home/templates/home/agenda.html:9
 #: african_cities_conference/home/templates/home/agenda.html:16
+#: african_cities_conference/home/templates/home/agenda.html:23
+#: african_cities_conference/home/templates/home/agenda.html:44
+#: african_cities_conference/home/templates/home/program_pdf.html:55
+#: african_cities_conference/templates/base.html:119
+#: african_cities_conference/templates/base.html:240
+msgid "Program"
+msgstr "Programme"
+
+#: african_cities_conference/home/templates/home/agenda.html:11
+#: african_cities_conference/home/templates/home/agenda.html:18
+#: african_cities_conference/home/templates/home/agenda.html:25
 #: african_cities_conference/home/templates/home/contact.html:11
 #: african_cities_conference/home/templates/home/contact.html:18
 #: african_cities_conference/home/templates/home/contact.html:25
@@ -41,1543 +50,49 @@ msgstr ""
 "acteurs publics et privés et des jeunes du monde entier pour dynamiser le "
 "développement des villes africaines."
 
-#: african_cities_conference/home/templates/home/agenda.html:76
-#: african_cities_conference/templates/base.html:117
-#: african_cities_conference/templates/base.html:238
-msgid "Program"
-msgstr "Programme"
-
-#: african_cities_conference/home/templates/home/agenda.html:88
+#: african_cities_conference/home/templates/home/agenda.html:56
+#: african_cities_conference/home/templates/home/program_pdf.html:67
 msgid "Legend:"
-msgstr "Légende"
+msgstr "Légende :"
 
-#: african_cities_conference/home/templates/home/agenda.html:91
+#: african_cities_conference/home/templates/home/agenda.html:59
+#: african_cities_conference/home/templates/home/program_pdf.html:70
 msgid "Cotonou, Benin"
 msgstr "Cotonou, Bénin"
 
-#: african_cities_conference/home/templates/home/agenda.html:95
+#: african_cities_conference/home/templates/home/agenda.html:63
+#: african_cities_conference/home/templates/home/program_pdf.html:74
 msgid "Ben Guerir, Marocco"
 msgstr "Ben Guerir, Maroc"
 
-#: african_cities_conference/home/templates/home/agenda.html:99
+#: african_cities_conference/home/templates/home/agenda.html:67
+#: african_cities_conference/home/templates/home/program_pdf.html:78
 msgid "Kumasi, Ghana"
 msgstr "Koumassi, Ghana"
 
-#: african_cities_conference/home/templates/home/agenda.html:103
+#: african_cities_conference/home/templates/home/agenda.html:71
+#: african_cities_conference/home/templates/home/program_pdf.html:82
 msgid "Only on site"
 msgstr "Uniquement sur site"
 
-#: african_cities_conference/home/templates/home/agenda.html:114
-msgid "Download PDF"
-msgstr "Télécharger le PDF"
+#: african_cities_conference/home/templates/home/agenda.html:76
+#: african_cities_conference/home/templates/home/program_pdf.html:87
+msgid "Timezone:"
+msgstr "Fuseau horaire :"
 
-#: african_cities_conference/home/templates/home/agenda.html:154
+#: african_cities_conference/home/templates/home/agenda.html:95
+#: african_cities_conference/home/templates/home/program_pdf.html:98
 msgid "May 23, 2023"
 msgstr "23 Mai 2023"
 
-#: african_cities_conference/home/templates/home/agenda.html:162
-#: african_cities_conference/home/templates/home/agenda.html:764
-msgid "08:30 AM - 09:00 AM"
-msgstr "08:30 - 09:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:166
-#: african_cities_conference/home/templates/home/agenda.html:768
-msgid "Welcome services"
-msgstr "Accueil des participants"
-
-#: african_cities_conference/home/templates/home/agenda.html:174
-msgid "09:00 AM - 09:10 AM"
-msgstr "09:00 - 09:10"
-
-#: african_cities_conference/home/templates/home/agenda.html:179
-#: african_cities_conference/home/templates/home/agenda.html:194
-#: african_cities_conference/home/templates/home/agenda.html:240
-#: african_cities_conference/home/templates/home/agenda.html:274
-#: african_cities_conference/home/templates/home/agenda.html:334
-#: african_cities_conference/home/templates/home/agenda.html:417
-#: african_cities_conference/home/templates/home/agenda.html:465
-#: african_cities_conference/home/templates/home/agenda.html:557
-#: african_cities_conference/home/templates/home/agenda.html:587
-#: african_cities_conference/home/templates/home/agenda.html:737
-#: african_cities_conference/home/templates/home/agenda.html:781
-#: african_cities_conference/home/templates/home/agenda.html:834
-#: african_cities_conference/home/templates/home/agenda.html:990
-#: african_cities_conference/home/templates/home/agenda.html:1039
-#: african_cities_conference/home/templates/home/agenda.html:1054
-#: african_cities_conference/home/templates/home/agenda.html:1239
-#: african_cities_conference/home/templates/home/agenda.html:1396
-#: african_cities_conference/home/templates/home/agenda.html:1411
-#: african_cities_conference/home/templates/home/agenda.html:1466
-msgid "BENIN"
-msgstr "BÉNIN"
-
-#: african_cities_conference/home/templates/home/agenda.html:180
-msgid "Opening Ceremony"
-msgstr "Cérémonie d'ouverture"
-
-#: african_cities_conference/home/templates/home/agenda.html:189
-msgid "09:10 AM - 09:15 AM"
-msgstr "09:10 - 09:15"
-
-#: african_cities_conference/home/templates/home/agenda.html:195
-msgid "Datafrication: From Data to African Smart Cities"
-msgstr "Datafrication : de la donnée aux villes africaines intelligentes"
-
-#: african_cities_conference/home/templates/home/agenda.html:199
-msgid ""
-"\n"
-"                                                    The challenges related "
-"to the accelerated demographic expansion observed in Africa would find "
-"their \n"
-"                                                    solutions in the new "
-"ICTs developed over the last decades. Mobile phone networks, internet, "
-"social networks, \n"
-"                                                    mobility applications, "
-"mobile payment, online shopping, etc. Digital transformation of traditional "
-"services \n"
-"                                                    has led to the "
-"production and use of an infinite amount of data that will be useful in "
-"building citizen-centred \n"
-"                                                    smart cities.\n"
-"                                                    "
-msgstr ""
-"\n"
-"Les défis liés à l’expansion démographique accélérée observée en Afrique "
-"trouveraient leurs solutions dans les nouvelles technologies de "
-"l’information et de la communication \n"
-"développées au cours de ces dernières décennies. Réseaux de téléphonie "
-"mobile, internet, réseaux sociaux, \n"
-"applications de mobilité, paiement mobile, achats en ligne. La "
-"transformation digitale des services traditionnels a entraîné la production "
-"et la consommation d’une quantité infinie de données \n"
-"qui serviront à la construction de villes intelligentes centrée sur le "
-"citoyen.\n"
-"                                                    "
-
-#: african_cities_conference/home/templates/home/agenda.html:215
-msgid "Director of the Centre of Excellence in Africa"
-msgstr "Directeur du Centre Excellence in Africa"
-
-#: african_cities_conference/home/templates/home/agenda.html:224
-msgid ""
-"Managing Director and Chief Innovation Officer at Sèmè City Development "
-"Agency"
-msgstr ""
-"Directrice Générale et Responsable de l'innovation à l'Agence de "
-"développement de la ville de Sèmè City"
-
-#: african_cities_conference/home/templates/home/agenda.html:235
-msgid "09:15 AM - 09:30 AM"
-msgstr "09:15 - 09:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:241
-msgid "The African city of 2043 as imagined by African youth"
-msgstr "La ville africaine de 2043 vue par la jeunesse africaine"
-
-#: african_cities_conference/home/templates/home/agenda.html:244
-msgid ""
-"\n"
-"                                                    You are invited to take "
-"a twenty-year leap into the future with Rebecca, a 12-year-old learner in "
-"the \n"
-"                                                    TINIMA programme "
-"initiated by Sèmè City. Welcome to the year 2043, where eco-neighbourhoods, "
-"smart networks, \n"
-"                                                    innovative mobility and "
-"fully digitalized services are flourishing in African cities at the service "
-"of a \n"
-"                                                    sustainable and "
-"inclusive living environment for citizens.\n"
-"                                                    "
-msgstr ""
-"\n"
-"Vous êtes invités à faire un bond de vingt ans dans le futur pour découvrir "
-"la ville africaine de demain avec Rebecca, 12 ans. \n"
-"Bienvenue en 2043, où éco - quartiers, réseaux intelligents, \n"
-"offre de mobilités innovantes et services entièrement digitalisés \n"
-"fleurissent dans les villes africaines au service d’un cadre de vie durable "
-"et inclusif pour les citoyens.\n"
-"                                                    "
-
-#: african_cities_conference/home/templates/home/agenda.html:258
-#: african_cities_conference/home/templates/home/agenda.html:1476
-msgid "Learner in the TINIMA program"
-msgstr ""
-"Apprenante du TINIMA, un programme de Sèmè City pour les jeunes de 8 à 18 ans"
-
-#: african_cities_conference/home/templates/home/agenda.html:269
-msgid "09:30 AM - 10:15 AM"
-msgstr "09:30 - 10:15"
-
-#: african_cities_conference/home/templates/home/agenda.html:275
-msgid "The politician and the architect"
-msgstr "Le politicien et l'architecte"
-
-#: african_cities_conference/home/templates/home/agenda.html:280
-msgid ""
-"\n"
-"                                                        Whereas the African "
-"city is in the process of transformation to address the urban challenges it "
-"faces, \n"
-"                                                        the public sector is "
-"giving more and more importance to collaborative work with the private "
-"sector. \n"
-"                                                        The relationship "
-"between public and private actors is being shaken up. This evolution of "
-"collaboration \n"
-"                                                        methods is "
-"stimulating, particularly with regard to the technological evolution that "
-"allows the city \n"
-"                                                        to be reconsidered "
-"in an innovative way.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Alors que la ville africaine est en pleine transformation pour adresser les "
-"challenges urbains qui se présentent à elle, la commande publique \n"
-"accorde de plus en plus d’importance au travail collaboratif avec le "
-"secteur \n"
-"privé. Les relations entre acteurs publiques et privés s’en trouvent "
-"bousculées. \n"
-"Cette évolution des modes de collaboration est stimulante notamment au "
-"regard de \n"
-"l’évolution technologique qui permet de repenser la ville d’une façon "
-"innovante.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:297
-msgid ""
-"Minister of Living Environment, Transport in charge of Sustainable "
-"Development of Benin"
-msgstr ""
-"Ministre du cadre de vie, des transports chargé du développement durable du "
-"Bénin"
-
-#: african_cities_conference/home/templates/home/agenda.html:306
-msgid "Architect, Global Archi Consult"
-msgstr "Architecte,Global Archi Consult"
-
-#: african_cities_conference/home/templates/home/agenda.html:317
-msgid "10:15 AM - 10:45 AM"
-msgstr "10:15 - 10:45"
-
-#: african_cities_conference/home/templates/home/agenda.html:321
-#: african_cities_conference/home/templates/home/agenda.html:588
-#: african_cities_conference/home/templates/home/agenda.html:603
-#: african_cities_conference/home/templates/home/agenda.html:835
-#: african_cities_conference/home/templates/home/agenda.html:1025
-#: african_cities_conference/home/templates/home/agenda.html:1040
-#: african_cities_conference/home/templates/home/agenda.html:1225
-#: african_cities_conference/home/templates/home/agenda.html:1397
-msgid "Coffee break"
-msgstr "Pause café"
-
-#: african_cities_conference/home/templates/home/agenda.html:329
-msgid "10:45 AM - 12:00 PM"
-msgstr "10:45 - 12:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:335
-msgid "Collective intelligence: youth, robots and the African city of tomorrow"
-msgstr ""
-"Intelligence collective : les jeunes, les robots et la ville de demain."
-
-#: african_cities_conference/home/templates/home/agenda.html:338
-msgid ""
-"\n"
-"                                                    Second academic year "
-"students of Africa Design School, the first design school in Benin, will "
-"present the result \n"
-"                                                    of a Datavisualization "
-"workshop on relationship between mobility data and data collected in the "
-"experimental \n"
-"                                                    eco-city of Sèmè One, "
-"the first campus of the Sèmè City project.\n"
-"                                                    "
-msgstr ""
-"\n"
-"Les étudiants en 2ème année d’Africa Design School, première école de design "
-"au Bénin présenteront le résultat d’un workshop Datavisualization \n"
-"sur les relations entre les données de mobilité et \n"
-"les données récoltées à travers la ville de Cotonou.\n"
-"                                                    "
-
-#: african_cities_conference/home/templates/home/agenda.html:350
-msgid "Second academic year students of Africa Design School"
-msgstr "Etudiants en 2eme année de design numérique, Africa Design School"
-
-#: african_cities_conference/home/templates/home/agenda.html:361
-msgid "12:00 AM - 02:00 PM"
-msgstr "12:00 - 14:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:365
-msgid "Lunch break"
-msgstr "Pause déjeuner"
-
-#: african_cities_conference/home/templates/home/agenda.html:373
-msgid "02:00 PM - 02:30 PM"
-msgstr "14:00 - 14:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:378
-#: african_cities_conference/home/templates/home/agenda.html:480
-#: african_cities_conference/home/templates/home/agenda.html:520
-#: african_cities_conference/home/templates/home/agenda.html:602
-#: african_cities_conference/home/templates/home/agenda.html:617
-#: african_cities_conference/home/templates/home/agenda.html:657
-#: african_cities_conference/home/templates/home/agenda.html:688
-#: african_cities_conference/home/templates/home/agenda.html:849
-#: african_cities_conference/home/templates/home/agenda.html:893
-#: african_cities_conference/home/templates/home/agenda.html:928
-#: african_cities_conference/home/templates/home/agenda.html:1024
-#: african_cities_conference/home/templates/home/agenda.html:1105
-#: african_cities_conference/home/templates/home/agenda.html:1135
-#: african_cities_conference/home/templates/home/agenda.html:1164
-#: african_cities_conference/home/templates/home/agenda.html:1265
-#: african_cities_conference/home/templates/home/agenda.html:1305
-#: african_cities_conference/home/templates/home/agenda.html:1335
-#: african_cities_conference/home/templates/home/agenda.html:1374
-#: african_cities_conference/home/templates/home/agenda.html:1436
-#: african_cities_conference/home/templates/home/agenda.html:1451
-msgid "MAROCCO"
-msgstr "MAROC"
-
-#: african_cities_conference/home/templates/home/agenda.html:379
-msgid "Resilience and adaptation of African"
-msgstr "Résilience dans les villes africaines"
-
-#: african_cities_conference/home/templates/home/agenda.html:383
-msgid ""
-"\n"
-"                                                        This keynote speech "
-"will explore the challenges faced by cities in Africa, including rapid "
-"urbanization, climate change, \n"
-"                                                        and economic "
-"disparities. The keynote will highlight the importance of building "
-"resilience in African cities to ensure \n"
-"                                                        that they can "
-"withstand shocks and stresses while continuing to provide essential services "
-"and opportunities for their residents. \n"
-"                                                        It will also discuss "
-"successful examples of resilience-building efforts in African cities and "
-"offer insights into how these efforts \n"
-"                                                        can be scaled up and "
-"replicated across the continent. Ultimately, the keynote will emphasize the "
-"urgent need for a collaborative \n"
-"                                                        and coordinated "
-"approach to building resilient African cities that can thrive in the face of "
-"adversity.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Ce discours d'ouverture explorera les défis auxquels sont confrontées les "
-"villes africaines, notamment l'urbanisation rapide, le changement "
-"climatique \n"
-"et les disparités économiques. Le discours d'ouverture soulignera "
-"l'importance de renforcer la résilience \n"
-"des villes africaines pour s'assurer qu'elles peuvent résister aux défis "
-"tout en continuant à fournir des services et des opportunités essentiels \n"
-"à leurs résidents. Il discutera également d'exemples réussis d'efforts de "
-"renforcement de la résilience dans les villes africaines et offrira un "
-"aperçu de la manière dont ces efforts peuvent être intensifiés et reproduits "
-"à travers le continent. \n"
-"Enfin, ce discours soulignera le besoin urgent d'une approche "
-"collaborative \n"
-"et coordonnée pour construire des villes africaines résilientes qui peuvent "
-"prospérer face à l'adversité.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:401
-msgid ""
-"Director of the School of Architecture, Urban Planning and Design (SAP + D) "
-"at the Mohammed VI Polytechnic University"
-msgstr ""
-"Directeur de l'Ecole d'Architecture, d'Urbanisme et de Design (SAP + D) à "
-"l'Université Polytechnique"
-
-#: african_cities_conference/home/templates/home/agenda.html:412
-msgid "02:15 PM - 03:00 PM"
-msgstr "14:15 - 15:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:418
-msgid ""
-"The professional and the opinion leader Digital technologies and "
-"infrastructures"
-msgstr ""
-"Le professionnel et le leader d'opinion, Technologies et infrastructures "
-"numériques"
-
-#: african_cities_conference/home/templates/home/agenda.html:422
-msgid ""
-"\n"
-"                                                        Innovation at the "
-"service of the city and its users is a key issue in addressing the urban "
-"challenges of the century and \n"
-"                                                        can raise economic, "
-"social and even ethical questions.\n"
-"                                                        "
-msgstr ""
-"\n"
-"L’innovation au service de la ville et des usagers est un enjeu de premier "
-"plan pour adresser les défis urbains du siècle \n"
-"et qui peut susciter des questions d’ordre économique, social et même "
-"éthique.\n"
-"                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:428
-msgid ""
-"\n"
-"                                                        Join two key players "
-"in the construction of new models of cities in Africa who will analyse how "
-"NICTs work in the urban question.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Rejoignez deux acteurs incontournables de la construction des nouveaux "
-"modèles de villes en Afrique qui décortiquent le fonctionnement des NTIC "
-"dans la question de l’urbain.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:440
-msgid ""
-"Artificial intelligence engineer, content creator on Youtube and teacher"
-msgstr ""
-"Ingénieur en intelligence artificielle, créateur de contenu sur Youtube et "
-"formateur"
-
-#: african_cities_conference/home/templates/home/agenda.html:449
-msgid ""
-"Director of Services for the State (Société des Infrastructures Numériques "
-"du Bénin)"
-msgstr ""
-"Directrice des Services pour l’Etat (Société des Infrastructures Numériques "
-"du Bénin)"
-
-#: african_cities_conference/home/templates/home/agenda.html:460
-msgid "02:15 PM - 04:00 PM"
-msgstr "14:15 - 16:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:466
-msgid ""
-"Workshop - Towards sustainable and healthy living environments in Africa: "
-"Public health and territorial planning policies connections"
-msgstr ""
-"Workshop - Vers des cadres de vie durables et sains en Afrique : liens entre "
-"les politiques de santé publique et d'aménagement territorial"
-
-#: african_cities_conference/home/templates/home/agenda.html:475
-msgid "02:30 PM - 03:00 PM"
-msgstr "14:30 - 15:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:481
-msgid "Urban geoinformation and its applications in African cities"
-msgstr ""
-"La géoinformation urbaine et ses applications dans les villes africaines"
-
-#: african_cities_conference/home/templates/home/agenda.html:485
-msgid ""
-"\n"
-"                                                        This keynote speech "
-"will delve into the critical role of geospatial data and technology in "
-"informing urban \n"
-"                                                        planning and "
-"development decisions in African cities. The keynote will showcase "
-"successful applications of \n"
-"                                                        geoinformation in "
-"African cities and highlight the potential for these technologies to improve "
-"urban services, \n"
-"                                                        promote "
-"sustainability, and enhance resilience. It will also address the challenges "
-"faced by African cities in \n"
-"                                                        accessing and "
-"utilizing geospatial data and technology. Ultimately, the keynote will "
-"emphasize the need for \n"
-"                                                        collaborative "
-"efforts and public engagement approaches to leverage geoinformation to "
-"address urban challenges \n"
-"                                                        and support "
-"sustainable urban development in Africa.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Ce discours d'ouverture se penchera sur le rôle essentiel des données et de "
-"la technologie géospatiales pour éclairer les décisions de planification et "
-"de développement urbains dans les villes africaines. \n"
-"Le discours présentera les applications réussies de l’information "
-"géographique dans \n"
-"les villes africaines et soulignera le potentiel de ces technologies pour "
-"améliorer les services urbains, promouvoir la durabilité et renforcer la "
-"résilience.\n"
-"Il abordera également les défis auxquels sont confrontées les villes "
-"africainesdans l'accès et l'utilisation des données et technologies "
-"géospatiales. \n"
-"Enfin, le discours d'ouverture mettra l'accent sur la nécessité d'efforts "
-"collaboratifs \n"
-"et d'approches d'engagement du public pour tirer parti de l’information "
-"géographique \n"
-"pour relever les défis urbains et soutenir le développement urbain durable "
-"en Afrique.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:504
-#: african_cities_conference/home/templates/home/agenda.html:649
-#: african_cities_conference/home/templates/home/agenda.html:1298
-msgid ""
-"Senior Lecturer in machine learning for Earth observation and Geomatics - "
-"Bordeaux INP"
-msgstr ""
-"Maître de conférences en apprentissage automatique pour L'observation de la "
-"Terre et la Géomatique - Bordeaux INP"
-
-#: african_cities_conference/home/templates/home/agenda.html:515
-msgid "03:00 PM - 03:30 PM"
-msgstr "15:00 - 15:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:521
-msgid "The rural to the rescue of the urban"
-msgstr "Le rural à la rescousse de l’urbain"
-
-#: african_cities_conference/home/templates/home/agenda.html:525
-msgid ""
-"\n"
-"                                                        This keynote speech "
-"will highlight the importance of building strong partnerships between rural "
-"and urban \n"
-"                                                        communities and "
-"showcase examples of successful collaborations that have resulted in "
-"sustainable and \n"
-"                                                        equitable urban "
-"development. The aim of this speech is to inspire new thinking and action "
-"and to promote \n"
-"                                                        greater awareness of "
-"the value of rural-urban linkages in shaping the future of cities.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Ce discours d'ouverture soulignera l'importance d'établir des partenariats "
-"solides entre les communautés rurales et urbaines \n"
-"et présentera des exemples de collaborations réussies qui ont abouti à un "
-"développement urbain durable et équitable. \n"
-"L'objectif de ce discours est d'inspirer de nouvelles réflexions et actions "
-"et de promouvoir une plus grande \n"
-"prise de conscience de la valeur des liens ruraux-urbains pour façonner "
-"l'avenir des villes.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:541
-msgid ""
-"Professor at the School of Architecture, Urban Planning and Design (SAP + D) "
-"at the Mohammed VI Polytechnic University"
-msgstr ""
-"Professeur à l'Ecole d'Architecture, d'Urbanisme et de Design (SAP + D) de "
-"l'Université Polytechnique Mohammed VI"
-
-#: african_cities_conference/home/templates/home/agenda.html:552
-msgid "03:15 PM - 04:15 PM"
-msgstr "15:15 - 16:15"
-
-#: african_cities_conference/home/templates/home/agenda.html:558
-msgid "Data protection in African cities of tomorrow"
-msgstr "La protection des données dans les villes africaines de demain"
-
-#: african_cities_conference/home/templates/home/agenda.html:562
-msgid ""
-"\n"
-"                                                        Whereas the notion "
-"of smart cities places the user at the centre of the city's activities, the "
-"alliance \n"
-"                                                        between digital "
-"technology and innovation will make it possible to improve the comfort and "
-"quality of \n"
-"                                                        life of the "
-"populations that are becoming more and more producers and consumers of "
-"data.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Alors que le concept même de smart cities positionne l’usager au centre du "
-"fonctionnement de la ville, l’alliance entre numérique, innovation "
-"technologique\n"
-" et plannification urbaine permettra d’améliorer le confort et \n"
-"la qualité de vie des populations de plus en plus et productrices et "
-"consommatrice de données.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:569
-msgid ""
-"\n"
-"                                                        In this context, the "
-"regulation of data in Africa will have to be established as an essential "
-"tool in the \n"
-"                                                        fight against all "
-"forms of acts that would affect the security and well-being of populations.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Dans ce contexte, la réglementation des données en Afrique devra s’établir "
-"comme un outil\n"
-" de lutte incontournable contre toute forme d’actes qui porteraient atteinte "
-"à la sécurité et au bien-être des populations.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:582
-msgid "04:15 PM - 04:45 PM"
-msgstr "16:15 - 16:45"
-
-#: african_cities_conference/home/templates/home/agenda.html:597
-msgid "03:30 PM - 04:00 PM"
-msgstr "15:30 - 16:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:612
-msgid "04:00 PM - 05:30 PM"
-msgstr "16:00 - 17:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:618
-msgid "Remote sensing and smart GIS"
-msgstr "Télédétection et SIG intelligent"
-
-#: african_cities_conference/home/templates/home/agenda.html:622
-msgid ""
-"\n"
-"                                                        This session will "
-"examine the latest developments and applications of remote sensing and GIS "
-"technologies in \n"
-"                                                        the context of "
-"African urban environments. The session will feature papers that highlight "
-"the potential of \n"
-"                                                        remote sensing and "
-"smart GIS for urban planning, environmental monitoring, disaster management, "
-"and public \n"
-"                                                        service delivery in "
-"African cities. Through case studies and theoretical frameworks, this "
-"session aims to \n"
-"                                                        provide a platform "
-"for researchers and practitioners to exchange ideas and explore innovative "
-"approaches to \n"
-"                                                        using remote sensing "
-"and GIS technologies to support sustainable urban development in Africa.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Cette session examinera les derniers développements et applications des "
-"technologies de télédétection et SIG dans le contexte \n"
-"des environnements urbains africains. La session présentera des articles "
-"mettant en évidence le potentiel de la \n"
-"télédétection et des SIG intelligents pour la planification urbaine, le "
-"suivi de l'environnement, la gestion des catastrophes et la prestation de "
-"services publics dans \n"
-"les villes africaines. À travers des études de cas et des modèles "
-"théoriques, \n"
-"cette session vise à fournir une plate-forme aux chercheurs et aux "
-"praticiens pour échanger des idées et \n"
-"explorer des approches innovantes d'utilisation de la télédétection et des "
-"technologies SIG pour soutenir le développement urbain durable en Afrique.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:640
-#: african_cities_conference/home/templates/home/agenda.html:1128
-msgid ""
-"Researcher at the Center of Urban Systems (CUS) at Mohammad VI Polytechnic "
-"University"
-msgstr ""
-"Chercheur au Centre des systèmes urbains de l'Université polytechnique "
-"Mohammad VI"
-
-#: african_cities_conference/home/templates/home/agenda.html:658
-msgid "Sustainable mobility for African cities"
-msgstr "Mobilité durable dans les villes africaines"
-
-#: african_cities_conference/home/templates/home/agenda.html:662
-msgid ""
-"\n"
-"                                                        This session will "
-"explore the latest advancements and opportunities in the field of mobility "
-"in African cities. \n"
-"                                                        With a focus on "
-"innovative technologies and strategies, this session will feature papers "
-"that examine the \n"
-"                                                        challenges and "
-"benefits of implementing smart mobility solutions in the region, including "
-"intelligent transportation \n"
-"                                                        systems, "
-"optimization methods with machine learning, and sustainable urban transport "
-"systems. The session aims to \n"
-"                                                        provide a platform "
-"for researchers and practitioners to exchange ideas and insights on how "
-"smart mobility solutions \n"
-"                                                        can contribute to "
-"more efficient, sustainable, and equitable transportation in African "
-"cities.\n"
-"                                                        "
-msgstr ""
-"\n"
-" Cette session explorera les dernières avancées et opportunités dans le "
-"domaine de la mobilité dans les villes africaines. \n"
-"En mettant l'accent sur les technologies et les stratégies innovantes, cette "
-"session présentera des articles qui examineront les défis et les avantages \n"
-"de la mise en œuvre de solutions de mobilité intelligentes dans la région, y "
-"compris les systèmes de transport intelligents, les méthodes "
-"d'optimisation \n"
-"avec l'apprentissage automatique et les systèmes de transport urbain "
-"durable. La session vise à fournir une plate-forme \n"
-"aux chercheurs et aux praticiens pour échanger des idées sur la manière dont "
-"les solutions de mobilité intelligente \n"
-"peuvent contribuer à un transport plus efficace,durable et équitable dans "
-"les villes africaines.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:680
-#: african_cities_conference/home/templates/home/agenda.html:1289
-msgid ""
-"Researcher at the Center of Urban Systems (CUS) at Mohammed VI Polytechnic "
-"University"
-msgstr ""
-"Chercheur au Centre des systèmes urbains de l'Université polytechnique "
-"Mohammad VI"
-
-#: african_cities_conference/home/templates/home/agenda.html:689
-msgid "Data-driven methods for urban planning"
-msgstr ""
-"Application des méthodes basées sur les données en planification urbaine"
-
-#: african_cities_conference/home/templates/home/agenda.html:693
-msgid ""
-"\n"
-"                                                        In this session, we "
-"will present papers that demonstrate how data analytics, machine learning, "
-"and \n"
-"                                                        other data-driven "
-"techniques can be used to address the unique challenges facing African "
-"cities, \n"
-"                                                        such as informal "
-"settlements, inadequate infrastructure, and rapid urbanization. Topics will "
-"include \n"
-"                                                        the use of satellite "
-"imagery and geospatial data to inform urban planning decisions, the "
-"application \n"
-"                                                        of social media data "
-"to better understand urban dynamics, and the use of predictive modeling to "
-"anticipate \n"
-"                                                        future urban growth. "
-"The papers will provide valuable insights for urban planners, policymakers, "
-"and researchers in Africa.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Au cours de cette session, nous présenterons des articles qui démontreront "
-"comment l'analyse de données, l'apprentissage automatique \n"
-"et d'autres techniques basées sur les données peuvent être utilisées pour "
-"relever les défis uniques auxquels sont confrontées les villes africaines, \n"
-"tels que les établissements informels, les infrastructures inadéquates et "
-"l'urbanisation rapide. Les sujets incluront l'utilisation \n"
-"de l'imagerie satellitaire et des données géospatiales pour éclairer les "
-"décisions de planification urbaine, l'application des \n"
-"données des réseaux sociaux pour mieux comprendre la dynamique urbaine et "
-"l'utilisation de la modélisation prédictive pour \n"
-"anticiper la croissance urbaine future. Les articles fourniront des "
-"informations précieuses aux urbanistes, aux décideurs et aux chercheurs en "
-"Afrique.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:711
-msgid "Assistant Professor at University Moulay Ismail of Meknes"
-msgstr "Professeur assistant à l'Université Moulay Ismail de Meknès"
-
-#: african_cities_conference/home/templates/home/agenda.html:720
-#: african_cities_conference/home/templates/home/agenda.html:1182
-msgid ""
-"Researcher at the Center of Urban System (CUS) of the Mohammed VI "
-"Polytechnic University"
-msgstr ""
-"Chercheur au Centre des systèmes urbains de l'Université polytechnique "
-"Mohammad VI"
-
-#: african_cities_conference/home/templates/home/agenda.html:732
-msgid "04:45 PM - 05:15 PM"
-msgstr "16:45 - 17:15"
-
-#: african_cities_conference/home/templates/home/agenda.html:738
-msgid ""
-"Restitution workshop - Towards sustainable and healthy living environments "
-"in Africa: Public health and territorial planning policies connections"
-msgstr ""
-"Restitution workshop - Vers des cadres de vie durables et sains en Afrique : "
-"liens entre les politiques de santé publique et d'aménagement territorial"
-
-#: african_cities_conference/home/templates/home/agenda.html:756
+#: african_cities_conference/home/templates/home/agenda.html:106
+#: african_cities_conference/home/templates/home/program_pdf.html:110
 msgid "May 24, 2023"
 msgstr "24 Mai 2023"
 
-#: african_cities_conference/home/templates/home/agenda.html:776
-msgid "09:00 AM - 10:00 AM"
-msgstr "09:00 - 10:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:782
-msgid "Ouidah city transformation"
-msgstr "Transformation de la ville de Ouidah"
-
-#: african_cities_conference/home/templates/home/agenda.html:785
-msgid ""
-"\n"
-"                                                    The development of the "
-"coastal city of Ouidah in Benin is a key challenge for the Beninese "
-"government, \n"
-"                                                    which is developing "
-"several projects, including the design and development of the Marina hotel "
-"complex \n"
-"                                                    and the Sèmè City "
-"campus, a 346 ha eco city. Closeup on the construction of a smart city which "
-"will \n"
-"                                                    contribute to developing "
-"the tourist and economic attractiveness of Benin.\n"
-"                                                    "
-msgstr ""
-"\n"
-" La valorisation de la ville côtière de Ouidah au Bénin est un enjeu phare "
-"du Gouvernement Béninois qui y développe \n"
-"plusieurs projets dont la conception et le développement du Complexe "
-"hôtelier de la Marina \n"
-"ou encore le campus de Sèmè City, eco cité de 346 hectares. Zoom sur la "
-"réalisation d’une smart city\n"
-" qui contribuera à développer l’attractivité touristique et économique du "
-"Bénin.\n"
-"                                                    "
-
-#: african_cities_conference/home/templates/home/agenda.html:800
-msgid "Mayor of Ouidah"
-msgstr "Maire de Ouidah"
-
-#: african_cities_conference/home/templates/home/agenda.html:809
-msgid "Head of Management and Planning of Sèmè City"
-msgstr "Responsable Gestion et planification de Sèmè City"
-
-#: african_cities_conference/home/templates/home/agenda.html:818
-msgid "Associate Architect Cobloc Architecture"
-msgstr "Architecte associé Cobloc Architecture"
-
-#: african_cities_conference/home/templates/home/agenda.html:829
-msgid "10:00 AM - 10:30 AM"
-msgstr "10:00 - 10:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:844
-msgid "09:00 AM - 09:45 AM"
-msgstr "09:00 - 09:45"
-
-#: african_cities_conference/home/templates/home/agenda.html:850
-msgid "The use of spatial data analysis for risk management"
-msgstr "Analyse des données spatiales pour la gestion urbaine"
-
-#: african_cities_conference/home/templates/home/agenda.html:853
-msgid ""
-"\n"
-"                                                    In this sesson , we will "
-"explore the crucial role of spatial data analysis in managing risks in "
-"African cities. \n"
-"                                                    Using real-world "
-"examples, we will examine the challenges and opportunities presented by the "
-"diverse and rapidly \n"
-"                                                    growing urban landscapes "
-"of Africa. We will highlight how spatial data analysis can help decision-"
-"makers to better \n"
-"                                                    understand and mitigate "
-"risks such as natural disasters, crime, and disease outbreaks.\n"
-"                                                    "
-msgstr ""
-"\n"
-"Dans cette session , nous explorerons le rôle crucial de l'analyse des "
-"données spatiales dans la gestion des risques dans les villes africaines. \n"
-"À l'aide d'exemples concrets, nous examinerons les défis et les opportunités "
-"présentés par les paysages urbains \n"
-"divers et en croissance rapide de l'Afrique. Nous soulignerons comment "
-"l'analyse des données spatiales peut aider les décideurs à mieux "
-"comprendre \n"
-"et atténuer les risques tels que les catastrophes naturelles, la criminalité "
-"et les épidémies.\n"
-"                                                    "
-
-#: african_cities_conference/home/templates/home/agenda.html:868
-#: african_cities_conference/home/templates/home/agenda.html:1328
-msgid "Assistant Professor at Mohammed VI Polytechnic University"
-msgstr "Professeur assistant à l'Université Mohammed VI Polytechnique"
-
-#: african_cities_conference/home/templates/home/agenda.html:877
-msgid "Founder of GeOsm Family"
-msgstr "Foundateur de GeOsm Family"
-
-#: african_cities_conference/home/templates/home/agenda.html:888
-msgid "09:45 AM - 10:30 AM"
-msgstr "09:45 - 10:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:894
-msgid ""
-"Agadir Smart City: An intelligent environment for a sustainable and "
-"resilient city"
-msgstr "Acteurs et processus d'implémentation d'une ville intelligente"
-
-#: african_cities_conference/home/templates/home/agenda.html:897
-msgid ""
-"\n"
-"                                                    During this session, we "
-"will examine the key features and successes of the Agadir Smart City "
-"initiative, including the use of \n"
-"                                                    renewable energy, smart "
-"waste management, and digital services for citizens. Through several "
-"examples, we will explore the \n"
-"                                                    potential of Smart "
-"Cities to drive economic growth and address pressing urban challenges, while "
-"creating a more livable and \n"
-"                                                    sustainable community in "
-"Agadir.\n"
-"                                                    "
-msgstr ""
-"\n"
-"Dans cette session nous examinerons les principales caractéristiques et "
-"réussites de l'initiative Agadir Smart City, notamment l'utilisation \n"
-"des énergies renouvelables, la gestion intelligente des déchets et les "
-"services numériques pour les citoyens. À travers plusieurs exemples, nous "
-"explorerons le \n"
-"potentiel des villes intelligentes pour stimuler la croissance économique et "
-"relever les défis urbains urgents, \n"
-"tout en créant une communauté plus vivable et durable à Agadir.\n"
-"                                                    "
-
-#: african_cities_conference/home/templates/home/agenda.html:912
-msgid ""
-"Architect, Agadir City Councillor, and member of the urban planning & smart "
-"city committee"
-msgstr ""
-"Architecte, Conseiller municipal de la ville d'Agadir, et membre du comité "
-"de planification urbaine & ville intelligente"
-
-#: african_cities_conference/home/templates/home/agenda.html:923
-msgid "09:00 AM - 10:30 AM"
-msgstr "09:00 - 10:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:929
-msgid "Women's entrepreneurship in the city"
-msgstr "La ville et l'esprit d'entreprise chez les femmes"
-
-#: african_cities_conference/home/templates/home/agenda.html:932
-msgid ""
-"\n"
-"                                                    This panel session will "
-"explore the challenges and opportunities faced by women entrepreneurs in "
-"African cities. \n"
-"                                                    We will discuss the "
-"unique barriers that women face in starting and growing their businesses, "
-"and how these \n"
-"                                                    challenges can be "
-"overcome through targeted policy interventions and support networks. Drawing "
-"on a case study \n"
-"                                                    from an African city, we "
-"will examine the ways in which women-led businesses are driving economic "
-"growth, creating \n"
-"                                                    jobs, and promoting "
-"social change. Ultimately, we will highlight the vital role that women's "
-"entrepreneurship plays \n"
-"                                                    in building more "
-"inclusive and sustainable African cities.\n"
-"                                                    "
-msgstr ""
-"\n"
-" Ce panel explorera les défis et les opportunités auxquels sont confrontées "
-"les femmes entrepreneurs dans les villes africaines. \n"
-"Nous discuterons des obstacles uniques auxquels les femmes sont confrontées "
-"lors du démarrage et de la croissance de leur entreprise, \n"
-"et de la manière dont ces défis peuvent être surmontés grâce à des "
-"interventions politiques ciblées et à des réseaux de soutien. En nous "
-"appuyant sur une étude de cas \n"
-"d'une ville africaine, nous examinerons la manière dont les entreprises "
-"dirigées par des femmes stimulent la croissance économique, \n"
-"créent des emplois et promeuvent le changement social. Enfin, nous "
-"soulignerons le rôle vital que joue l'entrepreneuriat féminin dans la "
-"construction \n"
-"de villes africaines plus inclusives et durables.\n"
-"                                                    "
-
-#: african_cities_conference/home/templates/home/agenda.html:949
-#: african_cities_conference/home/templates/home/agenda.html:1358
-msgid "Academic researcher in the field of management"
-msgstr "Chercheur en gestion"
-
-#: african_cities_conference/home/templates/home/agenda.html:956
-#: african_cities_conference/home/templates/home/agenda.html:1189
-msgid "GHANA"
-msgstr "GHANA"
-
-#: african_cities_conference/home/templates/home/agenda.html:957
-msgid ""
-"Session 1: The effects of port activities on transport, mobility, and urban "
-"form-case study cities: Accra, Lomѐ, Djibouti"
-msgstr ""
-"Session 1: Les effets des activités portuaires sur le transport, la mobilité "
-"et la forme urbaine - étude de cas des villes d'Accra, Lomé et Djibouti"
-
-#: african_cities_conference/home/templates/home/agenda.html:960
-msgid ""
-"\n"
-"                                                    In port and maritime "
-"geography, ports play an important role in the economies of cities and act "
-"as catalysts and \n"
-"                                                    incite development in "
-"specific economic sectors and locations near ports or along corridors. This "
-"section discusses \n"
-"                                                    the port-city "
-"relationship of three port cities (i.e., Lomè, Djibouti, and Tema).\n"
-"                                                    "
-msgstr ""
-"\n"
-" Dans la géographie portuaire et maritime, les ports jouent un rôle "
-"important dans l'économie des villes et agissent comme catalyseurs et \n"
-"incitent au développement dans des secteurs économiques et des emplacements "
-"spécifiques à proximité des ports ou le long des corridors. Cette section "
-"traite \n"
-"de la relation ville-port de trois villes portuaires (à savoir, Lomé, "
-"Djibouti et Tema).\n"
-"                                                    "
-
-#: african_cities_conference/home/templates/home/agenda.html:974
-#: african_cities_conference/home/templates/home/agenda.html:1209
-msgid ""
-"Transport Analyst, Lecturer & Research Coordinator, Regional Transport "
-"Research and Education Centre, Kumasi (TRECK), KNUST"
-msgstr ""
-"Analyste des transports, maître de conférences et coordinateur de recherche, "
-"Centre régional de recherche et d'enseignement sur les transports, Kumasi, "
-"KNUST"
-
-#: african_cities_conference/home/templates/home/agenda.html:985
-msgid "10:30 AM - 11:30 AM"
-msgstr "10:30 - 11:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:991
-msgid ""
-"Unlocking Africa's Tourism Potential: The Power of social media Data-driven "
-"Strategies"
-msgstr ""
-"Libérer le potentiel touristique de l'Afrique : la puissance des stratégies "
-"basées sur les données des réseaux sociaux"
-
-#: african_cities_conference/home/templates/home/agenda.html:995
-msgid ""
-"\n"
-"                                                        By building new "
-"cities models in Africa to improve the living environment of the population, "
-"urban actors are aiming \n"
-"                                                        at a significant "
-"objective: make African cities the most pleasant living places in the "
-"world.\n"
-"                                                        "
-msgstr ""
-"\n"
-" En construisant des nouveaux modèles de ville en Afrique pour améliorer le "
-"cadre de vie des populations, les acteurs urbains \n"
-"visent un objectif non négligeable : celui de faire des villes africaines "
-"les endroits du monde les plus agréables à vivre.\n"
-"                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1001
-msgid ""
-"\n"
-"                                                        The new tourism "
-"actors, agencies, influencers or tourism project owners are anticipating "
-"this long-term objective \n"
-"                                                        and are helping to "
-"discover Africa and its opportunities by using social networks as "
-"inexhaustible sources of data.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Les nouveaux acteurs touristiques, agences, influenceurs ou porteurs de "
-"projets touristiques anticipent sur cet objectif à long terme \n"
-"et participent à faire découvrir l’Afrique et ses opportunités en utilisant "
-"les réseaux sociaux sources inépuisables de données.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1007
-msgid ""
-"\n"
-"                                                        With these new "
-"players, discover how social network data is reinventing tourism in Africa.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Avec ces nouveaux acteurs, découvrez comment les données des réseaux sociaux "
-"réinventent le tourisme en Afrique.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1019
-msgid "10:30 AM - 11:00 AM"
-msgstr "10:30 - 11:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:1034
-msgid "11:00 AM - 11:30 AM"
-msgstr "11:00 - 11:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:1049
-msgid "11:30 AM - 12:30 PM"
-msgstr "11:30 - 12:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:1055
-msgid ""
-"Collecting data to improve basic urban services in Africa Mobility - Health "
-"- Urban management"
-msgstr ""
-"Collecter la data pour améliorer les services urbains de base Mobilité - "
-"Santé - Gestion urbaine"
-
-#: african_cities_conference/home/templates/home/agenda.html:1059
-msgid ""
-"\n"
-"                                                        By enabling better "
-"management of services such as energy, urban mobility and waste management, "
-"ICTs play an important role in \n"
-"                                                        the development of "
-"African cities. The optimisation of public services requires the "
-"mobilisation of data produced by users \n"
-"                                                        in order to improve "
-"the living quality of populations on the continent.\n"
-"                                                        "
-msgstr ""
-"\n"
-"En permettant une meilleure gestion de services comme l’énergie, la mobilité "
-"urbaine, ou encore la gestion des déchets, les TIC jouent un rôle "
-"important \n"
-"dans le développement des villes africaines. L’optimisation des services "
-"publics nécessite la mobilisation de données produites par les usagers \n"
-"en vue d’améliorer la qualité de vie des populations sur le continent.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1066
-msgid ""
-"\n"
-"                                                        Join the discussion "
-"between public actors, start-ups and entrepreneurs in Benin who are "
-"designing and using innovative \n"
-"                                                        digital solutions to "
-"improve the quality of life of users.\n"
-"                                                        "
-msgstr ""
-"\n"
-" Rejoignez la discussion entre acteurs publiques, start-up et entrepreneurs "
-"au Bénin qui conçoivent et utilisent des solutions numériques \n"
-"innovantes en vue d'améliorer le confort de vie des usagers.\n"
-"                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1080
-msgid "Entrepreneur, Co-founder of the Pharmap application"
-msgstr "Entrepreneur , Co - fondateur de l'application Pharmap"
-
-#: african_cities_conference/home/templates/home/agenda.html:1089
-msgid "General Manager of the Waste Management Company"
-msgstr "Directeur Général de la Société de Gestion des Déchets"
-
-#: african_cities_conference/home/templates/home/agenda.html:1100
-msgid "11:00 AM - 12:30 PM"
-msgstr "11:00 - 12:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:1106
-msgid "Cloud computing for urban planning in Africa: the case of GEE"
-msgstr ""
-"Cloud computing au service de la planification urbaine en Afrique : le cas "
-"de GEE"
-
-#: african_cities_conference/home/templates/home/agenda.html:1110
-msgid ""
-"\n"
-"                                                        In this tutorial, we "
-"will explore the potential of cloud computing for urban planning in Africa, "
-"using Google \n"
-"                                                        Earth Engine (GEE) "
-"as a case study. We will provide an overview of GEE and its capabilities and "
-"demonstrate \n"
-"                                                        how it can be used "
-"to analyze and visualize urban spatial data. We will also discuss the "
-"benefits and challenges \n"
-"                                                        of cloud computing "
-"for urban planning in African cities, including issues related to data "
-"accessibility and privacy. \n"
-"                                                        By the end of the "
-"tutorial, participants will have a better understanding of how to use cloud "
-"computing tools like \n"
-"                                                        GEE to improve urban "
-"planning outcomes in Africa.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Dans ce didacticiel, nous allons explorer le potentiel du cloud computing "
-"pour la planification urbaine en Afrique, en utilisant Google Earth Engine "
-"(GEE) \n"
-"comme étude de cas. Nous donnerons un aperçu de GEE et de ses "
-"fonctionnalités et démontrerons \n"
-"comment il peut être utilisé pour analyser et visualiser des données "
-"spatiales urbaines. Nous discuterons également des avantages et des défis /"
-"ndu cloud computing pour la planification urbaine dans les villes "
-"africaines, y compris les problèmes liés à l'accessibilité \n"
-"et à la confidentialité des données. À la fin du didacticiel, les "
-"participants comprendront mieux comment utiliser des outils de cloud "
-"computing \n"
-"tels que GEE pour améliorer les résultats de la planification urbaine en "
-"Afrique.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1136
-msgid "Urban extension modeling with QGIS"
-msgstr "Modélisation de l'extension urbaine avec QGIS"
-
-#: african_cities_conference/home/templates/home/agenda.html:1140
-msgid ""
-"\n"
-"                                                        This tutorial will "
-"explore how QGIS can be used to analyze urban growth patterns and predict "
-"future expansion, with a \n"
-"                                                        focus on techniques "
-"such as land use change modeling, suitability analysis, and spatial "
-"regression. We will also discuss \n"
-"                                                        the potential of "
-"these methods for informing urban planning and policy decision-making. By "
-"the end of the tutorial, \n"
-"                                                        participants will "
-"have gained practical skills in using QGIS for urban extension modeling and "
-"be better equipped to \n"
-"                                                        apply these "
-"techniques in their own work.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Ce didacticiel explorera comment QGIS peut être utilisé pour analyser les "
-"modèles de croissance urbaine et prédire l'expansion future, en mettant "
-"l'accent \n"
-"sur des techniques telles que la modélisation du changement d'utilisation "
-"des terres, l'analyse d'adéquation et la régression spatiale. \n"
-"Nous discuterons également du potentiel de ces méthodes pour éclairer la "
-"planification urbaine et la prise de décision politique. À la fin du "
-"didacticiel, \n"
-"les participants auront acquis des compétences pratiques dans l'utilisation "
-"de QGIS pour la modélisation de l'extension urbaine et seront mieux équipés "
-"pour \n"
-"appliquer ces techniques dans leur propre travail.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1157
-msgid "Project manager at SADV/OCP"
-msgstr "Chef de projet à la SADV/OCP"
-
-#: african_cities_conference/home/templates/home/agenda.html:1165
-msgid "Workshop session"
-msgstr "Session de wokshops"
-
-#: african_cities_conference/home/templates/home/agenda.html:1169
-msgid ""
-"\n"
-"                                                        Workshop session on "
-"different areas of urban planning in Africa.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Session de workshops dans divers domaines de planification urbaine en "
-"Afrique\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1190
-msgid "Session 2: Public transport system and public health risk"
-msgstr ""
-"Session 2: Système de transport en commun et risque pour la santé publique"
-
-#: african_cities_conference/home/templates/home/agenda.html:1194
-msgid ""
-"\n"
-"                                                        Rapid population "
-"growth and urbanization are stimulating growth in African cities. The "
-"informal and inefficient \n"
-"                                                        public transport "
-"system in most African cities has increased vehicular traffic with its "
-"associated externalities. \n"
-"                                                        This section "
-"investigates the public transport systems and the major public health hazard "
-"of transport in Africa.\n"
-"                                                        "
-msgstr ""
-"\n"
-"La croissance rapide de la population et l'urbanisation stimulent la "
-"croissance des villes africaines. Le système de transport public \n"
-"informel et inefficace dans la plupart des villes africaines a augmenté le "
-"trafic automobile avec ses externalités associées. \n"
-"Cette section étudie les systèmes de transport public et le principal danger "
-"pour la santé publique des transports en Afrique.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1220
-msgid "12:30 PM - 02:30 PM"
-msgstr "12:30 - 14:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:1234
-msgid "02:30 PM - 04:30 PM"
-msgstr "14:30 - 16:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:1240
-msgid "African Cities Lab: A gamechanger that transforms African cities"
-msgstr ""
-"African Cities Lab: un gamechanger qui transforme les villes africaines"
-
-#: african_cities_conference/home/templates/home/agenda.html:1244
-msgid ""
-"\n"
-"                                                        Presentation of the "
-"<a href=\"https://africancitieslab.org/\" target=\"_blank\">African Cities "
-"Lab project</a>:\n"
-"                                                        Six institutions "
-"from Anglophone and Francophone Africa are collaborating to create an "
-"African digital \n"
-"                                                        education platform "
-"on urban development, offering quality MOOCs and online continuing education "
-"for professionals. \n"
-"                                                        It also serves as a "
-"forum for the exchange of digital educational resources and management and "
-"governance of African \n"
-"                                                        cities to promote "
-"sustainable urban development.\n"
-"                                                        "
-msgstr ""
-"\n"
-"          Présentation du projet <a href=\"https://africancitieslab.org/\" "
-"target=\"_blank\">African Cities Lab</a>:\n"
-" Six institutions d’Afrique anglophone et francophone collaborent pour créer "
-"une plateforme africaine d'éducation numérique \n"
-"sur le développement urbain, offrant des MOOCs de qualité et une formation "
-"continue en ligne pour les professionnels. \n"
-"Elle sert également de forum pour l'échange de ressources éducatives "
-"numériques et la gestion et la gouvernance des villes \n"
-"africaines afin de favoriser un développement urbain durable.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1260
-msgid "02:30 PM - 04:00 PM"
-msgstr "14:30 - 16:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:1266
-msgid "Digital transformation and digital governance"
-msgstr "Transformation digitale et gouvernance numérique"
-
-#: african_cities_conference/home/templates/home/agenda.html:1270
-msgid ""
-"\n"
-"                                                        In this session, we "
-"will showcase recent research that explores the ways in which digital "
-"technologies are shaping \n"
-"                                                        urban citizenship, "
-"participation, and governance in Africa, and the opportunities and "
-"challenges that arise from \n"
-"                                                        these changes. "
-"Topics will include the role of digital platforms in promoting citizen "
-"engagement and accountability, \n"
-"                                                        the challenges of "
-"bridging the digital divide and ensuring equitable access to digital "
-"technologies, and the \n"
-"                                                        implications of "
-"digital governance for democratic processes and civic participation. The "
-"papers will provide \n"
-"                                                        important insights "
-"for policymakers, scholars, and practitioners working at the intersection of "
-"digital technologies \n"
-"                                                        and urban governance "
-"in Africa.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Au cours de cette session, nous présenterons des recherches récentes qui "
-"explorent la manière dont les technologies numériques \n"
-"façonnent la citoyenneté urbaine, la participation et la gouvernance en "
-"Afrique, ainsi que les opportunités et les défis qui découlent \n"
-"de ces changements. Les sujets incluront le rôle des plateformes numériques "
-"dans la promotion de l'engagement et de la responsabilité \n"
-"des citoyens, les défis de combler le fossé numérique et d'assurer un accès "
-"équitable aux technologies numériques, \n"
-"et les implications de la gouvernance numérique pour les processus "
-"démocratiques et la participation civique. Les articles fourniront des \n"
-"informations importantes aux décideurs, universitaires et praticiens "
-"travaillant à l'intersection des technologies numériques et de la "
-"gouvernance urbaine en Afrique.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1306
-msgid "Architecture and urban development"
-msgstr "Architecture et développement urbain"
-
-#: african_cities_conference/home/templates/home/agenda.html:1310
-msgid ""
-"\n"
-"                                                        This session will "
-"examine the intersections of architecture and urbanism, with a focus on the "
-"design, planning, \n"
-"                                                        and development of "
-"sustainable and livable urban spaces in Africa. The session will feature "
-"papers that explore \n"
-"                                                        a range of issues, "
-"including urban morphology, housing, public spaces, heritage conservation, "
-"new city development, \n"
-"                                                        and community "
-"participation, through a variety of theoretical and empirical perspectives. "
-"The aim of this session \n"
-"                                                        is to foster "
-"interdisciplinary dialogue and exchange of ideas among architects, urban "
-"designers, planners, and scholars, \n"
-"                                                        and to promote "
-"innovative approaches to architecture and urban development in the African "
-"context.\n"
-"                                                        "
-msgstr ""
-"\n"
-" Cette session examinera les intersections de l'architecture et de "
-"l'urbanisme, en mettant l'accent sur la conception, la planification \n"
-"et le développement d'espaces urbains durables et vivables en Afrique. La "
-"session présentera des articles qui explorent une gamme de questions, \n"
-"y compris la morphologie urbaine, le logement, les espaces publics, la "
-"conservation du patrimoine, le développement de nouvelles villes \n"
-"et la participation communautaire, à travers une variété de perspectives "
-"théoriques et empiriques. L'objectif de cette session \n"
-"est de favoriser le dialogue interdisciplinaire et l'échange d'idées entre "
-"architectes, urbanistes et universitaires, \n"
-"et de promouvoir des approches innovantes de l'architecture et du "
-"développement urbain dans le contexte africain.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1336
-msgid "Socioeconomic challenges of African cities"
-msgstr "Challenges socioéconomiques de la ville africaine"
-
-#: african_cities_conference/home/templates/home/agenda.html:1340
-msgid ""
-"\n"
-"                                                        This session will "
-"address the complex and diverse issues that affect the social and economic "
-"well-being \n"
-"                                                        of urban populations "
-"in Africa. The session will feature papers that explore a range of topics, "
-"including \n"
-"                                                        poverty, the "
-"socioeconomic impacts of COVID-19, unemployment, and social exclusion, with "
-"a focus on urban youth. \n"
-"                                                        The aim of this "
-"session is to provide a platform for researchers and practitioners to share "
-"insights and experience \n"
-"                                                        and to propose "
-"innovative strategies and policies that can help to address the "
-"socioeconomic challenges facing \n"
-"                                                        African cities.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Cette session abordera les questions complexes et diverses qui affectent le "
-"bien-être social et économique des populations urbaines\n"
-" en Afrique. La session présentera des articles qui explorent une gamme de "
-"sujets, y compris la pauvreté, \n"
-"les impacts socio-économiques de COVID-19, le chômage et l'exclusion "
-"sociale, avec un accent sur la jeunesse urbaine. \n"
-"L'objectif de cette session est de fournir une plate-forme aux chercheurs et "
-"aux praticiens pour partager leurs idées et leurs expériences \n"
-"et proposer des stratégies et des politiques innovantes qui peuvent aider à "
-"relever les défis socio-économiques \n"
-"auxquels sont confrontées les villes africaines.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1369
-msgid "04:00 PM - 05:00 PM"
-msgstr "16:00 - 17:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:1375
-msgid "Coffee break/Posters"
-msgstr "Pause café/Posters"
-
-#: african_cities_conference/home/templates/home/agenda.html:1379
-msgid ""
-"\n"
-"                                                        Posters "
-"presentations on different areas of urban planning in Africa.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Présentations de posters dans divers domaines de planification urbaine en "
-"Afrique\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1391
-msgid "04:30 PM - 05:00 PM"
-msgstr "16:30 - 17:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:1406
-msgid "05:00 PM - 06:00 PM"
-msgstr "17:00 - 18:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:1412
-msgid "Restitution of the Hackathon (Innovation Lab)"
-msgstr "Restitution Hackathon"
-
-#: african_cities_conference/home/templates/home/agenda.html:1416
-msgid ""
-"\n"
-"                                                        Optimising drinking "
-"water management in the new eco-city of Seme City. As part of the African "
-"Cities Lab - 2023 Summit, \n"
-"                                                        a hackathon was "
-"organised with 12 teams of 5 people. The objective is to find digital "
-"solutions to reuse the grey water \n"
-"                                                        of the future Seme "
-"City campus. The restitution is an opportunity for the 5 finalist teams to "
-"present their solutions \n"
-"                                                        to a "
-"multidisciplinary jury.\n"
-"                                                        "
-msgstr ""
-"\n"
-"Optimiser la gestion de l’eau potable au sein de la nouvelle eco cité de "
-"Sèmè City. Dans le cadre de l’African Cities Lab - 2023 Summit, \n"
-"un hackathon a été organisé avec 12 équipes de 5 personnes. L’objectif est "
-"de trouver des solutions numériques pour réutiliser les eaux grises \n"
-"du futur campus Sèmè City. La restitution est l’occasion pour les 5 équipes "
-"finalistes de \n"
-"présenter les solutions imaginées devant un jury pluridisciplinaire.\n"
-"                                                        "
-
-#: african_cities_conference/home/templates/home/agenda.html:1431
-msgid "05:00 PM - 05:30 PM"
-msgstr "17:00 - 17:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:1437
-msgid "Closing remarks"
-msgstr "Discours de clôture"
-
-#: african_cities_conference/home/templates/home/agenda.html:1446
-msgid "05:30 PM - 06:00 PM"
-msgstr "17:30 - 18:00"
-
-#: african_cities_conference/home/templates/home/agenda.html:1452
-msgid "Award ceremony"
-msgstr "Remise des prix"
-
-#: african_cities_conference/home/templates/home/agenda.html:1461
-msgid "06:00 PM - 06:15 PM"
-msgstr "18:00 - 18:15"
-
-#: african_cities_conference/home/templates/home/agenda.html:1467
-msgid "Key note - plenary session"
-msgstr "Discours de clôture (Key note)"
-
-#: african_cities_conference/home/templates/home/agenda.html:1487
-msgid "06:30 PM - 07:30 PM"
-msgstr "18:30 - 19:30"
-
-#: african_cities_conference/home/templates/home/agenda.html:1492
-msgid "Closing Cocktail"
-msgstr "Cocktail de fin"
-
-#: african_cities_conference/home/templates/home/agenda.html:1561
-#: african_cities_conference/templates/base.html:199
-msgid "An event by"
-msgstr "Un événement de"
-
-#: african_cities_conference/home/templates/home/agenda.html:1595
-#: african_cities_conference/templates/base.html:249
-msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
-msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
+#: african_cities_conference/home/templates/home/agenda.html:132
+msgid "Download PDF"
+msgstr "Télécharger le PDF"
 
 #: african_cities_conference/home/templates/home/blocks/agenda_layout.html:14
 msgid "Day"
@@ -1592,8 +107,8 @@ msgstr "En savoir plus"
 #: african_cities_conference/home/templates/home/contact.html:16
 #: african_cities_conference/home/templates/home/contact.html:23
 #: african_cities_conference/home/templates/home/contact.html:44
-#: african_cities_conference/templates/base.html:135
-#: african_cities_conference/templates/base.html:244
+#: african_cities_conference/templates/base.html:137
+#: african_cities_conference/templates/base.html:246
 msgid "Venues & Contacts"
 msgstr "Lieux & Contacts"
 
@@ -2063,16 +578,16 @@ msgstr ""
 "intelligentes.\n"
 "                            "
 
-#: african_cities_conference/home/templates/home/home.html:404
-#: african_cities_conference/home/templates/home/home.html:554
+#: african_cities_conference/home/templates/home/home.html:403
+#: african_cities_conference/home/templates/home/home.html:552
 msgid "Go to the program"
 msgstr "Voir le programme"
 
-#: african_cities_conference/home/templates/home/home.html:417
+#: african_cities_conference/home/templates/home/home.html:416
 msgid "Preliminary Webinars"
 msgstr "Webinaires préliminaires"
 
-#: african_cities_conference/home/templates/home/home.html:425
+#: african_cities_conference/home/templates/home/home.html:424
 msgid ""
 "\n"
 "                          Through a series of 4 webinars, the partners of "
@@ -2105,22 +620,22 @@ msgstr ""
 "ou pourraient être plus efficaces dans l'exploitation du numérique pour "
 "atteindre les ODD localement."
 
-#: african_cities_conference/home/templates/home/home.html:436
-#: african_cities_conference/home/templates/home/home.html:473
-#: african_cities_conference/home/templates/home/home.html:498
-#: african_cities_conference/home/templates/home/home.html:523
+#: african_cities_conference/home/templates/home/home.html:435
+#: african_cities_conference/home/templates/home/home.html:472
+#: african_cities_conference/home/templates/home/home.html:497
+#: african_cities_conference/home/templates/home/home.html:522
 msgid "Learn more"
 msgstr "En savoir plus"
 
-#: african_cities_conference/home/templates/home/home.html:447
+#: african_cities_conference/home/templates/home/home.html:446
 msgid "Innovation Labs"
 msgstr "Labs d’innovation"
 
-#: african_cities_conference/home/templates/home/home.html:459
+#: african_cities_conference/home/templates/home/home.html:458
 msgid "Doctoral Consortium & Spring school"
 msgstr "Consortium doctoral & école de printemps"
 
-#: african_cities_conference/home/templates/home/home.html:467
+#: african_cities_conference/home/templates/home/home.html:466
 msgid ""
 "\n"
 "                                        The DC offers the opportunity to "
@@ -2139,11 +654,11 @@ msgstr ""
 "pairs du domaine de leur sujet de thèse. \n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/home.html:485
+#: african_cities_conference/home/templates/home/home.html:484
 msgid "Poster & Demos Session"
 msgstr "Session posters et démos"
 
-#: african_cities_conference/home/templates/home/home.html:493
+#: african_cities_conference/home/templates/home/home.html:492
 msgid ""
 "\n"
 "                                        The poster and demo session of the "
@@ -2160,11 +675,11 @@ msgstr ""
 "innovantes dans un cadre informel et interactif.\n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/home.html:510
+#: african_cities_conference/home/templates/home/home.html:509
 msgid "Worshops & Tutorials session"
 msgstr "Session Ateliers & Didacticiels"
 
-#: african_cities_conference/home/templates/home/home.html:518
+#: african_cities_conference/home/templates/home/home.html:517
 msgid ""
 "\n"
 "                                        We invite proposals for events that "
@@ -2181,11 +696,11 @@ msgstr ""
 "scientifique et la réflexion créative et critique.\n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/home.html:535
+#: african_cities_conference/home/templates/home/home.html:534
 msgid "Marketplace"
 msgstr ""
 
-#: african_cities_conference/home/templates/home/home.html:543
+#: african_cities_conference/home/templates/home/home.html:542
 msgid ""
 "\n"
 "                                        It is a virtual showroom to offer "
@@ -2200,19 +715,19 @@ msgstr ""
 "et de vendre leur idées, produits et services innovants.\n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/home.html:567
+#: african_cities_conference/home/templates/home/home.html:565
 msgid "Organizations"
 msgstr "Organisateurs"
 
-#: african_cities_conference/home/templates/home/home.html:597
+#: african_cities_conference/home/templates/home/home.html:595
 msgid "African Cities Lab partners"
 msgstr "Partenaires de l'African Cities Lab"
 
-#: african_cities_conference/home/templates/home/home.html:655
+#: african_cities_conference/home/templates/home/home.html:653
 msgid "Let's keep in touch"
 msgstr "Restons en contact"
 
-#: african_cities_conference/home/templates/home/home.html:658
+#: african_cities_conference/home/templates/home/home.html:656
 msgid ""
 "\n"
 "                        Register to our newsletter to be first to hear about "
@@ -2225,20 +740,20 @@ msgstr ""
 "d'autres choses encore !\n"
 "                        "
 
-#: african_cities_conference/home/templates/home/home.html:671
+#: african_cities_conference/home/templates/home/home.html:669
 msgid "Your First and Last Name"
 msgstr "Votre nom et prénom"
 
-#: african_cities_conference/home/templates/home/home.html:678
+#: african_cities_conference/home/templates/home/home.html:676
 msgid "Your email here"
 msgstr "Votre email"
 
-#: african_cities_conference/home/templates/home/home.html:684
-#: african_cities_conference/templates/base.html:143
+#: african_cities_conference/home/templates/home/home.html:682
+#: african_cities_conference/templates/base.html:145
 msgid "Register"
 msgstr "S'inscrire"
 
-#: african_cities_conference/home/templates/home/home.html:710
+#: african_cities_conference/home/templates/home/home.html:708
 msgid ""
 "\n"
 "                            An multi-site, virtual and immersive <span class="
@@ -2250,31 +765,1432 @@ msgstr ""
 "et immersive sur plusieurs sites\n"
 "                    "
 
-#: african_cities_conference/home/templates/home/home.html:727
+#: african_cities_conference/home/templates/home/home.html:725
 msgid "Benin"
 msgstr "Bénin"
 
-#: african_cities_conference/home/templates/home/home.html:731
+#: african_cities_conference/home/templates/home/home.html:729
 msgid "Sèmè City, Cotonou"
 msgstr ""
 
-#: african_cities_conference/home/templates/home/home.html:744
+#: african_cities_conference/home/templates/home/home.html:742
 msgid "Online"
 msgstr "En ligne"
 
-#: african_cities_conference/home/templates/home/home.html:748
+#: african_cities_conference/home/templates/home/home.html:746
 msgid "Engage via our virtual platform as you would at a physical event."
 msgstr ""
 "Engagez-vous via notre plateforme virtuelle comme vous le feriez lors d'un "
 "événement physique."
 
-#: african_cities_conference/home/templates/home/home.html:761
+#: african_cities_conference/home/templates/home/home.html:759
 msgid "Morocco"
 msgstr "Maroc"
 
-#: african_cities_conference/home/templates/home/home.html:765
+#: african_cities_conference/home/templates/home/home.html:763
 msgid "Mohammed VI Polytechnic University, Ben guerir"
 msgstr "Université Mohammed VI Polytechnique, Ben Guérir"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:5
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:5
+msgid "08:30 AM - 09:00 AM"
+msgstr "08:30 - 09:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:8
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:8
+msgid "Welcome services"
+msgstr "Accueil des participants"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:15
+msgid "09:00 AM - 09:10 AM"
+msgstr "09:00 - 09:10"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:19
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:32
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:76
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:108
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:164
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:247
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:297
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:389
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:419
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:568
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:19
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:72
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:223
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:272
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:287
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:473
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:631
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:646
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:701
+msgid "BENIN"
+msgstr "BÉNIN"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:20
+msgid "Opening Ceremony"
+msgstr "Cérémonie d'ouverture"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:28
+msgid "09:10 AM - 09:15 AM"
+msgstr "09:10 - 09:15"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:33
+msgid "Datafrication: From Data to African Smart Cities"
+msgstr "Datafrication : de la donnée aux villes africaines intelligentes"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:36
+msgid ""
+"\n"
+"                        The challenges related to the accelerated "
+"demographic expansion observed in Africa would find their\n"
+"                        solutions in the new ICTs developed over the last "
+"decades. Mobile phone networks, internet, social networks,\n"
+"                        mobility applications, mobile payment, online "
+"shopping, etc. Digital transformation of traditional services\n"
+"                        has led to the production and use of an infinite "
+"amount of data that will be useful in building citizen-centred\n"
+"                        smart cities.\n"
+"                        "
+msgstr ""
+"\n"
+"Les défis liés à l’expansion démographique accélérée observée en Afrique "
+"trouveraient leurs solutions dans les nouvelles technologies de "
+"l’information et de la communication \n"
+"développées au cours de ces dernières décennies. Réseaux de téléphonie "
+"mobile, internet, réseaux sociaux, \n"
+"applications de mobilité, paiement mobile, achats en ligne. La "
+"transformation digitale des services traditionnels a entraîné la production "
+"et la consommation d’une quantité infinie de données \n"
+"qui serviront à la construction de villes intelligentes centrée sur le "
+"citoyen.\n"
+"                                                    "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:52
+msgid "Director of the Centre of Excellence in Africa"
+msgstr "Directeur du Centre Excellence in Africa"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:62
+msgid ""
+"Managing Director and Chief Innovation Officer at Sèmè City Development "
+"Agency"
+msgstr ""
+"Directrice Générale et Responsable de l'innovation à l'Agence de "
+"développement de la ville de Sèmè City"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:72
+msgid "09:15 AM - 09:30 AM"
+msgstr "09:15 - 09:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:77
+msgid "The African city of 2043 as imagined by African youth"
+msgstr "La ville africaine de 2043 vue par la jeunesse africaine"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:80
+msgid ""
+"\n"
+"                        You are invited to take a twenty-year leap into the "
+"future with Rebecca, a 12-year-old learner in the\n"
+"                        TINIMA programme initiated by Sèmè City. Welcome to "
+"the year 2043, where eco-neighbourhoods, smart networks,\n"
+"                        innovative mobility and fully digitalized services "
+"are flourishing in African cities at the service of a\n"
+"                        sustainable and inclusive living environment for "
+"citizens.\n"
+"                        "
+msgstr ""
+"\n"
+"Vous êtes invités à faire un bond de vingt ans dans le futur pour découvrir "
+"la ville africaine de demain avec Rebecca, 12 ans. \n"
+"Bienvenue en 2043, où éco - quartiers, réseaux intelligents, \n"
+"offre de mobilités innovantes et services entièrement digitalisés \n"
+"fleurissent dans les villes africaines au service d’un cadre de vie durable "
+"et inclusif pour les citoyens.\n"
+"                                                    "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:94
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:711
+msgid "Learner in the TINIMA program"
+msgstr ""
+"Apprenante du TINIMA, un programme de Sèmè City pour les jeunes de 8 à 18 ans"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:104
+msgid "09:30 AM - 10:15 AM"
+msgstr "09:30 - 10:15"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:109
+msgid "The politician and the architect"
+msgstr "Le politicien et l'architecte"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:113
+msgid ""
+"\n"
+"                            Whereas the African city is in the process of "
+"transformation to address the urban challenges it faces,\n"
+"                            the public sector is giving more and more "
+"importance to collaborative work with the private sector.\n"
+"                            The relationship between public and private "
+"actors is being shaken up. This evolution of collaboration\n"
+"                            methods is stimulating, particularly with regard "
+"to the technological evolution that allows the city\n"
+"                            to be reconsidered in an innovative way.\n"
+"                            "
+msgstr ""
+"\n"
+"Alors que la ville africaine est en pleine transformation pour adresser les "
+"challenges urbains qui se présentent à elle, la commande publique \n"
+"accorde de plus en plus d’importance au travail collaboratif avec le "
+"secteur \n"
+"privé. Les relations entre acteurs publiques et privés s’en trouvent "
+"bousculées. \n"
+"Cette évolution des modes de collaboration est stimulante notamment au "
+"regard de \n"
+"l’évolution technologique qui permet de repenser la ville d’une façon "
+"innovante.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:130
+msgid ""
+"Minister of Living Environment, Transport in charge of Sustainable "
+"Development of Benin"
+msgstr ""
+"Ministre du cadre de vie, des transports chargé du développement durable du "
+"Bénin"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:140
+msgid "Architect, Global Archi Consult"
+msgstr "Architecte,Global Archi Consult"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:150
+msgid "10:15 AM - 10:45 AM"
+msgstr "10:15 - 10:45"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:153
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:420
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:435
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:73
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:258
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:273
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:459
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:632
+msgid "Coffee break"
+msgstr "Pause café"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:160
+msgid "10:45 AM - 12:00 PM"
+msgstr "10:45 - 12:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:165
+msgid "Collective intelligence: youth, robots and the African city of tomorrow"
+msgstr ""
+"Intelligence collective : les jeunes, les robots et la ville de demain."
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:168
+msgid ""
+"\n"
+"                        Second academic year students of Africa Design "
+"School, the first design school in Benin, will present the result\n"
+"                        of a Datavisualization workshop on relationship "
+"between mobility data and data collected in the experimental\n"
+"                        eco-city of Sèmè One, the first campus of the Sèmè "
+"City project.\n"
+"                        "
+msgstr ""
+"\n"
+"Les étudiants en 2ème année d’Africa Design School, première école de design "
+"au Bénin présenteront le résultat d’un workshop Datavisualization \n"
+"sur les relations entre les données de mobilité et \n"
+"les données récoltées à travers la ville de Cotonou.\n"
+"                                                    "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:180
+msgid "Second academic year students of Africa Design School"
+msgstr "Etudiants en 2eme année de design numérique, Africa Design School"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:190
+msgid "12:00 AM - 02:00 PM"
+msgstr "12:00 - 14:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:194
+msgid "Lunch break"
+msgstr "Pause déjeuner"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:203
+msgid "02:00 PM - 02:30 PM"
+msgstr "14:00 - 14:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:208
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:312
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:352
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:434
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:449
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:489
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:519
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:85
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:128
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:161
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:257
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:339
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:369
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:398
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:499
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:540
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:570
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:609
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:671
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:686
+msgid "MAROCCO"
+msgstr "MAROC"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:209
+msgid "Resilience and adaptation of African"
+msgstr "Résilience dans les villes africaines"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:213
+msgid ""
+"\n"
+"                            This keynote speech will explore the challenges "
+"faced by cities in Africa, including rapid urbanization, climate change,\n"
+"                            and economic disparities. The keynote will "
+"highlight the importance of building resilience in African cities to ensure\n"
+"                            that they can withstand shocks and stresses "
+"while continuing to provide essential services and opportunities for their "
+"residents.\n"
+"                            It will also discuss successful examples of "
+"resilience-building efforts in African cities and offer insights into how "
+"these efforts\n"
+"                            can be scaled up and replicated across the "
+"continent. Ultimately, the keynote will emphasize the urgent need for a "
+"collaborative\n"
+"                            and coordinated approach to building resilient "
+"African cities that can thrive in the face of adversity.\n"
+"                            "
+msgstr ""
+"\n"
+"Ce discours d'ouverture explorera les défis auxquels sont confrontées les "
+"villes africaines, notamment l'urbanisation rapide, le changement "
+"climatique \n"
+"et les disparités économiques. Le discours d'ouverture soulignera "
+"l'importance de renforcer la résilience \n"
+"des villes africaines pour s'assurer qu'elles peuvent résister aux défis "
+"tout en continuant à fournir des services et des opportunités essentiels \n"
+"à leurs résidents. Il discutera également d'exemples réussis d'efforts de "
+"renforcement de la résilience dans les villes africaines et offrira un "
+"aperçu de la manière dont ces efforts peuvent être intensifiés et reproduits "
+"à travers le continent. \n"
+"Enfin, ce discours soulignera le besoin urgent d'une approche "
+"collaborative \n"
+"et coordonnée pour construire des villes africaines résilientes qui peuvent "
+"prospérer face à l'adversité.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:231
+msgid ""
+"Director of the School of Architecture, Urban Planning and Design (SAP + D) "
+"at the Mohammed VI Polytechnic University"
+msgstr ""
+"Directeur de l'Ecole d'Architecture, d'Urbanisme et de Design (SAP + D) à "
+"l'Université Polytechnique"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:242
+msgid "02:15 PM - 03:00 PM"
+msgstr "14:15 - 15:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:248
+msgid ""
+"The professional and the opinion leader Digital technologies and "
+"infrastructures"
+msgstr ""
+"Le professionnel et le leader d'opinion, Technologies et infrastructures "
+"numériques"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:252
+msgid ""
+"\n"
+"                            Innovation at the service of the city and its "
+"users is a key issue in addressing the urban challenges of the century and\n"
+"                            can raise economic, social and even ethical "
+"questions.\n"
+"                            "
+msgstr ""
+"\n"
+"L’innovation au service de la ville et des usagers est un enjeu de premier "
+"plan pour adresser les défis urbains du siècle \n"
+"et qui peut susciter des questions d’ordre économique, social et même "
+"éthique.\n"
+"                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:258
+msgid ""
+"\n"
+"                            Join two key players in the construction of new "
+"models of cities in Africa who will analyse how NICTs work in the urban "
+"question.\n"
+"                            "
+msgstr ""
+"\n"
+"Rejoignez deux acteurs incontournables de la construction des nouveaux "
+"modèles de villes en Afrique qui décortiquent le fonctionnement des NTIC "
+"dans la question de l’urbain.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:271
+msgid ""
+"Artificial intelligence engineer, content creator on Youtube and teacher"
+msgstr ""
+"Ingénieur en intelligence artificielle, créateur de contenu sur Youtube et "
+"formateur"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:281
+msgid ""
+"Director of Services for the State (Société des Infrastructures Numériques "
+"du Bénin)"
+msgstr ""
+"Directrice des Services pour l’Etat (Société des Infrastructures Numériques "
+"du Bénin)"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:292
+msgid "02:15 PM - 04:00 PM"
+msgstr "14:15 - 16:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:298
+msgid ""
+"Workshop - Towards sustainable and healthy living environments in Africa: "
+"Public health and territorial planning policies connections"
+msgstr ""
+"Workshop - Vers des cadres de vie durables et sains en Afrique : liens entre "
+"les politiques de santé publique et d'aménagement territorial"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:307
+msgid "02:30 PM - 03:00 PM"
+msgstr "14:30 - 15:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:313
+msgid "Urban geoinformation and its applications in African cities"
+msgstr ""
+"La géoinformation urbaine et ses applications dans les villes africaines"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:317
+msgid ""
+"\n"
+"                            This keynote speech will delve into the critical "
+"role of geospatial data and technology in informing urban\n"
+"                            planning and development decisions in African "
+"cities. The keynote will showcase successful applications of\n"
+"                            geoinformation in African cities and highlight "
+"the potential for these technologies to improve urban services,\n"
+"                            promote sustainability, and enhance resilience. "
+"It will also address the challenges faced by African cities in\n"
+"                            accessing and utilizing geospatial data and "
+"technology. Ultimately, the keynote will emphasize the need for\n"
+"                            collaborative efforts and public engagement "
+"approaches to leverage geoinformation to address urban challenges\n"
+"                            and support sustainable urban development in "
+"Africa.\n"
+"                            "
+msgstr ""
+"\n"
+"Ce discours d'ouverture se penchera sur le rôle essentiel des données et de "
+"la technologie géospatiales pour éclairer les décisions de planification et "
+"de développement urbains dans les villes africaines. \n"
+"Le discours présentera les applications réussies de l’information "
+"géographique dans \n"
+"les villes africaines et soulignera le potentiel de ces technologies pour "
+"améliorer les services urbains, promouvoir la durabilité et renforcer la "
+"résilience.\n"
+"Il abordera également les défis auxquels sont confrontées les villes "
+"africainesdans l'accès et l'utilisation des données et technologies "
+"géospatiales. \n"
+"Enfin, le discours d'ouverture mettra l'accent sur la nécessité d'efforts "
+"collaboratifs \n"
+"et d'approches d'engagement du public pour tirer parti de l’information "
+"géographique \n"
+"pour relever les défis urbains et soutenir le développement urbain durable "
+"en Afrique.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:336
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:482
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:533
+msgid ""
+"Senior Lecturer in machine learning for Earth observation and Geomatics - "
+"Bordeaux INP"
+msgstr ""
+"Maître de conférences en apprentissage automatique pour L'observation de la "
+"Terre et la Géomatique - Bordeaux INP"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:347
+msgid "03:00 PM - 03:30 PM"
+msgstr "15:00 - 15:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:353
+msgid "The rural to the rescue of the urban"
+msgstr "Le rural à la rescousse de l’urbain"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:357
+msgid ""
+"\n"
+"                            This keynote speech will highlight the "
+"importance of building strong partnerships between rural and urban\n"
+"                            communities and showcase examples of successful "
+"collaborations that have resulted in sustainable and\n"
+"                            equitable urban development. The aim of this "
+"speech is to inspire new thinking and action and to promote\n"
+"                            greater awareness of the value of rural-urban "
+"linkages in shaping the future of cities.\n"
+"                            "
+msgstr ""
+"\n"
+"Ce discours d'ouverture soulignera l'importance d'établir des partenariats "
+"solides entre les communautés rurales et urbaines \n"
+"et présentera des exemples de collaborations réussies qui ont abouti à un "
+"développement urbain durable et équitable. \n"
+"L'objectif de ce discours est d'inspirer de nouvelles réflexions et actions "
+"et de promouvoir une plus grande \n"
+"prise de conscience de la valeur des liens ruraux-urbains pour façonner "
+"l'avenir des villes.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:373
+msgid ""
+"Professor at the School of Architecture, Urban Planning and Design (SAP + D) "
+"at the Mohammed VI Polytechnic University"
+msgstr ""
+"Professeure à l'Ecole d'Architecture, d'Urbanisme et de Design (SAP + D) de "
+"l'Université Polytechnique Mohammed VI"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:384
+msgid "03:15 PM - 04:15 PM"
+msgstr "15:15 - 16:15"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:390
+msgid "Data protection in African cities of tomorrow"
+msgstr "La protection des données dans les villes africaines de demain"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:394
+msgid ""
+"\n"
+"                            Whereas the notion of smart cities places the "
+"user at the centre of the city's activities, the alliance\n"
+"                            between digital technology and innovation will "
+"make it possible to improve the comfort and quality of\n"
+"                            life of the populations that are becoming more "
+"and more producers and consumers of data.\n"
+"                            "
+msgstr ""
+"\n"
+"Alors que le concept même de smart cities positionne l’usager au centre du "
+"fonctionnement de la ville, l’alliance entre numérique, innovation "
+"technologique\n"
+" et plannification urbaine permettra d’améliorer le confort et \n"
+"la qualité de vie des populations de plus en plus et productrices et "
+"consommatrice de données.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:401
+msgid ""
+"\n"
+"                            In this context, the regulation of data in "
+"Africa will have to be established as an essential tool in the\n"
+"                            fight against all forms of acts that would "
+"affect the security and well-being of populations.\n"
+"                            "
+msgstr ""
+"\n"
+"Dans ce contexte, la réglementation des données en Afrique devra s’établir "
+"comme un outil\n"
+" de lutte incontournable contre toute forme d’actes qui porteraient atteinte "
+"à la sécurité et au bien-être des populations.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:414
+msgid "04:15 PM - 04:45 PM"
+msgstr "16:15 - 16:45"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:429
+msgid "03:30 PM - 04:00 PM"
+msgstr "15:30 - 16:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:444
+msgid "04:00 PM - 05:30 PM"
+msgstr "16:00 - 17:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:450
+msgid "Remote sensing and smart GIS"
+msgstr "Télédétection et SIG intelligent"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:454
+msgid ""
+"\n"
+"                            This session will examine the latest "
+"developments and applications of remote sensing and GIS technologies in\n"
+"                            the context of African urban environments. The "
+"session will feature papers that highlight the potential of\n"
+"                            remote sensing and smart GIS for urban planning, "
+"environmental monitoring, disaster management, and public\n"
+"                            service delivery in African cities. Through case "
+"studies and theoretical frameworks, this session aims to\n"
+"                            provide a platform for researchers and "
+"practitioners to exchange ideas and explore innovative approaches to\n"
+"                            using remote sensing and GIS technologies to "
+"support sustainable urban development in Africa.\n"
+"                            "
+msgstr ""
+"\n"
+"Cette session examinera les derniers développements et applications des "
+"technologies de télédétection et SIG dans le contexte \n"
+"des environnements urbains africains. La session présentera des articles "
+"mettant en évidence le potentiel de la \n"
+"télédétection et des SIG intelligents pour la planification urbaine, le "
+"suivi de l'environnement, la gestion des catastrophes et la prestation de "
+"services publics dans \n"
+"les villes africaines. À travers des études de cas et des modèles "
+"théoriques, \n"
+"cette session vise à fournir une plate-forme aux chercheurs et aux "
+"praticiens pour échanger des idées et \n"
+"explorer des approches innovantes d'utilisation de la télédétection et des "
+"technologies SIG pour soutenir le développement urbain durable en Afrique.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:472
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:362
+msgid ""
+"Researcher at the Center of Urban Systems (CUS) at Mohammad VI Polytechnic "
+"University"
+msgstr ""
+"Chercheur au Centre des systèmes urbains de l'Université polytechnique "
+"Mohammad VI"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:490
+msgid "Sustainable mobility for African cities"
+msgstr "Mobilité durable dans les villes africaines"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:494
+msgid ""
+"\n"
+"                            This session will explore the latest "
+"advancements and opportunities in the field of mobility in African cities.\n"
+"                            With a focus on innovative technologies and "
+"strategies, this session will feature papers that examine the\n"
+"                            challenges and benefits of implementing smart "
+"mobility solutions in the region, including intelligent transportation\n"
+"                            systems, optimization methods with machine "
+"learning, and sustainable urban transport systems. The session aims to\n"
+"                            provide a platform for researchers and "
+"practitioners to exchange ideas and insights on how smart mobility "
+"solutions\n"
+"                            can contribute to more efficient, sustainable, "
+"and equitable transportation in African cities.\n"
+"                            "
+msgstr ""
+"\n"
+" Cette session explorera les dernières avancées et opportunités dans le "
+"domaine de la mobilité dans les villes africaines. \n"
+"En mettant l'accent sur les technologies et les stratégies innovantes, cette "
+"session présentera des articles qui examineront les défis et les avantages \n"
+"de la mise en œuvre de solutions de mobilité intelligentes dans la région, y "
+"compris les systèmes de transport intelligents, les méthodes "
+"d'optimisation \n"
+"avec l'apprentissage automatique et les systèmes de transport urbain "
+"durable. La session vise à fournir une plate-forme \n"
+"aux chercheurs et aux praticiens pour échanger des idées sur la manière dont "
+"les solutions de mobilité intelligente \n"
+"peuvent contribuer à un transport plus efficace,durable et équitable dans "
+"les villes africaines.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:512
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:523
+msgid ""
+"Researcher at the Center of Urban Systems (CUS) at Mohammed VI Polytechnic "
+"University"
+msgstr ""
+"Chercheur au Centre des systèmes urbains de l'Université polytechnique "
+"Mohammad VI"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:520
+msgid "Data-driven methods for urban planning"
+msgstr ""
+"Application des méthodes basées sur les données en planification urbaine"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:524
+msgid ""
+"\n"
+"                            In this session, we will present papers that "
+"demonstrate how data analytics, machine learning, and\n"
+"                            other data-driven techniques can be used to "
+"address the unique challenges facing African cities,\n"
+"                            such as informal settlements, inadequate "
+"infrastructure, and rapid urbanization. Topics will include\n"
+"                            the use of satellite imagery and geospatial data "
+"to inform urban planning decisions, the application\n"
+"                            of social media data to better understand urban "
+"dynamics, and the use of predictive modeling to anticipate\n"
+"                            future urban growth. The papers will provide "
+"valuable insights for urban planners, policymakers, and researchers in "
+"Africa.\n"
+"                            "
+msgstr ""
+"\n"
+"Au cours de cette session, nous présenterons des articles qui démontreront "
+"comment l'analyse de données, l'apprentissage automatique \n"
+"et d'autres techniques basées sur les données peuvent être utilisées pour "
+"relever les défis uniques auxquels sont confrontées les villes africaines, \n"
+"tels que les établissements informels, les infrastructures inadéquates et "
+"l'urbanisation rapide. Les sujets incluront l'utilisation \n"
+"de l'imagerie satellitaire et des données géospatiales pour éclairer les "
+"décisions de planification urbaine, l'application des \n"
+"données des réseaux sociaux pour mieux comprendre la dynamique urbaine et "
+"l'utilisation de la modélisation prédictive pour \n"
+"anticiper la croissance urbaine future. Les articles fourniront des "
+"informations précieuses aux urbanistes, aux décideurs et aux chercheurs en "
+"Afrique.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:542
+msgid "Assistant Professor at University Moulay Ismail of Meknes"
+msgstr "Professeur assistant à l'Université Moulay Ismail de Meknès"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:552
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:416
+msgid ""
+"Researcher at the Center of Urban System (CUS) of the Mohammed VI "
+"Polytechnic University"
+msgstr ""
+"Chercheur au Centre des systèmes urbains de l'Université polytechnique "
+"Mohammad VI"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:563
+msgid "04:45 PM - 05:15 PM"
+msgstr "16:45 - 17:15"
+
+#: african_cities_conference/home/templates/home/parts/program_content_23.html:569
+msgid ""
+"Restitution workshop - Towards sustainable and healthy living environments "
+"in Africa: Public health and territorial planning policies connections"
+msgstr ""
+"Restitution workshop - Vers des cadres de vie durables et sains en Afrique : "
+"liens entre les politiques de santé publique et d'aménagement territorial"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:15
+msgid "09:00 AM - 10:00 AM"
+msgstr "09:00 - 10:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:20
+msgid "Ouidah city transformation"
+msgstr "Transformation de la ville de Ouidah"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:23
+msgid ""
+"\n"
+"                        The development of the coastal city of Ouidah in "
+"Benin is a key challenge for the Beninese government,\n"
+"                        which is developing several projects, including the "
+"design and development of the Marina hotel complex\n"
+"                        and the Sèmè City campus, a 346 ha eco city. Closeup "
+"on the construction of a smart city which will\n"
+"                        contribute to developing the tourist and economic "
+"attractiveness of Benin.\n"
+"                        "
+msgstr ""
+"\n"
+" La valorisation de la ville côtière de Ouidah au Bénin est un enjeu phare "
+"du Gouvernement Béninois qui y développe \n"
+"plusieurs projets dont la conception et le développement du Complexe "
+"hôtelier de la Marina \n"
+"ou encore le campus de Sèmè City, eco cité de 346 hectares. Zoom sur la "
+"réalisation d’une smart city\n"
+" qui contribuera à développer l’attractivité touristique et économique du "
+"Bénin.\n"
+"                                                    "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:38
+msgid "Mayor of Ouidah"
+msgstr "Maire de Ouidah"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:48
+msgid "Head of Management and Planning of Sèmè City"
+msgstr "Responsable Gestion et planification de Sèmè City"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:58
+msgid "Associate Architect Cobloc Architecture"
+msgstr "Architecte associé Cobloc Architecture"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:68
+msgid "10:00 AM - 10:30 AM"
+msgstr "10:00 - 10:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:81
+msgid "09:00 AM - 09:45 AM"
+msgstr "09:00 - 09:45"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:86
+msgid "The use of spatial data analysis for risk management"
+msgstr "Analyse des données spatiales pour la gestion urbaine"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:89
+msgid ""
+"\n"
+"                        In this sesson , we will explore the crucial role of "
+"spatial data analysis in managing risks in African cities.\n"
+"                        Using real-world examples, we will examine the "
+"challenges and opportunities presented by the diverse and rapidly\n"
+"                        growing urban landscapes of Africa. We will "
+"highlight how spatial data analysis can help decision-makers to better\n"
+"                        understand and mitigate risks such as natural "
+"disasters, crime, and disease outbreaks.\n"
+"                        "
+msgstr ""
+"\n"
+"Dans cette session , nous explorerons le rôle crucial de l'analyse des "
+"données spatiales dans la gestion des risques dans les villes africaines. \n"
+"À l'aide d'exemples concrets, nous examinerons les défis et les opportunités "
+"présentés par les paysages urbains \n"
+"divers et en croissance rapide de l'Afrique. Nous soulignerons comment "
+"l'analyse des données spatiales peut aider les décideurs à mieux "
+"comprendre \n"
+"et atténuer les risques tels que les catastrophes naturelles, la criminalité "
+"et les épidémies.\n"
+"                                                    "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:104
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:563
+msgid "Assistant Professor at Mohammed VI Polytechnic University"
+msgstr "Professeur assistant à l'Université Mohammed VI Polytechnique"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:114
+msgid "Founder of GeOsm Family"
+msgstr "Foundateur de GeOsm Family"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:124
+msgid "09:45 AM - 10:30 AM"
+msgstr "09:45 - 10:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:129
+msgid ""
+"Agadir Smart City: An intelligent environment for a sustainable and "
+"resilient city"
+msgstr "Acteurs et processus d'implémentation d'une ville intelligente"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:132
+msgid ""
+"\n"
+"                        During this session, we will examine the key "
+"features and successes of the Agadir Smart City initiative, including the "
+"use of\n"
+"                        renewable energy, smart waste management, and "
+"digital services for citizens. Through several examples, we will explore "
+"the\n"
+"                        potential of Smart Cities to drive economic growth "
+"and address pressing urban challenges, while creating a more livable and\n"
+"                        sustainable community in Agadir.\n"
+"                        "
+msgstr ""
+"\n"
+"Dans cette session nous examinerons les principales caractéristiques et "
+"réussites de l'initiative Agadir Smart City, notamment l'utilisation \n"
+"des énergies renouvelables, la gestion intelligente des déchets et les "
+"services numériques pour les citoyens. À travers plusieurs exemples, nous "
+"explorerons le \n"
+"potentiel des villes intelligentes pour stimuler la croissance économique et "
+"relever les défis urbains urgents, \n"
+"tout en créant une communauté plus vivable et durable à Agadir.\n"
+"                                                    "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:147
+msgid ""
+"Architect, Agadir City Councillor, and member of the urban planning & smart "
+"city committee"
+msgstr ""
+"Architecte, Conseiller municipal de la ville d'Agadir, et membre du comité "
+"de planification urbaine & ville intelligente"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:157
+msgid "09:00 AM - 10:30 AM"
+msgstr "09:00 - 10:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:162
+msgid "Women's entrepreneurship in the city"
+msgstr "La ville et l'esprit d'entreprise chez les femmes"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:165
+msgid ""
+"\n"
+"                        This panel session will explore the challenges and "
+"opportunities faced by women entrepreneurs in African cities.\n"
+"                        We will discuss the unique barriers that women face "
+"in starting and growing their businesses, and how these\n"
+"                        challenges can be overcome through targeted policy "
+"interventions and support networks. Drawing on a case study\n"
+"                        from an African city, we will examine the ways in "
+"which women-led businesses are driving economic growth, creating\n"
+"                        jobs, and promoting social change. Ultimately, we "
+"will highlight the vital role that women's entrepreneurship plays\n"
+"                        in building more inclusive and sustainable African "
+"cities.\n"
+"                        "
+msgstr ""
+"\n"
+" Ce panel explorera les défis et les opportunités auxquels sont confrontées "
+"les femmes entrepreneurs dans les villes africaines. \n"
+"Nous discuterons des obstacles uniques auxquels les femmes sont confrontées "
+"lors du démarrage et de la croissance de leur entreprise, \n"
+"et de la manière dont ces défis peuvent être surmontés grâce à des "
+"interventions politiques ciblées et à des réseaux de soutien. En nous "
+"appuyant sur une étude de cas \n"
+"d'une ville africaine, nous examinerons la manière dont les entreprises "
+"dirigées par des femmes stimulent la croissance économique, \n"
+"créent des emplois et promeuvent le changement social. Enfin, nous "
+"soulignerons le rôle vital que joue l'entrepreneuriat féminin dans la "
+"construction \n"
+"de villes africaines plus inclusives et durables.\n"
+"                                                    "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:182
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:593
+msgid "Academic researcher in the field of management"
+msgstr "Chercheur en gestion"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:189
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:423
+msgid "GHANA"
+msgstr "GHANA"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:190
+msgid ""
+"Session 1: The effects of port activities on transport, mobility, and urban "
+"form-case study cities: Accra, Lomѐ, Djibouti"
+msgstr ""
+"Session 1: Les effets des activités portuaires sur le transport, la mobilité "
+"et la forme urbaine - étude de cas des villes d'Accra, Lomé et Djibouti"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:193
+msgid ""
+"\n"
+"                        In port and maritime geography, ports play an "
+"important role in the economies of cities and act as catalysts and\n"
+"                        incite development in specific economic sectors and "
+"locations near ports or along corridors. This section discusses\n"
+"                        the port-city relationship of three port cities (i."
+"e., Lomè, Djibouti, and Tema).\n"
+"                        "
+msgstr ""
+"\n"
+" Dans la géographie portuaire et maritime, les ports jouent un rôle "
+"important dans l'économie des villes et agissent comme catalyseurs et \n"
+"incitent au développement dans des secteurs économiques et des emplacements "
+"spécifiques à proximité des ports ou le long des corridors. Cette section "
+"traite \n"
+"de la relation ville-port de trois villes portuaires (à savoir, Lomé, "
+"Djibouti et Tema).\n"
+"                                                    "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:207
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:443
+msgid ""
+"Transport Analyst, Lecturer & Research Coordinator, Regional Transport "
+"Research and Education Centre, Kumasi (TRECK), KNUST"
+msgstr ""
+"Analyste des transports, maître de conférences et coordinateur de recherche, "
+"Centre régional de recherche et d'enseignement sur les transports, Kumasi, "
+"KNUST"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:218
+msgid "10:30 AM - 11:30 AM"
+msgstr "10:30 - 11:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:224
+msgid ""
+"Unlocking Africa's Tourism Potential: The Power of social media Data-driven "
+"Strategies"
+msgstr ""
+"Libérer le potentiel touristique de l'Afrique : la puissance des stratégies "
+"basées sur les données des réseaux sociaux"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:228
+msgid ""
+"\n"
+"                            By building new cities models in Africa to "
+"improve the living environment of the population, urban actors are aiming\n"
+"                            at a significant objective: make African cities "
+"the most pleasant living places in the world.\n"
+"                            "
+msgstr ""
+"\n"
+" En construisant des nouveaux modèles de ville en Afrique pour améliorer le "
+"cadre de vie des populations, les acteurs urbains \n"
+"visent un objectif non négligeable : celui de faire des villes africaines "
+"les endroits du monde les plus agréables à vivre.\n"
+"                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:234
+msgid ""
+"\n"
+"                            The new tourism actors, agencies, influencers or "
+"tourism project owners are anticipating this long-term objective\n"
+"                            and are helping to discover Africa and its "
+"opportunities by using social networks as inexhaustible sources of data.\n"
+"                            "
+msgstr ""
+"\n"
+"Les nouveaux acteurs touristiques, agences, influenceurs ou porteurs de "
+"projets touristiques anticipent sur cet objectif à long terme \n"
+"et participent à faire découvrir l’Afrique et ses opportunités en utilisant "
+"les réseaux sociaux sources inépuisables de données.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:240
+msgid ""
+"\n"
+"                            With these new players, discover how social "
+"network data is reinventing tourism in Africa.\n"
+"                            "
+msgstr ""
+"\n"
+"Avec ces nouveaux acteurs, découvrez comment les données des réseaux sociaux "
+"réinventent le tourisme en Afrique.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:252
+msgid "10:30 AM - 11:00 AM"
+msgstr "10:30 - 11:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:267
+msgid "11:00 AM - 11:30 AM"
+msgstr "11:00 - 11:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:282
+msgid "11:30 AM - 12:30 PM"
+msgstr "11:30 - 12:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:288
+msgid ""
+"Collecting data to improve basic urban services in Africa Mobility - Health "
+"- Urban management"
+msgstr ""
+"Collecter la data pour améliorer les services urbains de base Mobilité - "
+"Santé - Gestion urbaine"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:292
+msgid ""
+"\n"
+"                            By enabling better management of services such "
+"as energy, urban mobility and waste management, ICTs play an important role "
+"in\n"
+"                            the development of African cities. The "
+"optimisation of public services requires the mobilisation of data produced "
+"by users\n"
+"                            in order to improve the living quality of "
+"populations on the continent.\n"
+"                            "
+msgstr ""
+"\n"
+"En permettant une meilleure gestion de services comme l’énergie, la mobilité "
+"urbaine, ou encore la gestion des déchets, les TIC jouent un rôle "
+"important \n"
+"dans le développement des villes africaines. L’optimisation des services "
+"publics nécessite la mobilisation de données produites par les usagers \n"
+"en vue d’améliorer la qualité de vie des populations sur le continent.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:299
+msgid ""
+"\n"
+"                            Join the discussion between public actors, start-"
+"ups and entrepreneurs in Benin who are designing and using innovative\n"
+"                            digital solutions to improve the quality of life "
+"of users.\n"
+"                            "
+msgstr ""
+"\n"
+" Rejoignez la discussion entre acteurs publiques, start-up et entrepreneurs "
+"au Bénin qui conçoivent et utilisent des solutions numériques \n"
+"innovantes en vue d'améliorer le confort de vie des usagers.\n"
+"                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:313
+msgid "Entrepreneur, Co-founder of the Pharmap application"
+msgstr "Entrepreneur , Co - fondateur de l'application Pharmap"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:323
+msgid "General Manager of the Waste Management Company"
+msgstr "Directeur Général de la Société de Gestion des Déchets"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:334
+msgid "11:00 AM - 12:30 PM"
+msgstr "11:00 - 12:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:340
+msgid "Cloud computing for urban planning in Africa: the case of GEE"
+msgstr ""
+"Cloud computing au service de la planification urbaine en Afrique : le cas "
+"de GEE"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:344
+msgid ""
+"\n"
+"                            In this tutorial, we will explore the potential "
+"of cloud computing for urban planning in Africa, using Google\n"
+"                            Earth Engine (GEE) as a case study. We will "
+"provide an overview of GEE and its capabilities and demonstrate\n"
+"                            how it can be used to analyze and visualize "
+"urban spatial data. We will also discuss the benefits and challenges\n"
+"                            of cloud computing for urban planning in African "
+"cities, including issues related to data accessibility and privacy.\n"
+"                            By the end of the tutorial, participants will "
+"have a better understanding of how to use cloud computing tools like\n"
+"                            GEE to improve urban planning outcomes in "
+"Africa.\n"
+"                            "
+msgstr ""
+"\n"
+"Dans ce didacticiel, nous allons explorer le potentiel du cloud computing "
+"pour la planification urbaine en Afrique, en utilisant Google Earth Engine "
+"(GEE) \n"
+"comme étude de cas. Nous donnerons un aperçu de GEE et de ses "
+"fonctionnalités et démontrerons \n"
+"comment il peut être utilisé pour analyser et visualiser des données "
+"spatiales urbaines. Nous discuterons également des avantages et des défis /"
+"ndu cloud computing pour la planification urbaine dans les villes "
+"africaines, y compris les problèmes liés à l'accessibilité \n"
+"et à la confidentialité des données. À la fin du didacticiel, les "
+"participants comprendront mieux comment utiliser des outils de cloud "
+"computing \n"
+"tels que GEE pour améliorer les résultats de la planification urbaine en "
+"Afrique.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:370
+msgid "Urban extension modeling with QGIS"
+msgstr "Modélisation de l'extension urbaine avec QGIS"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:374
+msgid ""
+"\n"
+"                            This tutorial will explore how QGIS can be used "
+"to analyze urban growth patterns and predict future expansion, with a\n"
+"                            focus on techniques such as land use change "
+"modeling, suitability analysis, and spatial regression. We will also "
+"discuss\n"
+"                            the potential of these methods for informing "
+"urban planning and policy decision-making. By the end of the tutorial,\n"
+"                            participants will have gained practical skills "
+"in using QGIS for urban extension modeling and be better equipped to\n"
+"                            apply these techniques in their own work.\n"
+"                            "
+msgstr ""
+"\n"
+"Ce didacticiel explorera comment QGIS peut être utilisé pour analyser les "
+"modèles de croissance urbaine et prédire l'expansion future, en mettant "
+"l'accent \n"
+"sur des techniques telles que la modélisation du changement d'utilisation "
+"des terres, l'analyse d'adéquation et la régression spatiale. \n"
+"Nous discuterons également du potentiel de ces méthodes pour éclairer la "
+"planification urbaine et la prise de décision politique. À la fin du "
+"didacticiel, \n"
+"les participants auront acquis des compétences pratiques dans l'utilisation "
+"de QGIS pour la modélisation de l'extension urbaine et seront mieux équipés "
+"pour \n"
+"appliquer ces techniques dans leur propre travail.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:391
+msgid "Project manager at SADV/OCP"
+msgstr "Chef de projet à la SADV/OCP"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:399
+msgid "Workshop session"
+msgstr "Session de wokshops"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:403
+msgid ""
+"\n"
+"                            Workshop session on different areas of urban "
+"planning in Africa.\n"
+"                            "
+msgstr ""
+"\n"
+"Session de workshops dans divers domaines de planification urbaine en "
+"Afrique\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:424
+msgid "Session 2: Public transport system and public health risk"
+msgstr ""
+"Session 2: Système de transport en commun et risque pour la santé publique"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:428
+msgid ""
+"\n"
+"                            Rapid population growth and urbanization are "
+"stimulating growth in African cities. The informal and inefficient\n"
+"                            public transport system in most African cities "
+"has increased vehicular traffic with its associated externalities.\n"
+"                            This section investigates the public transport "
+"systems and the major public health hazard of transport in Africa.\n"
+"                            "
+msgstr ""
+"\n"
+"La croissance rapide de la population et l'urbanisation stimulent la "
+"croissance des villes africaines. Le système de transport public \n"
+"informel et inefficace dans la plupart des villes africaines a augmenté le "
+"trafic automobile avec ses externalités associées. \n"
+"Cette section étudie les systèmes de transport public et le principal danger "
+"pour la santé publique des transports en Afrique.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:454
+msgid "12:30 PM - 02:30 PM"
+msgstr "12:30 - 14:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:468
+msgid "02:30 PM - 04:30 PM"
+msgstr "14:30 - 16:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:474
+msgid "African Cities Lab: A gamechanger that transforms African cities"
+msgstr ""
+"African Cities Lab: un gamechanger qui transforme les villes africaines"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:478
+msgid ""
+"\n"
+"                            Presentation of the <a href=\"https://"
+"africancitieslab.org/\" target=\"_blank\">African Cities Lab project</a>:\n"
+"                            Six institutions from Anglophone and Francophone "
+"Africa are collaborating to create an African digital\n"
+"                            education platform on urban development, "
+"offering quality MOOCs and online continuing education for professionals.\n"
+"                            It also serves as a forum for the exchange of "
+"digital educational resources and management and governance of African\n"
+"                            cities to promote sustainable urban "
+"development.\n"
+"                            "
+msgstr ""
+"\n"
+"          Présentation du projet <a href=\"https://africancitieslab.org/\" "
+"target=\"_blank\">African Cities Lab</a>:\n"
+" Six institutions d’Afrique anglophone et francophone collaborent pour créer "
+"une plateforme africaine d'éducation numérique \n"
+"sur le développement urbain, offrant des MOOCs de qualité et une formation "
+"continue en ligne pour les professionnels. \n"
+"Elle sert également de forum pour l'échange de ressources éducatives "
+"numériques et la gestion et la gouvernance des villes \n"
+"africaines afin de favoriser un développement urbain durable.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:494
+msgid "02:30 PM - 04:00 PM"
+msgstr "14:30 - 16:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:500
+msgid "Digital transformation and digital governance"
+msgstr "Transformation digitale et gouvernance numérique"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:504
+msgid ""
+"\n"
+"                            In this session, we will showcase recent "
+"research that explores the ways in which digital technologies are shaping\n"
+"                            urban citizenship, participation, and governance "
+"in Africa, and the opportunities and challenges that arise from\n"
+"                            these changes. Topics will include the role of "
+"digital platforms in promoting citizen engagement and accountability,\n"
+"                            the challenges of bridging the digital divide "
+"and ensuring equitable access to digital technologies, and the\n"
+"                            implications of digital governance for "
+"democratic processes and civic participation. The papers will provide\n"
+"                            important insights for policymakers, scholars, "
+"and practitioners working at the intersection of digital technologies\n"
+"                            and urban governance in Africa.\n"
+"                            "
+msgstr ""
+"\n"
+"Au cours de cette session, nous présenterons des recherches récentes qui "
+"explorent la manière dont les technologies numériques \n"
+"façonnent la citoyenneté urbaine, la participation et la gouvernance en "
+"Afrique, ainsi que les opportunités et les défis qui découlent \n"
+"de ces changements. Les sujets incluront le rôle des plateformes numériques "
+"dans la promotion de l'engagement et de la responsabilité \n"
+"des citoyens, les défis de combler le fossé numérique et d'assurer un accès "
+"équitable aux technologies numériques, \n"
+"et les implications de la gouvernance numérique pour les processus "
+"démocratiques et la participation civique. Les articles fourniront des \n"
+"informations importantes aux décideurs, universitaires et praticiens "
+"travaillant à l'intersection des technologies numériques et de la "
+"gouvernance urbaine en Afrique.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:541
+msgid "Architecture and urban development"
+msgstr "Architecture et développement urbain"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:545
+msgid ""
+"\n"
+"                            This session will examine the intersections of "
+"architecture and urbanism, with a focus on the design, planning,\n"
+"                            and development of sustainable and livable urban "
+"spaces in Africa. The session will feature papers that explore\n"
+"                            a range of issues, including urban morphology, "
+"housing, public spaces, heritage conservation, new city development,\n"
+"                            and community participation, through a variety "
+"of theoretical and empirical perspectives. The aim of this session\n"
+"                            is to foster interdisciplinary dialogue and "
+"exchange of ideas among architects, urban designers, planners, and "
+"scholars,\n"
+"                            and to promote innovative approaches to "
+"architecture and urban development in the African context.\n"
+"                            "
+msgstr ""
+"\n"
+" Cette session examinera les intersections de l'architecture et de "
+"l'urbanisme, en mettant l'accent sur la conception, la planification \n"
+"et le développement d'espaces urbains durables et vivables en Afrique. La "
+"session présentera des articles qui explorent une gamme de questions, \n"
+"y compris la morphologie urbaine, le logement, les espaces publics, la "
+"conservation du patrimoine, le développement de nouvelles villes \n"
+"et la participation communautaire, à travers une variété de perspectives "
+"théoriques et empiriques. L'objectif de cette session \n"
+"est de favoriser le dialogue interdisciplinaire et l'échange d'idées entre "
+"architectes, urbanistes et universitaires, \n"
+"et de promouvoir des approches innovantes de l'architecture et du "
+"développement urbain dans le contexte africain.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:571
+msgid "Socioeconomic challenges of African cities"
+msgstr "Challenges socioéconomiques de la ville africaine"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:575
+msgid ""
+"\n"
+"                            This session will address the complex and "
+"diverse issues that affect the social and economic well-being\n"
+"                            of urban populations in Africa. The session will "
+"feature papers that explore a range of topics, including\n"
+"                            poverty, the socioeconomic impacts of COVID-19, "
+"unemployment, and social exclusion, with a focus on urban youth.\n"
+"                            The aim of this session is to provide a platform "
+"for researchers and practitioners to share insights and experience\n"
+"                            and to propose innovative strategies and "
+"policies that can help to address the socioeconomic challenges facing\n"
+"                            African cities.\n"
+"                            "
+msgstr ""
+"\n"
+"Cette session abordera les questions complexes et diverses qui affectent le "
+"bien-être social et économique des populations urbaines\n"
+" en Afrique. La session présentera des articles qui explorent une gamme de "
+"sujets, y compris la pauvreté, \n"
+"les impacts socio-économiques de COVID-19, le chômage et l'exclusion "
+"sociale, avec un accent sur la jeunesse urbaine. \n"
+"L'objectif de cette session est de fournir une plate-forme aux chercheurs et "
+"aux praticiens pour partager leurs idées et leurs expériences \n"
+"et proposer des stratégies et des politiques innovantes qui peuvent aider à "
+"relever les défis socio-économiques \n"
+"auxquels sont confrontées les villes africaines.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:604
+msgid "04:00 PM - 05:00 PM"
+msgstr "16:00 - 17:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:610
+msgid "Coffee break/Posters"
+msgstr "Pause café/Posters"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:614
+msgid ""
+"\n"
+"                            Posters presentations on different areas of "
+"urban planning in Africa.\n"
+"                            "
+msgstr ""
+"\n"
+"Présentations de posters dans divers domaines de planification urbaine en "
+"Afrique\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:626
+msgid "04:30 PM - 05:00 PM"
+msgstr "16:30 - 17:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:641
+msgid "05:00 PM - 06:00 PM"
+msgstr "17:00 - 18:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:647
+msgid "Restitution of the Hackathon (Innovation Lab)"
+msgstr "Restitution Hackathon"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:651
+msgid ""
+"\n"
+"                            Optimising drinking water management in the new "
+"eco-city of Seme City. As part of the African Cities Lab - 2023 Summit,\n"
+"                            a hackathon was organised with 12 teams of 5 "
+"people. The objective is to find digital solutions to reuse the grey water\n"
+"                            of the future Seme City campus. The restitution "
+"is an opportunity for the 5 finalist teams to present their solutions\n"
+"                            to a multidisciplinary jury.\n"
+"                            "
+msgstr ""
+"\n"
+"Optimiser la gestion de l’eau potable au sein de la nouvelle eco cité de "
+"Sèmè City. Dans le cadre de l’African Cities Lab - 2023 Summit, \n"
+"un hackathon a été organisé avec 12 équipes de 5 personnes. L’objectif est "
+"de trouver des solutions numériques pour réutiliser les eaux grises \n"
+"du futur campus Sèmè City. La restitution est l’occasion pour les 5 équipes "
+"finalistes de \n"
+"présenter les solutions imaginées devant un jury pluridisciplinaire.\n"
+"                                                        "
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:666
+msgid "05:00 PM - 05:30 PM"
+msgstr "17:00 - 17:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:672
+msgid "Closing remarks"
+msgstr "Discours de clôture"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:681
+msgid "05:30 PM - 06:00 PM"
+msgstr "17:30 - 18:00"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:687
+msgid "Award ceremony"
+msgstr "Remise des prix"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:696
+msgid "06:00 PM - 06:15 PM"
+msgstr "18:00 - 18:15"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:702
+msgid "Key note - plenary session"
+msgstr "Discours de clôture (Key note)"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:722
+msgid "06:30 PM - 07:30 PM"
+msgstr "18:30 - 19:30"
+
+#: african_cities_conference/home/templates/home/parts/program_content_24.html:727
+msgid "Closing Cocktail"
+msgstr "Cocktail de fin"
+
+#: african_cities_conference/home/templates/home/program_pdf.html:11
+msgid "Agenda"
+msgstr ""
+
+#: african_cities_conference/home/templates/home/program_pdf.html:173
+#: african_cities_conference/templates/base.html:201
+msgid "An event by"
+msgstr "Un événement de"
+
+#: african_cities_conference/home/templates/home/program_pdf.html:207
+#: african_cities_conference/templates/base.html:251
+msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
+msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
 
 #: african_cities_conference/home/views.py:63
 msgid "Thank you for subscribing to our newsletter!"
@@ -2313,22 +2229,22 @@ msgstr ""
 msgid "Home"
 msgstr "Accueil"
 
-#: african_cities_conference/templates/base.html:120
+#: african_cities_conference/templates/base.html:122
 msgid "Speakers"
 msgstr "Intervenants"
 
-#: african_cities_conference/templates/base.html:125
+#: african_cities_conference/templates/base.html:127
 msgid "Committee"
 msgstr "Comité"
 
-#: african_cities_conference/templates/base.html:130
+#: african_cities_conference/templates/base.html:132
 msgid "Calls "
 msgstr "Appels à contributions"
 
-#: african_cities_conference/templates/base.html:235
+#: african_cities_conference/templates/base.html:237
 msgid "About African Cities Lab"
 msgstr "À propos d'African Cities Lab"
 
-#: african_cities_conference/templates/base.html:241
+#: african_cities_conference/templates/base.html:243
 msgid "Calls"
 msgstr "Appels à contributions"
