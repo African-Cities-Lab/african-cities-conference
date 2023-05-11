@@ -113,8 +113,10 @@
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% url 'home' %}">{% translate "Home" %}</a>
                             </li>
+                            {% url 'program' as url %}
                             <li class="list-inline-item">
-                                <a class="nav-link" href="https://reg.africancitieslab.org/189/agenda">{% translate "Program" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% url 'program' %}">{% translate "Program" %}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://reg.africancitieslab.org/189/speakers">{% translate "Speakers" %}</a>

@@ -1,0 +1,215 @@
+{% load home_tags i18n static wagtailcore_tags %}
+<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="African Cities Lab - 2023 Summit" />
+        <meta name="author" content="Nabil Raimi" />
+        <title>{% translate "Agenda" %} | African Cities Lab - 2023 Summit</title>
+        <meta name="robots" content="noindex,nofollow"/>
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+              integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"/>
+        <!-- Your stuff: Third-party CSS libraries go here -->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <!-- This file stores project-specific CSS -->
+        <link href="{% static 'css/project.css' %}" rel="stylesheet" />
+        <!-- This file stores agenda-specific CSS -->
+        <link href="{% static 'css/agenda.css' %}" rel="stylesheet" />
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <link rel="stylesheet"
+              href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <!-- Le javascript
+        ================================================== -->
+        {# Placed at the top of the document so pages load faster with defer #}
+        <!-- Bootstrap JS -->
+        <script defer
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+                integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+                crossorigin="anonymous"></script>
+        <script defer
+                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script defer
+                src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
+                integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <main id="agenda-page-pdf">
+            <section class="page-banner">
+                <div class="container">
+                    <div class="row py-5">
+                        <div class="col-12 col-md-6">
+                            <div class="position-relative position-relative font-size-3-25em font-weight-bold">
+                                {% translate "Program" %}
+                                <span class="dash-accent"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row align-items-center justify-content-lg-between">
+                        <div class="col-12 col-lg-8 pt-4 pb-0 py-md-4">
+                            <div class="sheldule-legend">
+                                <span class="font-weight-500 font-size-16">{% translate "Legend:" %}</span>
+                                <div class="d-inline-block m-2">
+                                    <div class="legend-color cotonou"></div>
+                                    <span>{% translate "Cotonou, Benin" %}</span>
+                                </div>
+                                <div class="d-inline-block m-2">
+                                    <div class="legend-color benguerir"></div>
+                                    <span>{% translate "Ben Guerir, Marocco" %}</span>
+                                </div>
+                                <div class="d-inline-block m-2">
+                                    <div class="legend-color kumasi"></div>
+                                    <span>{% translate "Kumasi, Ghana" %}</span>
+                                </div>
+                                <div class="d-inline-block m-2">
+                                    <div class="legend-color onsite"></div>
+                                    <span>{% translate "Only on site" %}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 pt-3 pb-4 py-md-4">
+                            <span class="font-weight-500 font-size-16">{% translate "Timezone:" %}</span>
+                            <span class="mx-2">GMT+1</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="sheldule-nav">
+                                <div class="sheldule-date">{% translate "May 23, 2023" %}</div>
+                            </div>
+                            {% include "home/parts/program_content_23.html" %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="sheldule-nav">
+                                <div class="sheldule-date">{% translate "May 24, 2023" %}</div>
+                            </div>
+                            {% include "home/parts/program_content_24.html" %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5">
+                <div class="container py-5">
+                    <div class="civa-partners-wrapper row-title">
+                        <div class="partners-item">
+                            <a href="https://seco.admin.ch/seco/en/home.html"
+                               target="_blank"
+                               class="d-block w-75">
+                                <img alt="SECO" src="{% static "images/assets/partners/seco.png" %}"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="civa-partners-wrapper">
+                        <div class="partners-item">
+                            <a href="https://semecity.bj/en" target="_blank" class="d-block">
+                                <img alt="Seme City"
+                                     src="{% static "images/assets/partners/semecity.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://um6p.ma" target="_blank" class="d-block">
+                                <img alt="UM6P" src="{% static "images/assets/partners/um6p.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://www.ucar.rnu.tn" target="_blank" class="d-block">
+                                <img alt="UCAR" src="{% static "images/assets/partners/ucar.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://www.knust.edu.gh" target="_blank" class="d-block">
+                                <img alt="KNUST" src="{% static "images/assets/partners/knust.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://ur.ac.rw" target="_blank" class="d-block">
+                                <img alt="UR" src="{% static "images/assets/partners/ur.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://www.uct.ac.za" target="_blank" class="d-block">
+                                <img alt="UCT" src="{% static "images/assets/partners/uct.png" %}"/>
+                            </a>
+                        </div>
+                        <div class="partners-item">
+                            <a href="https://epfl.ch" target="_blank" class="d-block">
+                                <img alt="EPFL" src="{% static "images/assets/partners/epfl.png" %}"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="acc-footer">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 text-center">
+                            <div class="text-center">
+                                <p class="font-size-12 mb-3">{% translate "An event by" %}</p>
+                            </div>
+                            <a href="https://africancitieslab.org/" target="_blank">
+                                <img src="{% static 'images/assets/logo-white.png' %}"
+                                     alt="African Cities Lab"
+                                     width="250"/>
+                            </a>
+                            <div class="social-media__wrapper pt-4">
+                                <ul class="list-inline mt-3 mb-5">
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://twitter.com/AfricanCtiesLab" class="text-white"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://www.linkedin.com/company/african-cities-lab/?viewAsMember=true"
+                                           class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://www.facebook.com/African-Cities-Lab-103073095772023"
+                                           class="text-white"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://instagram.com/africancitieslab?igshid=YmMyMTA2M2Y="
+                                           class="text-white"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://medium.com/@African_Cities_Lab" class="text-white"><i class="fab fa-medium-m"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mx-lg-3">
+                                        <a href="https://www.youtube.com/channel/UC22_61it3OdPBNj3CwkndUA"
+                                           class="text-white"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-center mt-4">
+                                <p class="font-size-12">{% translate "© Copyright 2022 African Cities Lab. All rights reserved. " %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
