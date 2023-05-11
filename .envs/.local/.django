@@ -2,8 +2,3 @@
 # ------------------------------------------------------------------------------
 USE_DOCKER=yes
 IPYTHONDIR=/app/.ipython
-
-MAILCHIMP_API_KEY=3f9067355b99a57765606d6255f51e0e-us17
-MAILCHIMP_DATA_CENTER=us17
-MAILCHIMP_NEWSLETTER_EN_ID=5ae555d5d3
-MAILCHIMP_NEWSLETTER_FR_ID=02ddbabc1c
