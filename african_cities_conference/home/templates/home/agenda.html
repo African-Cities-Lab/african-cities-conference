@@ -1,24 +1,38 @@
 {% extends "base.html" %}
 {% load i18n static %}
 {% block title %}
-    {% translate "Agenda" %} | African Cities Lab - 2023 Summit
+    {% translate "Program" %} | African Cities Lab - 2023 Summit
 {% endblock title %}
+{% block static_meta_tag %}
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title"
+          content="{% translate "Program" %} | African Cities Lab - 2023 Summit"/>
+    <meta name="twitter:description"
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta name="twitter:site" content="@AfricanCtiesLab" />
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+    <meta property="og:title"
+          content="{% translate "Program" %} | African Cities Lab - 2023 Summit"/>
+    <meta property="og:description"
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta property="og:site_name" content="African Cities Lab - 2023 Summit" />
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+    <meta itemprop="name"
+          content="{% translate "Program" %} | African Cities Lab - 2023 Summit"/>
+    <meta itemprop='description'
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+{% endblock static_meta_tag %}
 {% block css %}
     {{ block.super }}
+    <link href="{% static 'css/agenda.css' %}" rel="stylesheet" />
     <style>
-    .page-banner {
-      background-image: url({% static 'images/assets/banner-aclsummit.jpg' %});
-      background-position: top center;
-    }
-    #agenda-tab {
-        border: 0;
-        justify-content: center;
-    }
-    #agenda-tab .nav-item .nav-link {
-        border: 1px solid #dee2e6;
-        border-radius: .25em;
-        font-size: 18px;
-    }
+        .page-banner {
+          background-image: url({% static 'images/assets/banner-aclsummit.jpg' %});
+        }
     </style>
 {% endblock css %}
 {% block content %}
@@ -27,19 +41,50 @@
             <div class="row py-5">
                 <div class="col-12 col-md-6">
                     <div class="position-relative h1">
-                        {% translate "Agenda" %}
+                        {% translate "Program" %}
                         <span class="dash-accent"></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-5 font-size-16">
-        <div class="container-xl pt-5">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <ul class="nav nav-tabs" id="agenda-tab" role="tablist">
-                        <li class="nav-item m-3" role="presentation">
+    <section>
+        <div class="container">
+            <div class="row align-items-center justify-content-lg-between">
+                <div class="col-12 col-lg-8 pt-4 pb-0 py-md-4">
+                    <div class="sheldule-legend">
+                        <span class="font-weight-500 font-size-16">{% translate "Legend:" %}</span>
+                        <div class="d-inline-block m-2">
+                            <div class="legend-color cotonou"></div>
+                            <span>{% translate "Cotonou, Benin" %}</span>
+                        </div>
+                        <div class="d-inline-block m-2">
+                            <div class="legend-color benguerir"></div>
+                            <span>{% translate "Ben Guerir, Marocco" %}</span>
+                        </div>
+                        <div class="d-inline-block m-2">
+                            <div class="legend-color kumasi"></div>
+                            <span>{% translate "Kumasi, Ghana" %}</span>
+                        </div>
+                        <div class="d-inline-block m-2">
+                            <div class="legend-color onsite"></div>
+                            <span>{% translate "Only on site" %}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 pt-3 pb-4 py-md-4">
+                    <span class="font-weight-500 font-size-16">{% translate "Timezone:" %}</span>
+                    <span class="mx-2">GMT+1</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sheldule-tab" class="py-5">
+        <div class="container pb-5">
+            <div class="row justify-content-center pb-3">
+                <div class="col">
+                    <ul class="nav nav-tabs" id="sheldule-navigation" role="tablist">
+                        <li class="nav-item" role="presentation">
                             <a class="nav-link active"
                                id="one-tab"
                                data-bs-toggle="tab"
@@ -47,10 +92,10 @@
                                role="tab"
                                aria-controls="one"
                                aria-selected="true">
-                                23 May 2023
+                                {% translate "May 23, 2023" %}
                             </a>
                         </li>
-                        <li class="nav-item m-3" role="presentation">
+                        <li class="nav-item" role="presentation">
                             <a class="nav-link"
                                id="two-tab"
                                data-bs-toggle="tab"
@@ -58,41 +103,35 @@
                                role="tab"
                                aria-controls="two"
                                aria-selected="false">
-                                24 May 2023
+                                {% translate "May 24, 2023" %}
                             </a>
                         </li>
                     </ul>
-                    <div class="tab-content my-3" id="agenda-content">
+                    <div class="tab-content" id="sheldule-tab-content">
                         <div class="tab-pane fade show active"
                              id="one"
                              role="tabpanel"
                              aria-labelledby="one-tab">
-                            <div class="accordion accordion-flush" id="agenda-panel">
-                                <div class="accordion-item">
-                                    <div class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed"
-                                                type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#flush-collapseOne"
-                                                aria-expanded="false"
-                                                aria-controls="flush-collapseOne">
-                                        </button>
-                                    </div>
-                                    <div id="flush-collapseOne"
-                                         class="accordion-collapse collapse"
-                                         aria-labelledby="flush-headingOne"
-                                         data-bs-parent="#agenda-panel">
-                                        <div class="accordion-body"></div>
-                                    </div>
-                                </div>
-                            </div>
+                            {% include "home/agenda_content/program_content_23.html" %}
                         </div>
                         <div class="tab-pane fade"
                              id="two"
                              role="tabpanel"
-                             aria-labelledby="two-tab"></div>
+                             aria-labelledby="two-tab">
+                            {% include "home/agenda_content/program_content_24.html" %}
+                        </div>
                     </div>
+                    <p class="mt-4 font-italic">**{% translate "This programme may be modified." %}</p>
                 </div>
+            </div>
+            <div class="my-5 text-center">
+                <a class="btn btn__primary btn__small"
+                   target="_blank"
+                   href="{% if LANGUAGE_CODE == 'en' %}{% static "images/assets/agenda-pdf/agenda-2023-summit-en.pdf" %}{% else %}{% static "images/assets/agenda-pdf/agenda-2023-summit-fr.pdf" %}{% endif %}"
+                   class="d-block"
+                   download>
+                    {% translate "Download PDF" %}
+                </a>
             </div>
         </div>
     </section>
