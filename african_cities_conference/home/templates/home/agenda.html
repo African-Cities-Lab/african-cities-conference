@@ -28,7 +28,7 @@
 {% endblock static_meta_tag %}
 {% block css %}
     {{ block.super }}
-    <link href="{% static 'css/agenda.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/agenda_.css' %}" rel="stylesheet" />
     <style>
         .page-banner {
           background-image: url({% static 'images/assets/banner-aclsummit.jpg' %});
@@ -60,7 +60,7 @@
                         </div>
                         <div class="d-inline-block m-2">
                             <div class="legend-color benguerir"></div>
-                            <span>{% translate "Ben Guerir, Marocco" %}</span>
+                            <span>{% translate "Ben Guerir, Morocco" %}</span>
                         </div>
                         <div class="d-inline-block m-2">
                             <div class="legend-color kumasi"></div>
@@ -79,8 +79,8 @@
             </div>
         </div>
     </section>
-    <section id="sheldule-tab" class="py-5">
-        <div class="container pb-5">
+    <section id="sheldule-tab" class="pb-5">
+        <div class="container">
             <div class="row justify-content-center pb-3">
                 <div class="col">
                     <ul class="nav nav-tabs" id="sheldule-navigation" role="tablist">
@@ -124,7 +124,7 @@
                     <p class="mt-4 font-italic">**{% translate "This programme may be modified." %}</p>
                 </div>
             </div>
-            <div class="my-5 text-center">
+            <div class="mt-3 mb-5 text-center">
                 <a class="btn btn__primary btn__small"
                    target="_blank"
                    href="{% if LANGUAGE_CODE == 'en' %}{% static "images/assets/agenda-pdf/agenda-2023-summit-en.pdf" %}{% else %}{% static "images/assets/agenda-pdf/agenda-2023-summit-fr.pdf" %}{% endif %}"
