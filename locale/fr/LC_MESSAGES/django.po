@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-15 19:08+0200\n"
+"POT-Creation-Date: 2023-05-16 13:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,17 +120,17 @@ msgstr "09:00 - 09:10"
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:247
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:297
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:421
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:451
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:600
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:473
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:622
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:19
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:72
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:223
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:272
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:287
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:473
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:631
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:646
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:701
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:284
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:299
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:485
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:643
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:658
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:713
 msgid "BENIN"
 msgstr "BÉNIN"
 
@@ -183,7 +183,7 @@ msgid ""
 "Agency"
 msgstr ""
 "Directrice Générale et Responsable de l'innovation à l'Agence de "
-"développement de la ville de Sèmè City"
+"développement de Sèmè City"
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:72
 msgid "09:15 AM - 09:30 AM"
@@ -216,7 +216,7 @@ msgstr ""
 "                                                    "
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:94
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:711
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:723
 msgid "Learner in the TINIMA program"
 msgstr ""
 "Apprenante du TINIMA, un programme de Sèmè City pour les jeunes de 8 à 18 ans"
@@ -273,13 +273,13 @@ msgid "10:15 AM - 10:45 AM"
 msgstr "10:15 - 10:45"
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:153
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:452
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:467
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:474
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:489
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:73
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:258
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:273
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:459
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:632
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:270
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:285
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:471
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:644
 msgid "Coffee break"
 msgstr "Pause café"
 
@@ -329,23 +329,23 @@ msgstr "14:00 - 14:30"
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:208
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:344
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:384
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:466
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:481
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:521
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:551
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:488
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:503
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:543
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:573
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:85
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:128
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:161
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:257
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:339
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:369
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:398
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:499
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:540
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:570
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:609
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:671
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:686
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:269
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:351
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:381
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:410
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:511
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:552
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:582
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:621
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:683
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:698
 msgid "MOROCCO"
 msgstr "MAROC"
 
@@ -469,7 +469,7 @@ msgstr ""
 "les politiques de santé publique et d'aménagement territorial"
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:302
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:605
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:627
 msgid ""
 "\n"
 "                            This workshop will gather researchers, "
@@ -497,7 +497,7 @@ msgstr ""
 "                            "
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:318
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:621
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:643
 msgid ""
 "Full Professor in Université d’Abomey-Calavi, Director of Institut Régional "
 "de Santé Publique"
@@ -506,7 +506,7 @@ msgstr ""
 "Régional de Santé Publique"
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:328
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:631
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:653
 msgid ""
 "Lecturer and doctoral assistant at École Polytechnique Fédérale de Lausanne"
 msgstr ""
@@ -562,8 +562,8 @@ msgstr ""
 "                                                        "
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:368
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:514
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:533
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:536
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:545
 msgid ""
 "Senior Lecturer in machine learning for Earth observation and Geomatics - "
 "Bordeaux INP"
@@ -655,23 +655,31 @@ msgstr ""
 "à la sécurité et au bien-être des populations.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:446
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:447
+msgid "Managing Director at Information Systems and Digital Agency - Benin"
+msgstr "Directeur Général de l’Agence des Systèmes d’Information et du Numérique - Bénin"
+
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:457
+msgid "General Manager of ISOCEL Benin"
+msgstr "Directeur Général d'ISOCEL Bénin"
+
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:468
 msgid "04:15 PM - 04:45 PM"
 msgstr "16:15 - 16:45"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:461
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:483
 msgid "03:30 PM - 04:00 PM"
 msgstr "15:30 - 16:00"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:476
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:498
 msgid "04:00 PM - 05:30 PM"
 msgstr "16:00 - 17:30"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:482
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:504
 msgid "Remote sensing and smart GIS"
 msgstr "Télédétection et SIG intelligent"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:486
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:508
 msgid ""
 "\n"
 "                            This session will examine the latest "
@@ -704,8 +712,8 @@ msgstr ""
 "technologies SIG pour soutenir le développement urbain durable en Afrique.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:504
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:362
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:526
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:374
 msgid ""
 "Researcher at the Center of Urban Systems (CUS) at Mohammad VI Polytechnic "
 "University"
@@ -713,11 +721,11 @@ msgstr ""
 "Chercheur au Centre des systèmes urbains de l'Université polytechnique "
 "Mohammad VI"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:522
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:544
 msgid "Sustainable mobility for African cities"
 msgstr "Mobilité durable dans les villes africaines"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:526
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:548
 msgid ""
 "\n"
 "                            This session will explore the latest "
@@ -751,8 +759,8 @@ msgstr ""
 "les villes africaines.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:544
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:523
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:566
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:535
 msgid ""
 "Researcher at the Center of Urban Systems (CUS) at Mohammed VI Polytechnic "
 "University"
@@ -760,12 +768,12 @@ msgstr ""
 "Chercheur au Centre des systèmes urbains de l'Université polytechnique "
 "Mohammad VI"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:552
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:574
 msgid "Data-driven methods for urban planning"
 msgstr ""
 "Application des méthodes basées sur les données en planification urbaine"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:556
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:578
 msgid ""
 "\n"
 "                            In this session, we will present papers that "
@@ -799,12 +807,12 @@ msgstr ""
 "Afrique.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:574
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:596
 msgid "Assistant Professor at University Moulay Ismail of Meknes"
 msgstr "Professeur assistant à l'Université Moulay Ismail de Meknès"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:584
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:416
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:606
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:428
 msgid ""
 "Researcher at the Center of Urban System (CUS) of the Mohammed VI "
 "Polytechnic University"
@@ -812,11 +820,11 @@ msgstr ""
 "Chercheur au Centre des systèmes urbains de l'Université polytechnique "
 "Mohammad VI"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:595
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:617
 msgid "04:45 PM - 05:15 PM"
 msgstr "16:45 - 17:15"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:601
+#: african_cities_conference/home/templates/home/agenda_content/program_content_23.html:623
 msgid ""
 "Restitution workshop - Towards sustainable and healthy living environments "
 "in Africa: Public health and territorial planning policies connections"
@@ -906,7 +914,7 @@ msgstr ""
 "                                                    "
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:104
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:563
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:575
 msgid "Assistant Professor at Mohammed VI Polytechnic University"
 msgstr "Professeur assistant à l'Université Mohammed VI Polytechnique"
 
@@ -999,12 +1007,12 @@ msgstr ""
 "                                                    "
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:182
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:593
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:605
 msgid "Academic researcher in the field of management"
 msgstr "Chercheur en gestion"
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:189
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:423
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:435
 msgid "GHANA"
 msgstr "GHANA"
 
@@ -1038,7 +1046,7 @@ msgstr ""
 "                                                    "
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:207
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:443
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:455
 msgid ""
 "Transport Analyst, Lecturer & Research Coordinator, Regional Transport "
 "Research and Education Centre, Kumasi (TRECK), KNUST"
@@ -1103,19 +1111,23 @@ msgstr ""
 "réinventent le tourisme en Afrique.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:252
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:253
+msgid "General Manager Benin Tourism"
+msgstr "Directeur général Bénin Tourisme"
+
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:264
 msgid "10:30 AM - 11:00 AM"
 msgstr "10:30 - 11:00"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:267
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:279
 msgid "11:00 AM - 11:30 AM"
 msgstr "11:00 - 11:30"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:282
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:294
 msgid "11:30 AM - 12:30 PM"
 msgstr "11:30 - 12:30"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:288
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:300
 msgid ""
 "Collecting data to improve basic urban services in Africa Mobility - Health "
 "- Urban management"
@@ -1123,7 +1135,7 @@ msgstr ""
 "Collecter la data pour améliorer les services urbains de base Mobilité - "
 "Santé - Gestion urbaine"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:292
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:304
 msgid ""
 "\n"
 "                            By enabling better management of services such "
@@ -1145,7 +1157,7 @@ msgstr ""
 "en vue d’améliorer la qualité de vie des populations sur le continent.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:299
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:311
 msgid ""
 "\n"
 "                            Join the discussion between public actors, start-"
@@ -1160,25 +1172,25 @@ msgstr ""
 "innovantes en vue d'améliorer le confort de vie des usagers.\n"
 "                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:313
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:325
 msgid "Entrepreneur, Co-founder of the Pharmap application"
 msgstr "Entrepreneur , Co - fondateur de l'application Pharmap"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:323
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:335
 msgid "General Manager of the Waste Management Company"
 msgstr "Directeur Général de la Société de Gestion des Déchets"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:334
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:346
 msgid "11:00 AM - 12:30 PM"
 msgstr "11:00 - 12:30"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:340
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:352
 msgid "Cloud computing for urban planning in Africa: the case of GEE"
 msgstr ""
 "Cloud computing au service de la planification urbaine en Afrique : le cas "
 "de GEE"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:344
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:356
 msgid ""
 "\n"
 "                            In this tutorial, we will explore the potential "
@@ -1212,11 +1224,11 @@ msgstr ""
 "Afrique.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:370
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:382
 msgid "Urban extension modeling with QGIS"
 msgstr "Modélisation de l'extension urbaine avec QGIS"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:374
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:386
 msgid ""
 "\n"
 "                            This tutorial will explore how QGIS can be used "
@@ -1246,15 +1258,15 @@ msgstr ""
 "appliquer ces techniques dans leur propre travail.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:391
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:403
 msgid "Project manager at SADV/OCP"
 msgstr "Chef de projet à la SADV/OCP"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:399
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:411
 msgid "Workshop session"
 msgstr "Session de wokshops"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:403
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:415
 msgid ""
 "\n"
 "                            Workshop session on different areas of urban "
@@ -1266,12 +1278,12 @@ msgstr ""
 "Afrique\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:424
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:436
 msgid "Session 2: Public transport system and public health risk"
 msgstr ""
 "Session 2: Système de transport en commun et risque pour la santé publique"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:428
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:440
 msgid ""
 "\n"
 "                            Rapid population growth and urbanization are "
@@ -1291,20 +1303,20 @@ msgstr ""
 "pour la santé publique des transports en Afrique.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:454
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:466
 msgid "12:30 PM - 02:30 PM"
 msgstr "12:30 - 14:30"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:468
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:480
 msgid "02:30 PM - 04:30 PM"
 msgstr "14:30 - 16:30"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:474
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:486
 msgid "African Cities Lab: A gamechanger that transforms African cities"
 msgstr ""
 "African Cities Lab: un gamechanger qui transforme les villes africaines"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:478
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:490
 msgid ""
 "\n"
 "                            Presentation of the <a href=\"https://"
@@ -1331,15 +1343,15 @@ msgstr ""
 "africaines afin de favoriser un développement urbain durable.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:494
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:506
 msgid "02:30 PM - 04:00 PM"
 msgstr "14:30 - 16:00"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:500
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:512
 msgid "Digital transformation and digital governance"
 msgstr "Transformation digitale et gouvernance numérique"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:504
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:516
 msgid ""
 "\n"
 "                            In this session, we will showcase recent "
@@ -1373,11 +1385,11 @@ msgstr ""
 "gouvernance urbaine en Afrique.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:541
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:553
 msgid "Architecture and urban development"
 msgstr "Architecture et développement urbain"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:545
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:557
 msgid ""
 "\n"
 "                            This session will examine the intersections of "
@@ -1410,11 +1422,11 @@ msgstr ""
 "développement urbain dans le contexte africain.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:571
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:583
 msgid "Socioeconomic challenges of African cities"
 msgstr "Challenges socioéconomiques de la ville africaine"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:575
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:587
 msgid ""
 "\n"
 "                            This session will address the complex and "
@@ -1444,15 +1456,15 @@ msgstr ""
 "auxquels sont confrontées les villes africaines.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:604
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:616
 msgid "04:00 PM - 05:00 PM"
 msgstr "16:00 - 17:00"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:610
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:622
 msgid "Coffee break/Posters"
 msgstr "Pause café/Posters"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:614
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:626
 msgid ""
 "\n"
 "                            Posters presentations on different areas of "
@@ -1464,19 +1476,19 @@ msgstr ""
 "Afrique\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:626
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:638
 msgid "04:30 PM - 05:00 PM"
 msgstr "16:30 - 17:00"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:641
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:653
 msgid "05:00 PM - 06:00 PM"
 msgstr "17:00 - 18:00"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:647
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:659
 msgid "Restitution of the Hackathon (Innovation Lab)"
 msgstr "Restitution Hackathon"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:651
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:663
 msgid ""
 "\n"
 "                            Optimising drinking water management in the new "
@@ -1498,35 +1510,35 @@ msgstr ""
 "présenter les solutions imaginées devant un jury pluridisciplinaire.\n"
 "                                                        "
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:666
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:678
 msgid "05:00 PM - 05:30 PM"
 msgstr "17:00 - 17:30"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:672
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:684
 msgid "Closing remarks"
 msgstr "Discours de clôture"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:681
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:693
 msgid "05:30 PM - 06:00 PM"
 msgstr "17:30 - 18:00"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:687
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:699
 msgid "Award ceremony"
 msgstr "Remise des prix"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:696
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:708
 msgid "06:00 PM - 06:15 PM"
 msgstr "18:00 - 18:15"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:702
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:714
 msgid "Key note - plenary session"
 msgstr "Discours de clôture (Key note)"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:722
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:734
 msgid "06:30 PM - 07:30 PM"
 msgstr "18:30 - 19:30"
 
-#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:727
+#: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:739
 msgid "Closing Cocktail"
 msgstr "Cocktail de fin"
 
