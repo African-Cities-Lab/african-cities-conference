@@ -20,4 +20,9 @@ urlpatterns = [
         TemplateView.as_view(template_name="home/agenda.html"),
         name="program",
     ),
+    path(
+        "marketplace/",
+        TemplateView.as_view(template_name="home/static_marketplace.html"),
+        name="marketplace",
+    ),
 ]
