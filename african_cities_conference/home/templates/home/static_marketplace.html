@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% block title %}
+    {% translate "Marketplace" %} | African Cities Lab - 2023 Summit
+{% endblock title %}
+{% block static_meta_tag %}
+    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title"
+          content="{% translate "Marketplace" %} | African Cities Lab - 2023 Summit"/>
+    <meta name="twitter:description"
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta name="twitter:site" content="@AfricanCtiesLab" />
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+    <meta property="og:title"
+          content="{% translate "Marketplace" %} | African Cities Lab - 2023 Summit"/>
+    <meta property="og:description"
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta property="og:site_name" content="African Cities Lab - 2023 Summit" />
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+    <meta itemprop="name"
+          content="{% translate "Marketplace" %} | African Cities Lab - 2023 Summit"/>
+    <meta itemprop='description'
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+{% endblock static_meta_tag %}
+{% block css %}
+    {{ block.super }}
+    <style>
+        .page-banner {
+           background-image: url({% static "images/assets/banner-aclsummit.jpg" %});
+           background-position: top center
+        }
+    </style>
+{% endblock css %}
+{% block content %}
+    <section class="page-banner">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-12 col-md-6">
+                    <div class="position-relative h1">
+                        {% translate "Marketplace" %}
+                        <span class="dash-accent"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container-xl">
+            <div class="row justify-content-center"></div>
+        </div>
+    </section>
+{% endblock content %}
