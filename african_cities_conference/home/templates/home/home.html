@@ -53,10 +53,6 @@
         }
     </style>
 {% endblock css %}
-{% block javascript %}
-    {{ block.super }}
-    <script defer src="{% static 'js/counttimer.js' %}"></script>
-{% endblock javascript %}
 {% block content %}
     <section class="civa-banner">
         <div class="container-lg position-relative">
@@ -91,6 +87,7 @@
                             </a>
                         </div>
                     </div>
+                    {% comment %}
                     <div class="countdown-s2 mt-5">
                         <span class="countdown-section">
                             <div id="days" class="countdown-amount">230</div>
@@ -109,6 +106,7 @@
                             <p class="countdown-period">{% translate "Seconds" %}</p>
                         </span>
                     </div>
+                    {% endcomment %}
                 </div>
             </div>
         </div>
@@ -214,9 +212,7 @@
                 </div>
                 <div class="col-12 col-md-3">
                     <div class="mkdf-process-card">
-                        <div class="mkdf-process-circle">
-                            2
-                        </div>
+                        <div class="mkdf-process-circle">2</div>
                         <div>
                             {% blocktranslate %}
                             To promote exchanges between politicians and public and private actors in the development of African cities.
