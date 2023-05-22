@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-22 10:04+0200\n"
+"POT-Creation-Date: 2023-05-22 08:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -982,8 +982,12 @@ msgid "Mayor of Ouidah"
 msgstr "Maire de Ouidah"
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:48
-msgid "Head of Management and Planning of Sèmè City"
-msgstr "Responsable Gestion et planification de Sèmè City"
+msgid ""
+"Head of planning and construction management at the Sèmè City Development "
+"Agency"
+msgstr ""
+"Responsable planification et gestion des constructions à l'Agence de Développement "
+"de Sèmè City"
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:58
 msgid "Associate Architect Cobloc Architecture"
@@ -1331,7 +1335,9 @@ msgstr "Fondateur, MEDOM Bénin"
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:427
 msgid "General Manager of the Waste Management Company (SGDS SA) - Benin"
-msgstr "Directeur Général de la Société de Gestion des Déchets et de la Salubrité (SGDS SA) - Bénin"
+msgstr ""
+"Directeur Général de la Société de Gestion des Déchets et de la Salubrité "
+"(SGDS SA) - Bénin"
 
 #: african_cities_conference/home/templates/home/agenda_content/program_content_24.html:437
 msgid "Head of Marketing at Spiro"
@@ -2591,6 +2597,9 @@ msgstr "À propos d'African Cities Lab"
 #: african_cities_conference/templates/base.html:243
 msgid "Calls"
 msgstr "Appels à contributions"
+
+#~ msgid "Head of Management and Planning of Sèmè City"
+#~ msgstr "Responsable Gestion et planification de Sèmè City"
 
 #~ msgid "Entrepreneur, Co-founder of the Pharmap application"
 #~ msgstr "Entrepreneur , Co - fondateur de l'application Pharmap"
