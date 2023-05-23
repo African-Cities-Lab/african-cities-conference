@@ -4,7 +4,6 @@
     {% translate "Marketplace" %} | African Cities Lab - 2023 Summit
 {% endblock title %}
 {% block static_meta_tag %}
-    <meta name="robots" content="noindex,nofollow"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title"
           content="{% translate "Marketplace" %} | African Cities Lab - 2023 Summit"/>
@@ -29,6 +28,7 @@
 {% endblock static_meta_tag %}
 {% block css %}
     {{ block.super }}
+    <link href="{% static 'css/__marketplace.css' %}" rel="stylesheet" />
     <style>
         .page-banner {
            background-image: url({% static "images/assets/banner-aclsummit.jpg" %});
@@ -50,8 +50,93 @@
         </div>
     </section>
     <section class="py-5">
-        <div class="container-xl">
-            <div class="row justify-content-center"></div>
+        <div class="container-xl pb-5">
+            <div class="row exhibitors-list">
+                <div class="exhibitors-list__items col-10 col-md-4 col-lg-3">
+                    <div class="exhibitors-list__items__item">
+                        <div class="exhibitors-list__items__item__logo"
+                             style="background-image: url({% static 'images/assets/marketplace/sauvie.png' %})">
+                            <a href="{% url 'sauvie' %}"></a>
+                        </div>
+                        <div class="exhibitors-list__items__item__body">
+                            <h4 class="exhibitors-list__items__item__title">
+                                <a href="{% url 'sauvie' %}">SAUVIE</a>
+                            </h4>
+                            <div class="exhibitors-list__items__item__meta">AINO DIGITAL SAS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exhibitors-list__items col-10 col-md-4 col-lg-3">
+                    <div class="exhibitors-list__items__item">
+                        <div class="exhibitors-list__items__item__logo"
+                             style="background-image: url({% static 'images/assets/ico_company.png' %})">
+                            <a href="{% url '229-cadre-de-vie' %}"></a>
+                        </div>
+                        <div class="exhibitors-list__items__item__body">
+                            <h4 class="exhibitors-list__items__item__title">
+                                <a href="{% url '229-cadre-de-vie' %}">229 Cadre de vie</a>
+                            </h4>
+                            <div class="exhibitors-list__items__item__meta">African Design School</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exhibitors-list__items col-10 col-md-4 col-lg-3">
+                    <div class="exhibitors-list__items__item">
+                        <div class="exhibitors-list__items__item__logo"
+                             style="background-image: url({% static 'images/assets/marketplace/logo-citizon.png' %})">
+                            <a href="{% url 'citizon' %}"></a>
+                        </div>
+                        <div class="exhibitors-list__items__item__body">
+                            <h4 class="exhibitors-list__items__item__title">
+                                <a href="{% url 'citizon' %}">CitizOn</a>
+                            </h4>
+                            <div class="exhibitors-list__items__item__meta">CasaPocket</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exhibitors-list__items col-10 col-md-4 col-lg-3">
+                    <div class="exhibitors-list__items__item">
+                        <div class="exhibitors-list__items__item__logo"
+                             style="background-image: url({% static 'images/assets/marketplace/RMobilitylogo.png' %})">
+                            <a href="{% url 'rmobility' %}"></a>
+                        </div>
+                        <div class="exhibitors-list__items__item__body">
+                            <h4 class="exhibitors-list__items__item__title">
+                                <a href="{% url 'rmobility' %}">RMobility</a>
+                            </h4>
+                            <div class="exhibitors-list__items__item__meta">RAYNIS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exhibitors-list__items col-10 col-md-4 col-lg-3">
+                    <div class="exhibitors-list__items__item">
+                        <div class="exhibitors-list__items__item__logo"
+                             style="background-image: url({% static 'images/assets/marketplace/fiwe.png' %})">
+                            <a href="{% url 'fiwe' %}"></a>
+                        </div>
+                        <div class="exhibitors-list__items__item__body">
+                            <h4 class="exhibitors-list__items__item__title">
+                                <a href="{% url 'fiwe' %}">FIWÈ</a>
+                            </h4>
+                            <div class="exhibitors-list__items__item__meta">FIWÈ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exhibitors-list__items col-10 col-md-4 col-lg-3">
+                    <div class="exhibitors-list__items__item">
+                        <div class="exhibitors-list__items__item__logo"
+                             style="background-image: url({% static 'images/assets/marketplace/sniffer-bike.png' %})">
+                            <a href="{% url 'sniffer-bike' %}"></a>
+                        </div>
+                        <div class="exhibitors-list__items__item__body">
+                            <h4 class="exhibitors-list__items__item__title">
+                                <a href="{% url 'sniffer-bike' %}">Sniffer Bike -CUS 2022</a>
+                            </h4>
+                            <div class="exhibitors-list__items__item__meta">Center of Urban Systems – CUS at UM6P</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 {% endblock content %}
