@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% block title %}
+    {% translate "Marketplace" %} | African Cities Lab - 2023 Summit
+{% endblock title %}
+{% block static_meta_tag %}
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title"
+          content="{% translate "Marketplace" %} | African Cities Lab - 2023 Summit"/>
+    <meta name="twitter:description"
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta name="twitter:site" content="@AfricanCtiesLab" />
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+    <meta property="og:title"
+          content="{% translate "Marketplace" %} | African Cities Lab - 2023 Summit"/>
+    <meta property="og:description"
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta property="og:site_name" content="African Cities Lab - 2023 Summit" />
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+    <meta itemprop="name"
+          content="{% translate "Marketplace" %} | African Cities Lab - 2023 Summit"/>
+    <meta itemprop='description'
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+{% endblock static_meta_tag %}
+{% block css %}
+    {{ block.super }}
+    <link href="{% static 'css/__marketplace.css' %}" rel="stylesheet" />
+    <style>
+        .page-banner {
+           background-image: url({% static "images/assets/banner-aclsummit.jpg" %});
+           background-position: top center
+        }
+    </style>
+{% endblock css %}
+{% block content %}
+    <section class="page-banner">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-12 col-md-6">
+                    <div class="position-relative h1">
+                        {% translate "Marketplace" %}
+                        <span class="dash-accent"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="exhibitor-entry">
+        <div class="exhibitor-entry__header">
+            <div class="exhibitor-entry__header__logo"
+                 style="background-image: url({% static 'images/assets/marketplace/sniffer-bike.png' %})">
+            </div>
+            <div class="exhibitor-entry__header__infos">
+                <div class="h3 exhibitor-entry__hero__title">Sniffer Bike - CUS 2022</div>
+                <div class="exhibitor-entry__hero__meta">Center of Urban Systems – CUS at UM6P</div>
+            </div>
+        </div>
+        <div class="exhibitor-entry__body">
+            <div class="container">
+                <div class="row py-5 border-bottom-1">
+                    <div class="col-12">
+                        <div class="exhibitor-entry__body__description font-size-16">
+                            <p>
+                                <strong class="font-size-18">{% translate "Sniffer Bike: Measure air pollution in real time while cycling!" %}</strong>
+                            </p>
+                            <p>
+                                {% blocktranslate %}
+                                Have you ever wanted to participate in the collection of air quality data in your city? If so, we have a solution for you: <strong>Sniffer Bike</strong>!
+                                {% endblocktranslate %}
+                            </p>
+                            <p>
+                                {% blocktranslate %}
+                                The Sniffer Bike solution consists of air pollution sensors embedded in shared bikes. These gas and particulate matter (PM) sensors
+                                use low-cost technology to provide real-time air quality data from the bikes' location. air quality data in real time from the
+                                location of the bikes.
+                                {% endblocktranslate %}
+                            </p>
+                            <p>
+                                {% blocktranslate %}
+                                With Sniffer Bike, we can enjoy the convenience of cycling (can be shared) or other public transport while contributing to the collection
+                                of air quality data. public transport while contributing to the collection of air quality data. The data is stored in a spatial
+                                database The data is stored in a spatial database, which allows the creation of interactive maps of the air quality in your city.
+                                {% endblocktranslate %}
+                            </p>
+                            <p>
+                                {% blocktranslate %}
+                                The first Sniffer Bike prototype is currently in the test phase as a handheld device. Our goal is to generalise this solution in
+                                shared bikes in the near future, so that everyone can contribute to the collection of air quality data in their city. can contribute
+                                to the collection of air quality data in their city. With your participation, we can make this solution a reality for everyone.
+                                {% endblocktranslate %}
+                            </p>
+                            <p>
+                                {% blocktranslate %}
+                                Our Sniffer Bike solution does not just collect air quality data. It goes further by developing decision support tools for decision makers.
+                                These decision aids provide decision makers with valuable information on air quality These decision aids provide decision-makers with
+                                valuable information on air quality, which can help them to take appropriate action in terms of environmental protection.
+                                With Éco-Vélo, we can contribute to the creation of a cleaner and healthier environment for all, while helping decision makers
+                                to make informed decisions.
+                                {% endblocktranslate %}
+                            </p>
+                        </div>
+                        <div class="exhibitor-entry__body__more py-5">
+                            <div class="exhibitor-entry__contacts">
+                                <h5 class="font-size-18 mb-2">{% translate "Contacts" %}</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="mailto:rida.azmi@um6p.ma">rida.azmi@um6p.ma</a>
+                                    </li>
+                                    <li class="pt-2">00212 6 76 34 12 32</li>
+                                </ul>
+                            </div>
+                            <div class="exibitor-entry__additionnal">
+                                <div class="exibitor-entry__download__btn">
+                                    <a target="_blank"
+                                       href="{% static 'images/assets/marketplace/Sniffer_Bike_CUS_um6p.pdf' %}"
+                                       download>
+                                        <div class="download-ico">
+                                            <img alt="download-ico"
+                                                 width="28"
+                                                 height="28"
+                                                 src="{% static 'images/assets/download-ico.svg' %}"/>
+                                        </div>
+                                        <div class="ico-text">{% translate "Download presentation" %}</div>
+                                    </a>
+                                </div>
+                                <div class="exibitor-entry__social font-size-22">
+                                    <ul class="list-inline my-3">
+                                        <li class="list-inline-item mx-2">
+                                            <a href="https://www.linkedin.com/company/um6p-cus-center-of-urban-systems/mycompany/?viewAsMember=true">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-5 text-center">
+                    <a class="btn btn__small btn__primary"
+                       role="button"
+                       href="{% url 'marketplace' %}">{% translate "Back to marketplace" %}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

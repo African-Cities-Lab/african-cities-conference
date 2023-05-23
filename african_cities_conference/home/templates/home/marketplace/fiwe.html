@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% block title %}
+    {% translate "Marketplace" %} | African Cities Lab - 2023 Summit
+{% endblock title %}
+{% block static_meta_tag %}
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title"
+          content="{% translate "Marketplace" %} | African Cities Lab - 2023 Summit"/>
+    <meta name="twitter:description"
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta name="twitter:site" content="@AfricanCtiesLab" />
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+    <meta property="og:title"
+          content="{% translate "Marketplace" %} | African Cities Lab - 2023 Summit"/>
+    <meta property="og:description"
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta property="og:site_name" content="African Cities Lab - 2023 Summit" />
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+    <meta itemprop="name"
+          content="{% translate "Marketplace" %} | African Cities Lab - 2023 Summit"/>
+    <meta itemprop='description'
+          content="{% translate "By 23th and 24th May 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}"/>
+    <meta itemprop='image'
+          content="{% static 'images/assets/visuel-officiel512x512.png' %}"/>
+{% endblock static_meta_tag %}
+{% block css %}
+    {{ block.super }}
+    <link href="{% static 'css/__marketplace.css' %}" rel="stylesheet" />
+    <style>
+        .page-banner {
+           background-image: url({% static "images/assets/banner-aclsummit.jpg" %});
+           background-position: top center
+        }
+    </style>
+{% endblock css %}
+{% block content %}
+    <section class="page-banner">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-12 col-md-6">
+                    <div class="position-relative h1">
+                        {% translate "Marketplace" %}
+                        <span class="dash-accent"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="exhibitor-entry">
+        <div class="exhibitor-entry__header">
+            <div class="exhibitor-entry__header__logo"
+                 style="background-image: url({% static 'images/assets/marketplace/fiwe.png' %})">
+            </div>
+            <div class="exhibitor-entry__header__infos">
+                <div class="h3 exhibitor-entry__hero__title">FIWÈ</div>
+                <div class="exhibitor-entry__hero__meta">FIWÈ</div>
+            </div>
+        </div>
+        <div class="exhibitor-entry__body">
+            <div class="container">
+                <div class="row py-5 border-bottom-1">
+                    <div class="col-12">
+                        <div class="exhibitor-entry__body__description font-size-16">
+                            <p>
+                                {% blocktranslate %}
+                            FIWÈ is an experiential tourism agency that offers its users a mobile application application (Android and iOS),
+                            allowing users to live authentic tourist experiences and experiences and to easily find their way around Benin.
+                            Beninese territory.
+                            {% endblocktranslate %}
+                            </p>
+                            <p>
+                                {% blocktranslate %}
+                                Indeed, the FIWÈ application is designed to facilitate the search, planning and booking of local planning and
+                                booking of local tourist activities, as well as providing accurate information information on local tourist
+                                attractions, accommodation, restaurants and small shops, accommodation, restaurants and small shops in the area.
+                                {% endblocktranslate %}
+                            </p>
+                        </div>
+                        <div class="exhibitor-entry__body__more py-5">
+                            <div class="exhibitor-entry__contacts">
+                                <h5 class="font-size-18 mb-2">{% translate "Contacts" %}</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="mailto:bureau.fiwe@gmail.com">bureau.fiwe@gmail.com</a>
+                                    </li>
+                                    <li class="pt-2">+229 57 28 57 06</li>
+                                    <li class="pt-2">
+                                        <a href="https://fiwe.bj/">www.fiwe.bj</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="exibitor-entry__additionnal">
+                                <div class="exibitor-entry__download__btn">
+                                    <a target="_blank"
+                                       href="{% static 'images/assets/marketplace/Presentation FIWE.pdf' %}"
+                                       download>
+                                        <div class="download-ico">
+                                            <img alt="download-ico"
+                                                 width="28"
+                                                 height="28"
+                                                 src="{% static 'images/assets/download-ico.svg' %}"/>
+                                        </div>
+                                        <div class="ico-text">{% translate "Download presentation" %}</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-5 text-center">
+                    <a class="btn btn__small btn__primary"
+                       role="button"
+                       href="{% url 'marketplace' %}">{% translate "Back to marketplace" %}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
