@@ -45,7 +45,7 @@
             <link rel="stylesheet"
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
             <!-- This file stores project-specific CSS -->
-            <link href="{% static 'css/project.css' %}" rel="stylesheet" />
+            <link href="{% static 'css/__project.css' %}" rel="stylesheet" />
             <link rel="stylesheet"
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
             <link rel="stylesheet"
@@ -114,7 +114,7 @@
                                    href="{% url 'home' %}">{% translate "Home" %}</a>
                             </li>
                             {% url 'program' as url %}
-                            <li class="list-inline-item">
+                            <li class="nav-item">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% url 'program' %}">{% translate "Program" %}</a>
                             </li>
@@ -139,10 +139,10 @@
                         </ul>
                         <div class="right-header">
                             <div class="register-link">
-                                <a class="btn btn__primary btn-small font-size-14"
+                                <a class="btn btn__primary px-4 btn-small font-size-16"
                                    target="_blank"
-                                   href="https://reg.africancitieslab.org/189/participation_form">
-                                    {% translate "Register" %}
+                                   href="https://reg.africancitieslab.org/189/login">
+                                    {% translate "Login " %}
                                 </a>
                             </div>
                             <span class="dropdown px-2">
@@ -239,9 +239,8 @@
                                     <li class="menu-item">
                                         <a href="{% url 'program' %}">{% translate "Program" %}</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link {% if request.path == url %}active{% endif %}"
-                                           href="{% localized_slugurl 'commitee' %}">{% translate "Committee" %}</a>
+                                    <li class="menu-item">
+                                        <a href="{% localized_slugurl 'commitee' %}">{% translate "Committee" %}</a>
                                     </li>
                                     <li class="menu-item">
                                         <a href="{% localized_slugurl 'acc-calls' %}">{% translate "Calls" %}</a>
