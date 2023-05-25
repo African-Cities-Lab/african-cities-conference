@@ -1357,8 +1357,7 @@ a.nav-link:hover {
 }
 
 .mkdf-process-card {
-  border: 1px solid #f7f8fa;
-  box-shadow: -1px 14px 12px rgba(0, 0, 0, 0.03);
+  border: 0.5px solid #eaeaea;
   border-radius: 6px;
   padding: 1rem;
   min-height: 185px;
@@ -1773,6 +1772,10 @@ a.nav-link:hover {
 
   .countdown-timer__section {
     margin-top: unset;
+  }
+
+  .mkdf-process-card {
+    text-align: center;
   }
 }
 
