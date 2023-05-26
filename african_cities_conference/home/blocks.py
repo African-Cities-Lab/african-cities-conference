@@ -70,7 +70,7 @@ class SpeakerLayoutBlock(blocks.StructBlock):
                 ("name", blocks.CharBlock()),
                 (
                     "designation",
-                    blocks.RichTextBlock(),
+                    blocks.RichTextBlock(required=False),
                 ),
                 (
                     "social_links",
@@ -85,7 +85,7 @@ class SpeakerLayoutBlock(blocks.StructBlock):
                 ),
                 (
                     "biography",
-                    blocks.RichTextBlock(),
+                    blocks.RichTextBlock(required=False),
                 ),
             ],
         ),
