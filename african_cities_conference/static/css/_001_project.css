@@ -939,6 +939,11 @@ a.nav-link:hover {
   margin-right: 16px;
 }
 
+.speakers-card .card {
+  max-width: 288px;
+  margin: 0 auto;
+}
+
 .speakers-card .card-header::before {
   content: "";
   position: absolute;
