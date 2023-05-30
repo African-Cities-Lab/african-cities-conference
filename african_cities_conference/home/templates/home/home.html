@@ -434,7 +434,7 @@
                                         data-bs-target="#flush-collapseTen"
                                         aria-expanded="false"
                                         aria-controls="flush-collapseTen">
-                                    {% translate "Innovation Labs" %}
+                                    {% translate "Innovation Lab" %}
                                 </button>
                             </h4>
                         </div>
@@ -459,7 +459,7 @@
                                         formative yet critical environment, and to receive feedback from examiners, mentors and peers in the field of
                                         their thesis topic.
                                         {% endblocktranslate %}
-                                    <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-doctoral-consortium-spring-school/"
+                                    <a href="{% localized_slugurl 'call-for-doctoral-consortium-spring-school' %}"
                                        class="text_primary">{% translate "Learn more" %}</a>
                                 </div>
                             </div>
@@ -484,7 +484,7 @@
                                         The poster and demo session of the 1st African Cities Conference complements the research session and provides
                                         an opportunity to present recent results and innovative implementations in an informal and interactive setting.
                                         {% endblocktranslate %}
-                                    <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-poster-demos/"
+                                    <a href="{% localized_slugurl 'call-for-poster-demos' %}"
                                        class="text_primary">{% translate "Learn more" %}</a>
                                 </div>
                             </div>
@@ -509,7 +509,7 @@
                                         We invite proposals for events that promote discussion, interdisciplinary exchange and interaction, scholarly discourse,
                                         and creative and critical thinking, rather than being mere mini-conferences.
                                         {% endblocktranslate %}
-                                    <a href="https://acc2023.africancitieslab.org/en/acc-calls/call-for-workshops-tutorials/"
+                                    <a href="{% localized_slugurl 'call-for-workshops-tutorials' %}"
                                        class="text_primary">{% translate "Learn more" %}</a>
                                 </div>
                             </div>
@@ -534,6 +534,7 @@
                                         It is a virtual showroom to offer visibility and the opportunity to a dozen a dozen entrepreneurs to
                                         exhibit and sell their their innovative ideas, products and services.
                                         {% endblocktranslate %}
+                                    <a href="{% url 'marketplace' %}" class="text_primary">{% translate "Learn more" %}</a>
                                 </div>
                             </div>
                         </div>
