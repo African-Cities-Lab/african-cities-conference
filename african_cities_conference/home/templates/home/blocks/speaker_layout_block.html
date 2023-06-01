@@ -50,8 +50,8 @@
                         </div>
                     </div>
                     <div class="card-body border-0">
-                        <h4 class="speaker-title">{{ speaker.name }}</h4>
-                        <p class="speaker-designation">{{ speaker.designation }}</p>
+                        <h5 class="speaker-title">{{ speaker.name }}</h5>
+                        {% if speaker.designation %}<div class="speaker-designation">{{ speaker.designation }}</div>{% endif %}
                     </div>
                     <!-- Modal -->
                     <div class="modal fade"

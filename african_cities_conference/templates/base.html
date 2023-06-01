@@ -45,7 +45,7 @@
             <link rel="stylesheet"
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
             <!-- This file stores project-specific CSS -->
-            <link href="{% static 'css/__project.css' %}" rel="stylesheet" />
+            <link href="{% static 'css/_001_project.css' %}" rel="stylesheet" />
             <link rel="stylesheet"
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
             <link rel="stylesheet"
@@ -118,8 +118,10 @@
                                 <a class="nav-link {% if request.path == url %}active{% endif %}"
                                    href="{% url 'program' %}">{% translate "Program" %}</a>
                             </li>
+                            {% localized_slugurl 'speakers' as url %}
                             <li class="nav-item">
-                                <a class="nav-link" href="https://reg.africancitieslab.org/189/speakers">{% translate "Speakers" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}"
+                                   href="{% localized_slugurl 'speakers' %}">{% translate "Speakers" %}</a>
                             </li>
                             {% url 'marketplace' as url %}
                             <li class="nav-item">
